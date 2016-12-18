@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, 
 body, 
 h1, 
@@ -27,4 +28,35 @@ body {
 }
 ul {
 	list-style: none;
+=======
+html, 
+body, 
+h1, 
+div,
+p,
+a, 
+address, 
+img, 
+ul, 
+li,
+nav {
+	background: transparent;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+footer, 
+nav {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+>>>>>>> 028430e0c68453f3dc98afc501666dd71d843362
 }

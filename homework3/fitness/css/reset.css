@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, 
 div, 
 p, 
@@ -35,3 +36,42 @@ ul {
 	 list-style: none;
 }
 
+=======
+html, 
+div, 
+p, 
+a, 
+ul, 
+li, 
+aside, 
+footer, 
+nav {
+	background: transparent;
+	border: 0;
+	font: inherit;
+	font-size: 100%;         
+	line-height: 1;	
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	background: #f9f9f9;
+	border: 0;
+	font: inherit;
+	font-size: 100%;      
+	line-height: 1;	
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+aside, 
+footer, 
+nav {
+	display: block;
+}
+ul {
+	 list-style: none;
+}
+
+>>>>>>> 028430e0c68453f3dc98afc501666dd71d843362
