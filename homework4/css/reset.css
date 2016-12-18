@@ -1,0 +1,29 @@
+html, 
+body,
+div, 
+h2,
+p, 
+a, 
+aside,
+ul, 
+li, 
+footer, 
+nav {
+	border: 0;	
+	font: inherit;
+	font-size: 100%;
+	font-style: normal;
+	line-height: 1;	
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+aside, 
+footer, 
+nav {
+	display: block;
+}
+ul {
+	 list-style: none;
+}
