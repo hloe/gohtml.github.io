@@ -1,29 +1,37 @@
 html,
 body,
 div,
-h2,
+span,
+h1,
 p,
 a,
-aside,
+img,
 ul,
 li,
-footer,
+form,
+input,
+label,
+header,
 nav {
   border: 0;
   font: inherit;
   font-size: 100%;
-  font-style: normal;
-  line-height: 1;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  text-align: left;
   vertical-align: baseline;
 }
 
-aside,
-footer,
+
+/* HTML5 display-role reset for older browsers */
+
+header,
 nav {
   display: block;
+}
+
+body {
+  line-height: 1;
 }
 
 ul {

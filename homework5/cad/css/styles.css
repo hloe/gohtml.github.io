@@ -1,0 +1,282 @@
+body {
+  background-color: #cdcdc3;
+  font-family: 'Helvetica Neue', Tahoma, Geneva, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1215px;
+}
+
+
+/* MENU */
+
+nav {
+  background-color: #074b88;
+  background-image: url('../img/menu_background.jpg');
+  background-repeat: repeat-x;
+  height: 36px;
+}
+
+.menu {
+  float: right;
+  font-size: 0;
+  letter-spacing: -1px;
+  line-height: 0;
+}
+
+
+/* Clearfix */
+
+.menu::after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.menu-li {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  vertical-align: bottom;
+}
+
+.menu-li:last-child {
+  background: -webkit-linear-gradient(to bottom, #51b1dc, #2e7ac4);
+  background: -webkit-gradient(to bottom, #51b1dc, #2e7ac4);
+  background: -moz-linear-gradient(to bottom, #51b1dc, #2e7ac4);
+  background: -o-linear-gradient(to bottom, #51b1dc, #2e7ac4);
+  background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
+  border: 1px solid #509fd9;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 36px;
+  margin-right: 20px;
+  padding: 0 11px;
+}
+
+.menu-li-a {
+  color: #4e9ed6;
+  display: inline-block;
+  padding: 0 13px;
+  text-decoration: none;
+}
+
+.menu-li-a:hover {
+  background-color: rgb(78, 171, 218);
+  background-color: rgba(78, 171, 218, .5);
+  color: #fff;
+  -moz-transition: all .3s linear .3s;
+  -o-transition: all .3s linear .3s;
+  -webkit-transition: all .3s linear .3s;
+  transition: all .3s linear .3s;
+}
+
+.flag {
+  background-image: url('../img/flag.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding-left: 53px;
+}
+
+.underline {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.blue:hover {
+  color: #a5d2f2;
+  -moz-transition: color .3s linear .3s;
+  -o-transition: color .3s linear .3s;
+  -webkit-transition: color .3s linear .3s;
+  transition: color .3s linear .3s;
+}
+
+/* BACKGROUND */
+.background {
+  background-color: #abcbd8;
+  background-image: url('../img/background.jpg');
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 1028px;
+  margin: 0 auto;
+  padding-top: 213px;  
+  width: 1215px;  
+}
+
+/* HEADER */
+
+.header {
+  background-color: rgb(40, 45, 47);
+  background-color: rgba(40, 45, 47, .7);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 62px;
+  margin-bottom: 2px;
+  margin-left: 353px;
+  width: 560px;
+}
+
+.title {
+  color: #fff;
+  font-family: 'Helvetica Neue', Tahoma, Geneva, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 62px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/* Registration Form */
+
+.big-div {
+  background-color: rgb(40, 45, 47);
+  background-color: rgba(40, 45, 47, .7);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 549px;
+  margin-bottom: 2px;
+  margin-left: 353px;
+  padding-top: 35px;
+  width: 560px;
+}
+
+.facebook {
+  margin: 0 auto;
+  width: 276px;
+}
+
+.facebook-a {
+  color: #fff;
+  font-size: 21px;
+  text-align: center;
+}
+
+
+/* OR */
+
+.ou {
+  background-image: url('../img/horizontal-line.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #999;
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  height: 14px;
+  line-height: 14px;
+  margin: 30px auto 29px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 276px;
+}
+
+
+/* Contact Form */
+
+.form-field {
+  background-color: #101010;
+  border-bottom: 1px solid #484948;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ccc;
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 auto 16px;
+  padding-left: 19px;
+  text-transform: capitalize;
+  width: 276px;
+}
+
+.form-field:focus {
+  background: -webkit-linear-gradient(to bottom, #1b4b79, #1b5288, #1b5286);
+  background: -webkit-gradient(to bottom, #1b4b79, #1b5288, #1b5286);
+  background: -moz-linear-gradient(to bottom, #1b4b79, #1b5288, #1b5286);
+  background: -o-linear-gradient(to bottom, #1b4b79, #1b5288, #1b5286);
+  background: linear-gradient(to bottom, #1b4b79, #1b5288, #1b5286);
+  border-bottom: 1px solid #689bcc;
+  -moz-box-shadow: 0 0 18px #689bcc;
+  -webkit-box-shadow: 0 0 18px #689bcc;
+  box-shadow: 0 0 18px #689bcc;
+  -moz-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.checkbox {
+  height: 14px;
+  position: relative;
+}
+
+.checkbox-text {
+  color: #ccc;
+  display: inline-block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 20px;
+  padding-left: 8px;
+  position: absolute;
+  vertical-align: middle;
+}
+
+.form-button {
+  background: -webkit-linear-gradient(to bottom, #6bb8e7, #3686ca);
+  background: -webkit-gradient(to bottom, #6bb8e7, #3686ca);
+  background: -moz-linear-gradient(to bottom, #6bb8e7, #3686ca);
+  background: -o-linear-gradient(to bottom, #6bb8e7, #3686ca);
+  background: linear-gradient(to bottom, #6bb8e7, #3686ca);
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  height: 37px;
+  line-height: 37px;
+  margin: 26px auto 17px;
+  text-align: center;
+  width: 151px;
+}
+
+.form-button:hover {
+  background: -webkit-linear-gradient(to bottom, #47a2d8, #1471be);
+  background: -webkit-gradient(to bottom, #47a2d8, #1471be);
+  background: -moz-linear-gradient(to bottom, #47a2d8, #1471be);
+  background: -o-linear-gradient(to bottom, #47a2d8, #1471be);
+  background: linear-gradient(to bottom, #47a2d8, #1471be);
+  -moz-transition: background .3s linear .3s;
+  -o-transition: background .3s linear .3s;
+  -webkit-transition: background .3s linear .3s;
+  transition: background .3s linear .3s;  
+}
+
+.notice {
+  color: #ccc;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 16px;
+  text-align: center;
+}

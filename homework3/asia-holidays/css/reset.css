@@ -1,29 +1,33 @@
 html,
 body,
+h1,
 div,
-h2,
 p,
 a,
-aside,
+address,
+img,
 ul,
 li,
-footer,
 nav {
+  background: transparent;
   border: 0;
   font: inherit;
   font-size: 100%;
-  font-style: normal;
-  line-height: 1;
   margin: 0;
   padding: 0;
-  text-decoration: none;
   vertical-align: baseline;
 }
 
-aside,
+
+/* HTML5 display-role reset for older browsers */
+
 footer,
 nav {
   display: block;
+}
+
+body {
+  line-height: 1;
 }
 
 ul {
