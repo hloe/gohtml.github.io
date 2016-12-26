@@ -5,7 +5,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1215px;
+  /*  width: 1215px;*/
 }
 
 
@@ -101,18 +101,21 @@ nav {
   transition: color .3s linear .3s;
 }
 
+
 /* BACKGROUND */
+
 .background {
   background-color: #abcbd8;
   background-image: url('../img/background.jpg');
-  -webkit-box-sizing: border-box;
+  -webkit-background-size: cover;
+  background-size: cover;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: 1028px;
-  margin: 0 auto;
-  padding-top: 213px;  
-  width: 1215px;  
+  padding-bottom: 20%;
+  padding-top: 19%;
 }
+
 
 /* HEADER */
 
@@ -123,8 +126,7 @@ nav {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 62px;
-  margin-bottom: 2px;
-  margin-left: 353px;
+  margin: 0 auto 2px;
   width: 560px;
 }
 
@@ -148,31 +150,98 @@ nav {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: 549px;
-  margin-bottom: 2px;
-  margin-left: 353px;
+  margin: 0 auto 2px;
+  padding-bottom: 30px;
   padding-top: 35px;
   width: 560px;
 }
 
-.facebook {
+
+/* Facebook Button */
+
+.facebook-a {
+  background: -moz-linear-gradient(to bottom, #405896, #374c8d, #304272);
+  background: -o-linear-gradient(to bottom, #405896, #374c8d, #304272);
+  background: -webkit-linear-gradient(to bottom, #405896, #374c8d, #304272);
+  background: -webkit-gradient(to bottom, #405896, #374c8d, #304272);
+  background: linear-gradient(to bottom, #405896, #374c8d, #304272);
+  border-radius: 4px;
+  border-top: 1px solid #758ab5;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fbffff;
+  display: block;
+  font-size: 16px;
+  height: 35px;
+  line-height: 35px;
   margin: 0 auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
   width: 276px;
 }
 
-.facebook-a {
-  color: #fff;
-  font-size: 21px;
+.facebook-a:hover {
+  background: -moz-linear-gradient(to bottom, #274388, #223878, #192a57);
+  background: -o-linear-gradient(to bottom, #274388, #223878, #192a57);
+  background: -webkit-linear-gradient(to bottom, #274388, #223878, #192a57);
+  background: -webkit-gradient(to bottom, #274388, #223878, #192a57);
+  background: linear-gradient(to bottom, #274388, #223878, #192a57);
+  border-top: 1px solid #4E6799;
+  -moz-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.facebook-a-bold {
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+.facebook-a::before {
+  background-image: url('../img/border.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: 'f';
+  display: inline-block;
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  height: 35px;
+  left: 0;
+  line-height: 35px;
+  position: absolute;
   text-align: center;
+  top: -1px;
+  vertical-align: middle;
+  width: 39px;
+}
+
+.facebook-a::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: '\203a';
+  display: inline-block;
+  font-size: 33px;
+  height: 35px;
+  line-height: 30px;
+  position: absolute;
+  right: 26px;
+  vertical-align: middle;
+  width: 10px;
 }
 
 
 /* OR */
 
 .ou {
-  background-image: url('../img/horizontal-line.png');
-  background-position: center center;
-  background-repeat: no-repeat;
   color: #999;
   display: block;
   font-size: 14px;
@@ -183,11 +252,38 @@ nav {
   margin: 30px auto 29px;
   text-align: center;
   text-transform: uppercase;
+  vertical-align: middle;
   width: 276px;
+}
+
+.ou::before {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #666;
+  content: ' ';
+  display: inline-block;
+  height: 0;
+  margin-bottom: 5px;
+  width: 122px;
+}
+
+.ou::after {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #666;
+  content: ' ';
+  display: inline-block;
+  height: 0;
+  margin-bottom: 5px;
+  width: 122px;
 }
 
 
 /* Contact Form */
+
+.form {
+  display: block;
+  margin: 0 auto;
+  width: 276px;
+}
 
 .form-field {
   background-color: #101010;
@@ -225,7 +321,9 @@ nav {
 }
 
 .checkbox {
+  display: block;
   height: 14px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -269,7 +367,7 @@ nav {
   -moz-transition: background .3s linear .3s;
   -o-transition: background .3s linear .3s;
   -webkit-transition: background .3s linear .3s;
-  transition: background .3s linear .3s;  
+  transition: background .3s linear .3s;
 }
 
 .notice {
@@ -278,5 +376,7 @@ nav {
   font-style: normal;
   font-weight: 100;
   line-height: 16px;
+  margin: 0 auto;
   text-align: center;
+  width: 310px;
 }
