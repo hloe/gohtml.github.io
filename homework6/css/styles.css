@@ -294,6 +294,78 @@
   box-sizing: border-box;
   height: 34px;
   margin: 0 auto;
+  position: relative;
+  width: 911px;
+}
+
+.main-menu {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  left: 125px;
+  font-size: 0;
+  height: 32px;
+  letter-spacing: -1px;
+  line-height: 0;
+  position: absolute;
+  width: 684px;
+}
+
+.main-menu-li {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 32px;
+  letter-spacing: normal;
+  line-height: 32px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.main-menu-a {
+  color: #a2acb0;
+  display: inline-block;
+  line-height: 26px;
+  padding: 0 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.main-menu-a:hover {
+  background-color: #1b5a7b;
+  border-radius: 15px;
+  color: #fff;
+  -moz-transition: all linear .9s;
+  -o-transition: all linear .9s;
+  -webkit-transition: all linear .9s;
+  transition: all linear .9s;
+}
+
+
+/*
+.dark {
+  background: -moz-linear-gradient(to bottom, #4d5663, #282c30, #0b0d0e, #020202);
+  background: -o-linear-gradient(to bottom, #4d5663, #282c30, #0b0d0e, #020202);
+  background: -webkit-linear-gradient(to bottom, #4d5663, #282c30, #0b0d0e, #020202);
+  background: -webkit-gradient(to bottom, #4d5663, #282c30, #0b0d0e, #020202);
+  background: linear-gradient(to bottom, #4d5663, #282c30, #0b0d0e, #020202);
+  border: 1px solid #2c345a;
+  border-radius: 5px;
+  -moz-box-shadow: 2px 3px 1px #bdbdbd;
+  -webkit-box-shadow: 2px 3px 1px #bdbdbd;
+  box-shadow: 2px 3px 1px #bdbdbd;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 34px;
+  margin: 0 auto;
   width: 911px;
 }
 
@@ -316,9 +388,10 @@
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   font-size: 14px;
   font-weight: 500;
+  height: 34px;
   letter-spacing: normal;
   line-height: 14px;
-  margin: 4px 0;
+  margin-top: 3px;
   text-transform: uppercase;
 }
 
@@ -344,6 +417,7 @@
   -webkit-transition: all linear .9s;
   transition: all linear .9s;
 }
+*/
 
 
 /* BASKET ICONS */
@@ -512,6 +586,10 @@
   height: 17px;
 }
 
+.search-label-2 {
+  font-size: 9px;
+}
+
 .small-gray-text {
   color: #77858b;
   font-size: 9px;
@@ -529,6 +607,7 @@
 }
 
 .select1 {
+  background-color: #fff;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -581,6 +660,7 @@
   border-width: 0;
   bottom: 9px;
   color: #154467;
+  cursor: pointer;
   float: right;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -843,10 +923,10 @@
 .first-column3 {
   float: left;
   left: 4px;
-  letter-spacing: .1px;
+  /*  letter-spacing: .1px;*/
   position: relative;
   width: 86px;
-  word-spacing: 4px;
+  /*word-spacing: 4px;*/
 }
 
 .second-column3 {
@@ -969,11 +1049,11 @@
   color: #114165;
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-stretch: condensed;
   font-weight: 600;
   height: 27px;
-  letter-spacing: .7px;
+  /*  letter-spacing: .7px;*/
   line-height: 27px;
   margin-bottom: 13px;
   padding-left: 30px;
@@ -1349,6 +1429,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #e5e9ea;
+  cursor: pointer;
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
