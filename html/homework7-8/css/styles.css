@@ -58,7 +58,7 @@
   padding-top: 52px;
 }
 
-.container--960-visible {
+.container--large-visible {
   display: none;
 }
 
@@ -175,20 +175,23 @@
 /* LINKS DECORATION */
 
 .menu__link {
-  border-bottom: 2px solid #edbfff;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   color: #fff;
   display: inline-block;
   line-height: 24px;
   padding: 0 5px 3px;
   text-decoration: none;
-  text-shadow: 1px 2px 3px #7f7f7f;
   text-transform: uppercase;
 }
 
-.menu__link:hover {
+.menu__link--header {
+  border-bottom: 2px solid #edbfff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 1px 2px 3px #7f7f7f;
+}
+
+.menu__link--header:hover {
   background-color: rgb(27, 12, 37);
   background-color: rgba(27, 12, 37, .8);
   border-bottom: 2px solid #edbfff;
@@ -199,7 +202,7 @@
   width: 244px;
 }
 
-.menu__link--drop-down--last {
+.menu__link--drop-down {
   border-bottom: 2px solid transparent;
 }
 
@@ -207,8 +210,16 @@
   border-radius: 10px 10px 0 0;
 }
 
-.menu__link--last {
+.menu__link--drop-down--last {
   border-radius: 0 0 10px 10px;
+}
+
+.menu__link--footer {
+  text-shadow: 1px 2px 3px #464646;
+}
+
+.menu__link--footer:hover {
+  color: #cfcfcf;
 }
 
 
@@ -302,18 +313,24 @@
   margin-right: 3px;
 }
 
-.pointers__item--header:hover,
-.pointers__item--header:active {
+.pointers__item--header-active {
+  background-image: url('../img/white_circle.png');  
+}
+
+.pointers__item--header:hover {
   background-image: url('../img/white_circle.png');
 }
 
 .pointers__item--blog {
   background-image: url('../img/light_circle.png');
-  margin-right: -2px;
+  margin-right: 3px;
 }
 
-.pointers__item--blog:hover,
-.pointers__item--blog:active {
+.pointers__item--blog-active {
+  background-image: url('../img/dark_circle.png');  
+}
+
+.pointers__item--blog:hover {
   background-image: url('../img/dark_circle.png');
 }
 
@@ -535,9 +552,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /*  margin: 0 auto;*/
   padding-left: 21px;
-  /*  max-width: 298px;*/
   width: 100%;
 }
 
@@ -723,8 +738,8 @@
 }
 
 .hidden,
-.visible480,
-.visible768,
-.visible960 {
+.visible-phone,
+.visible-tablet,
+.visible-large {
   display: none;
 }
