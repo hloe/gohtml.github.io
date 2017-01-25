@@ -1,0 +1,15 @@
+.logo {
+  display: inline-block;
+  text-align: left;
+}
+
+.menu--header {
+  display: inline-block;
+  max-width: 650px;
+  text-align: right;
+}
+
+.slider--shadow {
+  background-image: url('../img/transparent_gray.png');
+  background-repeat: repeat-x;
+}
