@@ -175,9 +175,12 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: 20px;
-  margin-right: 25px;
+  margin-right: 18px;
 }
 
+.menu__item--footer:last-of-type {
+  margin-right: 3px;
+}
 
 /* LINKS DECORATION */
 
@@ -338,7 +341,7 @@
 .pointers--header {
   left: 205px;
   position: absolute;
-  width: 90px;
+  width: 95px;
 }
 
 .pointers--blog {
@@ -395,6 +398,9 @@
 /* ABOUT */
 
 .about {
+  background-color: #35273c;
+  background-image: url('../img/purple480.jpg');
+  background-repeat: repeat-x;
   background: -moz-linear-gradient(to bottom, #775385, #36293d);
   background: -o-linear-gradient(to bottom, #775385, #36293d);
   background: -webkit-linear-gradient(to bottom, #775385, #36293d);

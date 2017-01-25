@@ -102,6 +102,10 @@
   margin-right: 40px;
 }
 
+.menu__item:last-of-type {
+  margin-right: 0;
+}
+
 .menu__item--footer {
   display: inline-block;
   font-family: 'League Gothic', Arial, Helvetica, sans-serif;
@@ -110,6 +114,10 @@
   letter-spacing: normal;
   line-height: 20px;
   margin-right: 43px;
+}
+
+.menu__item--footer:last-of-type {
+  margin-right: 0;
 }
 
 .menu__link {
@@ -252,13 +260,14 @@
 .pointers--header {
   float: right;
   right: 142px;
-  width: 90px;
+  width: 95px;
 }
 
 .pointers--blog {
   float: left;
   left: 118px;
   margin-top: 25px;
+  position: relative;
   width: 95px;
 }
 
@@ -311,6 +320,9 @@
 /* ABOUT */
 
 .about {
+  background-color: #35273c;
+  background-image: url('../img/purple768.jpg');
+  background-repeat: repeat-x;
   background: -moz-linear-gradient(to bottom, #775385, #36293d);
   background: -o-linear-gradient(to bottom, #775385, #36293d);
   background: -webkit-linear-gradient(to bottom, #775385, #36293d);
@@ -626,6 +638,10 @@
   text-align: center;
 }
 
+.logos__item:last-of-type {
+  margin-right: 0;
+}
+
 .logos__link {
   display: block;
   text-decoration: none;
@@ -649,7 +665,7 @@
   box-sizing: border-box;
   float: left;
   margin-left: 20px;
-  margin-right: 35px;
+  margin-right: 30px;
   position: relative;
   width: 210px;
 }

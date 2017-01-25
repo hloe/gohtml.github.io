@@ -119,7 +119,11 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: 24px;
-  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.menu__item:last-of-type {
+  margin-right: 0;
 }
 
 .menu__item--footer {
@@ -130,6 +134,10 @@
   letter-spacing: normal;
   line-height: 20px;
   margin-right: 43px;
+}
+
+.menu__item--footer:last-of-type {
+  margin-right: 0;
 }
 
 .menu__link {
@@ -246,7 +254,7 @@
   float: right;
   margin-right: 160px;
   margin-top: 511px;
-  width: 90px;
+  width: 95px;
 }
 
 .pointers--blog {
@@ -306,6 +314,9 @@
 /* ABOUT */
 
 .about {
+  background-color: #35273c;
+  background-image: url('../img/purple960.jpg');
+  background-repeat: repeat-x;
   background: -moz-linear-gradient(to bottom, #775385, #36293d);
   background: -o-linear-gradient(to bottom, #775385, #36293d);
   background: -webkit-linear-gradient(to bottom, #775385, #36293d);
@@ -334,11 +345,11 @@
 
 .about__column--1 {
   margin-left: 10px;
-  margin-right: 49px;
+  margin-right: 43px;
 }
 
 .about__column--2 {
-  margin-right: 49px;
+  margin-right: 43px;
 }
 
 .about__text {
@@ -683,7 +694,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  margin-right: 54px;
+  margin-right: 50px;
   position: relative;
   width: 277px;
 }
