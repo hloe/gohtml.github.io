@@ -4,10 +4,9 @@
 
 @font-face {
     font-family: 'League Gothic';
-    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot') format ('eot');
     font-weight: normal;
     font-style: normal;
-    color: #000;
 }
 
 
