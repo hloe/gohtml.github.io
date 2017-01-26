@@ -1,16 +1,10 @@
-.test {
-  color: red;
-}
-
 .logo {
   display: inline-block;
-  text-align: left;
 }
 
 .menu--header {
   display: inline-block;
   max-width: 650px;
-  text-align: right;
 }
 
 .slider--shadow {
