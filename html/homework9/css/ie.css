@@ -175,10 +175,12 @@
 .slider__text {
   display: block;
   float: left;
+  left: 0;
   margin-top: 95px;
   max-width: 520px;
   position: absolute;
   width: 45%;
+  background-color: red;
 }
 
 .slider__hgroup {
@@ -221,6 +223,7 @@
   margin-bottom: 94px;
   position: absolute;
   right: 70px;
+  background-color: green;
 }
 
 .slider__img {
