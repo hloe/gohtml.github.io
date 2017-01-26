@@ -175,7 +175,7 @@
 .slider__text {
   display: block;
   float: left;
-  margin-top: 95px;
+  margin-top: 190px;
   max-width: 520px;
   position: absolute;
   width: 45%;
@@ -218,7 +218,7 @@
 
 .slider__picture {
   float: right;
-  margin-bottom: 94px;
+  margin-top: 190px;
   position: absolute;
   right: 70px;
 }
