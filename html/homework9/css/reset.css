@@ -14,8 +14,7 @@ footer,
 header,
 nav,
 picture,
-section,
-source {
+section {
   border: 0;
   font: inherit;
   font-size: 100%;
@@ -27,17 +26,11 @@ source {
 
 /* HTML5 display-role reset for older browsers */
 
-article,
-aside,
-details,
-figcaption,
-figure,
 footer,
 header,
 hgroup,
 picture,
 menu,
-nav,
 section {
   display: block;
 }
