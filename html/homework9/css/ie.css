@@ -176,7 +176,8 @@
   display: block;
   float: left;
   margin-top: 95px;
-  width: 520px;
+  max-width: 520px;
+  width: 45%;
 }
 
 .slider__hgroup {
@@ -587,7 +588,7 @@
 .logos {
   margin: 0 auto;
   padding-left: 93px;
-  width: 960px;
+  max-width: 960px;
 }
 
 .logos__list {
