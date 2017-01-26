@@ -16,9 +16,6 @@
   background-image: url('../img/mountains960.jpg');
   background-position: center 0;
   background-repeat: no-repeat;
-  -moz-background-size: auto;
-  -webkit-background-size: auto;
-  background-size: auto;
   border-bottom: 1px solid #36283d;
   height: 777px;
   padding-top: 68px;
@@ -108,30 +105,24 @@
 
 .menu__item {
   display: inline-block;
-  font-family: 'League Gothic';
-  font-size: 24px;
+  font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
-  line-height: 24px;
-  margin-right: 35px;
+  line-height: 1;
 }
 
-.menu__item:last-of-type {
-  margin-right: 0;
+.menu__item--header {
+  font-size: 17px;
+  margin-right: 20px;
 }
 
 .menu__item--footer {
-  display: inline-block;
-  font-family: 'League Gothic', Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 20px;
+  font-size: 16px;
   margin-right: 43px;
 }
 
-.menu__item--footer:last-of-type {
+.menu__item--last {
   margin-right: 0;
 }
 
@@ -146,6 +137,7 @@
   display: inline-block;
   padding: 0 7px 8px 5px;
   text-shadow: 1px 2px 3px #7f7f7f;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=90, Color='#7f7f7f')";
 }
 
 .menu__link--header:hover {
@@ -170,7 +162,8 @@
 }
 
 .slider--shadow {
-  background-color: rgba(0, 0, 0, .2);
+  background-image: url('../img/transparent_gray.png');
+  background-repeat: repeat-x;
   cursor: pointer;
   height: 400px;
   margin-top: 170px;
@@ -188,11 +181,11 @@
 
 .slider__hgroup {
   color: #fefefe;
-  font-family: 'League Gothic', Arial, Helvetica, sans-serif;
-  font-size: 59px;
+  font-family: Arial, sans-serif;
+  font-size: 45px;
   font-style: normal;
   letter-spacing: -.25px;
-  line-height: 59px;
+  line-height: 1;
   text-align: left;
   text-shadow: 1px 2px 1px #7f7f7f;
   text-transform: capitalize;
@@ -200,11 +193,11 @@
 
 .slider__title {
   color: #edbfff;
-  font-family: 'League Gothic', Arial, Helvetica, sans-serif;
-  font-size: 32px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
   font-style: normal;
   letter-spacing: -.15px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   text-shadow: 1px 2px 1px #7f7f7f;
   text-transform: uppercase;
   word-spacing: 1px;
@@ -212,11 +205,11 @@
 
 .slider__p {
   color: #fff;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 100;
-  line-height: 24px;
+  line-height: 1.5;
   text-shadow: 1px 2px 1px #7f7f7f;
   vertical-align: top;
 }
@@ -305,8 +298,6 @@
   background-image: url('../img/purple960.jpg');
   background-repeat: repeat-x;
   border-bottom: 1px solid #21333b;
-  -moz-box-shadow: 0 5px 10px rgba(126, 126, 126, .5);
-  -webkit-box-shadow: 0 5px 10px rgba(126, 126, 126, .5);
   box-shadow: 0 5px 10px rgba(126, 126, 126, .5);
   height: 261px;
   padding-top: 79px;
@@ -334,9 +325,9 @@
 
 .about__title {
   color: #fff;
-  font-family: 'League Gothic', Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  line-height: 24px;
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+  line-height: .8;
   padding-bottom: 11px;
   text-shadow: 1px 1px 1px #000;
   text-transform: uppercase;
@@ -345,12 +336,12 @@
 
 .about__p {
   color: #fff;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 100;
   letter-spacing: -.1px;
-  line-height: 24px;
+  line-height: 1.5;
   text-shadow: 1px 1px 1px #000;
   vertical-align: top;
 }
@@ -376,8 +367,8 @@
 
 .about__link {
   color: #fff;
-  font-family: 'League Gothic', Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
   font-stretch: extra-condensed;
   text-decoration: none;
   text-shadow: 1px 1px 1px #000;
@@ -464,9 +455,9 @@
 
 .slider2__title {
   color: #454545;
-  font-family: 'League Gothic', Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  line-height: 24px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  line-height: .8;
   margin-bottom: 12px;
   text-shadow: 0 0 2px #a8a8a8;
   text-transform: uppercase;
@@ -484,11 +475,11 @@
 
 .slider2__p {
   color: #454545;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 100;
-  line-height: 24px;
+  line-height: 1.5;
   vertical-align: top;
 }
 
@@ -505,8 +496,8 @@
 
 .updates__title {
   color: #454545;
-  font-family: 'League Gothic', Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
   margin-bottom: 18px;
   margin-top: 30px;
   text-align: left;
@@ -531,31 +522,30 @@
 }
 
 .updates__background {
-  border-radius: 48px;
-  height: 48px;
-  width: 48px;
+  height: 49px;
+  width: 49px;
 }
 
 .updates__background--1 {
-  background-image: url('../img/glare.jpg') 200px 50px;
+  background-image: url('../img/updates1.png');
 }
 
 .updates__background--2 {
-  background-image: url('../img/glare.jpg') 200px 100px;
+  background-image: url('../img/updates2.png');
 }
 
 .updates__background--3 {
-  background-image: url('../img/glare.jpg') 200px 150px;
+  background-image: url('../img/updates3.png');
 }
 
 .updates__subtitle {
   color: #454545;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
   letter-spacing: .6px;
-  line-height: 24px;
+  line-height: 1.5;
   margin-left: 66px;
   margin-top: -50px;
   word-spacing: -2px;
@@ -563,12 +553,12 @@
 
 .updates__p {
   color: #454545;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 100;
   letter-spacing: .2px;
-  line-height: 24px;
+  line-height: 1.5;
   margin-left: 66px;
   word-spacing: -2px;
 }
@@ -581,8 +571,8 @@
 
 .updates__link {
   color: #454545;
-  font-family: 'League Gothic', Arial, Helvetica, sans-serif;
-  font-size: 19px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -596,8 +586,8 @@
 
 .logos {
   margin: 0 auto;
-  max-width: 960px;
   padding-left: 93px;
+  width: 960px;
 }
 
 .logos__list {
@@ -616,19 +606,19 @@
   text-align: left;
 }
 
-.logos__item:nth-of-type(2) {
+.logos__item--2 {
   margin-right: 32px;
 }
 
-.logos__item:nth-of-type(3) {
+.logos__item--3 {
   margin-right: 35px;
 }
 
-.logos__item:nth-of-type(4) {
+.logos__item--4 {
   margin-right: 17px;
 }
 
-.logos__item:nth-of-type(5) {
+.logos__item--5 {
   margin-right: 65px;
 }
 
@@ -667,10 +657,10 @@
 
 .articles__title {
   color: #454545;
-  font-family: 'League Gothic', Arial, Helvetica, sans-serif;
-  font-size: 48px;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
   letter-spacing: -.2px;
-  line-height: 48px;
+  line-height: 1;
   margin-bottom: 11px;
   text-shadow: 0 1px 0 #000;
   text-transform: uppercase;
@@ -682,8 +672,8 @@
 }
 
 .articles__title--small {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 1;
   margin-bottom: 9px;
   padding-top: 2px;
 }
@@ -693,17 +683,17 @@
   font-family: Georgia, serif;
   font-size: 16px;
   font-style: italic;
-  line-height: 24px;
+  line-height: 1.5;
   margin-bottom: 7px;
 }
 
 .articles__p {
   color: #787878;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 100;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 .articles__p--padding {
@@ -718,11 +708,6 @@
   background-image: url('../img/footer960.jpg');
   background-position: center 0;
   background-repeat: no-repeat;
-  /*  -moz-background-size: 2400px 114px;
-  -webkit-background-size: 2400px 114px;
-  background-size: 2400px 114px;*/
-  -moz-box-shadow: inset 0 4px 4px rgba(70, 70, 70, .5);
-  -webkit-box-shadow: inset 0 4px 4px rgba(70, 70, 70, .5);
   box-shadow: inset 0 4px 4px rgba(70, 70, 70, .5);
   height: 68px;
   padding-top: 46px;
@@ -739,7 +724,7 @@
 .copyright__p {
   bottom: 0;
   color: #fff;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 100;
