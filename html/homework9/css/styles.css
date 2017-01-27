@@ -100,10 +100,12 @@
   float: right;
   margin-top: 6px;
   right: 0;
+  width: 660px;
 }
 
 .menu--footer {
   float: left;
+  width: 580px;
 }
 
 .menu__item {
@@ -117,7 +119,7 @@
 
 .menu__item--header {
   font-size: 24px;
-  margin-right: 35px;  
+  margin-right: 35px;
 }
 
 .menu__item--footer {
@@ -301,9 +303,6 @@
 /* ABOUT */
 
 .about {
-  background-color: #35273c;
-  background-image: url('../img/purple960.jpg');
-  background-repeat: repeat-x;
   background: -moz-linear-gradient(to bottom, #775385, #36293d);
   background: -o-linear-gradient(to bottom, #775385, #36293d);
   background: -webkit-linear-gradient(to bottom, #775385, #36293d);
