@@ -3,13 +3,15 @@ function pow() {
   'use strict';
 
   var integerNumber = takeNumber();
+
   if (integerNumber) {
     var integerPower = takePower();
+
     if (integerPower) {
       var result = calculate(integerNumber, integerPower);
-
       alert('Число ' + integerNumber + ' в степени ' + integerPower + ' равно ' + result);
     }
+
   }
 
   function takeNumber() {
@@ -26,7 +28,9 @@ function pow() {
         num = prompt('Все же введите целое число', '');
       }
     }
+
     return +num;
+
   }
 
   function takePower() {
@@ -43,19 +47,23 @@ function pow() {
         power = prompt('Все же введите целое значение', '');
       }
     }
+
     return +power;
+
   }
 
   function calculate(number, power) {
 
     if (power === 0) {
       return 1;
+
     } else if (power > 0) {
       var serviceVariable = 1;
       var i;
       for (i = 1; i <= power; i++) {
         serviceVariable = serviceVariable * number;
       }
+
     } else {
       var serviceVariable = 1;
       var i;
@@ -66,7 +74,7 @@ function pow() {
     }
 
     return serviceVariable;
-  }
 
+  }
 
 }
