@@ -11,10 +11,7 @@ function checkLogin() {
 
     check(name, arrNames);
 
-  } else {
-    alert('Выполнение программы прервано');
   }
-
 
   function takeNames(n) {
     var i;
@@ -22,6 +19,15 @@ function checkLogin() {
     for (i = 0; i < n; i++) {
       array[i] = prompt('Введите имя', '');
       if (array[i] === null) {
+        var deleted;
+        deleted = array.pop();
+        alert('Выполнение программы прервано');
+        break;
+      }
+      if (array[i] === '') {
+        var deleted;
+        deleted = array.pop();
+        alert('Введено пустое значение. Выполнение программы прервано');
         break;
       }
     }
