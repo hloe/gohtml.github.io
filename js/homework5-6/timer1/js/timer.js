@@ -7,13 +7,11 @@ function firstTimer() {
   var buttonStart = document.getElementsByClassName('start')[0];
   buttonStart.addEventListener('click', start);
 
-
-  var milliSeconds = 0;
   var seconds = 0;
   var minutes = 0;
   var hours = 0;
 
-
+  // Start button
   function start() {
 
     var buttonClear = document.getElementsByClassName('clear')[0];
@@ -22,25 +20,12 @@ function firstTimer() {
     buttonStart.addEventListener('click', pause);
     buttonClear.addEventListener('click', clear);
 
-
     buttonStart.innerHTML = 'Pause';
 
     var span = document.getElementsByClassName('time');
-
-    var timerMilliSeconds = setInterval(function () {
-      milliSeconds++;
-      if (milliSeconds < 10) {
-        span[3].innerHTML = '00' + String(milliSeconds);
-      } else if (milliSeconds < 100) {
-        span[3].innerHTML = '0' + String(milliSeconds);
-      } else if (milliSeconds < 1000) {
-        span[3].innerHTML = String(milliSeconds);
-      } else {
-        milliSeconds = 0;
-      }
-    }, 1);
-
-    var timerSeconds = setInterval(function () {
+    
+    // Set seconds
+    var timerSeconds = setInterval(function() {
       seconds++;
       if (seconds < 10) {
         span[2].innerHTML = '0' + String(seconds);
@@ -51,7 +36,8 @@ function firstTimer() {
       }
     }, 1000);
 
-    var timerMinutes = setInterval(function () {
+    // Set minutes
+    var timerMinutes = setInterval(function() {
       minutes++;
       if (minutes < 10) {
         span[1].innerHTML = '0' + String(minutes);
@@ -62,7 +48,8 @@ function firstTimer() {
       }
     }, 60000);
 
-    var timerHours = setInterval(function () {
+    // Set hours
+    var timerHours = setInterval(function() {
       hours++;
       if (hours < 10) {
         span[0].innerHTML = '0' + String(hours);
@@ -73,6 +60,25 @@ function firstTimer() {
       }
     }, 3600000);
 
+    
+    //As we can't simply use setInterval for milliseconds,
+    // use Date
+    var timerMilliSeconds = setInterval(function () {
+      var date = new Date();
+      var ms = Date.now() - Date.parse(date);
+
+      ms = String(ms % 1000);
+      while (ms.length < 2) {
+        ms = '00' + ms;
+      };
+      while (ms.length < 3) {
+        ms = '0' + ms;
+      };
+      span[3].innerHTML = ms;
+    }, 1);
+
+
+    // Pause button
     function pause() {
       buttonStart.innerHTML = 'Continue';
 
@@ -84,6 +90,7 @@ function firstTimer() {
       buttonStart.addEventListener('click', start);
     }
 
+    // Clear button
     function clear() {
 
       buttonStart.innerHTML = 'Start';
@@ -93,11 +100,9 @@ function firstTimer() {
       clearInterval(timerMinutes);
       clearInterval(timerHours);
 
-      milliSeconds = 0;
       seconds = 0;
       minutes = 0;
       hours = 0;
-
 
       span[0].innerHTML = '00';
       span[1].innerHTML = '00';
@@ -108,8 +113,6 @@ function firstTimer() {
       buttonStart.addEventListener('click', start);
 
     }
-
-
 
   }
 

@@ -7,16 +7,16 @@ function firstTimer() {
   var buttonStart = document.getElementsByClassName('start')[0];
   buttonStart.addEventListener('click', start);
 
-
-  var milliSeconds = 0;
   var seconds = 0;
   var minutes = 0;
   var hours = 0;
 
+  // Set number of inserted strings
   var count = 1;
 
   var span = document.getElementsByClassName('time');
-
+  
+  //Start button
   function start() {
 
     var div = document.getElementsByClassName('buttons')[0];
@@ -35,21 +35,8 @@ function firstTimer() {
     var buttonSplit = document.getElementsByClassName('split')[0];
     buttonSplit.addEventListener('click', split);
 
-    var timerMilliSeconds = setInterval(function () {
-      milliSeconds++;
-      if (milliSeconds < 10) {
-        span[3].innerHTML = '00' + String(milliSeconds);
-      } else if (milliSeconds < 100) {
-        span[3].innerHTML = '0' + String(milliSeconds);
-      } else if (milliSeconds < 1000) {
-        span[3].innerHTML = String(milliSeconds);
-      } else {
-        milliSeconds = 0;
-      }
-      return (span[3]);
-    }, 1);
-
-    var timerSeconds = setInterval(function () {
+    // Set seconds
+    var timerSeconds = setInterval(function() {
       seconds++;
       if (seconds < 10) {
         span[2].innerHTML = '0' + String(seconds);
@@ -58,10 +45,10 @@ function firstTimer() {
       } else {
         seconds = 0;
       }
-      return (span[2]);
     }, 1000);
 
-    var timerMinutes = setInterval(function () {
+    // Set minutes
+    var timerMinutes = setInterval(function() {
       minutes++;
       if (minutes < 10) {
         span[1].innerHTML = '0' + String(minutes);
@@ -70,10 +57,10 @@ function firstTimer() {
       } else {
         minutes = 0;
       }
-      return (span[1]);
     }, 60000);
 
-    var timerHours = setInterval(function () {
+    // Set hours
+    var timerHours = setInterval(function() {
       hours++;
       if (hours < 10) {
         span[0].innerHTML = '0' + String(hours);
@@ -82,9 +69,26 @@ function firstTimer() {
       } else {
         hours = 0;
       }
-      return (span[0]);
     }, 3600000);
 
+    
+    //As we can't simply use setInterval for milliseconds:
+    var timerMilliSeconds = setInterval(function () {
+      var date = new Date();
+      var ms = Date.now() - Date.parse(date);
+
+      ms = String(ms % 1000);
+      while (ms.length < 2) {
+        ms = '00' + ms;
+      };
+      while (ms.length < 3) {
+        ms = '0' + ms;
+      };
+
+      span[3].innerHTML = ms;
+    }, 1);
+
+    // Stop button
     function stop() {
 
       buttonStart.innerHTML = 'Start';
@@ -102,6 +106,7 @@ function firstTimer() {
     }
 
 
+    // Reset button
     function reset() {
 
       buttonStart.innerHTML = 'Start';
@@ -111,11 +116,9 @@ function firstTimer() {
       clearInterval(timerMinutes);
       clearInterval(timerHours);
 
-      milliSeconds = 0;
       seconds = 0;
       minutes = 0;
       hours = 0;
-
 
       span[0].innerHTML = '00';
       span[1].innerHTML = '00';
@@ -137,6 +140,7 @@ function firstTimer() {
 
   }
 
+  // Insert text when pressing Stop button
   function insert() {
     var divSplit = document.getElementsByClassName('div-split')[0];
     var p = document.createElement('p');
@@ -147,6 +151,7 @@ function firstTimer() {
     count++;
   }
 
+  // Split
   function split() {
     var divSplit = document.getElementsByClassName('div-split')[0];
     var p = document.createElement('p');
@@ -156,6 +161,5 @@ function firstTimer() {
 
     count++;
   }
-
 
 }

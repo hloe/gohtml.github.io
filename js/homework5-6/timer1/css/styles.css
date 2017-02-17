@@ -8,7 +8,7 @@ body {
 .container {
   background-color: #eaedf3;
   height: 100%;
-  padding-top: 108px;
+  padding-top: 70px;
 }
 
 .timer {
@@ -17,11 +17,47 @@ body {
   -moz-box-shadow: 5px 10px 50px rgb(153, 157, 165);
   -webkit-box-shadow: 5px 10px 50px rgb(153, 157, 165);
   box-shadow: 5px 10px 50px rgb(153, 157, 165);
-  height: 210px;
+  height: 360px;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 30px;
   text-align: center;
-  width: 625px;
+  width: 650px;
+  z-index: 1;
+}
+
+.title {
+  color: #4609aa;
+  font-family: 'Helvetica Light';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  color: #4609aa;
+  font-family: 'Helvetica Light';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.name-hours {
+  margin-left: 65px;
+}
+
+.name-minutes {
+  margin-left: 76px;
+}
+
+.name-seconds {
+  margin-left: 65px;
+}
+
+.name-mill {
+  margin-left: 60px;
 }
 
 .time {
@@ -35,7 +71,6 @@ body {
   font-style: normal;
   font-weight: 300;
   padding: 23px;
-  z-index: 1;
 }
 
 .colon {

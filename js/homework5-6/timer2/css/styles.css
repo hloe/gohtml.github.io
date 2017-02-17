@@ -1,11 +1,13 @@
 html,
 body {
   background-color: #262932;
+  background-image: url('../images/background.jpg');
+  background-repeat: repeat;
   height: 100%;
 }
 
 .container {
-  padding-top: 180px;
+  padding-top: 100px;
 }
 
 .timer {
@@ -13,8 +15,49 @@ body {
   width: 600px;
 }
 
+.title {
+  color: #a0a0a0;
+  font-family: 'Helvetica UltraLight';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subtitle {
+  color: #737373;
+  font-family: 'Helvetica UltraLight';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.name-hours {
+  margin-left: 15px;
+}
+
+.name-minutes {
+  margin-left: 45px;
+}
+
+.name-seconds {
+  margin-left: 26px;
+}
+
+.name-mill {
+  margin-left: 15px;
+}
+
 .time {
   background-color: #212121;
+  background: linear-gradient(to bottom, #202020, #2a2a2a, #202020);
+  border: 1px solid #0f0f0f;
   border-radius: 5px;
   color: #fff;
   font-family: 'Helvetica Bold';
@@ -35,7 +78,7 @@ body {
 }
 
 .buttons {
-  margin: 60px auto;
+  margin: 80px auto;
   width: 500px;
 }
 
