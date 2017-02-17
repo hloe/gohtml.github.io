@@ -1,0 +1,85 @@
+html,
+body {
+  background-color: #262932;
+  height: 100%;
+}
+
+.container {
+  padding-top: 180px;
+}
+
+.timer {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.time {
+  background-color: #212121;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Helvetica Bold';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding: 20px 15px;
+}
+
+.colon {
+  color: #20201f;
+  font-family: 'Helvetica Bold';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.buttons {
+  margin: 60px auto;
+  width: 500px;
+}
+
+.btn {
+  background-color: transparent;
+  color: #737373;
+  font-family: 'Helvetica UltraLight';
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 25%;
+}
+
+.btn,
+.btn:focus,
+.btn:active {
+  outline: none;
+}
+
+.btn:active,
+.btn:hover {
+  color: #d0cfcf;
+  cursor: pointer;
+}
+
+.start,
+.split {
+  margin-right: 9%;
+}
+
+.div-split {
+  margin: 30px auto;
+  width: 400px;
+}
+
+.splited {
+  color: #a0a0a0;
+  font-family: 'Helvetica UltraLight';
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-align: center;
+}
