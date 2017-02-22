@@ -1,8 +1,6 @@
 'use strict';
 
-firstTimer();
-
-function firstTimer() {
+(function() {
 
   var buttonStart = document.getElementsByClassName('start')[0];
   buttonStart.addEventListener('click', start);
@@ -23,60 +21,58 @@ function firstTimer() {
     buttonStart.innerHTML = 'Pause';
 
     var span = document.getElementsByClassName('time');
-    
+
     // Set seconds
     var timerSeconds = setInterval(function() {
       seconds++;
-      if (seconds < 10) {
-        span[2].innerHTML = '0' + String(seconds);
-      } else if (seconds < 60) {
-        span[2].innerHTML = String(seconds);
-      } else {
-        seconds = 0;
-      }
+
+      seconds = addZeros(seconds % 60, 2);
+
+      span[2].innerHTML = seconds;
     }, 1000);
 
     // Set minutes
     var timerMinutes = setInterval(function() {
       minutes++;
-      if (minutes < 10) {
-        span[1].innerHTML = '0' + String(minutes);
-      } else if (minutes < 60) {
-        span[1].innerHTML = String(minutes);
-      } else {
-        minutes = 0;
-      }
-    }, 60000);
+
+      minutes = addZeros(minutes % 60, 2);
+
+      span[1].innerHTML = minutes;
+
+    }, 60 * 1000);
 
     // Set hours
     var timerHours = setInterval(function() {
       hours++;
-      if (hours < 10) {
-        span[0].innerHTML = '0' + String(hours);
-      } else if (hours < 23) {
-        span[0].innerHTML = String(hours);
-      } else {
-        hours = 0;
-      }
-    }, 3600000);
 
-    
+      hours = addZeros(hours % 24, 2);
+
+      span[0].innerHTML = hours;
+
+    }, 60 * 60 * 1000);
+
+
     //As we can't simply use setInterval for milliseconds,
     // use Date
-    var timerMilliSeconds = setInterval(function () {
+    var timerMilliSeconds = setInterval(function() {
       var date = new Date();
       var ms = Date.now() - Date.parse(date);
 
-      ms = String(ms % 1000);
-      while (ms.length < 2) {
-        ms = '00' + ms;
-      };
-      while (ms.length < 3) {
-        ms = '0' + ms;
-      };
+      ms = addZeros(ms % 1000, 3);
+
       span[3].innerHTML = ms;
     }, 1);
 
+    // Format numbers
+    function addZeros(n, needLength) {
+
+      needLength = needLength || 2;
+      n = String(n);
+      while (n.length < needLength) {
+        n = "0" + n;
+      }
+      return n;
+    }
 
     // Pause button
     function pause() {
@@ -116,4 +112,4 @@ function firstTimer() {
 
   }
 
-}
+})();
