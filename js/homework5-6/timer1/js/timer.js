@@ -1,6 +1,6 @@
 'use strict';
 
-(function() {
+(function () {
 
   var buttonStart = document.getElementsByClassName('start')[0];
   buttonStart.addEventListener('click', start);
@@ -23,38 +23,41 @@
     var span = document.getElementsByClassName('time');
 
     // Set seconds
-    var timerSeconds = setInterval(function() {
+    var timerSeconds = setInterval(function () {
       seconds++;
 
-      seconds = addZeros(seconds % 60, 2);
+      span[2].innerHTML = addZeros(seconds % 60, 2);
 
-      span[2].innerHTML = seconds;
+      //We can't use setInterval for minutes and hours,
+      //because in this case it doesn't work synchronously
+      //So make minutes and hours depend on secounds.
+
+      // Set minutes
+      if (seconds === 60) {
+        seconds = 0;
+        minutes++;
+
+        span[1].innerHTML = addZeros(minutes % 60, 2);
+      }
+
+      // Set hours
+      if (minutes === 60) {
+        minutes = 0;
+        hours++;
+        span[0].innerHTML = addZeros(hours % 24, 2);
+      }
+
+      if (hours === 24) {
+        hours = 0;
+        span[0].innerHTML = addZeros(hours % 24, 2);
+      }
+
     }, 1000);
-
-    // Set minutes
-    var timerMinutes = setInterval(function() {
-      minutes++;
-
-      minutes = addZeros(minutes % 60, 2);
-
-      span[1].innerHTML = minutes;
-
-    }, 60 * 1000);
-
-    // Set hours
-    var timerHours = setInterval(function() {
-      hours++;
-
-      hours = addZeros(hours % 24, 2);
-
-      span[0].innerHTML = hours;
-
-    }, 60 * 60 * 1000);
 
 
     //As we can't simply use setInterval for milliseconds,
     // use Date
-    var timerMilliSeconds = setInterval(function() {
+    var timerMilliSeconds = setInterval(function () {
       var date = new Date();
       var ms = Date.now() - Date.parse(date);
 
@@ -80,8 +83,6 @@
 
       clearInterval(timerMilliSeconds);
       clearInterval(timerSeconds);
-      clearInterval(timerMinutes);
-      clearInterval(timerHours);
 
       buttonStart.addEventListener('click', start);
     }
@@ -93,8 +94,6 @@
 
       clearInterval(timerMilliSeconds);
       clearInterval(timerSeconds);
-      clearInterval(timerMinutes);
-      clearInterval(timerHours);
 
       seconds = 0;
       minutes = 0;

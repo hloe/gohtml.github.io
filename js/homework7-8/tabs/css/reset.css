@@ -1,0 +1,24 @@
+html,
+body,
+div,
+span,
+h2,
+p,
+a,
+ul,
+li {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}

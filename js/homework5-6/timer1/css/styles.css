@@ -91,6 +91,7 @@ body {
   background-color: #332b4e;
   background: -moz-radial-gradient(ellipse closest-side, rgba(63, 44, 104, 1), rgba(28, 31, 37, .97));
   background: -o-radial-gradient(ellipse closest-side, rgba(63, 44, 104, 1), rgba(28, 31, 37, .97));
+  background: -webkit-gradient(ellipse closest-side, rgba(63, 44, 104, 1), rgba(28, 31, 37, .97));
   background: -webkit-radial-gradient(ellipse closest-side, rgba(63, 44, 104, 1), rgba(28, 31, 37, .97));
   background: radial-gradient(ellipse closest-side, rgba(63, 44, 104, 1), rgba(28, 31, 37, .97));
   border-radius: 12px;
@@ -109,7 +110,7 @@ body {
 .btn,
 .btn:focus,
 .btn:active {
-  outline: none;
+  outline-width: 0;
 }
 
 .btn:active,

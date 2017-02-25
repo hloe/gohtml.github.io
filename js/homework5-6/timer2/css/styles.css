@@ -23,8 +23,8 @@ body {
   font-weight: 600;
   letter-spacing: 3px;
   margin-bottom: 50px;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -56,6 +56,10 @@ body {
 
 .time {
   background-color: #212121;
+  background: -o-linear-gradient(to bottom, #202020, #2a2a2a, #202020);
+  background: -moz-linear-gradient(to bottom, #202020, #2a2a2a, #202020);
+  background: -webkit-gradient(to bottom, #202020, #2a2a2a, #202020);
+  background: -webkit-linear-gradient(to bottom, #202020, #2a2a2a, #202020);
   background: linear-gradient(to bottom, #202020, #2a2a2a, #202020);
   border: 1px solid #0f0f0f;
   border-radius: 5px;
@@ -97,7 +101,7 @@ body {
 .btn,
 .btn:focus,
 .btn:active {
-  outline: none;
+  outline-width: 0;
 }
 
 .btn:active,
