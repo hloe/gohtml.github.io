@@ -12,26 +12,25 @@
 
 <body>
   <div class="wrapper">
-    <h1 class="title">Registration Form</h1>
-    <form action="#">
-      <ul class="list">
-        <li class="item">
-          <input type="text" id="firstname" class="input" placeholder="first name">
-          <div class="hint firstname">Please provide your first name.</div>
-        </li>
-        <li class="item">
-          <input type="text" id="lastname" class="input" placeholder="last name">
-          <div class="hint lastname">Please provide your last name.</div>
-        </li>
-        <li class="item">
-          <input type="email" id="address" class="input" placeholder="email address">
-          <div class="hint address">You email address.</div>
-        </li>
-        <li class="item">
-          <button class="button">submit</button>
-        </li>
-      </ul>
-    </form>
+    <div class="container">
+      <h1 class="title">Registration Form</h1>
+      <form action="#">
+        <ul class="list">
+          <li class="item">
+            <input type="text" class="input" placeholder="first name" data-title="Please provide your first name.">
+          </li>
+          <li class="item">
+            <input type="text" class="input" placeholder="last name" data-title="Please provide your last name.">
+          </li>
+          <li class="item">
+            <input type="email" class="input" placeholder="email address" data-title="You email address.">
+          </li>
+          <li class="item">
+            <button class="button">show help</button>
+          </li>
+        </ul>
+      </form>
+    </div>
   </div>
 
   <script src="js/form.js"></script>

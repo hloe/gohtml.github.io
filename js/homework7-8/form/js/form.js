@@ -1,10 +1,25 @@
 $('.input').mouseover(function () {
-  $(this).siblings('.hint').animate({
-    opacity: 1
-  }, 800);
+  // If we have already hint after clicking button, delete it:
+  $('.hint').remove();
+
+  var title = $(this).attr('data-title');
+  $(this).closest('li').append('<span class="hint">' + title + '</span>');
 });
+
+
 $('.input').mouseout(function () {
-  $(this).siblings('.hint').animate({
-    opacity: 0
-  }, 800);
+  $('.hint').remove();
+});
+
+//
+
+$('.button').click(function () {
+  // If we have already hint after clicking button, delete it:
+  $('.hint').remove();
+
+  $('.input').each(function () {
+    var title = $(this).attr('data-title');
+    $(this).closest('li').append('<span class="hint">' + title + '</span>');
+  });
+  return false;
 });
