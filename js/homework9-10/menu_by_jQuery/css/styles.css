@@ -1,0 +1,174 @@
+/*font-family: 'Lucida Grande Bold';*/
+
+.clearfix::after {
+  clear: both;
+  content: ' ';
+  display: block;
+  float: none;
+}
+
+.container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #444;
+  margin: 0 auto;
+  padding: 50px;
+  width: 835px;
+}
+
+.title {
+  font-family: 'Lucida Grande Bold';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.nav {
+  margin-bottom: 30px;
+}
+
+.menu {
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  font-size: 0;
+  letter-spacing: -1px;
+  line-height: 0;
+  width: 737px;
+}
+
+.menu-item {
+  background-color: #fafafa;
+  border-right: 1px solid #ededed;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  cursor: pointer;
+  display: block;
+  font-family: 'Lucida Grande Bold';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  height: 41px;
+  letter-spacing: normal;
+  line-height: 41px;
+  padding-left: 54px;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 245px;
+  float: left;
+}
+
+.menu-item:last-of-type {
+  border-right: 1px solid transparent;
+}
+
+.menu-link {
+  color: #444;
+  text-decoration: none;
+}
+
+.apps,
+.business-rules {
+  position: relative;
+}
+
+.apps::before {
+  content: url('../images/apps.png');
+  left: 31px;
+  position: absolute;
+  top: 1px;
+}
+
+.business-rules::before {
+  content: url('../images/business_rules.png');
+  left: 31px;
+  position: absolute;
+  top: 1px;
+}
+
+.manage {
+  position: relative;
+}
+
+.manage::before {
+  content: url('../images/manage.png');
+  height: 16px;
+  left: 31px;
+  top: 1px;
+  position: absolute;
+  width: 18px;
+}
+
+.manage::after {
+  content: url('../images/arrows.png');
+  height: 16px;
+  right: 12px;
+  position: absolute;
+  top: 1px;
+  opacity: .4;
+  width: 11px;
+}
+
+.submenu {
+  border-radius: 0 0 4px 4px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0;
+  left: -1px;
+  letter-spacing: -1px;
+  line-height: 0;
+  position: absolute;
+  top: 41px;
+  width: 245px;
+  z-index: 2;
+}
+
+.submenu-item {
+  border: 1px solid #ededed;
+  background-color: #fafafa;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  display: block;
+  font-size: 12px;
+  letter-spacing: normal;
+  line-height: 3.33;
+  padding-left: 54px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.submenu-item:hover {
+  background-color: #f5f5f5;
+}
+
+.submenu-item:last-of-type {
+  border-radius: 0 0 4px 4px;
+}
+
+.dropdown > .submenu {
+  display: none;
+}
+
+.text {
+  font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  z-index: 1;
+}
