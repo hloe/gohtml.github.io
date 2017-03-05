@@ -1,16 +1,20 @@
 $(function () {
   $('.menu-item').mouseover(function () {
-    $(this).children('.menu-link').css('color', '#787878');
+    $(this).css('background-color', '#dac96a');
+    $(this).children('.menu-link').css('color', '#554c00');
   });
   $('.menu-item').mouseout(function () {
-    $(this).children('.menu-link').css('color', '#444444');
+    $(this).css('background-color', '#492e74');
+    $(this).children('.menu-link').css('color', '#1a053a');
   });
 
   $('.submenu-item').mouseover(function () {
-    $(this).children('.menu-link').css('color', '#787878');
+    $(this).css('background-color', '#dac96a');
+    $(this).children('.menu-link').css('color', '#554c00');
   });
   $('.submenu-item').mouseout(function () {
-    $(this).children('.menu-link').css('color', '#444444');
+    $(this).css('background-color', '#492e74');
+    $(this).children('.menu-link').css('color', '#1a053a');
   });
 
 
