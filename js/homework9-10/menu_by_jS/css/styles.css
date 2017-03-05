@@ -1,0 +1,153 @@
+/*font-family: 'Lucida Grande Bold';*/
+
+.clearfix::after {
+  clear: both;
+  content: ' ';
+  display: block;
+  float: none;
+}
+
+body {
+  background-color: #8e79ae;
+}
+
+.container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #1a053a;
+  margin: 0 auto;
+  padding: 50px;
+  width: 835px;
+}
+
+.title {
+  font-family: 'Lucida Grande Bold';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.nav {
+  margin-bottom: 50px;
+}
+
+.menu {
+  border: 1px solid #1a053a;
+  border-radius: 4px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  font-size: 0;
+  letter-spacing: -1px;
+  line-height: 0;
+  width: 737px;
+}
+
+.menu-item {
+  background-color: #492e74;
+  border-right: 1px solid #1a053a;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  cursor: pointer;
+  display: block;
+  font-family: 'Lucida Grande Bold';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  height: 41px;
+  letter-spacing: normal;
+  line-height: 41px;
+  padding-left: 44px;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 245px;
+  float: left;
+}
+
+.menu-item:last-of-type {
+  border-right: 1px solid transparent;
+}
+
+.menu-link {
+  color: #1a053a;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown::after {
+  content: '\25bc';
+  height: 16px;
+  right: 12px;
+  position: absolute;
+  top: 1px;
+  width: 11px;
+}
+
+.submenu {
+  border-radius: 0 0 4px 4px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0;
+  left: -1px;
+  letter-spacing: -1px;
+  line-height: 0;
+  position: absolute;
+  top: 41px;
+  width: 245px;
+  z-index: 2;
+}
+
+.submenu-item {
+  border-bottom: 1px solid #1a053a;
+  border-left: 1px solid #1a053a;
+  border-right: 1px solid #1a053a;
+  background-color: #492e74;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, .5);
+  display: block;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 3.33;
+  padding-left: 44px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.submenu-item:first-of-type {
+  border-top: 1px solid #1a053a;
+}
+
+.submenu-item:last-of-type {
+  border-radius: 0 0 4px 4px;
+}
+
+.dropdown > .submenu {
+  /*  display: none;*/
+  clip: rect(0, 245px, 0, 0);
+}
+
+.text {
+  font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  z-index: 1;
+}

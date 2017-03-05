@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Lucida Grande Bold';
+	src: url('LucidaGrande-Bold.eot');
+	src: url('LucidaGrande-Bold.eot?#iefix') format('embedded-opentype'),
+		url('LucidaGrande-Bold.woff') format('woff'),
+		url('LucidaGrande-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
