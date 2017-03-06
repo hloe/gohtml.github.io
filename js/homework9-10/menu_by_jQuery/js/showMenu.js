@@ -1,40 +1,50 @@
 $(function () {
 
+  // Show hidden submenu
   $('.dropdown').hover(function () {
     $(this).children('.submenu').slideDown(500);
   }, function () {
     $(this).children('.submenu').slideUp(500);
   });
 
+  //Change menu items view
+  $('.menu-item').hover(function () {
+    $(this).animate({
+      backgroundColor: '#dac96a',
+      color: '#554c00',
+    }, 500);
+
+    $(this).children('.menu-link').animate({
+      color: '#554c00',
+    }, 500);
+
+  }, function () {
+    $(this).animate({
+      backgroundColor: '#492e74',
+      color: '#1a053a',
+    }, 500);
+    $(this).children('.menu-link').animate({
+      color: '#1a053a',
+    }, 500);
+
+  });
+
+  //  // Change submenu items view
+  $('.submenu-item').hover(function () {
+    $(this).animate({
+      backgroundColor: '#dac96a',
+    }, 500);
+    $(this).children('.menu-link').animate({
+      color: '#554c00',
+    }, 500);
+  }, function () {
+    $(this).animate({
+      backgroundColor: '#492e74',
+    }, 500);
+    $(this).children('.menu-link').animate({
+      color: '#1a053a',
+    }, 500);
+  });
+
 
 });
-
-//$(function () {
-//  $('.menu-item').mouseover(function () {
-//    $(this).css('background-color', '#dac96a');
-//    $(this).children('.menu-link').css('color', '#554c00');
-//  });
-//  $('.menu-item').mouseout(function () {
-//    $(this).css('background-color', '#492e74');
-//    $(this).children('.menu-link').css('color', '#1a053a');
-//  });
-//
-//  $('.submenu-item').mouseover(function () {
-//    $(this).css('background-color', '#dac96a');
-//    $(this).children('.menu-link').css('color', '#554c00');
-//  });
-//  $('.submenu-item').mouseout(function () {
-//    $(this).css('background-color', '#492e74');
-//    $(this).children('.menu-link').css('color', '#1a053a');
-//  });
-//
-//
-//  $('.dropdown').mouseover(function () {
-//    $(this).children('.submenu').css('display', 'block');
-//  });
-//  $('.dropdown').mouseout(function () {
-//    $(this).children('.submenu').css('display', 'none');
-//  });
-//
-//
-//});
