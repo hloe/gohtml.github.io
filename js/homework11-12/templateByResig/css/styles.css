@@ -1,0 +1,55 @@
+/* Reset CSS */
+
+html,
+body,
+div,
+p,
+ul,
+li {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+
+/* Styles */
+
+.container {
+  background-color: #00bfff;
+}
+
+.list {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.quote {
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.author {
+  color: #fff;
+  font-family: 'Simpsons';
+  font-weight: normal;
+  font-size: 17px;
+  font-style: normal;
+  margin-right: 40px;
+  margin-bottom: 25px;
+  text-align: right;
+}
