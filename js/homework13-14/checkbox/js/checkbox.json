@@ -1,0 +1,63 @@
+var questions = [
+  {
+    "question": "Какие из этих свойств элемента могут указывать на текстовый узел?",
+    "answers": [
+      "firstElementChild",
+      "firstChild",
+      "parentNode",
+      "parentElement",
+      "nextSibling"
+    ],
+    "right answers": [
+      "firstChild",
+      "nextSibling"
+    ]
+  },
+  {
+    "question": "Как получить полную ширину блочного DOM-элемента, если у него есть border и padding?",
+    "answers": [
+      "parseInt(elem.style.width)",
+      "parseInt(getComputedStyle(elem).width)",
+      "elem.offsetWidth",
+      "elem.clientWidth"
+    ],
+    "right anwers": [
+      "parseInt(getComputedStyle(elem).width)",
+      "elem.offsetWidth"
+    ]
+  },
+  {
+    "question": "Браузер вызывает setInterval и setTimeout гораздо реже, чем обычно, если…",
+    "ansers": [
+      "Вкладка, в которой работает JavaScript, не видна и находится в фоновом режиме.",
+      "Посетитель зашёл с ноутбука, с питанием от батареи.",
+      "В обоих этих случаях."
+    ],
+    "right answers": [
+      "В обоих этих случаях."
+    ]
+  },
+  {
+    "question": "Можно ли скриптом перевести посетителя на другую страницу сайта?",
+    "answers": [
+      "Да, куда угодно.",
+      "Да, но только в рамках текущего сайта.",
+      "Нет, нельзя."
+    ],
+    "right anwsers": [
+      "Да, куда угодно."
+    ]
+  },
+  {
+    "question": "Какое событие не может быть вызвано кликом мыши?",
+    "answers": [
+      "onfocus",
+      "onclick",
+      "onkeydown",
+      "onmousedown"
+    ],
+    "right answers": [
+      "onkeydown"
+    ]
+  }
+]
