@@ -1,3 +1,7 @@
+// This file loads object into localStorage
+
+'use strict';
+
 let questions = [
   {
     "question": "Какие из этих свойств элемента могут указывать на текстовый узел?",
@@ -21,14 +25,14 @@ let questions = [
       "elem.offsetWidth",
       "elem.clientWidth"
     ],
-    "right anwers": [
+    "right answers": [
       "parseInt(getComputedStyle(elem).width)",
       "elem.offsetWidth"
     ]
   },
   {
     "question": "Браузер вызывает setInterval и setTimeout гораздо реже, чем обычно, если…",
-    "ansers": [
+    "answers": [
       "Вкладка, в которой работает JavaScript, не видна и находится в фоновом режиме.",
       "Посетитель зашёл с ноутбука, с питанием от батареи.",
       "В обоих этих случаях."
@@ -44,7 +48,7 @@ let questions = [
       "Да, но только в рамках текущего сайта.",
       "Нет, нельзя."
     ],
-    "right anwsers": [
+    "right answers": [
       "Да, куда угодно."
     ]
   },
@@ -60,4 +64,8 @@ let questions = [
       "onkeydown"
     ]
   }
-]
+];
+
+
+// Save object in localStorage
+localStorage.setItem('test', JSON.stringify(questions));

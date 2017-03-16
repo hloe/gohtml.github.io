@@ -10,29 +10,72 @@ function checkResults() {
   for (let i = 0; i < answeredQuestions.length; i++) {
     //Get right answer position
     let answers = questions[i]['answers'];
-    let rightAnswer = questions[i]['right answer'];
-    let rightAnswerPosition = answers.indexOf(rightAnswer);
-
+    let rightAnswer = questions[i]['right answers'];
 
     //Get selected answer position
     let inputs = answeredQuestions[i].getElementsByTagName('input');
+
     let selectedValue;
-    for (let j = 0; j < inputs.length; j++) {
-      if (inputs[j].type === 'radio' && inputs[j].checked) {
-        selectedValue = +inputs[j].value;
+
+    // Count correct answers in questions with 1 correct answer
+    if (rightAnswer.length === 1) {
+      let rightAnswerString = rightAnswer[0];
+      let rightAnswerPosition = answers.indexOf(rightAnswerString);
+
+      for (let j = 0; j < inputs.length; j++) {
+        if (inputs[j].checked) {
+          selectedValue = +inputs[j].value;
+        }
+      }
+
+      //Check not answering questions
+      if (selectedValue === undefined) {
+        sum = -1;
+        break;
+      }
+
+      //  Count right answers
+      if (rightAnswerPosition === selectedValue) {
+        sum++;
+      }
+
+
+      // Count correct answers in questions with several correct answers
+    } else {
+      let amount = 0;
+      let inputsChoose = [];
+      for (let j = 0; j < inputs.length; j++) {
+        if (inputs[j].checked) {
+          inputsChoose[j] = answers[j];
+          amount++;
+        }
+      }
+
+      //Check not answering questions
+      if (amount === 0) {
+        sum = -1;
+        break;
+      }
+
+
+      if (amount === rightAnswer.length) {
+        let correctSum = 0;
+
+        for (let n = 0; n < inputsChoose.length; n++) {
+          for (let j = 0; j < rightAnswer.length; j++) {
+            if (rightAnswer[j] === inputsChoose[n]) {
+              console.log(inputsChoose[n]);
+              correctSum++;
+            }
+          }
+        }
+
+        if (correctSum === amount) {
+          sum++;
+        }
       }
     }
 
-    //
-    if (selectedValue === undefined) {
-      sum = -1;
-      break;
-    }
-
-    // Count right answers
-    if (rightAnswerPosition === selectedValue) {
-      sum++;
-    }
   }
 
   return (sum);

@@ -4,12 +4,67 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/modal.css">
   <title>Тест по программированию</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
 </head>
 
 <body>
 
-  <script src="js/script.js" async></script>
+  <div class="container"></div>
+
+  <script type="txt/html" id="test">
+    <form name="test">
+      <h1 class="h1 text-center">Тест по программированию</h1>
+
+      <ol class="list col-lg-8 col-lg-offset-2">
+        <% for (let i = 0; i < data.length; i++) { %>
+          <li class="question">
+            <%= data[i].question %>
+              <ul class="list-unstyled">
+                <% let answers = data[i].answers; %>
+
+                  <% let rightAnswers = data[i]['right answers']; %>
+
+                    <% if (rightAnswers.length === 1) { %>
+                      <% for (let j = 0; j < answers.length; j++) {%>
+                        <li class="answer">
+                          <div>
+                            <label>
+                              <input type="radio" name="answer <%= i %>" value="<%= j %>">
+                              <%= answers[j] %>
+                            </label>
+                          </div>
+                        </li>
+                        <% }%>
+
+                          <% } else { %>
+                            <% for (let j = 0; j < answers.length; j++) {%>
+                              <li class="answer">
+                                <div>
+                                  <label>
+                                    <input type="checkbox" name="answer <%= i %>" value="<%= j %>">
+                                    <%= answers[j] %>
+                                  </label>
+                                </div>
+                              </li>
+                              <% }%>
+                                <% }%>
+
+              </ul>
+          </li>
+          <% } %>
+      </ol>
+
+      <input type="submit" value="Проверить мои результаты" class="btn btn-lg btn-default center-block">
+    </form>
+  </script>
+
+  <script src="js/checkbox.js"></script>
+  <script src="js/loDash.js"></script>
+  <script src="js/showResults.js"></script>
+
+
 </body>
 
 </html>
