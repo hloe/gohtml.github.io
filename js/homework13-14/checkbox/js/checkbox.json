@@ -1,4 +1,4 @@
-var questions = [
+let questions = [
   {
     "question": "Какие из этих свойств элемента могут указывать на текстовый узел?",
     "answers": [

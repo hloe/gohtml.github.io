@@ -232,7 +232,7 @@ $(function () {
       quote: 'I Call the Big One Bitey',
       author: 'Homer Simpson'
     }, {
-      quote: 'What?s a wedding? Webster?s dictionary describes it as the act of removing weeds from one?s garden.',
+      quote: 'What\'s a wedding? Webster\'s dictionary describes it as the act of removing weeds from one\'s garden.',
       author: 'Homer Simpson'
     }, {
       quote: 'OK, OK, I won\'t go stalk Lenny and Carl. Now... . I\'m Going Out... .to ... . Stalk... . (laughs) he he he DOH.',

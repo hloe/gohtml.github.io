@@ -1,17 +1,20 @@
-var questions = [
+// This file loads object into localStorage
+
+'use strict';
+
+let questions = [
   {
     "question": "Чем отличаются стандарты DOM Level 2 и DOM Level 3?",
     "answers": [
       "DOM Level 2 – это свойства второго уровня, а DOM Level 3 – третьего.",
       "DOM Level 3 появился позже чем DOM Level 2, он доопределяет DOM-свойства и события.",
-          "wrong answer 2": "DOM Level 3 работает в 3 раза быстрее, чем DOM Level 1, а DOM Level 2 – только в 2 раза.",
+      "DOM Level 3 работает в 3 раза быстрее, чем DOM Level 1, а DOM Level 2 – только в 2 раза.",
       "DOM Level 3 описывает новые свойства, которых нет в DOM Level 2.",
       "DOM Level 3 описывает только события, а DOM Level 2 – только свойства элементов.",
       "Хорош выдумывать, какой ещё DOM Level? Есть только «просто DOM»."
     ],
     "right answer": "DOM Level 3 появился позже чем DOM Level 2, он доопределяет DOM-свойства и события."
-  },
-  {
+  }, {
     "question": "Можно ли из JavaScript получить содержимое комментария?",
     "answers": [
       "Да, комментарий – DOM-узел, можно получить.",
@@ -19,8 +22,7 @@ var questions = [
       "Можно получить, но только до окончания загрузки страницы."
     ],
     "right answer": "Да, комментарий – DOM-узел, можно получить."
-  },
-  {
+  }, {
     "question": "Браузер вызывает setInterval и setTimeout гораздо реже, чем обычно, если…",
     "answers": [
       "Вкладка, в которой работает JavaScript, не видна и находится в фоновом режиме.",
@@ -28,8 +30,7 @@ var questions = [
       "В обоих этих случаях."
     ],
     "right answer": "В обоих этих случаях."
-  },
-  {
+  }, {
     "question": "Можно ли скриптом перевести посетителя на другую страницу сайта?",
     "answers": [
       "Да, куда угодно.",
@@ -37,8 +38,7 @@ var questions = [
       "Нет, нельзя."
     ],
     "right answer": "Да, куда угодно."
-  },
-  {
+  }, {
     "question": "Если функция-обработчик события onclick выполняется долго, и посетитель во время её работы нажал на кнопку клавиатуры – что будет с возникшим событием keydown?",
     "answers": [
       "Будет проигнорировано, так как браузер занят.",
@@ -47,5 +47,9 @@ var questions = [
       "Если событие на том же элементе, что и onclick, то будет проигнорировано, иначе – обработано после onclick."
     ],
     "right answer": "Событие keydown будет обработано после onclick."
-   }
-]
+  }
+];
+
+
+// Save object in localStorage
+localStorage.setItem('test', JSON.stringify(questions));
