@@ -3,3 +3,6 @@
 *.db
 *.psd
 jQuery/
+React/
+node_modules/
+.sass-cache/
