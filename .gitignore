@@ -1,7 +1,6 @@
 
 *.log
 *.db
-*.psd
 jQuery/
 React/
 node_modules/
