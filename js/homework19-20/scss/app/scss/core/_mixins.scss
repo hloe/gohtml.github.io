@@ -1,0 +1,27 @@
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+@mixin ubuntu-medium {
+  font-family: 'Ubuntu Medium', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin ubuntu-condensed {
+  font-family: 'Ubuntu Condensed', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin ubuntu-light {
+  font-family: 'Ubuntu Light', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,23 @@
+@import "../core/_core.scss";
+.icon {}
+
+.icon-social {
+  fill: $gray;
+  height: 16px;
+  &:hover {
+    fill: $blue;
+  }
+}
+
+.icon-features {
+  fill: $yellow;
+  height: 32px;
+}
+
+.icon-arrow {
+  width: 10px;
+  fill: $blue;
+  &:hover {
+    fill: $blue-gray;
+  }
+}
