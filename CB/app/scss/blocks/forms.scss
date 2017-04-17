@@ -1,9 +1,4 @@
 @import "../core/_core.scss";
-.search-icon {
-  width: 14px;
-  height: 14px;
-}
-
 .subscribe-form {
   width: 302px;
   height: 50px;
@@ -53,7 +48,11 @@ input[type="submit"] {
   border-width: 0;
   outline-width: 0;
   background-color: transparent;
-  @include retina('../images/white-arrow.png', 2, 6px 10px, 10px center no-repeat);
+  @include retina('../images/white-arrow.png', 2, 15px 15px, 10px center no-repeat);
+    background-image: url('../images/white-arrow.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
   color: transparent;
   cursor: pointer;
 }

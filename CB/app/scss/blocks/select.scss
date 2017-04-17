@@ -37,25 +37,25 @@
   color: $light-grey;
   color: $light-grey-transparent;
   text-transform: uppercase;
-      -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
-
 }
 
 .label {
   position: relative;
   &:after {
     position: absolute;
-    display: block;
-    width: 10px;
-    height: 6px;
+    display: block; 
+    width: 7px;
+    height: 4px;
     right: 6px;
-    top: 5px;
+    top: 4px;
     content: '';
     @include retina('../images/arrow.png', 2, 7px 4px, top center no-repeat);
-    pointer-events:none;
+ background: url('../images/black-arrow.svg'), 7px 4px, top center no-repeat;
+    pointer-events: none;
   }
   &:before {
     position: absolute;
@@ -65,8 +65,7 @@
     top: 0;
     right: 6px;
     content: '';
-        background-color: $white;
-
-    pointer-events:none;
+    background-color: $white;
+    pointer-events: none;
   }
 }
