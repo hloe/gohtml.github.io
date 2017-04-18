@@ -1,0 +1,135 @@
+@import "../core/_core.scss";
+.preheader {
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  &__list {
+    @include list;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: 17px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $services-background;
+  &__list {
+    @include list;
+  }
+  &__item {
+    display: inline-block;
+    height: 56px;
+  }
+  &__form {
+    margin-right: 8px;
+  }
+}
+
+.menu-link {
+  display: block;
+  height: 56px;
+  padding: 0 40px;
+  border-left: 1px solid $border;
+  border-right: 1px solid $border;
+  @include ubuntu-condensed;
+  font-size: .875rem;
+  line-height: 56px;
+  letter-spacing: normal;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  &:hover {
+    color: $yellow;
+  }
+  &__active {
+    border-left-color: $blue;
+    border-right-color: $blue;
+    background-color: $blue;
+  }
+}
+
+.search-form {
+  width: 241px;
+  height: 40px;
+  border: 1px solid $border;
+  &__list {
+    @include list;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+input[type="text"] {
+  width: 213px;
+  height: 38px;
+  padding-left: 14px;
+  border-width: 0;
+  outline-width: 0;
+  background-color: $footer-background;
+  color: $input;
+  color: $input-transparent;
+  @includ arial;
+  font-size: .75rem;
+  line-height: 1.667;
+}
+
+::-webkit-input-placeholder {
+  @includ arial;
+  color: $input;
+  color: $input-transparent;
+  font-size: .75rem;
+  line-height: 1.667;
+}
+
+::-moz-placeholder {
+  @includ arial;
+  color: $input;
+  color: $input-transparent;
+  font-size: .75rem;
+  line-height: 1.667;
+}
+
+:-moz-placeholder {
+  @includ arial;
+  color: $input;
+  color: $input-transparent;
+  font-size: .75rem;
+  line-height: 1.667;
+}
+
+:-ms-input-placeholder {
+  @includ arial;
+  color: $input;
+  color: $input-transparent;
+  font-size: .75rem;
+  line-height: 1.667;
+}
+
+input[type="submit"] {
+  width: 26px;
+  height: 38px;
+  border-width: 0;
+  outline-width: 0;
+  background-color: $footer-background;
+  color: transparent;
+  background-image: url('../i/search.svg');
+  background-repeat: no-repeat;
+  background-position: center left;
+}

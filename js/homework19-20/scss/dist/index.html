@@ -12,61 +12,81 @@
 
 <body>
 
-
-  <section class="preheader" id="home">
   
-    <div>
+  <section class="preheader" id="home">
+    <div class="social">
       <a href="">
         <img src="images/logo.png" alt="Build Home. INDUSTRIAL THEME" class="logo" data-rjs="2">
       </a>
-    </div>
   
-    <div>
-      <ul>
-        <li>
-          <svg class="icon icon-social">
-            <use xlink:href="./i/sprite_preheader.svg#facebook"></use>
-          </svg>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="">
+            <svg class="icon icon-social">
+              <use xlink:href="./i/sprite_preheader.svg#facebook"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <svg class="icon icon-social">
-            <use xlink:href="./i/sprite_preheader.svg#twitter"></use>
-          </svg>
+        <li class="social__item">
+          <a href="">
+            <svg class="icon icon-social">
+              <use xlink:href="./i/sprite_preheader.svg#twitter"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <svg class="icon icon-social">
-            <use xlink:href="./i/sprite_preheader.svg#rss"></use>
-          </svg>
+        <li class="social__item">
+          <a href="">
+            <svg class="icon icon-social">
+              <use xlink:href="./i/sprite_preheader.svg#rss"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <svg class="icon icon-social">
-            <use xlink:href="./i/sprite_preheader.svg#linkedin"></use>
-          </svg>
+        <li class="social__item">
+          <a href="">
+            <svg class="icon icon-social">
+              <use xlink:href="./i/sprite_preheader.svg#linkedin"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <svg class="icon icon-social">
-            <use xlink:href="./i/sprite_preheader.svg#skype"></use>
-          </svg>
+        <li class="social__item">
+          <a href="">
+            <svg class="icon icon-social">
+              <use xlink:href="./i/sprite_preheader.svg#skype"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </div>
   
-    <nav class="nav">
-      <ul>
-        <li><a href="#home">home</a></li>
-        <li><a href="#features">features</a></li>
-        <li>
-          <a href="#services">services</a></li>
-        <li>
-          <a href="#news">news</a></li>
-        <li>
-          <a href="">shop</a></li>
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a href="#home" class="menu-link menu-link__active">home</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#features" class="menu-link">features</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#services" class="menu-link">services</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#news" class="menu-link">news</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="" class="menu-link">shop</a>
+        </li>
       </ul>
   
-      <form action="">
-        <input type="text">
+      <form action="#" class="search-form header-nav__form">
+        <ul class="search-form__list">
+          <li class="search-form__item">
+            <input type="text" placeholder="Search...">
+          </li>
+          <li class="search-form__item">
+            <input type="submit" value="Send">
+          </li>
+        </ul>
       </form>
-  
     </nav>
   </section>
   <header class="header">
@@ -121,35 +141,37 @@
       </li>
     </ul>
   </section>
-  <section class="services">
-    <h2>our services</h2>
-    <ul>
-      <li>
-        <figure>
-          <p></p><img src="images/service1.jpg" alt="working man" data-rjs="2"></p>
-          <figcation>schedule services</figcation>
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <p></p><img src="images/service2.jpg" alt="big yellow track" data-rjs="2"></p>
-          <figcation>preventive maintence</figcation>
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <p></p><img src="images/service3.jpg" alt="man on the ladder" data-rjs="2"></p>
-          <figcation>tire & wheel services</figcation>
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <p></p><img src="images/service4.jpg" alt="yellow pipes" data-rjs="2"></p>
-          <figcation>repair services</figcation>
-        </figure>
-      </li>
-    </ul>
-  </section>
+  <div class="wrapper wrapper__services">
+    <section class="services">
+      <h2>our services</h2>
+      <ul>
+        <li>
+          <figure>
+            <p></p><img src="images/service1.jpg" alt="working man" data-rjs="2"></p>
+            <figcation>schedule services</figcation>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <p></p><img src="images/service2.jpg" alt="big yellow track" data-rjs="2"></p>
+            <figcation>preventive maintence</figcation>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <p></p><img src="images/service3.jpg" alt="man on the ladder" data-rjs="2"></p>
+            <figcation>tire & wheel services</figcation>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <p></p><img src="images/service4.jpg" alt="yellow pipes" data-rjs="2"></p>
+            <figcation>repair services</figcation>
+          </figure>
+        </li>
+      </ul>
+    </section>
+  </div>
   <section class="news">
     <div class="latest-news">
       <h2>latest news</h2>
@@ -280,24 +302,40 @@
       </ul>
     </div>
   </section>
-  <footer class="footer">
-    <div class="contacts">
-      <ul>
-        <li>
-          <img src="images/location.png" alt="location" width="12" height="16" data-rjs="2"> BuildHomeLtd. Street Name 123 23 45 Cityname
-        </li>
-        <li>
-          <img src="images/phone.png" alt="phone" width="10" height="16" data-rjs="2"> +123 900 123 456
-        </li>
-        <li>
-          <img src="images/message.png" alt="email" width="16" height="12" data-rjs="2"> info@buildhome.web
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-      &copy; 2014 Build Home
-    </div>
-  </footer>
+  <div class="wrapper wrapper__footer">
+    <footer class="footer">
+      <div class="contacts">
+        <ul>
+          <li>
+            <svg class="icon icon-location">
+              <use xlink:href="./i/sprite_footer.svg#location"></use>
+            </svg>
+            <!--          <img src="images/location.png" alt="location" width="12" height="16" data-rjs="2">-->
+            BuildHomeLtd. Street Name 123 23 45 Cityname
+          </li>
+          <li>
+            <svg class="icon icon-phone">
+              <use xlink:href="./i/sprite_footer.svg#phone"></use>
+            </svg>
+            <!--          <img src="images/phone.png" alt="phone" width="10" height="16" data-rjs="2">-->
+            +123 900 123 456
+          </li>
+          <li>
+            <svg class="icon icon-message">
+              <use xlink:href="./i/sprite_footer.svg#message"></use>
+            </svg>
+            <!--          <img src="images/message.png" alt="email" width="16" height="12" data-rjs="2">-->
+            info@buildhome.web
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        &copy; 2014 Build Home
+      </div>
+    </footer>
+  </div>
+
+
 
   <script src="js/retina.min.js"></script>
 </body>

@@ -8,6 +8,13 @@
   }
 }
 
+@mixin list {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -1px;
+  
+}
+
 @mixin ubuntu-medium {
   font-family: 'Ubuntu Medium', Arial, sans-serif;
   font-weight: normal;
@@ -24,4 +31,8 @@
   font-family: 'Ubuntu Light', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
+}
+
+@mixin arial {
+  font-family: Arial, sans-serif;
 }
