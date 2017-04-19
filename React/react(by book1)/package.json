@@ -1,0 +1,14 @@
+{
+  "name": "react-by-tutorial",
+  "version": "1.0.0",
+  "description": "Exercises by React tutorial",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "hloe",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.15.2"
+  }
+}
