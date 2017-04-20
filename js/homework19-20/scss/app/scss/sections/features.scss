@@ -2,4 +2,64 @@
 .features {
   width: 1160px;
   margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @include list;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+  }
+  &__number {
+    width: 100px;
+    @include ubuntu-medium;
+    font-size: 5.625rem;
+    letter-spacing: normal;
+    line-height: 1;
+    color: $features-title;
+    opacity: .1;
+  }
+  &__content {
+    width: 240px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &__title {
+    margin-top: 18px;
+    margin-bottom: 22px;
+    @include ubuntu-medium;
+    font-size: 1.25rem;
+    line-height: 1;
+    letter-spacing: normal;
+    color: $features-title;
+    text-transform: capitalize;
+  }
+  &__text {
+    font-family: Arial, sans-serif;
+    font-size: .813rem;
+    letter-spacing: normal;
+    line-height: 1.538;
+    color: $features-text;
+  }
+  &__link {
+    display: block;
+    margin-top: 20px;
+    @include ubuntu-medium;
+    font-size: .813rem;
+    line-height: 1.538;
+    letter-spacing: normal;
+    color: $features-title;
+    text-decoration: none;
+    &:hover {
+      color: $blue;
+      svg {
+        fill: $blue-gray;
+      }
+    }
+  }
 }

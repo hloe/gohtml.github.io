@@ -2,4 +2,65 @@
 .services {
   width: 1160px;
   margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 70px;
+  &__title {
+    @include ubuntu-medium;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    line-height: .833;
+    color: $white;
+    text-transform: capitalize;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    @include list;
+  }
+  &__item {
+    position: relative;
+  }
+}
+
+.service-figure {
+  text-align: center;
+  &__img {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 33px;
+  }
+  &__name {
+    @include ubuntu-medium;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: $white;
+    text-transform: capitalize;
+  }
+}
+
+.hover {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 260px;
+  background-color: $hover;
+//  font-weight: 100;
+  font-size: 4rem;
+  line-height: 260px;
+  letter-spacing: normal;
+  color: $white;
+  text-align: center;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.service-figure:hover > .service-figure__name {
+  color: yellow;
+}
+
+.service-card:hover > .hover {
+  visibility: visible;
 }
