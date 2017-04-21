@@ -3,17 +3,14 @@
   display: block;
   margin-bottom: 5px;
   height: 39px;
+  border: 1px solid $accordion-closed;
+  background-color: $white;
   @include ubuntu-medium;
   font-size: .813rem;
   line-height: 39px;
   vertical-align: middle;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-.closed {
-  border: 1px solid $accordion-closed;
-  background-color: $white;
   color: $services-background;
   &:before {
     display: inline-block;
@@ -26,7 +23,16 @@
   }
 }
 
-.open {
+.accordion-content {
+  display: none;
+  padding: 30px 35px;
+  font-family: Arial, sans-serif;
+  font-size: .813rem;
+  line-height: 1.538;
+  color: $features-text;
+}
+
+.panel:hover > .accordion {
   background-color: $yellow;
   color: $white;
   &:before {
@@ -39,19 +45,7 @@
   }
 }
 
-.accordion-content {
-  padding: 30px 35px;
-  font-family: Arial, sans-serif;
-  font-size: .813rem;
-  line-height: 1.538;
-
-  color: $features-text;
-}
-
-.hidden {
-  display: none;
-}
-
-.visible {
+//Если отключить, работает анимация
+.panel:hover > .accordion-content {
   display: block;
 }

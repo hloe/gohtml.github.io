@@ -85,13 +85,13 @@ input[type="text"] {
   background-color: $footer-background;
   color: $input;
   color: $input-transparent;
-  @includ arial;
+  font-family: Arial, sans-serif;
   font-size: .75rem;
   line-height: 1.667;
 }
 
 ::-webkit-input-placeholder {
-  @includ arial;
+  font-family: Arial, sans-serif;
   color: $input;
   color: $input-transparent;
   font-size: .75rem;
@@ -99,7 +99,7 @@ input[type="text"] {
 }
 
 ::-moz-placeholder {
-  @includ arial;
+  font-family: Arial, sans-serif;
   color: $input;
   color: $input-transparent;
   font-size: .75rem;
@@ -107,7 +107,7 @@ input[type="text"] {
 }
 
 :-moz-placeholder {
-  @includ arial;
+  font-family: Arial, sans-serif;
   color: $input;
   color: $input-transparent;
   font-size: .75rem;
@@ -115,7 +115,7 @@ input[type="text"] {
 }
 
 :-ms-input-placeholder {
-  @includ arial;
+  font-family: Arial, sans-serif;
   color: $input;
   color: $input-transparent;
   font-size: .75rem;

@@ -1,8 +1,9 @@
 'use strict';
 
-$('.accordion').click(function () {
-  $('.visible').toggleClass('hidden visible');
-  $('.open').toggleClass('open closed');
-  $(this).toggleClass('open closed');
-  $(this).next().toggleClass('hidden visible');
+$('.panel').hover(function (event) {
+  event.preventDefault();
+  $(this).children('.accordion-content').slideDown('slow');
+}, function (event) {
+  event.preventDefault();
+  $(this).children('.accordion-content').slideUp('slow');
 });

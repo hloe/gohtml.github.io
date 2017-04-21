@@ -1,7 +1,6 @@
 
 *.log
 *.db
-*.psd
 jQuery/
 node_modules/
 .sass-cache/
