@@ -1,5 +1,37 @@
 @import "../core/_core.scss";
 .links {
+  display: flex;
+  justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 75px;
+  &__container {
+    width: 260px;
+  }
+  &__title {
+    margin-bottom: 45px;
+    @include ubuntu-medium;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $white;
+    text-transform: uppercase;
+  }
+  &__item {
+    height: 35px;
+    border-bottom: 1px solid $links-border;
+    &:last-of-type {
+      border-bottom-color: transparent;
+    }
+  }
+  &__link {
+    font-family: Arial, sans-serif;
+    font-size: .813rem;
+    line-height: 2.769;
+    color: $white-transparent;
+    text-decoration: none;
+    &:hover {
+      color: $blue;
+    }
+  }
 }

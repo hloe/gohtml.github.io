@@ -1,0 +1,57 @@
+@import "../core/_core.scss";
+.accordion {
+  display: block;
+  margin-bottom: 5px;
+  height: 39px;
+  @include ubuntu-medium;
+  font-size: .813rem;
+  line-height: 39px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.closed {
+  border: 1px solid $accordion-closed;
+  background-color: $white;
+  color: $services-background;
+  &:before {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin-right: 13px;
+    border-right: 2px solid $accordion-closed;
+    content: '+';
+    text-align: center;
+  }
+}
+
+.open {
+  background-color: $yellow;
+  color: $white;
+  &:before {
+    display: inline-block;
+    width: 38px;
+    margin-right: 13px;
+    border-right: 1px solid $accordion-open;
+    content: '-';
+    text-align: center;
+  }
+}
+
+.accordion-content {
+  padding: 30px 35px;
+  font-family: Arial, sans-serif;
+  font-size: .813rem;
+  line-height: 1.538;
+
+  color: $features-text;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

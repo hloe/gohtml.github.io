@@ -1,6 +1,31 @@
 @import "../core/_core.scss";
 .footer {
-width: 1160px;
-margin: 0 auto;
-  background-color: $footer-background;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+  height: 60px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: .75rem;
+  line-height: 1.667;
+  color: $white-transparent2;
+  &__list {
+    @include list;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: 35px;
+    font-size: .75rem;
+    line-height: 1;
+    letter-spacing: normal;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &__icon {
+    margin-right: 5px;
+      vertical-align: text-bottom;
+
+  }
 }
