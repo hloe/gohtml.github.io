@@ -276,12 +276,63 @@ let data = [
   }
 ]
 
+// Get skills array
+function addSpace(val) {
+  return (' ' + val);
+}
 
-//for (var i = 0; i < data.length; i++) {
-//  console.log(data[i].skills);
-//}
+function getSkills() {
+  let skills = _.map(data, 'skills');
+  skills = _.flatten(skills);
+  skills = _.uniq(skills);
+
+  let p = document.createElement('p');
+  p.innerHTML = '[' + _.map(skills, addSpace) + ']';
+  let div = document.getElementsByClassName('text-center')[0];
+  div.appendChild(p);
+}
+
+let buttonSkills = document.getElementsByClassName('btn')[0];
+buttonSkills.addEventListener('click', getSkills);
+
+// Get names array
+function countFriends(val) {
+  return val.length;
+}
+
+function getSortedNames() {
+
+  let sortedData = _.sortBy(data, 'friends');
+  let names = _.map(sortedData, 'name');
+
+  let p = document.createElement('p');
+  p.innerHTML = '[' + _.map(names, addSpace) + ']';
+  let div = document.getElementsByClassName('text-center')[1];
+  div.appendChild(p);
+
+}
+
+let buttonNames = document.getElementsByClassName('btn')[1];
+buttonNames.addEventListener('click', getSortedNames);
+
+// Get friends array
+function getFriends() {
+  // take friends' objects
+  let friends = _.map(data, 'friends');
+  // transform objects into array
+  friends = _.flatten(friends);
+  // get names from array
+  friends = _.map(friends, 'name');
+  // get only unique values
+  friends = _.uniq(friends);
+
+  let p = document.createElement('p');
+  p.innerHTML = '[' + _.map(friends, addSpace) + ']';
+  let div = document.getElementsByClassName('text-center')[2];
+  div.appendChild(p);
+
+}
 
 
-let sk = _.at(data[0], 'skills');
-sk.push(_.at(data[1], 'skills'));
-console.log(sk);
+let buttonFriends = document.getElementsByClassName('btn')[2];
+buttonFriends.addEventListener('click', getFriends);
