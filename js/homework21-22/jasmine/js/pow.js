@@ -1,23 +1,5 @@
 'use strict';
 
-var button = document.getElementsByClassName('btn')[0];
-button.addEventListener('click', pow);
-
-function pow() {
-
-  var integerNumber = app.takeNumber();
-
-  if (integerNumber) {
-    var integerPower = app.takePower();
-
-    if (integerPower) {
-      var result = app.calculate(integerNumber, integerPower);
-      alert('Число ' + integerNumber + ' в степени ' + integerPower + ' равно ' + result);
-    }
-  }
-}
-
-
 var app = {
   takeNumber: function () {
 
@@ -76,7 +58,18 @@ var app = {
       }
     }
     return serviceVariable;
+  },
+  pow: function () {
+    var integerNumber = this.takeNumber();
 
+    if (integerNumber) {
+      var integerPower = this.takePower();
+
+      if (integerPower) {
+        var result = this.calculate(integerNumber, integerPower);
+        alert('Число ' + integerNumber + ' в степени ' + integerPower + ' равно ' + result);
+      }
+    }
   }
 }
 
