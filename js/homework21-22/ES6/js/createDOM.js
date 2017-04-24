@@ -14,27 +14,30 @@ container.innerHTML =
 <input type="submit" value="Проверить мои результаты" class="btn btn-lg btn-default center-block">
 </form>`;
 
-for (let i = 0; i < data.length; i++) {
+for (let value of data) {
   let ol = document.getElementsByClassName('list')[0];
   let li = document.createElement('li');
   li.className = 'question';
-  li.innerHTML = data[i]['question'];
+li.innerHTML = value['question'];
+  
   let ul = document.createElement('ul');
   ul.className = 'list-unstyled';
 
   ol.appendChild(li);
   li.appendChild(ul);
 
-  if (data[i]['right answers'].length === 1) {
-    for (let j = 0; j < data[i]['answers'].length; j++) {
+//   if (Object.is(value['right answers'].length, 1)) { 
+     if (value['right answers'].length === 1) { 
+
+  for (let j = 0; j < value['answers'].length; j++) {
 
       let smallLi = document.createElement('li');
       smallLi.className = 'answer';
       smallLi.innerHTML = `<li class="answer">
 <div>
 <label>
-<input type="radio" name="answer ${i}" value="${j}">
-${data[i]['answers'][j]}
+<input type="radio" value="${j}">
+${value['answers'][j]}
 </label>
 </div>
 </li>`;
@@ -43,15 +46,15 @@ ${data[i]['answers'][j]}
 
     }
   } else {
-    for (let j = 0; j < data[i]['answers'].length; j++) {
+    for (let j = 0; j < value['answers'].length; j++) {
 
       let smallLi = document.createElement('li');
       smallLi.className = 'answer';
       smallLi.innerHTML = `<li class="answer">
 <div>
 <label>
-<input type="checkbox" name="answer ${i}" value="${j}">
-${data[i]['answers'][j]}
+<input type="checkbox" value="${j}">
+${value['answers'][j]}
 </label>
 </div>
 </li>`;

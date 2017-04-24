@@ -10,7 +10,7 @@ function checkResults() {
   for (let i = 0; i < answeredQuestions.length; i++) {
     //Get right answer position
     let answers = questions[i]['answers'];
-    let rightAnswer = questions[i]['right answers'];
+    let rightAnswerNumbers = questions[i]['right answers'];
 
     //Get selected answer position
     let inputs = answeredQuestions[i].getElementsByTagName('input');
@@ -18,29 +18,29 @@ function checkResults() {
     let selectedValue;
 
     // Count correct answers in questions with 1 correct answer
-    if (rightAnswer.length === 1) {
-      let rightAnswerString = rightAnswer[0];
-      let rightAnswerPosition = answers.indexOf(rightAnswerString);
+    if(Object.is(rightAnswerNumbers.length, 1)) {
 
-      for (let j = 0; j < inputs.length; j++) {
-        if (inputs[j].checked) {
-          selectedValue = +inputs[j].value;
+      let rightAnswerPosition = questions[i]['right answers'][0];
+      
+      for (let value of inputs) {
+        if (value.checked) {
+          selectedValue = +value.value;
         }
       }
 
       //Check not answering questions
-      if (selectedValue === undefined) {
+      if (Object.is(selectedValue, undefined)) {
         sum = -1;
         break;
       }
 
-      //  Count right answers
-      if (rightAnswerPosition === selectedValue) {
+      //  Check whether right answer is selected
+      if(Object.is(rightAnswerPosition, selectedValue)) {
         sum++;
       }
 
 
-      // Count correct answers in questions with several correct answers
+    // Count correct answers in questions with several correct answers
     } else {
       let amount = 0;
       let inputsChoose = [];
@@ -52,24 +52,25 @@ function checkResults() {
       }
 
       //Check not answering questions
-      if (amount === 0) {
+      if (Object.is(amount, 0)){
         sum = -1;
         break;
       }
 
 
-      if (amount === rightAnswer.length) {
-        let correctSum = 0;
+      // Check whether all correct answers are selected
+      if (Object.is(amount, rightAnswerNumbers.length)) {
+      let correctSum = 0;
 
         for (let n = 0; n < inputsChoose.length; n++) {
-          for (let j = 0; j < rightAnswer.length; j++) {
-            if (rightAnswer[j] === inputsChoose[n]) {
+          for (let j = 0; j < rightAnswerNumbers.length; j++) {
+            if(Object.is(rightAnswerNumbers[j], n)) {
               correctSum++;
             }
           }
         }
 
-        if (correctSum === amount) {
+        if (Object.is(correctSum, amount)) {
           sum++;
         }
       }

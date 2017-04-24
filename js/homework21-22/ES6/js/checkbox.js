@@ -12,10 +12,7 @@ let questions = [
       "parentElement",
       "nextSibling"
     ],
-    "right answers": [
-      "firstChild",
-      "nextSibling"
-    ]
+    "right answers": [1,4]
   },
   {
     "question": "Как получить полную ширину блочного DOM-элемента, если у него есть border и padding?",
@@ -25,10 +22,7 @@ let questions = [
       "elem.offsetWidth",
       "elem.clientWidth"
     ],
-    "right answers": [
-      "parseInt(getComputedStyle(elem).width)",
-      "elem.offsetWidth"
-    ]
+    "right answers": [1,2]
   },
   {
     "question": "Браузер вызывает setInterval и setTimeout гораздо реже, чем обычно, если…",
@@ -37,9 +31,7 @@ let questions = [
       "Посетитель зашёл с ноутбука, с питанием от батареи.",
       "В обоих этих случаях."
     ],
-    "right answers": [
-      "В обоих этих случаях."
-    ]
+    "right answers": [2]
   },
   {
     "question": "Можно ли скриптом перевести посетителя на другую страницу сайта?",
@@ -48,9 +40,7 @@ let questions = [
       "Да, но только в рамках текущего сайта.",
       "Нет, нельзя."
     ],
-    "right answers": [
-      "Да, куда угодно."
-    ]
+    "right answers": [0]
   },
   {
     "question": "Какое событие не может быть вызвано кликом мыши?",
@@ -60,9 +50,7 @@ let questions = [
       "onkeydown",
       "onmousedown"
     ],
-    "right answers": [
-      "onkeydown"
-    ]
+    "right answers": [2]
   }
 ];
 
