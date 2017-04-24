@@ -10,6 +10,14 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $services-background;
+  &:hover {
+    background-color: $yellow;
+    color: $white;
+    &:before {
+          border-right: 1px solid $accordion-open;
+
+    }
+  }
   &:before {
     display: inline-block;
     width: 38px;
@@ -27,15 +35,6 @@
   color: $services-background;
 }
 
-.accordion-content {
-  display: none;
-  padding: 30px 35px;
-  font-family: Arial, sans-serif;
-  font-size: .813rem;
-  line-height: 1.538;
-  color: $features-text;
-}
-
 .open {
   background-color: $yellow;
   color: $white;
@@ -49,6 +48,11 @@
   }
 }
 
-//.panel:hover > .accordion-content {
-//  display: block;
-//}
+.accordion-content {
+  display: none;
+  padding: 30px 35px;
+  font-family: Arial, sans-serif;
+  font-size: .813rem;
+  line-height: 1.538;
+  color: $features-text;
+}
