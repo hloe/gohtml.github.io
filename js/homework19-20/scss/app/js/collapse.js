@@ -1,9 +1,6 @@
 'use strict';
 
-$('.panel').hover(function (event) {
-  event.preventDefault();
-  $(this).children('.accordion-content').slideDown('slow');
-}, function (event) {
-  event.preventDefault();
-  $(this).children('.accordion-content').slideUp('slow');
+$('.panel').click(function (event) {
+  $(this).children('.accordion').toggleClass('open closed');
+  $(this).children('.accordion-content').slideToggle('slow');
 });

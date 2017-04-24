@@ -1,1 +1,1 @@
-"use strict";$(".panel").hover(function(n){n.preventDefault(),$(this).children(".accordion-content").slideDown("slow")},function(n){n.preventDefault(),$(this).children(".accordion-content").slideUp("slow")});
+"use strict";$(".panel").click(function(c){$(this).children(".accordion").toggleClass("open closed"),$(this).children(".accordion-content").slideToggle("slow")});
