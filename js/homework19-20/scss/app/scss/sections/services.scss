@@ -47,7 +47,6 @@
   width: 260px;
   height: 260px;
   background-color: $hover;
-//  font-weight: 100;
   font-size: 4rem;
   line-height: 260px;
   letter-spacing: normal;
@@ -57,8 +56,8 @@
   visibility: hidden;
 }
 
-.service-figure:hover > .service-figure__name {
-  color: yellow;
+.service-card:hover .service-figure__name {
+  color: $yellow;
 }
 
 .service-card:hover > .hover {
