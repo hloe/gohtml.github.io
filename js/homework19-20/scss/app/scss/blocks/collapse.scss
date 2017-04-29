@@ -1,11 +1,11 @@
 @import "../core/_core.scss";
 .accordion {
   display: block;
-  margin-bottom: 5px;
-  height: 39px;
+  margin-bottom: .313rem;
+  height: 2.438rem;
   @include ubuntu-medium;
   font-size: .813rem;
-  line-height: 39px;
+  line-height: 2.438rem;
   vertical-align: middle;
   text-transform: uppercase;
   text-decoration: none;
@@ -14,23 +14,24 @@
     background-color: $yellow;
     color: $white;
     &:before {
-          border-right: 1px solid $accordion-open;
-
+      border-right: .063rem solid $accordion-open;
     }
   }
   &:before {
     display: inline-block;
-    width: 38px;
-    height: 38px;
-    margin-right: 13px;
-    border-right: 2px solid $accordion-closed;
+    width: 2.375rem;
+    height: 2.375rem;
+    margin-right: .813rem;
+    border-right: .125rem solid $accordion-closed;
     content: '+';
     text-align: center;
   }
 }
 
 .closed {
-  border: 1px solid $accordion-closed;
+  display: block;
+  height: 2.375rem;
+ border: .063rem solid $accordion-closed;
   background-color: $white;
   color: $services-background;
 }
@@ -40,19 +41,26 @@
   color: $white;
   &:before {
     display: inline-block;
-    width: 38px;
-    margin-right: 13px;
-    border-right: 1px solid $accordion-open;
+    width: 2.375rem;
+    margin-right: .813rem;
+    border-right: .063rem solid $accordion-open;
     content: '-';
     text-align: center;
   }
 }
 
 .accordion-content {
-  display: none;
-  padding: 30px 35px;
+  padding: 1.875rem 2.188rem;
   font-family: Arial, sans-serif;
   font-size: .813rem;
   line-height: 1.538;
   color: $features-text;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
 }

@@ -1,21 +1,21 @@
 @import "../core/_core.scss";
-.preheader {
-  width: 1160px;
+.header {
+  width: 72.5rem;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 
 .social {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 110px;
+  padding: 2.25rem 0;
   &__list {
     @include list;
   }
   &__item {
     display: inline-block;
-    margin-right: 17px;
+    margin-right: 1.063rem;
     &:last-of-type {
       margin-right: 0;
     }
@@ -32,22 +32,21 @@
   }
   &__item {
     display: inline-block;
-    height: 56px;
+    height: 3.5rem;
   }
   &__form {
-    margin-right: 8px;
+    margin-right: .5rem;
   }
 }
 
 .menu-link {
   display: block;
-  height: 56px;
-  padding: 0 40px;
-  border-left: 1px solid $border;
-  border-right: 1px solid $border;
+  padding: 0 2.5rem;
+  border-left: .063rem solid $border;
+  border-right: .063rem solid $border;
   @include ubuntu-condensed;
   font-size: .875rem;
-  line-height: 56px;
+  line-height: 3.5rem;
   letter-spacing: normal;
   color: $white;
   text-decoration: none;
@@ -64,9 +63,8 @@
 }
 
 .search-form {
-  width: 241px;
-  height: 40px;
-  border: 1px solid $border;
+  width: 15.063rem;
+  border: .063rem solid $border;
   &__list {
     @include list;
   }
@@ -77,9 +75,9 @@
 }
 
 input[type="text"] {
-  width: 213px;
-  height: 38px;
-  padding-left: 14px;
+  width: 13.313rem;
+  height: 2.375rem;
+  padding-left: .875rem;
   border-width: 0;
   outline-width: 0;
   background-color: $footer-background;
@@ -123,8 +121,8 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-  width: 26px;
-  height: 38px;
+  width: 1.625rem;
+  height: 2.375rem;
   border-width: 0;
   outline-width: 0;
   background-color: $footer-background;

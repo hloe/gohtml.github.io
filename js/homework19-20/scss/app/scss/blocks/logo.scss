@@ -1,5 +1,24 @@
 @import "../core/_core.scss";
 .logo {
-  width: 205px;
-  height: 37px;
+  display: flex;
+  &__text {
+    margin-left: .688rem;
+  }
+  &__title {
+    @include ubuntu-medium;
+    font-size: 1.875rem;
+    line-height: .667;
+  }
+  &__subtitle {
+    @include ubuntu-light;
+    font-size: .75rem;
+    line-height: 1.667;
+    letter-spacing: .219rem;
+    text-transform: uppercase;
+    opacity: .65;
+  }
+  &__link {
+    color: $logo-text;
+    text-decoration: none;
+  }
 }

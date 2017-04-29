@@ -11,8 +11,7 @@
 @mixin list {
   font-size: 0;
   line-height: 0;
-  letter-spacing: -1px;
-  
+  letter-spacing: -.063rem;
 }
 
 @mixin ubuntu-medium {
