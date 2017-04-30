@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <title>ToDo List</title>
 
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
   <script src="js/lodash.js"></script>
@@ -12,15 +15,28 @@
 
 <body>
 
-  <script type="text/template" id="wrapper-template">
+
+  <script type="text/template" id="container-template">
     <div class="wrapper">
-      <form>
+
+      <div class="container">
+        <h1 class="title">ToDo List</h1>
         <ul class="item-list">
         </ul>
-      </form>
-      <div class="controlls">
-        <input type="text" class="item-value">
-        <button class="item-add">Add</button>
+
+        <div class="controlls">
+          <input type="text" class="item-value">
+          <button class="item-add">Add</button>
+        </div>
+      </div>
+
+      <div class="instructions">
+        <h2 class="instructions-title">Instructions:</h2>
+        <ol class="insturcitons-list">
+          <li class="instructions-item">If you want to add new item, select input field, then enter item name and press button "Add"</li>
+          <li class="instructions-item">If you want to delete item, click on the cross beside this item</li>
+          <li class="instructions-item">If you want to change item, click this onitem, then change item name and press button "Enter"</li>
+        </ol>
       </div>
     </div>
   </script>

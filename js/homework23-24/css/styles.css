@@ -1,0 +1,116 @@
+.wrapper {
+  background-color: #22272D;
+  padding: 3.125rem 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 2.5rem 0;
+  width: 18.75rem;
+  margin: auto;
+  background-color: #363D45;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1.875rem;
+  background-color: #DB6458;
+  font-size: 1.25rem;
+  line-height: 3;
+  color: #E0EAED;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  height: 1.875rem;
+  border-width: 0;
+  outline-width: 0;
+  margin-bottom: .25rem;
+  padding-left: .625rem;
+  text-transform: capitalize;
+  color: #E0EAED;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: #E0EAED;
+}
+
+::-moz-placeholder {
+  color: #E0EAED;
+}
+
+:-moz-placeholder {
+  color: #E0EAED;
+}
+
+:-ms-input-placeholder {
+  color: #E0EAED;
+}
+
+.item-change {
+  background-color: #363D45;
+}
+
+.item-delete {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #E0EAED;
+  cursor: pointer;
+}
+
+.item-delete:hover {
+  color: #DB6458;
+}
+
+.controlls {
+  margin-top: 1.875rem;
+}
+
+.item-value {
+  background-color: #22272D;
+}
+
+.item-add {
+  display: block;
+  margin: .625rem auto 0;
+  width: 5rem;
+  height: 1.75rem;
+  border-width: 0;
+  outline-width: 0;
+  background-color: #B3AFB3;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.item-add:hover {
+  background-color: #22272D;
+  color: #E0EAED;
+}
+
+.instructions {
+  width: 37.5rem;
+  margin: 3.125rem auto 0;
+}
+
+.instructions-title {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #E0EAED;
+}
+
+.instructions-item {
+  font-size: .875rem;
+  color: #99858D;
+  margin-bottom: .313rem;
+}
+
+.active {
+  background-color: red;
+}
+
+.inactive {
+  background-color: green;
+}

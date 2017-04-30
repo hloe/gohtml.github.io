@@ -38,9 +38,9 @@ function View(model) {
   let self = this;
 
   function init() {
-    let wrapper = _.template($('#wrapper-template').html());
+    let container = _.template($('#container-template').html());
 
-    $('body').append(wrapper);
+    $('body').append(container);
     self.elements = {
       input: $('.item-value'),
       addBtn: $('.item-add'),
@@ -88,11 +88,10 @@ function Controller(model, view) {
     let newValue = '';
 
     let oldValue = $(this).attr('data-value');
-    $(this).css('background', 'green');
+    $(this).css('background', '#22272D');
 
     // Save changes when input losts the focus
     $(this).blur(function () {
-      $('input').css('background', 'white');
       model.changeItem(oldValue, newValue);
       view.renderList(model.data);
 
@@ -102,15 +101,16 @@ function Controller(model, view) {
     });
 
     // Save changes if Enter is pressed
-    view.elements.listContainer.on('keydown', saveChanges);
+    view.elements.listContainer.on('keypress', saveChanges);
 
     function saveChanges(event) {
-      newValue = newValue + String.fromCharCode(event.keyCode);
+      if (event.keyCode > 32) {
+        newValue = newValue + String.fromCharCode(event.keyCode);
+      }
 
       event = event || window.event;
 
       if (event.keyCode === 13) {
-        $('input').css('background', 'white');
         model.changeItem(oldValue, newValue);
         view.renderList(model.data);
 
