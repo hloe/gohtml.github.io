@@ -27,6 +27,11 @@ function Model(data) {
     return self.data;
   };
 
+  self.changeItem = function (oldValue, newValue) {
+    let index = self.data.indexOf(oldValue);
+    self.data[index] = newValue;
+  }
+
 }
 
 function View(model) {
@@ -61,6 +66,8 @@ function Controller(model, view) {
 
   view.elements.addBtn.on('click', addItem);
   view.elements.listContainer.on('click', '.item-delete', removeItem);
+  view.elements.listContainer.on('click', '.item-change', changeItem);
+
 
   function addItem() {
     let newItem = view.elements.input.val();
@@ -76,10 +83,52 @@ function Controller(model, view) {
     model.removeItem(item);
     view.renderList(model.data);
   }
+
+  function changeItem() {
+    let newValue = '';
+
+    let oldValue = $(this).attr('data-value');
+    $(this).css('background', 'green');
+
+    // Save changes when input losts the focus
+    $(this).blur(function () {
+      $('input').css('background', 'white');
+      model.changeItem(oldValue, newValue);
+      view.renderList(model.data);
+
+      // Clear newValue for next changeItem()
+      newValue = '';
+      return;
+    });
+
+    // Save changes if Enter is pressed
+    view.elements.listContainer.on('keydown', saveChanges);
+
+    function saveChanges(event) {
+      newValue = newValue + String.fromCharCode(event.keyCode);
+
+      event = event || window.event;
+
+      if (event.keyCode === 13) {
+        $('input').css('background', 'white');
+        model.changeItem(oldValue, newValue);
+        view.renderList(model.data);
+
+        // Clear newValue for next changeItem()
+        newValue = '';
+        return;
+      }
+
+      return newValue;
+    }
+  }
+
+
+
 }
 
 $(function () {
-  let firstToDoList = ['Learn JavaScript', 'Drink coffee', 'Conquer the Galaxy'];
+  let firstToDoList = ['Learn JavaScript', 'Buy beer', 'Conquer the Galaxy'];
   let model = new Model(firstToDoList);
   let view = new View(model);
   let controller = new Controller(model, view);
