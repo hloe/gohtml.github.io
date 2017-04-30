@@ -1,5 +1,57 @@
+/*Reset CSS*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+ul,
+ol,
+li,
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style-position: inside;
+}
+
 .wrapper {
-  background-color: #22272D;
+  background-color: #22272d;
   padding: 3.125rem 0;
   font-family: Arial, sans-serif;
 }
@@ -8,16 +60,16 @@
   padding: 2.5rem 0;
   width: 18.75rem;
   margin: auto;
-  background-color: #363D45;
+  background-color: #363d45;
   text-align: center;
 }
 
 .title {
   margin-bottom: 1.875rem;
-  background-color: #DB6458;
+  background-color: #db6458;
   font-size: 1.25rem;
   line-height: 3;
-  color: #E0EAED;
+  color: #e0eaed;
   text-align: center;
   text-transform: uppercase;
 }
@@ -29,24 +81,24 @@ input[type="text"] {
   margin-bottom: .25rem;
   padding-left: .625rem;
   text-transform: capitalize;
-  color: #E0EAED;
+  color: #e0eaed;
   cursor: pointer;
 }
 
 ::-webkit-input-placeholder {
-  color: #E0EAED;
+  color: #e0eaed;
 }
 
 ::-moz-placeholder {
-  color: #E0EAED;
+  color: #e0eaed;
 }
 
 :-moz-placeholder {
-  color: #E0EAED;
+  color: #e0eaed;
 }
 
 :-ms-input-placeholder {
-  color: #E0EAED;
+  color: #e0eaed;
 }
 
 .item-change {
@@ -56,12 +108,12 @@ input[type="text"] {
 .item-delete {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #E0EAED;
+  color: #e0eaed;
   cursor: pointer;
 }
 
 .item-delete:hover {
-  color: #DB6458;
+  color: #db6458;
 }
 
 .controlls {
@@ -69,7 +121,7 @@ input[type="text"] {
 }
 
 .item-value {
-  background-color: #22272D;
+  background-color: #22272d;
 }
 
 .item-add {
@@ -79,15 +131,15 @@ input[type="text"] {
   height: 1.75rem;
   border-width: 0;
   outline-width: 0;
-  background-color: #B3AFB3;
+  background-color: #b3afb3;
   font-weight: bold;
-  color: #fff;
+  color: #22272D;
   cursor: pointer;
 }
 
 .item-add:hover {
-  background-color: #22272D;
-  color: #E0EAED;
+  background-color: #22272d;
+  color: #e0eaed;
 }
 
 .instructions {
@@ -98,19 +150,11 @@ input[type="text"] {
 .instructions-title {
   font-size: 1.125rem;
   line-height: 1.75;
-  color: #E0EAED;
+  color: #e0eaed;
 }
 
 .instructions-item {
   font-size: .875rem;
   color: #99858D;
   margin-bottom: .313rem;
-}
-
-.active {
-  background-color: red;
-}
-
-.inactive {
-  background-color: green;
 }
