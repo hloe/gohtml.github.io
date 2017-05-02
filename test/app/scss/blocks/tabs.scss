@@ -1,0 +1,10 @@
+@import "../core/_core.scss";
+.hidden {
+  display: none;
+}
+
+.active {
+  background: #fff;
+  border-bottom: 1px solid transparent;
+  color: #e6235b;
+}

@@ -49,7 +49,7 @@ gulp.task('html', function () {
 gulp.task('scripts', function () {
   return gulp.src('app/js/**/*.js')
     // minification
-    .pipe(uglify())
+   // .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
 });
 
