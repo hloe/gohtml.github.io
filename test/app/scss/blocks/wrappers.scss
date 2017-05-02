@@ -1,1 +1,7 @@
 @import "../core/_core.scss";
+.wrapper {
+  &__header {
+    background-color: $header-background;
+    @include retina('../images/header-background.jpg', 2, cover, top center no-repeat);
+  }
+}

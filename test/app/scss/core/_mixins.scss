@@ -7,6 +7,19 @@
 //visibility: hidden;
 //}
 //}
+@mixin list {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -1px;
+}
+
+@mixin transition {
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
 @mixin roboto-black {
   font-family: 'Roboto Black', Arial, sans-serif;
   font-style: normal;

@@ -1,1 +1,93 @@
 @import "../core/_core.scss";
+.nav {
+  position: fixed;
+  width: 100%;
+  &__menu {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__list {
+    @include list;
+  }
+  &__item {
+    position: relative;
+    display: inline-block;
+    @include roboto-black;
+    font-size: 12.5px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    &:before {
+      position: absolute;
+      display: block;
+      padding-top: 49px;
+      content: '\2022';
+      color: $white;
+    }
+    &:first-of-type {
+      &:before {
+        content: '';
+      }
+    }
+  }
+  &__link {
+    display: block;
+    border-bottom: 4px solid transparent;
+    padding: 47px 33px 42px 33px;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      @include transition;
+      border-bottom: 4px solid $yellow;
+      color: $yellow;
+    }
+  }
+  &__phone {
+    margin-left: 75px;
+    margin-right: 44px;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-top: -80px;
+  }
+  &__line {
+    border-bottom: 1px solid $white;
+    padding-top: 5px;
+    &_left {
+      width: 32px;
+      margin-right: 39px;
+    }
+    &_right {
+      width: 100%;
+      margin-left: 33px;
+    }
+  }
+}
+
+.phone {
+  @include roboto-black;
+  font-size: 27px;
+  line-height: 1;
+  letter-spacing: -.8px;
+  color: $white;
+  &__minion {
+    @include minion;
+  }
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 230px;
+  height: 149px;
+  @include retina('../images/logo.png', 2, contain, top center no-repeat);
+  @include roboto-black;
+  font-size: 25px;
+  line-height: 1;
+  color: $white;
+  text-decoration: none;
+}

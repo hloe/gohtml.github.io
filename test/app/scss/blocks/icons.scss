@@ -1,4 +1,14 @@
 @import "../core/_core.scss";
+.icon-arrow {
+  width: 16px;
+  height: 9px;
+  fill: $yellow;
+  &:hover {
+    @include transition;
+    fill: $circle;
+  }
+}
+
 .icon-sertificate {
   width: 28px;
   height: 29px;
