@@ -1,10 +1,47 @@
 @import "../core/_core.scss";
+.tabs {
+  &__list {
+    position: relative;
+    z-index: 3;
+    @include list;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  &__item {
+    display: inline-block;
+    width: 33%;
+    @include roboto-black;
+    font-size: 21px;
+    line-height: 2.095;
+    letter-spacing: 2.5px;
+  }
+  &__link {
+    display: block;
+    padding: 23px 0;
+    border-bottom: 4px solid transparent;
+    color: $gray;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      @include transition;
+      border-bottom: 4px solid $black;
+      color: $black;
+    }
+  }
+  &__content {
+    margin-top: -3px;
+    padding-top: 35px;
+    border-top: 2px solid $gray-border;
+  }
+}
+
 .hidden {
   display: none;
 }
 
 .active {
-  background: #fff;
-  border-bottom: 1px solid transparent;
-  color: #e6235b;
+  border-bottom: 4px solid $black;
+  color: $black;
 }

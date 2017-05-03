@@ -4,4 +4,8 @@
     background-color: $header-background;
     @include retina('../images/header-background.jpg', 2, cover, top center no-repeat);
   }
+  &__programs {
+    background-color: $light-background;
+      @include retina('../images/background.jpg', 2, 100px 100px, repeat);
+  }
 }

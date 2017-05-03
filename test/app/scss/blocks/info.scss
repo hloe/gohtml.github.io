@@ -1,0 +1,80 @@
+@import "../core/_core.scss";
+.info {
+  position: relative;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__photo {
+    position: absolute;
+    z-index: 2;
+    top: 95px;
+  }
+}
+
+.main {
+  @include roboto-black;
+  position: relative;
+  z-index: 1;
+  &__subheading {
+    display: block;
+    margin-right: 80px;
+    margin-top: 75px;
+    font-size: 200px;
+    line-height: 0;
+    //    line-height: .22;
+    color: $light-gray;
+    text-transform: uppercase;
+  }
+  &__title {
+    margin-right: 208px;
+    @include georgia-bold;
+    font-size: 30px;
+    line-height: 1.667;
+    color: $dark-gray;
+    text-transform: capitalize;
+  }
+  &__list {
+    width: 245px;
+    margin-top: 65px;
+    margin-right: 235px;
+  }
+  &__item {
+    display: flex;
+    align-content: center;
+    margin-bottom: 20px;
+    @include georgia-regular;
+    font-size: 1rem;
+    color: $black;
+    line-height: 30px;
+    vertical-align: middle;
+  }
+  &__price {
+    @include georgia-bold;
+    font-size: 31px;
+    &_big {
+      font-size: 58px;
+    }
+  }
+  &__link {
+    display: block;
+    width: 100%;
+    height: 58px;
+    border-radius: 2px;
+    background-color: $black;
+    @include roboto-black;
+    font-size: 14px;
+    line-height: 58px;
+    vertical-align: middle;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      @include transition;
+      background-color: #060303;
+      color: #cfcece;
+    }
+  }
+}
