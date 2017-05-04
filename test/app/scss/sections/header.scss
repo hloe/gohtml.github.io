@@ -37,11 +37,6 @@
   }
   &__title {
     margin-bottom: 39px;
-    @include roboto-black;
-    font-size: 57.5px;
-    line-height: .87;
-    letter-spacing: 5.7px;
-    text-transform: uppercase;
   }
   &__emphasis {
     color: $yellow;

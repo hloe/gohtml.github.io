@@ -1,56 +1,55 @@
 @import "../core/_core.scss";
-.info {
-  position: relative;
-  &__main {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  &__photo {
-    position: absolute;
-    z-index: 2;
-    top: 95px;
-  }
-}
-
 .main {
-  @include roboto-black;
   position: relative;
-  z-index: 1;
-  &__subheading {
-    display: block;
-    margin-right: 80px;
-    margin-top: 75px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 80px;
+  &__img {
+    position: relative;
+    margin-top: 92px;
+    z-index: 2;
+  }
+  &__header {
+    position: absolute;
+    top: 0;
+    right: 75px;
+    @include roboto-black;
     font-size: 200px;
-    line-height: 0;
-    //    line-height: .22;
+    line-height: 1;
     color: $light-gray;
     text-transform: uppercase;
   }
   &__title {
-    margin-right: 208px;
+    position: absolute;
+    z-index: 5;
+    top: 98px;
+    right: 135px;
     @include georgia-bold;
     font-size: 30px;
     line-height: 1.667;
+    letter-spacing: 0;
     color: $dark-gray;
     text-transform: capitalize;
   }
   &__list {
-    width: 245px;
-    margin-top: 65px;
-    margin-right: 235px;
+    margin-top: -252px;
+    margin-left: 57px;
   }
   &__item {
     display: flex;
-    align-content: center;
+    align-items: center;
     margin-bottom: 20px;
     @include georgia-regular;
     font-size: 1rem;
     color: $black;
-    line-height: 30px;
-    vertical-align: middle;
+  }
+  &__icon {
+    margin-right: 15px;
   }
   &__price {
+    display: block;
+    margin-top: 25px;
+    margin-left: 57px;
     @include georgia-bold;
     font-size: 31px;
     &_big {
@@ -59,13 +58,16 @@
   }
   &__link {
     display: block;
-    width: 100%;
+    width: 245px;
     height: 58px;
+    margin-top: 28px;
+    margin-left: 57px;
     border-radius: 2px;
     background-color: $black;
     @include roboto-black;
     font-size: 14px;
     line-height: 58px;
+    letter-spacing: 1px;
     vertical-align: middle;
     color: $white;
     text-align: center;

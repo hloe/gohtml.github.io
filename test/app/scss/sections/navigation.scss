@@ -3,14 +3,12 @@
   position: fixed;
   z-index: 100;
   width: 100%;
+  background-color: $black-transparent;
   &__menu {
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-  &__list {
-    @include list;
   }
   &__item {
     position: relative;
@@ -18,7 +16,6 @@
     @include roboto-black;
     font-size: 12.5px;
     line-height: 1;
-    letter-spacing: normal;
     text-transform: uppercase;
     &:before {
       position: absolute;

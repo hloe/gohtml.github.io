@@ -2,14 +2,13 @@
 .tabs {
   &__list {
     position: relative;
-    z-index: 3;
-    @include list;
-    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     max-width: 750px;
     margin: 0 auto;
   }
   &__item {
-    display: inline-block;
     width: 33%;
     @include roboto-black;
     font-size: 21px;
@@ -17,6 +16,8 @@
     letter-spacing: 2.5px;
   }
   &__link {
+    position: relative;
+    z-index: 5;
     display: block;
     padding: 23px 0;
     border-bottom: 4px solid transparent;
@@ -32,7 +33,7 @@
   }
   &__content {
     margin-top: -3px;
-    padding-top: 35px;
+    padding-top: 5px;
     border-top: 2px solid $gray-border;
   }
 }
