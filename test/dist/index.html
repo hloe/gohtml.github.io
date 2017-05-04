@@ -6,39 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <!--  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
 
   <title>Barista Training in Amsterdam</title>
 </head>
 
 <body>
 
-  <div class="wrapper wrapper__contact">
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-4 col-lg-8 col-lg-offset-4">
-            <header>
-              <h2 class="contact__title">Have questions?</h2>
-              <p class="contact__subtitle">Leave a request and we will contact you shortly</p>
-            </header>
 
-            <form action="#">
-              <ul>
-                <li>
-                  <input type="text" placeholder="your name" required>
-                </li>
-                <li>
-                  <input type="number" placeholder="contact number" required>
-                </li>
-              </ul>
-              <button type="submit">Send</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+
+  <section id="testimonials" class="container">
+    <header>
+      <h2>Testimonials</h2>
+      <p>We have enough patience to teach you the art of coffee</p>
+    </header>
+
+    <div class="flexslider-review">
+      <ul class="slides">
+        <li>
+          <img src="images/avatar.png" alt="Alex Nikandrov">
+          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+        </li>
+        <li>
+          <img src="images/avatar.png" alt="Alex Nikandrov">
+          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+        </li>
+        <li>
+          <img src="images/avatar.png" alt="Alex Nikandrov">
+          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+        </li>
+        <li>
+          <img src="images/avatar.png" alt="Alex Nikandrov">
+          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+        </li>
+        <li>
+          <img src="images/avatar.png" alt="Alex Nikandrov">
+          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+        </li>
+        <li>
+          <img src="images/avatar.png" alt="Alex Nikandrov">
+          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <script>
+    $(window).load(function () {
+      $('.flexslider-review').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        slideshowSpeed: 4000,
+        directionNav: true,
+        controlNav: true,
+        //        itemWidth: 850,
+        move: 1
+      });
+    });
+  </script>
 
   <!--
  <nav class="nav">
@@ -375,26 +403,105 @@
    </header>
  </section>
  <section id="partners" class="container">
-   <h2>Our partners</h2>
- </section>
- <section id="contact" class="container">
-   <header>
-     <h2>Have questions?</h2>
-     <p>Leave a request and we will contact you shortly</p>
-   </header>
  
-   <form action="#">
-     <ul>
-       <li>
-         <input type="text" placeholder="your name" required>
-       </li>
-       <li>
-         <input type="number" placeholder="contact number" required>
-       </li>
-     </ul>
-     <button type="submit">Send</button>
-   </form>
+   <div class="row">
+     <div class="col-lg-12">
+ 
+       <h2>Our partners</h2>
+ 
+       <div class="flexslider">
+         <ul class="slides">
+           <li>
+             <a href="" target="_blank">
+               <img src="images/abajour-logo.png" alt="Abajour" data-rjs="2">
+             </a>
+           </li>
+           <li>
+             <a href="" target="_blank">
+               <img src="images/altbier-logo.png" alt="AltBier" data-rjs="2">
+             </a>
+           </li>
+           <li>
+             <a href="" target="_blank">
+               <img src="images/dedushka-logo.png" alt="Dedushka" data-rjs="2">
+             </a>
+           </li>
+           <li>
+             <a href="" target="_blank">
+               <img src="images/gdeburger-logo.png" alt="Gleburger" data-rjs="2">
+             </a>
+           </li>
+           <li>
+             <a href="" target="_blank">
+               <img src="images/baden-logo.png" alt="Baden-Baden" data-rjs="2">
+             </a>
+           </li>
+           <li>
+             <img src="images/class-logo.png" alt="Class Market" data-rjs="2">
+           </li>
+           <li>
+             <a href="" target="_blank">
+               <img src="images/abajour-logo.png" alt="Abajour" data-rjs="2">
+             </a>
+           </li>
+           <li>
+             <a href="" target="_blank">
+               <img src="images/altbier-logo.png" alt="AltBier" data-rjs="2">
+             </a>
+           </li>
+           <li>
+             <a href="" target="_blank">
+               <img src="images/dedushka-logo.png" alt="Dedushka" data-rjs="2">
+             </a>
+           </li>
+           <li>
+             <a href="" target="_blank">
+               <img src="images/gdeburger-logo.png" alt="Gleburger" data-rjs="2">
+             </a>
+           </li>
+           <li>
+             <a href="" target="_blank">
+               <img src="images/baden-logo.png" alt="Baden-Baden" data-rjs="2">
+             </a>
+           </li>
+           <li>
+             <a href="" target="_blank">
+               <img src="images/class-logo.png" alt="Class Market" data-rjs="2">
+             </a>
+           </li>
+         </ul>
+       </div>
+ 
+     </div>
+   </div>
+ 
  </section>
+ <div class="wrapper wrapper__contact">
+   <section id="contact" class="contact">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-8 col-md-offset-4 col-lg-8 col-lg-offset-4">
+           <header>
+             <h2 class="contact__title">Have questions?</h2>
+             <p class="contact__subtitle">Leave a request and we will contact you shortly</p>
+           </header>
+ 
+           <form action="#">
+             <ul class="contact__list">
+               <li class="contact__item">
+                 <input type="text" class="form__input" placeholder="your name" required>
+               </li>
+               <li class="contact__item">
+                 <input type="tel" class="form__input" placeholder="contact number" required>
+               </li>
+             </ul>
+             <input type="submit" class="form__submit contact__submit" value="send">
+           </form>
+         </div>
+       </div>
+     </div>
+   </section>
+ </div>
  <div class="wrapper wrapper__footer">
    <section class="school container">
      <h2 class="school__title">Professional school barista</h2>
@@ -451,6 +558,8 @@
 
 
   <script src="js/tabs.js" async></script>
+  <script src="js/jquery.flexslider.js" async></script>
+
   <script src="js/retina.min.js"></script>
 </body>
 
