@@ -1,0 +1,30 @@
+@import "../core/_core.scss";
+.contact {
+  position: relative;
+  padding-top: 144px;
+  padding-bottom: 268px;
+  @include retina('../images/coffee-background.png', 2, 184px 342px, right bottom no-repeat);
+  &__title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $form-line;
+  }
+  &__subtitle {
+    margin-top: 1rem;
+    line-height: 2.063;
+    word-spacing: -.9px;
+  }
+  &__list {
+    width: 383px;
+    margin-top: 96px;
+  }
+  &__item {
+    &:first-of-type {
+      margin-bottom: 49px;
+    }
+  }
+  &__submit {
+    position: absolute;
+    bottom: 0;
+    right: 27px;
+  }
+}

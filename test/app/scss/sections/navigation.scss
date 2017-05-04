@@ -9,6 +9,15 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-left: 333px;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid $white;
+      content: '';
+    }
   }
   &__item {
     position: relative;
@@ -31,9 +40,11 @@
     }
   }
   &__link {
+    position: relative;
+    z-index: 102;
     display: block;
     border-bottom: 4px solid transparent;
-    padding: 47px 33px 42px 33px;
+    padding: 47px 33px 40px 33px;
     color: $white;
     text-decoration: none;
     &:hover {
@@ -45,22 +56,24 @@
   &__phone {
     margin-left: 75px;
     margin-right: 44px;
+    text-decoration: none;
+    &:hover {
+      @include transition;
+      color: $yellow;
+    }
   }
   &__logo {
+    position: absolute;
+    z-index: 101;
+    top: 25px;
     display: flex;
     align-items: center;
-    margin-top: -80px;
-  }
-  &__line {
-    border-bottom: 1px solid $white;
-    padding-top: 5px;
-    &_left {
-      width: 32px;
+    &:before {
+      border-bottom: 1px solid $white;
+      padding-top: 5px;
+      content: '';
+      flex: 0 0 2rem;
       margin-right: 39px;
-    }
-    &_right {
-      width: 100%;
-      margin-left: 33px;
     }
   }
 }
