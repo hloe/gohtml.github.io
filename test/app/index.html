@@ -15,69 +15,52 @@
 
 <body>
 
+  <div class="wrapper wrapper__gallery">
+    <section id="gallery" class="gallery">
+      <header class="gallery__header">
+        <h2 class="gallery__title">Gallery</h2>
+        <p class="gallery__subtitle">You yourself are testing the taste benefits of each method and select the type of cooking yourself</p>
+      </header>
 
 
-  <section id="testimonials" class="container">
-    <header>
-      <h2>Testimonials</h2>
-      <p>We have enough patience to teach you the art of coffee</p>
-    </header>
+      <ul class="gallery-slider">
+        <li>
+          <img src="images/photo1.jpg" alt="" data-rjs="2">
+        </li>
+        <li>
+          <img src="images/photo2.jpg" alt="" data-rjs="2">
+        </li>
+        <li>
+          <img src="images/photo3.jpg" alt="" data-rjs="2">
+        </li>
+        <li>
+          <img src="images/photo4.jpg" alt="" data-rjs="2">
+        </li>
+        <li>
+          <img src="images/photo5.jpg" alt="" data-rjs="2">
+        </li>
+        <li>
+          <img src="images/photo1.jpg" alt="" data-rjs="2">
+        </li>
+        <li>
+          <img src="images/photo2.jpg" alt="" data-rjs="2">
+        </li>
+        <li>
+          <img src="images/photo3.jpg" alt="" data-rjs="2">
+        </li>
+        <li>
+          <img src="images/photo4.jpg" alt="" data-rjs="2">
+        </li>
+        <li>
+          <img src="images/photo5.jpg" alt="" data-rjs="2">
+        </li>
+      </ul>
 
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
-
-      <!-- Carousel content -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <div class="carousel-caption">
-            <img src="images/avatar.png" alt="Alex Nikandrov">
-            <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="carousel-caption">
-            <img src="images/avatar.png" alt="Alex Nikandrov">
-            <p>2Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="carousel-caption">
-            <img src="images/avatar.png" alt="Alex Nikandrov">
-            <p>3Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="carousel-caption">
-            <img src="images/avatar.png" alt="Alex Nikandrov">
-            <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="carousel-caption">
-            <img src="images/avatar.png" alt="Alex Nikandrov">
-            <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="carousel-caption">
-            <img src="images/avatar.png" alt="Alex Nikandrov">
-            <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-          </div>
-        </div>
-
-        <!-- Pointers -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-        </ol>
-
+      <div>
+        <span class="current-number"></span> from <span class="amount"></span>
       </div>
-    </div>
-
-  </section>
+    </section>
+  </div>
 
 
 
@@ -94,6 +77,25 @@
 
 
   <script src="js/tabs.js" async></script>
+  <script src="js/jquery.movingboxes.js"></script>
+  <script>
+    $(function () {
+
+      $('.gallery-slider').movingBoxes({
+        /* width and panelWidth options deprecated, but still work to keep the plugin backwards compatible
+        width: 500,
+        panelWidth: 0.5,
+        */
+        startPanel: 1, // start with this panel
+        wrap: false, // if true, the panel will infinitely loop
+        buildNav: true, // if true, navigation links will be added
+        navFormatter: function () {
+            return "&#9679;";
+          } // function which returns the navigation text for each panel
+      });
+
+    });
+  </script>
   <script src="js/jquery.flexslider.js" async></script>
   <script src="js/carousel.min.js" async></script>
 

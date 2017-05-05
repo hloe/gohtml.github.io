@@ -23,50 +23,63 @@
       <p>We have enough patience to teach you the art of coffee</p>
     </header>
 
-    <div class="flexslider-review">
-      <ul class="slides">
-        <li>
-          <img src="images/avatar.png" alt="Alex Nikandrov">
-          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-        </li>
-        <li>
-          <img src="images/avatar.png" alt="Alex Nikandrov">
-          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-        </li>
-        <li>
-          <img src="images/avatar.png" alt="Alex Nikandrov">
-          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-        </li>
-        <li>
-          <img src="images/avatar.png" alt="Alex Nikandrov">
-          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-        </li>
-        <li>
-          <img src="images/avatar.png" alt="Alex Nikandrov">
-          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-        </li>
-        <li>
-          <img src="images/avatar.png" alt="Alex Nikandrov">
-          <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
-        </li>
-      </ul>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
+
+      <!-- Carousel content -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="carousel-caption">
+            <img src="images/avatar.png" alt="Alex Nikandrov">
+            <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption">
+            <img src="images/avatar.png" alt="Alex Nikandrov">
+            <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption">
+            <img src="images/avatar.png" alt="Alex Nikandrov">
+            <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption">
+            <img src="images/avatar.png" alt="Alex Nikandrov">
+            <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption">
+            <img src="images/avatar.png" alt="Alex Nikandrov">
+            <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption">
+            <img src="images/avatar.png" alt="Alex Nikandrov">
+            <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+          </div>
+        </div>
+
+        <!-- Pointers -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        </ol>
+
+      </div>
     </div>
 
   </section>
 
-  <script>
-    $(window).load(function () {
-      $('.flexslider-review').flexslider({
-        animation: "slide",
-        animationLoop: true,
-        slideshowSpeed: 4000,
-        directionNav: true,
-        controlNav: true,
-        //        itemWidth: 850,
-        move: 1
-      });
-    });
-  </script>
+
 
   <!--
  <nav class="nav">
@@ -108,7 +121,7 @@
        <div class="programs__content">
          <div class="tabs">
            <ul class="tabs__list">
-             <li class="tabs__item"><a href="#basic" class="tabs__link active">basic</a></li>
+             <li class="tabs__item"><a href="#basic" class="tabs__link active-tab">basic</a></li>
              <li class="tabs__item"><a href="#premium" class="tabs__link">premium</a></li>
              <li class="tabs__item"><a href="#platinum" class="tabs__link">platinum</a></li>
            </ul>
@@ -401,6 +414,61 @@
      <h2>Testimonials</h2>
      <p>We have enough patience to teach you the art of coffee</p>
    </header>
+ 
+   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
+ 
+     <!-- Carousel content -->
+     <div class="carousel-inner">
+       <div class="item active">
+         <div class="carousel-caption">
+           <img src="images/avatar.png" alt="Alex Nikandrov">
+           <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+         </div>
+       </div>
+       <div class="item">
+         <div class="carousel-caption">
+           <img src="images/avatar.png" alt="Alex Nikandrov">
+           <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+         </div>
+       </div>
+       <div class="item">
+         <div class="carousel-caption">
+           <img src="images/avatar.png" alt="Alex Nikandrov">
+           <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+         </div>
+       </div>
+       <div class="item">
+         <div class="carousel-caption">
+           <img src="images/avatar.png" alt="Alex Nikandrov">
+           <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+         </div>
+       </div>
+       <div class="item">
+         <div class="carousel-caption">
+           <img src="images/avatar.png" alt="Alex Nikandrov">
+           <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+         </div>
+       </div>
+       <div class="item">
+         <div class="carousel-caption">
+           <img src="images/avatar.png" alt="Alex Nikandrov">
+           <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!</p>
+         </div>
+       </div>
+ 
+       <!-- Pointers -->
+       <ol class="carousel-indicators">
+         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+         <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+       </ol>
+ 
+     </div>
+   </div>
+ 
  </section>
  <section id="partners" class="container">
  
@@ -559,6 +627,7 @@
 
   <script src="js/tabs.js" async></script>
   <script src="js/jquery.flexslider.js" async></script>
+  <script src="js/carousel.min.js" async></script>
 
   <script src="js/retina.min.js"></script>
 </body>
