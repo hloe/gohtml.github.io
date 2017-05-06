@@ -30,12 +30,6 @@
 }
 
 
-/* active slider border highlight */
-
-//.mb-active-slider {
-//  border-color: #333;
-//}
-
 /*** Slider panel ***/
 
 .mb-slider .mb-panel {
@@ -71,11 +65,13 @@ change .current class name using plugin option, currentPanel : 'current' */
 .legend {
   width: 452px;
   height: 67px;
-  margin: 66px auto 0;
+  margin: 99px auto 0;
   @include clearfix;
   @include georgia-regular;
   font-size: 19.5px;
   line-height: 67px;
+  letter-spacing: 0;
+  word-spacing: 1.4;
   text-align: center;
   vertical-align: middle;
   color: $yellow;
@@ -93,8 +89,6 @@ a.mb-scrollButtons {
   width: 136px;
   height: 67px;
   bottom: 0;
-  //  margin-top: -29px;
-  /* if you change the arrow images, you may have to adjust this (1/2 height of arrow image) */
   cursor: pointer;
   text-decoration: none;
   outline: 0;
@@ -126,7 +120,9 @@ a.mb-scrollButtons.mb-right:hover {
 }
 
 a.mb-scrollButtons.disabled {
-  display: none;
+  @include transition;
+  opacity: 0;
+  cursor: default;
 }
 
 
@@ -136,32 +132,8 @@ a.mb-scrollButtons.disabled {
   display: none;
   margin: 0 auto;
   text-align: center;
-  background: #ccc;
   position: relative;
   z-index: 100;
-}
-
-.mb-controls a {
-  color: #666;
-  font: 18px/2.2 Georgia, Serif;
-  display: inline-block;
-  text-decoration: none;
-  padding: 2px;
-  margin: 0 5px 0 0;
-  text-align: center;
-  outline: 0;
-}
-
-.mb-controls a:hover {
-  color: black;
-}
-
-.mb-controls a.current {
-  color: white;
-}
-
-.mb-active-slider .mb-controls {
-  background: #333;
 }
 
 

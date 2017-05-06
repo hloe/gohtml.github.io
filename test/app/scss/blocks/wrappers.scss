@@ -37,7 +37,7 @@
   &__gallery {
     position: relative;
     background-color: $gallery;
-    height: 1162px;
+    height: 1165px;
     @include retina('../images/gallery-background.jpg', 2, cover, top center no-repeat);
     background-attachment: fixed;
     &:before {
@@ -66,6 +66,11 @@
   &__testimonials {
     background-color: $light-background;
     @include retina('../images/background.jpg', 2, 100px 100px, repeat);
+  }
+  &__partners {
+        background-color: $light-background;
+    @include retina('../images/background.jpg', 2, 100px 100px, repeat);
+
   }
   &__contact {
     position: relative;
