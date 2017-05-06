@@ -2,7 +2,7 @@
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 100%;
+//  max-width: 100%;
   height: auto;
 }
 
@@ -125,34 +125,59 @@
 }
 
 .carousel-indicators {
-  padding-left: 0;
-  text-align: center;
-  margin: 0 auto;
-  width: 5.625rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 14px auto 0;
+  width: 194px;
 }
 
 .carousel-indicators li {
   display: inline-block;
-  width: .625rem;
-  height: .625rem;
-  margin-left: .5rem;
+  width: 1rem;
+  height: 1rem;
   text-indent: -62.438rem;
   border-radius: 50%;
   cursor: pointer;
   background-color: $black;
+  &:hover {
+    @include transition;
+    background-color: $yellow;
+  }
 }
 
 .carousel-indicators .active {
   background-color: $yellow;
 }
 
+.carousel-control {
+  top: 50%;
+  margin-top: 28px;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  position: absolute;
+  width: 9px;
+  height: 17px;
+}
+
+.carousel-control.left {
+  left: 0;
+  @include retina('../images/arrow-prev.png', 2, cover, top center no-repeat);
+}
+
+.carousel-control.right {
+  right: 0;
+  @include retina('../images/arrow-next.png', 2, cover, top center no-repeat);
+}
+
 .carousel-caption {
-  left: 15%;
-  right: 15%;
-  bottom: 1.25rem;
   z-index: 10;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: 69px;
   text-align: center;
 }
 
@@ -166,56 +191,4 @@
     right: 20%;
     padding-bottom: 2.813rem;
   }
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.pull-right {
-  float: right !important;
-}
-
-.pull-left {
-  float: left !important;
-}
-
-.hide {
-  display: none !important;
-}
-
-.show {
-  display: block !important;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.text-hide {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.affix {
-  position: fixed;
 }

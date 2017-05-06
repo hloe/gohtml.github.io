@@ -28,7 +28,11 @@
       // defaults
       base.$window = base.$el.parent(); // mb-scroll
       base.$wrap = base.$window.parent() // mb-wrapper
-        .prepend('<a class="mb-scrollButtons mb-left"></a>')
+        .append('<div class="legend">');
+
+      base.$legend = $('.legend')
+        .append('<a class="mb-scrollButtons mb-left"></a>')
+        .append('<span class="current-number"></span> from <span class="amount"></span>')
         .append('<a class="mb-scrollButtons mb-right"></a>');
 
       base.$panels = base.$el.children().addClass('mb-panel');
@@ -92,11 +96,13 @@
         case 32: // right arrow & space
           if (base.$wrap.is('.mb-active-slider')) {
             base.goForward();
+            increaseCounter(); //increase slide's number
           }
           break;
         case 37: // left arrow
           if (base.$wrap.is('.mb-active-slider')) {
             base.goBack();
+            reduceCounter(); //reduce slide's number
           }
           break;
         }
@@ -111,6 +117,7 @@
 
       base.$el.trigger('preinit.movingBoxes', [base, base.curPanel]);
 
+
       //Set slides counter
       var counter = 1;
       var ul = $('.gallery-slider');
@@ -124,20 +131,25 @@
 
 
       leftButton.click(reduceCounter);
+
       rightButton.click(increaseCounter);
 
       function reduceCounter() {
         counter = $('.current-number').html();
         counter = +counter;
-        counter = counter - 1;
-        $('.current-number').html(counter);
+        if (counter > 1) {
+          counter = counter - 1;
+          $('.current-number').html(counter);
+        }
       }
 
       function increaseCounter() {
         counter = $('.current-number').html();
         counter = +counter;
-        counter = counter + 1;
-        $('.current-number').html(counter);
+        if (counter < liArr.length) {
+          counter = counter + 1;
+          $('.current-number').html(counter);
+        }
       }
 
 

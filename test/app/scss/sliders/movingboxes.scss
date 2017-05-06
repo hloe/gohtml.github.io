@@ -7,13 +7,9 @@
 }
 
 .mb-wrapper {
-  border: 5px solid blue;
-  margin: 0 auto 20px;
   position: relative;
   left: 0;
   top: 0;
-  border-radius: 10px;
-  box-shadow: inset 0 0 10px #888;
 }
 
 
@@ -36,16 +32,14 @@
 
 /* active slider border highlight */
 
-.mb-active-slider {
-  border-color: #333;
-}
-
+//.mb-active-slider {
+//  border-color: #333;
+//}
 
 /*** Slider panel ***/
 
 .mb-slider .mb-panel {
   margin: 0;
-  // padding: 20px;
   display: block;
   cursor: pointer;
   float: left;
@@ -64,8 +58,7 @@ change .current class name using plugin option, currentPanel : 'current' */
 /*** Inside the panel ***/
 
 .mb-inside {
-  padding: 10px;
-  border: 1px solid red;
+  margin-right: 53px;
 }
 
 .mb-inside * {
@@ -75,31 +68,53 @@ change .current class name using plugin option, currentPanel : 'current' */
 
 /*** Left & Right Navigation Arrows ***/
 
+.legend {
+  width: 452px;
+  height: 67px;
+  margin: 66px auto 0;
+  @include clearfix;
+  @include georgia-regular;
+  font-size: 19.5px;
+  line-height: 67px;
+  text-align: center;
+  vertical-align: middle;
+  color: $yellow;
+}
+
+.current-number,
+.amount {
+  font-size: 30px;
+  color: $white;
+}
+
 a.mb-scrollButtons {
   z-index: 200;
   display: block;
   width: 136px;
   height: 67px;
-  position: absolute;
-  top: 50%;
-  margin-top: -29px;
+  bottom: 0;
+  //  margin-top: -29px;
   /* if you change the arrow images, you may have to adjust this (1/2 height of arrow image) */
   cursor: pointer;
   text-decoration: none;
   outline: 0;
   border: 0;
+  &:hover {
+    @include transition;
+    filter: saturate(2);
+  }
 }
 
 a.mb-scrollButtons.mb-left {
+  float: left;
+  left: 0;
   @include retina('../images/left-arrow.png', 2, cover, top center no-repeat);
-  background-position: left top;
-  left: 0px;
 }
 
 a.mb-scrollButtons.mb-right {
+  float: right;
+  right: 0;
   @include retina('../images/right-arrow.png', 2, cover, top center no-repeat);
-  background-position: right top;
-  right: 0px;
 }
 
 a.mb-scrollButtons.mb-left:hover {
