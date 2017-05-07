@@ -1,0 +1,35 @@
+@import "../core/_core.scss";
+.coffee-bean {
+  position: absolute;
+  z-index: 7;
+  &__header {
+    top: -13.5rem;
+    right: 5.938rem;
+  }
+  &__prog1 {
+    top: 9.813rem;
+    left: 0;
+  }
+  &__prog2 {
+    top: 41.938rem;
+    right: 0;
+  }
+  &__gallery {
+    z-index: 100;
+    top: -2.25rem;
+    left: 2.75rem;
+  }
+  &__testimonials {
+    top: -10.813rem;
+    right: 2.5rem;
+  }
+  &__formbean {
+    top: 9.125rem;
+    left: 18.313rem;
+  }
+  &__formgroup {
+    z-index: 8;
+    top: -5.5rem;
+    left: 0;
+  }
+}

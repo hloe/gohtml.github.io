@@ -1,0 +1,48 @@
+@import "../core/_core.scss";
+.tabs {
+  &__list {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 46.875rem;
+    margin: 0 auto;
+  }
+  &__item {
+    width: 33%;
+    @include roboto-black;
+    font-size: 1.313rem;
+    line-height: 2.095;
+    letter-spacing: .156rem;
+  }
+  &__link {
+    position: relative;
+    z-index: 5;
+    display: block;
+    padding: 1.438rem 0;
+    border-bottom: .25rem solid transparent;
+    color: $gray;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      @include transition;
+      border-bottom: .25rem solid $black;
+      color: $black;
+    }
+  }
+  &__content {
+    margin-top: -.188rem;
+    padding-top: .313rem;
+    border-top: .125rem solid $gray-border;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.active-tab {
+  border-bottom: .25rem solid $black;
+  color: $black;
+}

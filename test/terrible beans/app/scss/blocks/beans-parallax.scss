@@ -1,0 +1,54 @@
+//@import "../core/_core.scss";
+//html {
+//  height: 100%;
+//  overflow: hidden;
+//}
+//
+//body {
+//  perspective: 1px;
+//  transform-style: preserve-3d;
+//  height: 100%;
+//  overflow-y: scroll;
+//  overflow-x: hidden;
+//}
+//
+//.coffee-bean {
+//  position: absolute;
+//  z-index: 20;
+//  &__header {
+//    top: -200px;
+//    right: 235px;
+//    transform: translateZ(.25px) scale(1);
+//  }
+//  &__prog1 {
+//    top: 0;
+//    left: 150px;
+//    transform: translateZ(.25px) scale(.75);
+//  }
+//  &__prog2 {
+//    top: -250px;
+//    right: 76px;
+//    transform: translateZ(.25px) scale(.75);
+//  }
+//  &__gallery {
+//    top: 0;
+//    left: 184px;
+//    transform: translateZ(.25px) scale(.75);
+//  }
+//  &__testimonials {
+//    top: -110px;
+//    right: 115px;
+//    transform: translateZ(.25px) scale(.75);
+//  }
+//  &__formbean {
+//    top: 110px;
+//    left: 300px;
+//    transform: translateZ(.45px) scale(.75);
+//  }
+//  &__formgroup {
+//    z-index: 25;
+//    top: -110px;
+//    left: 50px;
+//    transform: translateZ(.25px) scale(.65);
+//  }
+//}

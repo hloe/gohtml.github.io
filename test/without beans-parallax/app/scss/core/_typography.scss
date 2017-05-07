@@ -1,0 +1,28 @@
+h1 {
+  @include roboto-black;
+  font-size: 3.954rem;
+  line-height: 1;
+  letter-spacing: .356rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  @include roboto-black;
+  font-size: 3.125rem;
+  line-height: 1;
+  letter-spacing: .313rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  @include roboto-black;
+  font-size: 1.094rem;
+  line-height: 1.429;
+  letter-spacing: .063rem;
+  text-transform: uppercase;
+}
+
+p {
+  @include georgia-regular;
+  font-size: 1rem;
+}

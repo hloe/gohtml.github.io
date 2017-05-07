@@ -1,0 +1,58 @@
+@import "../core/_core.scss";
+.form {
+  &__input {
+    width: 23.938rem;
+    height: 2.125rem;
+    border-width: 0;
+    border-bottom: .063rem solid $form-line;
+    outline-width: 0;
+    background-color: transparent;
+    @include roboto-black;
+    font-size: .781rem;
+    line-height: 1;
+    letter-spacing: .031rem;
+    color: $black;
+    text-transform: uppercase;
+  }
+  &__submit {
+    width: 18.375rem;
+    height: 3.813rem;
+    border-width: 0;
+    padding-left: 5.563rem;
+    @include retina('../images/button.png', 2, cover, top center no-repeat);
+    @include roboto-black;
+    font-size: 1.094rem;
+    line-height: 2.514;
+    letter-spacing: .063rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+
+::-webkit-input-placeholder {
+  @include roboto-black;
+  letter-spacing: .031rem;
+  color: $black;
+  text-transform: uppercase;
+}
+
+::-moz-placeholder {
+  @include roboto-black;
+  letter-spacing: .031rem;
+  color: $black;
+  text-transform: uppercase;
+}
+
+:-moz-placeholder {
+  @include roboto-black;
+  letter-spacing: .031rem;
+  color: $black;
+  text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+  @include roboto-black;
+  letter-spacing: .031rem;
+  color: $black;
+  text-transform: uppercase;
+}
