@@ -46,10 +46,12 @@ gulp.task('html', function () {
 
 
 gulp.task('scripts', function () {
-  return gulp.src('src/js/plugins/*.js')
-    .pipe(uglify())
-    .pipe(concat('script.js'))
-    .pipe(gulp.dest('src/js'))
+  //  return gulp.src('src/js/plugins/*.js')
+  //  .pipe(uglify())
+  //    .pipe(concat('script.js'))
+  //    .pipe(gulp.dest('src/js'))
+  return gulp.src('src/js/*.js')
+    .pipe(gulp.dest('dist/js'))
 });
 
 gulp.task('readyScripts', function () {
@@ -91,17 +93,17 @@ gulp.task('clean:dist', function (callback) {
 gulp.task('watch', ['browserSync', 'sass'], function () {
   gulp.watch('src/scss/**/*.scss', ['sass']);
   gulp.watch('src/**/*.html', browserSync.reload);
-//  gulp.watch('src/js/**/*.js', browserSync.reload);
+  //  gulp.watch('src/js/**/*.js', browserSync.reload);
 });
 
 gulp.task('default', function (callback) {
-  runSequence(['sass', 'autoprefixer', 'browserSync', 'watch', 'html'],
+  runSequence(['sass', 'browserSync', 'watch', 'html'],
     callback
   )
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'readyScripts', 'images', 'fonts', 'icons'],
+  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'readyScripts', 'images', 'fonts', 'icons'],
     callback
   )
 });
