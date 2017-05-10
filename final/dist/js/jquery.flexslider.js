@@ -461,18 +461,17 @@
 }(jQuery);
 
 $(window).load(function () {
-  $(".flexslider").flexslider({
-    $('.flexslider').flexslider({
-      animation: "slide"
-        //    animation: "slide",
-        //    animationLoop: !0,
-        //    slideshowSpeed: 6e3,
-        //    directionNav: !0,
-        //    controlNav: !1,
-        //    itemWidth: 210,
-        //    itemMargin: 10,
-        //    minItems: 6,
-        //    move: 1
-    })
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: false
+      //    animation: "slide",
+      //    animationLoop: !0,
+      //    slideshowSpeed: 6e3,
+      //    directionNav: !0,
+      //    controlNav: !1,
+      //    itemWidth: 210,
+      //    itemMargin: 10,
+      //    minItems: 6,
+      //    move: 1
   })
 });

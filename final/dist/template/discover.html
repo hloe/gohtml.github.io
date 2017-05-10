@@ -1,0 +1,32 @@
+<section class="discover">
+  <h2>Discover holiday activity ideas</h2>
+
+  <div class="images-container"></div>
+
+  <script type="text/template" id="pictures">
+    <div class="images">
+      <div class="images__gridsize"></div>
+      <% for (var i = 0; i < data.length; i++) { %>
+        <% if ((i !== 4) && (i !== 5)) {%>
+          <div class="images__item images__item">
+            <img src="<%= data[i] %>" alt="random photo №<%= i %>" class="images__img">
+          </div>
+          <% } else { %>
+            <div class="images__item images__item_2x">
+              <img src="<%= data[i] %>" alt="random photo №<%= i %>" class="images__img">
+            </div>
+            <% } %>
+              <% }; %>
+    </div>
+  </script>
+
+</section>
+
+<section class="search">
+  <h2>Discover holiday activity ideas</h2>
+  <p>Hi! What are your holiday interests?</p>
+  <form action="#" class="form">
+    <input type="text" placeholder="enter your interests" class="input">
+    <input type="button" value="search partners" class="button">
+  </form>
+</section>

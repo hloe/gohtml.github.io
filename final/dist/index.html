@@ -7,49 +7,18 @@
 
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js"></script>
 
   <title>Share Your Holiday Dreams</title>
 </head>
 
 <body>
 
-  <section class="how">
-    <h2>How Urlaubsgl&uuml;ck works?</h2>
-    <div>
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <img src="images/step1-mobile.jpg" alt="" data-rjs="2">
-          </li>
-          <li>
-            <img src="images/step2-mobile.jpg" alt="" data-rjs="2">
-          </li>
-          <li>
-            <img src="images/step3-mobile.jpg" alt="" data-rjs="2">
-          </li>
-        </ul>
-      </div>
-
-      <div>step 1</div>
-      <h3>Sed leo enim, condimentum</h3>
-      <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-    </div>
-    <div>
-      <div>step 2</div>
-      <h3>Morbi velit risus</h3>
-      <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-    </div>
-    <div>
-      <div>step 3</div>
-      <h3>Sed leo enim, condimentum</h3>
-      <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-    </div>
-  </section>
-
-  <!--
   <header class="header">
     <nav>
-      <a href="">urlaubsgl&uuml;ck</a>
+      <a href="" class="logo">urlaubsgl&uuml;ck</a>
       <ul>
         <li>
           <a href="">log in</a>
@@ -59,23 +28,196 @@
         </li>
       </ul>
     </nav>
-    <header class="">
       <h1>Share your holiday dreams</h1>
       <p>And find the perfect partner to fullfill it</p>
       <a href="">Find your holiday partner</a>
-    </header>
   </header>
+  <section class="how">
+    <h2>How Urlaubsgl&uuml;ck works?</h2>
+    <div>
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="images/step1-mobile.jpg" alt="" data-rjs="2">
+          </li>
+          <li>
+            <img src="images/step1-mobile.jpg" alt="" data-rjs="2">
+          </li>
+          <li>
+            <img src="images/step1-mobile.jpg" alt="" data-rjs="2">
+          </li>
+        </ul>
+      </div>
   
+      <div>
+        <div>step 1</div>
+        <h3>Sed leo enim, condimentum</h3>
+        <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+      </div>
+    </div>
+    <div>
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="images/step2-mobile.jpg" alt="" data-rjs="2">
+          </li>
+          <li>
+            <img src="images/step2-mobile.jpg" alt="" data-rjs="2">
+          </li>
+          <li>
+            <img src="images/step2-mobile.jpg" alt="" data-rjs="2">
+          </li>
+        </ul>
+      </div>
   
+      <div>
+        <div>step 2</div>
+        <h3>Morbi velit risus</h3>
+        <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+      </div>
+    </div>
+    <div>
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="images/step3-mobile.jpg" alt="" data-rjs="2">
+          </li>
+          <li>
+            <img src="images/step3-mobile.jpg" alt="" data-rjs="2">
+          </li>
+          <li>
+            <img src="images/step3-mobile.jpg" alt="" data-rjs="2">
+          </li>
+        </ul>
+      </div>
   
-  
-  <section class="header">
-    Footer
+      <div>
+        <div>step 3</div>
+        <h3>Sed leo enim, condimentum</h3>
+        <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+      </div>
+    </div>
   </section>
--->
+  <section class="meet">
+    <h2>Meet a partner for your best holiday</h2>
+    <ul>
+      <li>
+        <div>
+          <img src="images/avatar1.jpg" alt="Bradley Hunter" data-rjs="2">
+          <a href="" class="icon-circle icon-circle__red">
+            <svg class="icon icon__tv">
+              <use xlink:href="./i/sprite.svg#tv"></use>
+            </svg>
+          </a>
+          <h3>Bradley Hunter</h3>
+          <p>Based in Chicago. I love playing tennis and loud music.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="images/avatar2.jpg" alt="Heather Walker" data-rjs="2">
+          <a href="" class="icon-circle icon-circle__yellow">
+            <svg class="icon icon__bottle">
+              <use xlink:href="./i/sprite.svg#bottle"></use>
+            </svg>
+          </a>
+          <h3>Heather Walker</h3>
+          <p>I'm a happy person that loves cats and climbing on mountains.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="images/avatar3.jpg" alt="Lucas Marsha" data-rjs="2">
+          <a href="" class="icon-circle icon-circle__aqua">
+            <svg class="icon icon__cup">
+              <use xlink:href="./i/sprite.svg#cup"></use>
+            </svg>
+          </a>
+          <h3>Lucas Marsha</h3>
+          <p>I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="images/avatar4.jpg" alt="Bradley Hunter" data-rjs="2">
+          <a href="" class="icon-circle icon-circle__blue">
+            <svg class="icon icon__plane">
+              <use xlink:href="./i/sprite.svg#plane"></use>
+            </svg>
+          </a>
+          <h3>Bradley Hunter</h3>
+          <p>Based in Chicago. I love playing tennis and loud music.</p>
+        </div>
+      </li>
+    </ul>
+    <a href="">See other partners</a>
+  </section>
+  <section class="discover">
+    <h2>Discover holiday activity ideas</h2>
+  
+    <div class="images-container"></div>
+  
+    <script type="text/template" id="pictures">
+      <div class="images">
+        <div class="images__gridsize"></div>
+        <% for (var i = 0; i < data.length; i++) { %>
+          <% if ((i !== 4) && (i !== 5)) {%>
+            <div class="images__item images__item">
+              <img src="<%= data[i] %>" alt="random photo №<%= i %>" class="images__img">
+            </div>
+            <% } else { %>
+              <div class="images__item images__item_2x">
+                <img src="<%= data[i] %>" alt="random photo №<%= i %>" class="images__img">
+              </div>
+              <% } %>
+                <% }; %>
+      </div>
+    </script>
+  
+  </section>
+  
+  <section class="search">
+    <h2>Discover holiday activity ideas</h2>
+    <p>Hi! What are your holiday interests?</p>
+    <form action="#" class="form">
+      <input type="text" placeholder="enter your interests" class="input">
+      <input type="button" value="search partners" class="button">
+    </form>
+  </section>
+  <footer class="footer">
+    <a href="" class="logo">urlaubsgl&uuml;ck</a>
+    <ul>
+      <li><a href="">company</a>
+        <ul>
+          <li>
+            <a href="">about</a>
+          </li>
+          <li>
+            <a href="">contacts</a>
+          </li>
+          <li>
+            <a href="">press</a>
+          </li>
+          <li>
+            <a href="">blog</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="">partners</a></li>
+    </ul>
+  
+    <a href="">
+      <img src="images/logo.jpg" alt="Designed by ARETO Development" data-rjs="2">
+    </a>
+  </footer>
 
 
-  <script src="js/script.js" async></script>
+  <script src="js/jquery.flexslider.js" async></script>
+  <script src="js/pixabay.js" async></script>
+  <script src="js/masonry.js" async></script>
+
+  <!--  <script src="js/script.js" async></script>-->
+
 </body>
 
 </html>
