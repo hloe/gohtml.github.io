@@ -15,8 +15,21 @@
   transition: all .3s ease-out;
 }
 
-//Montserrat Bold
-//Montserrat Regular
-//Roboto Light
-//
-//all: Arial, sans-serif;
+@mixin montserrat-bold {
+  	font-family: 'Montserrat Bold', Arial, sans-serif;
+font-weight: bold;
+  font-style: normal;
+}
+
+@mixin montserrat-regular {
+  font-family: 'Montserrat Regular', Arial, sans-serif;
+font-weight: normal;
+  font-style: normal;
+}
+
+@mixin roboto {
+  font-family: 'Roboto Light', Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+

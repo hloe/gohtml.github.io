@@ -1,2 +1,35 @@
 @import "../core/_core.scss";
-.header {}
+.header {
+  padding-top: 20px;
+  padding-bottom: 149px;
+  background-color: $header;
+  @include retina('../images/header-mobile.jpg', 2, cover, top center no-repeat);
+  text-align: center;
+  &__logo {
+       margin-top: 117px;
+  }
+  &__title {
+    margin-top: 32px;
+  }
+  &__subtitle {
+    width: 70%;
+    margin: 13px auto 27px;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $white;
+  }
+  &__link {
+    padding: 11px 50px 10px;
+    background-color: $red;
+    border-radius: 20px;
+    @include montserrat-bold;
+    font-size: .875rem;
+    line-height: 1;
+    word-spacing: 2px;
+    color: $white;
+    &:hover {
+      @include transition;
+      background-color: $red-hover;
+    }
+  }
+}

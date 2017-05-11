@@ -1,0 +1,34 @@
+@import "../core/_core.scss";
+.step-background {
+  width: 100%;
+  height: 240px;
+  border: 2px solid $white;
+  border-radius: 8px;
+  &_11 {
+    @include retina('../images/step11-mobile.jpg', 2, cover, top center no-repeat);
+  }
+  &_12 {
+    @include retina('../images/step12-mobile.jpg', 2, cover, top center no-repeat);
+  }
+  &_13 {
+    @include retina('../images/step13-mobile.jpg', 2, cover, top center no-repeat);
+  }
+  &_21 {
+    @include retina('../images/step21-mobile.jpg', 2, cover, top center no-repeat);
+  }
+  &_22 {
+    @include retina('../images/step22-mobile.jpg', 2, cover, top center no-repeat);
+  }
+  &_23 {
+    @include retina('../images/step23-mobile.jpg', 2, cover, top center no-repeat);
+  }
+  &_31 {
+    @include retina('../images/step31-mobile.jpg', 2, cover, top center no-repeat);
+  }
+  &_32 {
+    @include retina('../images/step32-mobile.jpg', 2, cover, top center no-repeat);
+  }
+  &_33 {
+    @include retina('../images/step33-mobile.jpg', 2, cover, top center no-repeat);
+  }
+}

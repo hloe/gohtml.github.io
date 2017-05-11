@@ -1,0 +1,23 @@
+@import "../core/_core.scss";
+.nav {
+  display: flex;
+   flex-direction: column;
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    display: block;
+    padding: 9px 16px;
+    @include montserrat-bold;
+    font-size: .875rem;
+    line-height: 1;
+    color: $white;
+    border: .125rem solid transparent;
+    border-radius: 23px;
+    &:hover {
+      @include transition;
+      border: .125rem solid $white;
+    }
+  }
+}

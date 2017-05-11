@@ -1,0 +1,12 @@
+@import "../core/_core.scss";
+.logo {
+  @include montserrat-bold;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1px;
+  &__header {
+    font-size: 20px;
+    color: $white;
+  }
+  &__footer {}
+}

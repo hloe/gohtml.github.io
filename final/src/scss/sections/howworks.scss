@@ -1,1 +1,38 @@
 @import "../core/_core.scss";
+.how {
+  padding-top: 37px;
+  padding-bottom: 20px;
+  &__title {
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  &__container {
+    position: relative;
+  }
+  &__step {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.step {
+  padding: 69px 20px 0;
+  color: $white;
+  &__number {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 7px 14px;
+    background-color: $red;
+    border-radius: 20px;
+    @include montserrat-regular;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  &__title {
+    margin-bottom: 13px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
