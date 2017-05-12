@@ -1,1 +1,61 @@
 @import "../core/_core.scss";
+.meet {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  text-align: center;
+  &__title {
+    width: 90%;
+    margin: 0 auto 15px;
+    line-height: 1.1;
+    letter-spacing: .2px;
+    word-spacing: 0;
+  }
+  &__link {
+    display: block;
+    width: 280px;
+    height: 40px;
+    margin: 0 auto;
+    border: .125rem solid $red;
+    border-radius: 20px;
+    @include montserrat-bold;
+    font-size: .875rem;
+    line-height: 36px;
+    word-spacing: 1.5px;
+    color: $red;
+    text-align: center;
+    vertical-align: middle;
+    &:hover {
+      @include transition;
+      background-color: $red;
+      color: $white;
+    }
+  }
+}
+
+.user {
+  position: relative;
+  width: 122px;
+  height: 122px;
+  margin: 0 auto 19px;
+  &__photo {
+    border-radius: 50%;
+  }
+  &__icon {
+    position: absolute;
+    bottom: -3px;
+    right: -2px;
+  }
+  &__title {
+    margin-bottom: 16px;
+    font-size: .875rem;
+    word-spacing: 1.5px;
+    color: $dark-gray;
+  }
+  &__text {
+    width: 68%;
+    margin: 0 auto 29px;
+    font-size: .875rem;
+    line-height: 1.2;
+    color: $light-gray;
+  }
+}

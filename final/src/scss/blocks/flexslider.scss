@@ -457,13 +457,18 @@ html[xmlns] .flexslider .slides {
   display: block;
   width: 30px;
   height: 55px;
-  content: url(../images/left-arrow.png);
+    content: '';
   color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  @media (min-width: 40rem) {
+    content: url(../images/left-arrow.png);
+  }
 }
 
 .flex-direction-nav a.flex-next:before {
-  content: url(../images/right-arrow.png);
+   content: '';
+  @media (min-width: 40rem) {
+    content: url(../images/right-arrow.png);
+  }
 }
 
 .flex-direction-nav .flex-prev {

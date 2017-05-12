@@ -1,0 +1,54 @@
+@import "../core/_core.scss";
+.input {
+  box-sizing: border-box;
+  width: 280px;
+  height: 40px;
+  border: 1px solid $gray-border;
+  border-radius: .25rem;
+  outline-width: 0;
+  padding-left: 16px;
+  line-height: 38;
+  vertical-align: middle;
+  color: $input;
+}
+
+::-webkit-input-placeholder {
+  @include roboto;
+  font-size: .875rem;
+  color: $input;
+}
+
+::-moz-placeholder {
+  @include roboto;
+  font-size: .875rem;
+  color: $input;
+}
+
+:-moz-placeholder {
+  @include roboto;
+  font-size: .875rem;
+  color: $input;
+}
+
+:-ms-input-placeholder {
+  @include roboto;
+  font-size: .875rem;
+  color: $input;
+}
+
+.button {
+  width: 280px;
+  height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  outline-width: 0;
+  background-color: $red;
+  @include montserrat-bold;
+  font-size: .875rem;
+  text-align: center;
+  color: $white;
+  &:hover {
+    @include transition;
+    background-color: $red-hover;
+  }
+}
