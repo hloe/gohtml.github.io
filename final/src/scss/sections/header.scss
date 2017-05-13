@@ -5,11 +5,24 @@
   background-color: $header;
   @include retina('../images/header-mobile.jpg', 2, cover, top center no-repeat);
   text-align: center;
+  @media (min-width: 40rem) {
+    @include retina('../images/header-tablet.jpg', 2, cover, top center no-repeat);
+    padding-top: 39px;
+    padding-bottom: 234px;
+  }
   &__logo {
-       margin-top: 117px;
+    margin-top: 117px;
+    @media (min-width: 40rem) {
+      margin-top: 0;
+      margin-left: 48px;
+    }
   }
   &__title {
     margin-top: 32px;
+    @media (min-width: 40rem) {
+      margin: 142px auto 0;
+      width: 79%;
+    }
   }
   &__subtitle {
     width: 70%;
@@ -17,9 +30,18 @@
     font-size: 18px;
     line-height: 1.2;
     color: $white;
+    @media (min-width: 40rem) {
+      margin: 30px auto 36px;
+      font-size: 24px;
+    }
   }
   &__link {
-    padding: 11px 50px 10px;
+    display: block;
+    width: 90%;
+    max-width: 280px;
+    margin: 0 auto;
+    padding-top: 11px;
+    padding-bottom: 11px;
     background-color: $red;
     border-radius: 20px;
     @include montserrat-bold;
@@ -30,6 +52,13 @@
     &:hover {
       @include transition;
       background-color: $red-hover;
+    }
+    @media (min-width: 40rem) {
+      width: 226px;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: middle;
+      padding: 0;
     }
   }
 }
