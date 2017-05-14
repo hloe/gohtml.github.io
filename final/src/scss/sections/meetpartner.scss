@@ -1,14 +1,40 @@
 @import "../core/_core.scss";
 .meet {
-  padding-top: 15px;
   padding-bottom: 19px;
   text-align: center;
+  @media (min-width: 40rem) {
+    padding-top: 47px;
+  }
   &__title {
     width: 90%;
     margin: 0 auto 15px;
     line-height: 1.1;
     letter-spacing: .2px;
     word-spacing: 0;
+    @media (min-width: 40rem) {
+      margin-bottom: 33px;
+    }
+  }
+  &__list {
+    @media (min-width: 40rem) {
+      display: flex;
+      flex-flow: row wrap;
+      width: 66%;
+      margin: 0 auto;
+    }
+  }
+  &__item {
+    @media (min-width: 40rem) {
+      flex: 0 0 50%;
+      &:nth-of-type(1) {
+        order: -2;
+        margin-bottom: 27px;
+      }
+      &:nth-of-type(3) {
+        order: -1;
+        margin-bottom: 27px;
+      }
+    }
   }
   &__link {
     display: block;
@@ -29,14 +55,25 @@
       background-color: $red;
       color: $white;
     }
+    @media (min-width: 40rem) {
+      width: 192px;
+      margin-top: 7px;
+    }
   }
 }
 
 .user {
-  position: relative;
-  width: 122px;
-  height: 122px;
-  margin: 0 auto 19px;
+  margin: 0 auto;
+  @media (min-width: 40rem) {
+    margin: 0;
+    padding: 0 10px;
+  }
+  &__avatar {
+    position: relative;
+    width: 122px;
+    height: 122px;
+    margin: 0 auto;
+  }
   &__photo {
     border-radius: 50%;
   }
@@ -46,6 +83,7 @@
     right: -2px;
   }
   &__title {
+    margin-top: 19px;
     margin-bottom: 16px;
     font-size: .875rem;
     word-spacing: 1.5px;
@@ -57,5 +95,8 @@
     font-size: .875rem;
     line-height: 1.2;
     color: $light-gray;
+    @media (min-width: 40rem) {
+      width: 94%;
+    }
   }
 }

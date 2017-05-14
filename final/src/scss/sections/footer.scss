@@ -3,8 +3,21 @@
   border-top: .25rem solid $red;
   padding-top: 18px;
   text-align: center;
+  @media (min-width: 40rem) {
+    padding: 38px 39px 39px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__menu {
     margin-top: 14px;
+    @media (min-width: 40rem) {
+      margin-top: 0;
+    }
+  }
+  &__designed {
+    text-align: right;
   }
   &__span {
     @include montserrat-bold;

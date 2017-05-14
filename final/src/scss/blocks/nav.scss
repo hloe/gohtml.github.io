@@ -10,9 +10,10 @@
   &__list {
     display: flex;
     justify-content: center;
-    margin: 0  auto;
+    margin: 0 auto;
     @media (min-width: 40rem) {
-      margin-right: 50px;}
+      margin-right: 50px;
+    }
   }
   &__link {
     display: block;
@@ -35,16 +36,29 @@
     @include montserrat-bold;
     font-size: .875rem;
     text-transform: capitalize;
+    @media (min-width: 40rem) {
+      display: flex;
+      margin-left: -40px;
+    }
   }
   &__sublist {
     display: flex;
     justify-content: center;
     @include roboto;
+    @media (min-width: 40rem) {
+      flex-direction: column;
+    }
   }
   &__item {
     margin-bottom: 16px;
     &:last-of-type {
       margin-bottom: 13px;
+    }
+    @media (min-width: 40rem) {
+      margin-right: 103px;
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
   &__subitem {
@@ -52,6 +66,9 @@
     margin-right: 13px;
     &:last-of-type {
       margin-right: 0;
+    }
+    @media (min-width: 40rem) {
+      margin-top: 16px;
     }
   }
   &__link {

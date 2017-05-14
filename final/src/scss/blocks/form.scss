@@ -10,6 +10,9 @@
   line-height: 38;
   vertical-align: middle;
   color: $input;
+  @media (min-width: 40rem) {
+    width: 240px;
+  }
 }
 
 ::-webkit-input-placeholder {
@@ -50,5 +53,8 @@
   &:hover {
     @include transition;
     background-color: $red-hover;
+  }
+  @media (min-width: 40rem) {
+    width: 160px;
   }
 }

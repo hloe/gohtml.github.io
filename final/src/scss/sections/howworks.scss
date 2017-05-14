@@ -1,14 +1,31 @@
 @import "../core/_core.scss";
 .how {
   padding-top: 37px;
-  padding-bottom: 14px;
+  @media (min-width: 40rem) {
+    padding-top: 98px;
+    padding-bottom: 50px;
+  }
   &__title {
-    margin-bottom: 11px;
+    margin-bottom: 14px;
     letter-spacing: .35px;
     text-align: center;
+    @media (min-width: 40rem) {
+      margin-bottom: 33px;
+    }
+  }
+  &__sliders {
+    @media (min-width: 40rem) {
+      display: flex;
+      flex-direction: row;
+    }
   }
   &__container {
     position: relative;
+    @media (min-width: 40rem) {
+      flex: 0 0 33%;
+      margin: 0 10px;
+      ;
+    }
   }
   &__step {
     position: absolute;

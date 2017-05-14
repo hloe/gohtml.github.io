@@ -4,16 +4,20 @@
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 1px;
-      &:hover {
-      @include transition;
-      color: $red-hover;
-    }
   &__header {
     font-size: 20px;
     color: $white;
+          &:hover {
+      @include transition;
+      color: $gray-border;
+    }
   }
   &__footer {
     font-size: 1rem;
     color: $red;
+          &:hover {
+      @include transition;
+      color: $red-hover;
+    }
   }
 }

@@ -8,7 +8,7 @@
   @media (min-width: 40rem) {
     @include retina('../images/header-tablet.jpg', 2, cover, top center no-repeat);
     padding-top: 39px;
-    padding-bottom: 234px;
+    padding-bottom: 232px;
   }
   &__logo {
     margin-top: 117px;
@@ -31,7 +31,7 @@
     line-height: 1.2;
     color: $white;
     @media (min-width: 40rem) {
-      margin: 30px auto 36px;
+      margin: 30px auto 34px;
       font-size: 24px;
     }
   }
