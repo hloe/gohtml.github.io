@@ -5,6 +5,10 @@
   @media (min-width: 40rem) {
     padding-top: 47px;
   }
+  @media (min-width: 64rem) {
+    padding-top: 45px;
+    padding-bottom: 20px;
+  }
   &__title {
     width: 90%;
     margin: 0 auto 15px;
@@ -14,6 +18,9 @@
     @media (min-width: 40rem) {
       margin-bottom: 33px;
     }
+    @media (min-width: 64rem) {
+      margin-bottom: 31px;
+    }
   }
   &__list {
     @media (min-width: 40rem) {
@@ -22,10 +29,14 @@
       width: 66%;
       margin: 0 auto;
     }
+    @media (min-width: 64rem) {
+      flex-wrap: nowrap;
+      width: 100%;
+    }
   }
   &__item {
     @media (min-width: 40rem) {
-      flex: 0 0 50%;
+      flex: 0 1 50%;
       &:nth-of-type(1) {
         order: -2;
         margin-bottom: 27px;
@@ -97,6 +108,9 @@
     color: $light-gray;
     @media (min-width: 40rem) {
       width: 94%;
+    }
+    @media (min-width: 64rem) {
+      margin-bottom: 32px;
     }
   }
 }

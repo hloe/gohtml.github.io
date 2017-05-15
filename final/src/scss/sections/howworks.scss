@@ -5,6 +5,9 @@
     padding-top: 98px;
     padding-bottom: 50px;
   }
+  @media (min-width: 64rem) {
+    padding-bottom: -47px;
+  }
   &__title {
     margin-bottom: 14px;
     letter-spacing: .35px;
@@ -17,14 +20,22 @@
     @media (min-width: 40rem) {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      padding: 0 5px;
     }
   }
   &__container {
     position: relative;
     @media (min-width: 40rem) {
-      flex: 0 0 33%;
-      margin: 0 10px;
-      ;
+      flex: 0 1 32%;
+    }
+    @media (min-width: 64rem) {
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
   &__step {
@@ -37,20 +48,37 @@
 .step {
   padding: 69px 20px 0;
   color: $white;
+  @media (min-width: 40rem) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    bottom: 16px;
+  }
   &__number {
-    display: inline-block;
-    margin-bottom: 15px;
-    padding: 7px 14px;
+    display: block;
+    width: 70px;
+    height: 20px;
+    margin-bottom: 17px;
     background-color: $red;
     border-radius: 20px;
     @include montserrat-regular;
     font-size: 10px;
+    line-height: 20px;
     letter-spacing: 2px;
+    vertical-align: middle;
+    text-align: center;
     text-transform: uppercase;
+
   }
   &__title {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
     font-size: 24px;
     line-height: 1.2;
+  }
+  &__text {
+    @include roboto;
+    font-size: 14px;
+    line-height: 1.25;
+    color: $gray-border;
   }
 }

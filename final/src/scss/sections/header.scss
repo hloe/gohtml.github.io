@@ -10,11 +10,19 @@
     padding-top: 39px;
     padding-bottom: 232px;
   }
+  @media (min-width: 64rem) {
+    @include retina('../images/header-desktop.jpg', 2, cover, top center no-repeat);
+    padding-top: 40px;
+    padding-bottom: 234px;
+  }
   &__logo {
     margin-top: 117px;
     @media (min-width: 40rem) {
       margin-top: 0;
       margin-left: 48px;
+    }
+    @media (min-width: 64rem) {
+      margin-left: 0;
     }
   }
   &__title {
@@ -22,6 +30,9 @@
     @media (min-width: 40rem) {
       margin: 142px auto 0;
       width: 79%;
+    }
+    @media (min-width: 64rem) {
+      width: 60%;
     }
   }
   &__subtitle {
@@ -33,6 +44,9 @@
     @media (min-width: 40rem) {
       margin: 30px auto 34px;
       font-size: 24px;
+    }
+    @media (min-width: 64rem) {
+      margin-top: 28px;
     }
   }
   &__link {

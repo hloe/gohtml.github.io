@@ -7,7 +7,7 @@
   &__header {
     font-size: 20px;
     color: $white;
-          &:hover {
+        &:hover {
       @include transition;
       color: $gray-border;
     }

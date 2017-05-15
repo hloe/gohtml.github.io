@@ -7,10 +7,16 @@
   @media (min-width: 40rem) {
     height: 404px;
   }
+  @media (min-width: 64rem) {
+    height: 400px;
+  }
   &_11 {
     @include retina('../images/step11-mobile.jpg', 2, cover, top center no-repeat);
     @media (min-width: 40rem) {
       @include retina('../images/step11-tablet.jpg', 2, cover, top center no-repeat);
+    }
+    @media (min-width: 64rem) {
+      @include retina('../images/step11-desktop.jpg', 2, cover, top center no-repeat);
     }
   }
   &_12 {
@@ -18,11 +24,17 @@
     @media (min-width: 40rem) {
       @include retina('../images/step12-tablet.jpg', 2, cover, top center no-repeat);
     }
+    @media (min-width: 64rem) {
+      @include retina('../images/step12-desktop.jpg', 2, cover, top center no-repeat);
+    }
   }
   &_13 {
     @include retina('../images/step13-mobile.jpg', 2, cover, top center no-repeat);
     @media (min-width: 40rem) {
       @include retina('../images/step13-tablet.jpg', 2, cover, top center no-repeat);
+    }
+    @media (min-width: 64rem) {
+      @include retina('../images/step13-desktop.jpg', 2, cover, top center no-repeat);
     }
   }
   &_21 {
@@ -30,11 +42,17 @@
     @media (min-width: 40rem) {
       @include retina('../images/step21-tablet.jpg', 2, cover, top center no-repeat);
     }
+    @media (min-width: 64rem) {
+      @include retina('../images/step21-desktop.jpg', 2, cover, top center no-repeat);
+    }
   }
   &_22 {
     @include retina('../images/step22-mobile.jpg', 2, cover, top center no-repeat);
     @media (min-width: 40rem) {
       @include retina('../images/step22-tablet.jpg', 2, cover, top center no-repeat);
+    }
+    @media (min-width: 64rem) {
+      @include retina('../images/step22-desktop.jpg', 2, cover, top center no-repeat);
     }
   }
   &_23 {
@@ -42,11 +60,17 @@
     @media (min-width: 40rem) {
       @include retina('../images/step23-tablet.jpg', 2, cover, top center no-repeat);
     }
+    @media (min-width: 64rem) {
+      @include retina('../images/step23-desktop.jpg', 2, cover, top center no-repeat);
+    }
   }
   &_31 {
     @include retina('../images/step31-mobile.jpg', 2, cover, top center no-repeat);
     @media (min-width: 40rem) {
       @include retina('../images/step31-tablet.jpg', 2, cover, top center no-repeat);
+    }
+    @media (min-width: 64rem) {
+      @include retina('../images/step31-desktop.jpg', 2, cover, top center no-repeat);
     }
   }
   &_32 {
@@ -54,11 +78,17 @@
     @media (min-width: 40rem) {
       @include retina('../images/step32-tablet.jpg', 2, cover, top center no-repeat);
     }
+    @media (min-width: 64rem) {
+      @include retina('../images/step32-desktop.jpg', 2, cover, top center no-repeat);
+    }
   }
   &_33 {
     @include retina('../images/step33-mobile.jpg', 2, cover, top center no-repeat);
     @media (min-width: 40rem) {
       @include retina('../images/step33-tablet.jpg', 2, cover, top center no-repeat);
+    }
+    @media (min-width: 64rem) {
+      @include retina('../images/step33-desktop.jpg', 2, cover, top center no-repeat);
     }
   }
 }

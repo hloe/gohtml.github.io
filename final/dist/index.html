@@ -15,27 +15,26 @@
 </head>
 
 <body>
- 
- <div style="width: 768px; margin: 0 auto">
-    <!--to delete-->
 
   <header class="header">
-    <nav class="nav">
-      <ul class="nav__list">
-        <li>
-          <a href="" class="nav__link">Log in</a>
-        </li>
-        <li>
-          <a href="" class="nav__link">Sign up</a>
-        </li>
-      </ul>
-      <a href="" class="logo logo__header header__logo">urlaubsgl&uuml;ck</a>
-    </nav>
-    <h1 class="header__title">Share your holiday dreams</h1>
-    <p class="header__subtitle">And find the perfect partner to fullfill it</p>
-    <a href="" class="header__link">Find your holiday partner</a>
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li>
+            <a href="" class="nav__link">Log in</a>
+          </li>
+          <li>
+            <a href="" class="nav__link">Sign up</a>
+          </li>
+        </ul>
+        <a href="" class="logo logo__header header__logo">urlaubsgl&uuml;ck</a>
+      </nav>
+      <h1 class="header__title">Share your holiday dreams</h1>
+      <p class="header__subtitle">And find the perfect partner to fullfill it</p>
+      <a href="" class="header__link">Find your holiday partner</a>
+    </div>
   </header>
-  <section class="how">
+  <section class="how container">
     <h2 class="how__title">How Urlaubsgl&uuml;ck works?</h2>
   
     <div class="how__sliders">
@@ -57,7 +56,7 @@
         <div class="step how__step">
           <div class="step__number">step 1</div>
           <h3 class="step__title">Sed leo enim, condimentum</h3>
-          <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+          <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
         </div>
       </div>
   
@@ -79,7 +78,7 @@
         <div class="step how__step">
           <div class="step__number">step 2</div>
           <h3 class="step__title">Morbi velit risus</h3>
-          <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+          <p class="step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
         </div>
       </div>
   
@@ -100,14 +99,14 @@
         <div class="step how__step">
           <div class="step__number">step 3</div>
           <h3 class="step__title">Sed leo enim, condimentum</h3>
-          <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+          <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
         </div>
       </div>
   
     </div>
   
   </section>
-  <section class="meet">
+  <section class="meet container">
     <h2 class="meet__title">Meet a partner for your best holiday</h2>
     <ul class="meet__list">
       <li class="meet__item">
@@ -169,7 +168,7 @@
     </ul>
     <a href="" class="meet__link">See other partners</a>
   </section>
-  <section class="discover">
+  <section class="discover container">
     <h2 class="discover__title">Discover holiday activity ideas</h2>
   
     <div class="images-container"></div>
@@ -193,7 +192,7 @@
   
   </section>
   
-  <section class="search">
+  <section class="search container">
     <h2 class="search__title">Discover holiday activity ideas</h2>
     <p class="search__text">Hi! What are your holiday interests?</p>
     <form action="#" class="form">
@@ -207,45 +206,43 @@
       </ul>
     </form>
   </section>
-  <footer class="footer">
-    <a href="" class="logo logo__footer">urlaubsgl&uuml;ck</a>
-    <nav class="footer-nav footer__menu">
-      <ul class="footer-nav__list">
-        <li class="footer-nav__item">
-          <a href="" class="footer-nav__link">company</a>
-          <ul class="footer-nav__sublist">
-            <li class="footer-nav__subitem">
-              <a href="" class="footer-nav__sublink">about</a>
-            </li>
-            <li class="footer-nav__subitem">
-              <a href="" class="footer-nav__sublink">contacts</a>
-            </li>
-            <li class="footer-nav__subitem">
-              <a href="" class="footer-nav__sublink">press</a>
-            </li>
-            <li class="footer-nav__subitem">
-              <a href="" class="footer-nav__sublink">blog</a>
-            </li>
-          </ul>
-        </li>
-        <li class="footer-nav__item">
-          <a href="" class="footer-nav__link">partners</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="footer-wrapper">
+    <footer class="footer container">
+      <a href="" class="logo logo__footer footer__logo">urlaubsgl&uuml;ck</a>
+      <nav class="footer-nav footer__menu">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link">company</a>
+            <ul class="footer-nav__sublist">
+              <li class="footer-nav__subitem">
+                <a href="" class="footer-nav__sublink">about</a>
+              </li>
+              <li class="footer-nav__subitem">
+                <a href="" class="footer-nav__sublink">contacts</a>
+              </li>
+              <li class="footer-nav__subitem">
+                <a href="" class="footer-nav__sublink">press</a>
+              </li>
+              <li class="footer-nav__subitem">
+                <a href="" class="footer-nav__sublink">blog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link">partners</a>
+          </li>
+        </ul>
+      </nav>
   
-    <div class="footer__designed">
-      <span class="footer__span">designed by</span>
-      <a href="" class="footer__link" target="_blank">
-        <img src="images/logo.jpg" alt="Designed by ARETO Development" data-rjs="2">
-      </a>
-    </div>
-  </footer>
- 
-
-    <!--to delete-->
+      <div class="footer__designed">
+        <span class="footer__span">designed by</span>
+        <a href="" class="footer__link" target="_blank">
+          <img src="images/logo.jpg" alt="Designed by ARETO Development" data-rjs="2">
+        </a>
+      </div>
+  
+    </footer>
   </div>
-
 
   <script src="js/jquery.flexslider.js" async></script>
   <script src="js/pixabay.js" async></script>

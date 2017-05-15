@@ -7,11 +7,17 @@
     padding-top: 77px;
     padding-bottom: 42px;
   }
+  @media (min-width: 64rem) {
+    padding-bottom: 52px;
+  }
   &__title {
     line-height: 1.2;
     padding-bottom: 15px;
     @media (min-width: 40rem) {
       margin-bottom: 19px;
+    }
+    @media (min-width: 64rem) {
+      margin-bottom: 35px;
     }
   }
 }
