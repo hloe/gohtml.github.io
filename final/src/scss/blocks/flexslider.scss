@@ -68,7 +68,6 @@ html[xmlns] .flexslider .slides {
 
 .flexslider {
   margin: 0;
-  // border: 4px solid #fff;
   position: relative;
   zoom: 1;
 }
@@ -83,7 +82,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-viewport {
-  max-height: 2000px;
+  max-height: 125rem;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -92,11 +91,11 @@ html[xmlns] .flexslider .slides {
 }
 
 .loading .flex-viewport {
-  max-height: 300px;
+  max-height: 18.75rem;
 }
 
 .carousel li {
-  margin-right: 5px;
+  margin-right: .313rem;
 }
 
 .flex-direction-nav {
@@ -106,9 +105,9 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
-  width: 30px;
-  height: 55px;
-  margin: -22.5px 0 0;
+  width: 1.875rem;
+  height: 3.438rem;
+  margin: -1.406rem 0 0;
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -122,7 +121,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav a:before {
-  font-size: 40px;
+  font-size: 2.5rem;
   display: inline-block;
   content: '';
 }
@@ -164,11 +163,11 @@ html[xmlns] .flexslider .slides {
 
 .flex-pauseplay a {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1.125rem;
+  height: 1.125rem;
   position: absolute;
-  bottom: 5px;
-  left: 10px;
+  bottom: .313rem;
+  left: .625rem;
   opacity: 0.8;
   z-index: 10;
   overflow: hidden;
@@ -177,7 +176,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-pauseplay a:before {
-  font-size: 20px;
+  font-size: 1.25rem;
   display: inline-block;
   content: '\f004';
 }
@@ -190,34 +189,22 @@ html[xmlns] .flexslider .slides {
   content: '\f003';
 }
 
-//.flex-control-nav {
-//  width: 100%;
-//  position: absolute;
-//  bottom: -40px;
-//  text-align: center;
-//}
 .flex-control-nav li {
-  margin: 0 6px;
+  margin: 0 .375rem;
   display: inline-block;
   zoom: 1;
   *display: inline;
 }
 
 .flex-control-paging li a {
-  width: 11px;
-  height: 11px;
+  width: .688rem;
+  height: .688rem;
   display: block;
   background: #666;
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  text-indent: -9999px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  text-indent: -925rem;
+  border-radius: 1.25rem;
 }
 
 .flex-control-paging li a:hover {
@@ -232,7 +219,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-control-thumbs {
-  margin: 5px 0 0;
+  margin: .313rem 0 0;
   position: static;
   overflow: hidden;
 }
@@ -249,11 +236,6 @@ html[xmlns] .flexslider .slides {
   display: block;
   opacity: .7;
   cursor: pointer;
-  -moz-user-select: none;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
   transition: all 1s ease;
 }
 
@@ -271,14 +253,14 @@ html[xmlns] .flexslider .slides {
  * RESPONSIVE
  * ====================================================================================================================*/
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 53.75rem) {
   .flex-direction-nav .flex-prev {
     opacity: 1;
-    left: 10px;
+    left: .625rem;
   }
   .flex-direction-nav .flex-next {
     opacity: 1;
-    right: 10px;
+    right: .625rem;
   }
 }
 
@@ -317,7 +299,6 @@ html[xmlns] .flexslider .slides {
 
 .flexslider .slides > li {
   display: none;
-  -webkit-backface-visibility: hidden;
 }
 
 .flexslider .slides img {
@@ -365,20 +346,16 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-viewport {
-  max-height: 2000px;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
+  max-height: 125rem;
   transition: all 1s ease;
 }
 
 .loading .flex-viewport {
-  max-height: 300px;
+  max-height: 18.75rem;
 }
 
 .carousel li {
-  margin-right: 5px;
+  margin-right: .313rem;
 }
 
 .flex-direction-nav {
@@ -388,31 +365,27 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
-  width: 30px;
-  height: 55px;
+  width: 1.875rem;
+  height: 3.438rem;
   top: 0;
-  margin-top: 62.5px;
+  margin-top: 3.906rem;
   position: absolute;
   z-index: 10;
   overflow: hidden;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  text-shadow: .063rem .063rem 0 rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease-in-out;
   @media (min-width: 64rem) {
     top: 50%;
-    margin-top: -44px;
+    margin-top: -2.75rem;
   }
 }
 
 .flex-direction-nav a:before {
   display: block;
-  width: 30px;
-  height: 55px;
+  width: 1.875rem;
+  height: 3.438rem;
   content: '';
   color: rgba(0, 0, 0, 0.8);
   @media (min-width: 40rem) {
@@ -428,19 +401,25 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav .flex-prev {
-  left: 13px;
-  @media (min-width: 64rem) {left: 21px;}
+  left: .813rem;
+  @media (min-width: 64rem) {
+    left: 1.313rem;
+  }
 }
 
 .flex-direction-nav .flex-next {
-  right: 13px;
-  @media (min-width: 64rem) {right: 21px;}
+  right: .813rem;
+  @media (min-width: 64rem) {
+    right: 1.313rem;
+  }
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
-  left: 13px;
-  @media (min-width: 64rem) {left: 21px;}
+  left: .813rem;
+  @media (min-width: 64rem) {
+    left: 1.313rem;
+  }
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
@@ -449,8 +428,10 @@ html[xmlns] .flexslider .slides {
 
 .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
-  right: 13px;
-  @media (min-width: 64rem) {right: 21px;}
+  right: .813rem;
+  @media (min-width: 64rem) {
+    right: 1.313rem;
+  }
 }
 
 .flexslider:hover .flex-direction-nav .flex-next:hover {
@@ -466,11 +447,11 @@ html[xmlns] .flexslider .slides {
 
 .flex-pauseplay a {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   position: absolute;
-  bottom: 5px;
-  left: 10px;
+  bottom: .313rem;
+  left: .625rem;
   opacity: 0.8;
   z-index: 10;
   overflow: hidden;
@@ -479,7 +460,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-pauseplay a:before {
-  font-size: 20px;
+  font-size: 1.25rem;
   display: inline-block;
   content: '\f004';
 }
@@ -495,32 +476,26 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  bottom: -40px;
+  bottom: -2.5rem;
   text-align: center;
 }
 
 .flex-control-nav li {
-  margin: 0 6px;
+  margin: 0 .375rem;
   display: inline-block;
   zoom: 1;
   *display: inline;
 }
 
 .flex-control-paging li a {
-  width: 11px;
-  height: 11px;
+  width: .688rem;
+  height: .688rem;
   display: block;
   background: #666;
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  text-indent: -9999px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  text-indent: -625rem;
+  border-radius: 1.25rem;
 }
 
 .flex-control-paging li a:hover {
@@ -535,7 +510,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-control-thumbs {
-  margin: 5px 0 0;
+  margin: .313rem 0 0;
   position: static;
   overflow: hidden;
 }
@@ -553,10 +528,6 @@ html[xmlns] .flexslider .slides {
   opacity: .7;
   cursor: pointer;
   -moz-user-select: none;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
   transition: all 1s ease;
 }
 
@@ -574,13 +545,13 @@ html[xmlns] .flexslider .slides {
  * RESPONSIVE
  * ====================================================================================================================*/
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 53.75rem) {
   .flex-direction-nav .flex-prev {
     opacity: 1;
-    left: 10px;
+    left: .625rem;
   }
   .flex-direction-nav .flex-next {
     opacity: 1;
-    right: 10px;
+    right: .625rem;
   }
 }

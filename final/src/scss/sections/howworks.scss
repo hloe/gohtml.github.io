@@ -1,19 +1,19 @@
 @import "../core/_core.scss";
 .how {
-  padding-top: 37px;
+  padding-top: 2.313rem;
   @media (min-width: 40rem) {
-    padding-top: 98px;
-    padding-bottom: 50px;
+    padding-top: 6.125rem;
+    padding-bottom: 3.125rem;
   }
   @media (min-width: 64rem) {
-    padding-bottom: -47px;
+    padding-bottom: -2.938rem;
   }
   &__title {
-    margin-bottom: 14px;
-    letter-spacing: .35px;
+    margin-bottom: .875rem;
+    letter-spacing: .022rem;
     text-align: center;
     @media (min-width: 40rem) {
-      margin-bottom: 33px;
+      margin-bottom: 2.063rem;
     }
   }
   &__sliders {
@@ -21,7 +21,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding: 0 5px;
+      padding: 0 .313rem;
     }
   }
   &__container {
@@ -46,38 +46,37 @@
 }
 
 .step {
-  padding: 69px 20px 0;
+  padding: 4.313rem 1.25rem 0;
   color: $white;
   @media (min-width: 40rem) {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    bottom: 16px;
+    bottom: 1rem;
   }
   &__number {
     display: block;
-    width: 70px;
-    height: 20px;
-    margin-bottom: 17px;
+    width: 4.375rem;
+    height: 1.25rem;
+    margin-bottom: 1.063rem;
     background-color: $red;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     @include montserrat-regular;
-    font-size: 10px;
-    line-height: 20px;
-    letter-spacing: 2px;
+    font-size: .625rem;
+    line-height: 1.25rem;
+    letter-spacing: .125rem;
     vertical-align: middle;
     text-align: center;
     text-transform: uppercase;
-
   }
   &__title {
-    margin-bottom: 12px;
-    font-size: 24px;
+    margin-bottom: .75rem;
+    font-size: 1.5rem;
     line-height: 1.2;
   }
   &__text {
     @include roboto;
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.25;
     color: $gray-border;
   }

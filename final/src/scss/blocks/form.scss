@@ -1,17 +1,17 @@
 @import "../core/_core.scss";
 .input {
   box-sizing: border-box;
-  width: 280px;
-  height: 40px;
-  border: 1px solid $gray-border;
+  width: 17.5rem;
+  height: 2.5rem;
+  border: .063rem solid $gray-border;
   border-radius: .25rem;
   outline-width: 0;
-  padding-left: 16px;
+  padding-left: 1rem;
   line-height: 38;
   vertical-align: middle;
   color: $input;
   @media (min-width: 40rem) {
-    width: 240px;
+    width: 15rem;
   }
 }
 
@@ -40,10 +40,10 @@
 }
 
 .button {
-  width: 280px;
-  height: 40px;
+  width: 17.5rem;
+  height: 2.5rem;
   border-width: 0;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   outline-width: 0;
   background-color: $red;
   @include montserrat-bold;
@@ -55,6 +55,6 @@
     background-color: $red-hover;
   }
   @media (min-width: 40rem) {
-    width: 160px;
+    width: 10rem;
   }
 }

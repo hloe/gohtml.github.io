@@ -4,28 +4,28 @@
 }
 
 .footer {
-  padding-top: 18px;
+  padding-top: 1.125rem;
   text-align: center;
   @media (min-width: 40rem) {
-    padding: 38px 39px 39px;
+    padding: 2.375rem 2.438rem 2.438rem;
     text-align: left;
     @include clearfix;
   }
   @media (min-width: 64rem) {
-    padding: 40px 0 38px;
+    padding: 2.5rem 0 2.375rem;
   }
   &__logo {
     @media (min-width: 40rem) {
-      margin-right: 122px;
+      margin-right: 7.625rem;
       float: left;
       top: 0;
     }
     @media (min-width: 64rem) {
-      margin-right: 137px;
+      margin-right: 8.563rem;
     }
   }
   &__menu {
-    margin-top: 14px;
+    margin-top: .875rem;
     @media (min-width: 40rem) {
       margin-top: 0;
       float: left;
@@ -36,20 +36,20 @@
     @media (min-width: 40rem) {
       text-align: right;
       float: right;
-      margin-top: -6px;
-      margin-right: -2px;
+      margin-top: -.375rem;
+      margin-right: -.125rem;
     }
   }
   &__span {
     @include montserrat-bold;
-    font-size: 10px;
-    letter-spacing: 1px;
+    font-size: .625rem;
+    letter-spacing: .063rem;
     text-transform: uppercase;
     color: $gray-border;
   }
   &__link {
     display: block;
-    margin: 6px auto 0;
+    margin: .375rem auto 0;
     &:hover {
       @include transition;
       filter: saturate(1.5);

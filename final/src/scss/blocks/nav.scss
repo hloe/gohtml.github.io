@@ -12,7 +12,7 @@
     justify-content: center;
     margin: 0 auto;
     @media (min-width: 40rem) {
-      margin-right: 50px;
+      margin-right: 3.125rem;
     }
     @media (min-width: 64rem) {
       margin-right: 0;
@@ -20,13 +20,13 @@
   }
   &__link {
     display: block;
-    padding: 9px 16px;
+    padding: .563rem 1rem;
     @include montserrat-bold;
     font-size: .875rem;
     line-height: 1;
     color: $white;
     border: .125rem solid transparent;
-    border-radius: 23px;
+    border-radius: 1.438rem;
     &:hover {
       @include transition;
       border: .125rem solid $white;
@@ -41,7 +41,7 @@
     text-transform: capitalize;
     @media (min-width: 40rem) {
       display: flex;
-      margin-left: -40px;
+      margin-left: -2.5rem;
     }
   }
   &__sublist {
@@ -53,28 +53,28 @@
     }
   }
   &__item {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     &:last-of-type {
-      margin-bottom: 13px;
+      margin-bottom: .813rem;
     }
     @media (min-width: 40rem) {
-      margin-right: 103px;
+      margin-right: 6.438rem;
       &:last-of-type {
         margin-right: 0;
       }
     }
     @media (min-width: 64rem) {
-      margin-right: 91px;
+      margin-right: 5.688rem;
     }
   }
   &__subitem {
-    margin-top: 7px;
-    margin-right: 13px;
+    margin-top: .438rem;
+    margin-right: .813rem;
     &:last-of-type {
       margin-right: 0;
     }
     @media (min-width: 40rem) {
-      margin-top: 16px;
+      margin-top: 1rem;
     }
   }
   &__link {

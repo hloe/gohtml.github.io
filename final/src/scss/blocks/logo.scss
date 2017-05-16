@@ -3,11 +3,11 @@
   @include montserrat-bold;
   text-transform: uppercase;
   line-height: 1;
-  letter-spacing: 1px;
+  letter-spacing: .063rem;
   &__header {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: $white;
-        &:hover {
+    &:hover {
       @include transition;
       color: $gray-border;
     }
@@ -15,7 +15,7 @@
   &__footer {
     font-size: 1rem;
     color: $red;
-          &:hover {
+    &:hover {
       @include transition;
       color: $red-hover;
     }

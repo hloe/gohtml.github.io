@@ -1,34 +1,34 @@
 @import "../core/_core.scss";
 .header {
-  padding-top: 20px;
-  padding-bottom: 149px;
+  padding-top: 1.25rem;
+  padding-bottom: 9.313rem;
   background-color: $header;
   @include retina('../images/header-mobile.jpg', 2, cover, top center no-repeat);
   text-align: center;
   @media (min-width: 40rem) {
     @include retina('../images/header-tablet.jpg', 2, cover, top center no-repeat);
-    padding-top: 39px;
-    padding-bottom: 232px;
+    padding-top: 2.438rem;
+    padding-bottom: 14.5rem;
   }
   @media (min-width: 64rem) {
     @include retina('../images/header-desktop.jpg', 2, cover, top center no-repeat);
-    padding-top: 40px;
-    padding-bottom: 234px;
+    padding-top: 2.5rem;
+    padding-bottom: 14.625rem;
   }
   &__logo {
-    margin-top: 117px;
+    margin-top: 7.313rem;
     @media (min-width: 40rem) {
       margin-top: 0;
-      margin-left: 48px;
+      margin-left: 3rem;
     }
     @media (min-width: 64rem) {
       margin-left: 0;
     }
   }
   &__title {
-    margin-top: 32px;
+    margin-top: 2rem;
     @media (min-width: 40rem) {
-      margin: 142px auto 0;
+      margin: 8.875rem auto 0;
       width: 79%;
     }
     @media (min-width: 64rem) {
@@ -37,40 +37,40 @@
   }
   &__subtitle {
     width: 70%;
-    margin: 13px auto 27px;
-    font-size: 18px;
+    margin: .813rem auto 1.688rem;
+    font-size: 1.125rem;
     line-height: 1.2;
     color: $white;
     @media (min-width: 40rem) {
-      margin: 30px auto 34px;
-      font-size: 24px;
+      margin: 1.875rem auto 2.125rem;
+      font-size: 1.5rem;
     }
     @media (min-width: 64rem) {
-      margin-top: 28px;
+      margin-top: 1.75rem;
     }
   }
   &__link {
     display: block;
     width: 90%;
-    max-width: 280px;
+    max-width: 17.5rem;
     margin: 0 auto;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: .688rem;
+    padding-bottom: .688rem;
     background-color: $red;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     @include montserrat-bold;
     font-size: .875rem;
     line-height: 1;
-    word-spacing: 2px;
+    word-spacing: .125rem;
     color: $white;
     &:hover {
       @include transition;
       background-color: $red-hover;
     }
     @media (min-width: 40rem) {
-      width: 226px;
-      height: 40px;
-      line-height: 40px;
+      width: 14.125rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
       vertical-align: middle;
       padding: 0;
     }
