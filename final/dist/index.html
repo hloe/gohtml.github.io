@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
   <title>Share Your Holiday Dreams</title>
 </head>
 
 <body>
+
 
   <div class="wrapper">
     <header class="header container">
@@ -36,99 +36,91 @@
       </section>
     </header>
   </div>
-
   <section class="section container">
     <h2 class="section__title">How Urlaubsgl&uuml;ck works?</h2>
-
+  
     <div class="how section__content how__sliders">
-
-      <div class="how__item">
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-              <div class="step step-background step-background_1">
-                <div class="step__number">step 1</div>
-                <h3 class="step__title">Sed leo enim, condimentum</h3>
-                <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-              </div>
-            </li>
-            <li>
-              <div class="step step-background step-background_2">
-                <div class="step__number">step 2</div>
-                <h3 class="step__title">Morbi velit risus</h3>
-                <p class="step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-              </div>
-            </li>
-            <li>
-              <div class="step step-background step-background_3">
-                <div class="step__number">step 3</div>
-                <h3 class="step__title">Sed leo enim, condimentum</h3>
-                <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+  
+      <div class="flexslider how__item">
+        <ul class="slides">
+          <li>
+            <div class="step step-background step-background_1">
+              <div class="step__number">step 1</div>
+              <h3 class="step__title">Sed leo enim, condimentum</h3>
+              <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step step-background step-background_2">
+              <div class="step__number">step 2</div>
+              <h3 class="step__title">Morbi velit risus</h3>
+              <p class="step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step step-background step-background_3">
+              <div class="step__number">step 3</div>
+              <h3 class="step__title">Sed leo enim, condimentum</h3>
+              <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+            </div>
+          </li>
+        </ul>
       </div>
-
-      <div class="how__item">
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-              <div class="step step-background step-background_1">
-                <div class="step__number">step 1</div>
-                <h3 class="step__title">Sed leo enim, condimentum</h3>
-                <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-              </div>
-            </li>
-            <li>
-              <div class="step step-background step-background_2">
-                <div class="step__number">step 2</div>
-                <h3 class="step__title">Morbi velit risus</h3>
-                <p class="step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-              </div>
-            </li>
-            <li>
-              <div class="step step-background step-background_3">
-                <div class="step__number">step 3</div>
-                <h3 class="step__title">Sed leo enim, condimentum</h3>
-                <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+  
+      <div class="flexslider how__item">
+        <ul class="slides">
+          <li>
+            <div class="step step-background step-background_2">
+              <div class="step__number">step 2</div>
+              <h3 class="step__title">Morbi velit risus</h3>
+              <p class="step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step step-background step-background_3">
+              <div class="step__number">step 3</div>
+              <h3 class="step__title">Sed leo enim, condimentum</h3>
+              <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step step-background step-background_1">
+              <div class="step__number">step 1</div>
+              <h3 class="step__title">Sed leo enim, condimentum</h3>
+              <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+            </div>
+          </li>
+        </ul>
       </div>
-
-      <div class="how__item">
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-              <div class="step step-background step-background_1">
-                <div class="step__number">step 1</div>
-                <h3 class="step__title">Sed leo enim, condimentum</h3>
-                <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-              </div>
-            </li>
-            <li>
-              <div class="step step-background step-background_2">
-                <div class="step__number">step 2</div>
-                <h3 class="step__title">Morbi velit risus</h3>
-                <p class="step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-              </div>
-            </li>
-            <li>
-              <div class="step step-background step-background_3">
-                <div class="step__number">step 3</div>
-                <h3 class="step__title">Sed leo enim, condimentum</h3>
-                <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+  
+      <div class="flexslider how__item">
+        <ul class="slides">
+          <li>
+            <div class="step step-background step-background_3">
+              <div class="step__number">step 3</div>
+              <h3 class="step__title">Sed leo enim, condimentum</h3>
+              <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step step-background step-background_1">
+              <div class="step__number">step 1</div>
+              <h3 class="step__title">Sed leo enim, condimentum</h3>
+              <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step step-background step-background_2">
+              <div class="step__number">step 2</div>
+              <h3 class="step__title">Morbi velit risus</h3>
+              <p class="step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+            </div>
+          </li>
+        </ul>
       </div>
-
+  
     </div>
   </section>
-
   <section class="section container">
     <h2 class="section__title">Meet a partner for your best holiday</h2>
     <div class="meet section__content">
@@ -139,10 +131,10 @@
               <a href="#" class="user__link">
                 <img src="images/avatar1.jpg" alt="Bradley Hunter" class="user__photo" data-rjs="2">
                 <i class="icon-circle icon-circle_red user__icon">
-              <svg class="icon icon__tv">
-                <use xlink:href="./i/sprite.svg#tv"></use>
-              </svg>
-            </i>
+                <svg class="icon icon__tv">
+                  <use xlink:href="./i/sprite.svg#tv"></use>
+                </svg>
+              </i>
               </a>
             </div>
             <h3 class="user__title">Bradley Hunter</h3>
@@ -155,10 +147,10 @@
               <a href="#" class="user__link">
                 <img src="images/avatar2.jpg" alt="Heather Walker" class="user__photo" data-rjs="2">
                 <i class="icon-circle icon-circle_yellow user__icon">
-              <svg class="icon icon__bottle">
-                <use xlink:href="./i/sprite.svg#bottle"></use>
-              </svg>
-            </i>
+                <svg class="icon icon__bottle">
+                  <use xlink:href="./i/sprite.svg#bottle"></use>
+                </svg>
+              </i>
               </a>
             </div>
             <h3 class="user__title">Lucas Marsha</h3>
@@ -171,10 +163,10 @@
               <a href="#" class="user__link">
                 <img src="images/avatar3.jpg" alt="Lucas Marsha" class="user__photo" data-rjs="2">
                 <i class="icon-circle icon-circle_aqua user__icon">
-              <svg class="icon icon__cup">
-                <use xlink:href="./i/sprite.svg#cup"></use>
-              </svg>
-            </i>
+                <svg class="icon icon__cup">
+                  <use xlink:href="./i/sprite.svg#cup"></use>
+                </svg>
+              </i>
               </a>
             </div>
             <h3 class="user__title">Heather Walker</h3>
@@ -187,10 +179,10 @@
               <a href="#" class="user__link">
                 <img src="images/avatar4.jpg" alt="Bradley Hunter" class="user__photo" data-rjs="2">
                 <i class="icon-circle icon-circle_blue user__icon">
-              <svg class="icon icon__plane">
-                <use xlink:href="./i/sprite.svg#plane"></use>
-              </svg>
-            </i>
+                <svg class="icon icon__plane">
+                  <use xlink:href="./i/sprite.svg#plane"></use>
+                </svg>
+              </i>
               </a>
             </div>
             <h3 class="user__title">Bradley Hunter</h3>
@@ -201,37 +193,20 @@
       <a href="#" class="meet__link">See other partners</a>
     </div>
   </section>
-
   <section class="section container">
     <h2 class="section__title">Discover holiday activity ideas</h2>
     <div class="section__content">
-
-      <div class="images-container"></div>
-
-      <script type="text/template" id="pictures">
-        <div class="images">
-          <div class="images__gridsize"></div>
-          <% for (var i = 0; i < data.length; i++) { %>
-            <% if ((i !== 4) && (i !== 5)) {%>
-              <div class="images__item images__item">
-                <img src="<%= data[i] %>" alt="random photo №<%= i %>" class="images__img">
-              </div>
-              <% } else { %>
-                <div class="images__item images__item_2x">
-                  <img src="<%= data[i] %>" alt="random photo №<%= i %>" class="images__img">
-                </div>
-                <% } %>
-                  <% }; %>
-        </div>
-      </script>
+  
+      <div id="images-container"></div>
+  
     </div>
   </section>
-
+  
   <section class="section container">
     <h2 class="section__title">Discover holiday activity ideas</h2>
     <p class="section__subtitle">Hi! What are your holiday interests?</p>
     <div class="search section__content">
-      <form action="" class="form search__form">
+      <form action="#" class="form search__form">
         <ul class="search__list">
           <li class="search__item">
             <input type="text" placeholder="Enter your interests" class="input">
@@ -243,7 +218,6 @@
       </form>
     </div>
   </section>
-
   <div class="footer-wrapper">
     <footer class="footer container">
       <a href="#" class="logo logo_footer footer__logo">urlaubsgl&uuml;ck</a>
@@ -271,251 +245,19 @@
           </li>
         </ul>
       </nav>
-
+  
       <div class="footer__designed">
         <span class="footer__span">designed by</span>
         <a href="#" class="footer__link" target="_blank">
           <img src="images/logo.jpg" alt="Designed by ARETO Development" data-rjs="2">
         </a>
       </div>
-
-    </footer>
-  </div>
-
-
-  <!--
-  <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li>
-            <a href="" class="nav__link">Log in</a>
-          </li>
-          <li>
-            <a href="" class="nav__link">Sign up</a>
-          </li>
-        </ul>
-        <a href="" class="logo logo__header header__logo">urlaubsgl&uuml;ck</a>
-      </nav>
-      <h1 class="header__title">Share your holiday dreams</h1>
-      <p class="header__subtitle">And find the perfect partner to fullfill it</p>
-      <a href="" class="header__link">Find your holiday partner</a>
-    </div>
-  </header>
-  <section class="how container">
-    <h2 class="how__title">How Urlaubsgl&uuml;ck works?</h2>
-  
-    <div class="how__sliders">
-  
-      <div class="how__container">
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-              <div class="step-background step-background_11"></div>
-            </li>
-            <li>
-              <div class="step-background step-background_12"></div>
-            </li>
-            <li>
-              <div class="step-background step-background_13"></div>
-            </li>
-          </ul>
-        </div>
-        <div class="step how__step">
-          <div class="step__number">step 1</div>
-          <h3 class="step__title">Sed leo enim, condimentum</h3>
-          <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-        </div>
-      </div>
-  
-      <div class="how__container">
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-              <div class="step-background step-background_21"></div>
-            </li>
-            <li>
-              <div class="step-background step-background_22"></div>
-            </li>
-            <li>
-              <div class="step-background step-background_23"></div>
-            </li>
-          </ul>
-        </div>
-  
-        <div class="step how__step">
-          <div class="step__number">step 2</div>
-          <h3 class="step__title">Morbi velit risus</h3>
-          <p class="step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-        </div>
-      </div>
-  
-      <div class="how__container">
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-              <div class="step-background step-background_31"></div>
-            </li>
-            <li>
-              <div class="step-background step-background_32"></div>
-            </li>
-            <li>
-              <div class="step-background step-background_33"></div>
-            </li>
-          </ul>
-        </div>
-        <div class="step how__step">
-          <div class="step__number">step 3</div>
-          <h3 class="step__title">Sed leo enim, condimentum</h3>
-          <p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-        </div>
-      </div>
-  
-    </div>
-  
-  </section>
-  <section class="meet container">
-    <h2 class="meet__title">Meet a partner for your best holiday</h2>
-    <ul class="meet__list">
-      <li class="meet__item">
-        <div class="user">
-          <div class="user__avatar">
-            <img src="images/avatar1.jpg" alt="Bradley Hunter" class="user__photo" data-rjs="2">
-            <a href="" class="icon-circle icon-circle__red user__icon">
-              <svg class="icon icon__tv">
-                <use xlink:href="./i/sprite.svg#tv"></use>
-              </svg>
-            </a>
-          </div>
-          <h3 class="user__title">Bradley Hunter</h3>
-          <p class="user__text">Based in Chicago. I love playing tennis and loud music.</p>
-        </div>
-      </li>
-      <li class="meet__item">
-        <div class="user">
-          <div class="user__avatar">
-            <img src="images/avatar2.jpg" alt="Heather Walker" class="user__photo" data-rjs="2">
-            <a href="" class="icon-circle icon-circle__yellow user__icon">
-              <svg class="icon icon__bottle">
-                <use xlink:href="./i/sprite.svg#bottle"></use>
-              </svg>
-            </a>
-          </div>
-          <h3 class="user__title">Lucas Marsha</h3>
-          <p class="user__text">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
-        </div>
-      </li>
-      <li class="meet__item">
-        <div class="user">
-          <div class="user__avatar">
-            <img src="images/avatar3.jpg" alt="Lucas Marsha" class="user__photo" data-rjs="2">
-            <a href="" class="icon-circle icon-circle__aqua user__icon">
-              <svg class="icon icon__cup">
-                <use xlink:href="./i/sprite.svg#cup"></use>
-              </svg>
-            </a>
-          </div>
-          <h3 class="user__title">Heather Walker</h3>
-          <p class="user__text">I'm a happy person that loves cats and climbing on mountains.</p>
-        </div>
-      </li>
-      <li class="meet__item">
-        <div class="user">
-          <div class="user__avatar">
-            <img src="images/avatar4.jpg" alt="Bradley Hunter" class="user__photo" data-rjs="2">
-            <a href="" class="icon-circle icon-circle__blue user__icon">
-              <svg class="icon icon__plane">
-                <use xlink:href="./i/sprite.svg#plane"></use>
-              </svg>
-            </a>
-          </div>
-          <h3 class="user__title">Bradley Hunter</h3>
-          <p class="user__text">Based in Chicago. I love playing tennis and loud music.</p>
-        </div>
-      </li>
-    </ul>
-    <a href="" class="meet__link">See other partners</a>
-  </section>
-  <section class="discover container">
-    <h2 class="discover__title">Discover holiday activity ideas</h2>
-  
-    <div class="images-container"></div>
-  
-    <script type="text/template" id="pictures">
-      <div class="images">
-        <div class="images__gridsize"></div>
-        <% for (var i = 0; i < data.length; i++) { %>
-          <% if ((i !== 4) && (i !== 5)) {%>
-            <div class="images__item images__item">
-              <img src="<%= data[i] %>" alt="random photo №<%= i %>" class="images__img">
-            </div>
-            <% } else { %>
-              <div class="images__item images__item_2x">
-                <img src="<%= data[i] %>" alt="random photo №<%= i %>" class="images__img">
-              </div>
-              <% } %>
-                <% }; %>
-      </div>
-    </script>
-  
-  </section>
-  
-  <section class="search container">
-    <h2 class="search__title">Discover holiday activity ideas</h2>
-    <p class="search__text">Hi! What are your holiday interests?</p>
-    <form action="#" class="form">
-      <ul class="search__list">
-        <li class="search__item">
-          <input type="text" placeholder="Enter your interests" class="input">
-        </li>
-        <li class="search__item">
-          <input type="button" value="Search partners" class="button">
-        </li>
-      </ul>
-    </form>
-  </section>
-  <div class="footer-wrapper">
-    <footer class="footer container">
-      <a href="" class="logo logo__footer footer__logo">urlaubsgl&uuml;ck</a>
-      <nav class="footer-nav footer__menu">
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">company</a>
-            <ul class="footer-nav__sublist">
-              <li class="footer-nav__subitem">
-                <a href="" class="footer-nav__sublink">about</a>
-              </li>
-              <li class="footer-nav__subitem">
-                <a href="" class="footer-nav__sublink">contacts</a>
-              </li>
-              <li class="footer-nav__subitem">
-                <a href="" class="footer-nav__sublink">press</a>
-              </li>
-              <li class="footer-nav__subitem">
-                <a href="" class="footer-nav__sublink">blog</a>
-              </li>
-            </ul>
-          </li>
-          <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">partners</a>
-          </li>
-        </ul>
-      </nav>
-  
-      <div class="footer__designed">
-        <span class="footer__span">designed by</span>
-        <a href="" class="footer__link" target="_blank">
-          <img src="images/logo.jpg" alt="Designed by ARETO Development" data-rjs="2">
-        </a>
-      </div>
   
     </footer>
   </div>
--->
 
   <script src="js/jquery.flexslider.js" async></script>
   <script src="js/pixabay.js" async></script>
-  <script src="js/masonry.js" async></script>
 
 </body>
 
