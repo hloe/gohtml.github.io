@@ -1,48 +1,9 @@
 @import "../core/_core.scss";
-.discover {
-  padding-top: 1.188rem;
-  padding-bottom: .313rem;
-  text-align: center;
-  @media (min-width: 40rem) {
-    padding-top: 4.813rem;
-    padding-bottom: 2.625rem;
-  }
-  @media (min-width: 64rem) {
-    padding-bottom: 3.25rem;
-  }
-  &__title {
-    line-height: 1.2;
-    padding-bottom: .938rem;
-    @media (min-width: 40rem) {
-      margin-bottom: 1.188rem;
-    }
-    @media (min-width: 64rem) {
-      margin-bottom: 2.188rem;
-    }
-  }
-}
-
 .search {
-  padding-top: 1.125rem;
-  padding-bottom: 2.5rem;
-  text-align: center;
-  @media (min-width: 40rem) {
-    padding-top: 2.625rem;
-    padding-bottom: 6.25rem;
-  }
-  &__title {
-    line-height: 1.2;
-    margin-bottom: .75rem;
+  &__form {
+    padding-bottom: 2.5rem;
     @media (min-width: 40rem) {
-      margin-bottom: 2rem;
-    }
-  }
-  &__text {
-    margin-bottom: 1.063rem;
-    @include roboto;
-    font-size: 1.125rem;
-    @media (min-width: 40rem) {
-      margin-bottom: 2.5rem;
+      padding-bottom: 6.25rem;
     }
   }
   &__list {

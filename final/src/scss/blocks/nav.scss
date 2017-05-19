@@ -10,7 +10,6 @@
   &__list {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
     @media (min-width: 40rem) {
       margin-right: 3.125rem;
     }
