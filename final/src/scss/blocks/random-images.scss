@@ -4,6 +4,8 @@
   max-width: 58.75rem;
   &__img {
     width: 100%;
+      border-radius: .25rem;
+
   }
 }
 
@@ -16,7 +18,6 @@
   border-bottom: .313rem solid $white;
   border-right: .625rem solid $white;
   border-left: .625rem solid $white;
-  border-radius: .25rem;
   @media (min-width: 40rem) {
     margin: 0;
     width: 10rem;
