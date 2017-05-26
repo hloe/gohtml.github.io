@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+@media (min-width: 48rem) {
+  .container {
+    width: 46.25rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  .container {
+    width: 60rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .container {
+    width: 73.75rem;
+  }
+}
+
+.page {
+  padding: 3rem 0;
+  background-color: #ffe0ad;
+  font-family: Arial, sans-serif;
+  font-size: .875rem;
+  color: #ab813c;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form {
+  width: 15rem;
+  margin: 0 auto;
+}
+
+.input-prediction {
+  width: 14rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  vertical-align: middle;
+  outline-width: 0;
+  text-indent: .875rem;
+  background-color: #ffedcf;
+  color: #ab813c;
+}
+
+::-webkit-input-placeholder {
+  color: #d8b171;
+}
+
+::-moz-placeholder {
+  color: #d8b171;
+}
+
+:-moz-placeholder {
+  color: #d8b171;
+}
+
+:-ms-input-placeholder {
+  color: #d8b171;
+}
+
+.select-container {
+  width: 15rem;
+  border-right: 1rem solid #ffe0ad;
+  overflow: hidden;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  width: 16rem;
+  height: auto;
+  background-color: transparent;
+  outline-width: 0;
+  text-indent: .875rem;
+}
+
+.option {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  height: 2.5rem;
+  background-color: #ffedcf;
+  color: #ab813c;
+  cursor: pointer;
+}
+
+.option:hover,
+.option:focus,
+.option:active,
+.option:checked {
+  background-color: #dbc196;
+  color: #ab813c;
+}
+
+.non-selected {
+  display: flex;
+  align-items: center;
+  background-color: #ffedcf;
+  height: 2.5rem;
+  color: #ab813c;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  background-color: #dbc196;
+  height: 2.5rem;
+  color: #ab813c;
+}
+
+
+
+.sorry,
+.description {
+  padding: .75rem;
+  line-height: 1.5;
+  @media (min-width: 30rem) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @media (min-width: 48rem) {
+    width: 50%;
+  }
+}
+
+.sorry {
+  font-style: italic;
+}
