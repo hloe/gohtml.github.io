@@ -1,4 +1,5 @@
 (function () {
+
   'use strict';
 
   // If there isn't names array yet
@@ -14,8 +15,8 @@
 
   //Call selectSuitable function every time when input is changed
   input.oninput = function () {
-    selectSuitable(input.value.toLowerCase())
-  };
+    selectSuitable(input.value.toLowerCase());
+  }
 
   // Choose name with keyboard
   input.addEventListener('keyup', handleKey);
@@ -27,11 +28,6 @@
 
   let options = document.getElementById('autocomplete').getElementsByTagName('option');
 
-  // Hide predictions when there's onblur event
-  input.addEventListener('blur', hideSelect);
-
-  // Show predictions when user 'returns' to input; there's onfocus event
-  input.addEventListener('focus', showSelect);
 
   // **************  
   // All functions are below
@@ -210,14 +206,6 @@
     let index = document.getElementById('autocomplete').selectedIndex;
     input.value = options[index].innerHTML;
     document.getElementById('autocomplete').innerHTML = '';
-  }
-
-  function hideSelect() {
-    select.style.display = 'none';
-  }
-
-  function showSelect() {
-    select.style.display = 'block';
   }
 
 })();

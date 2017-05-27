@@ -88,7 +88,7 @@ gulp.task('bundleJs', function () {
       presets: ['es2015']
     }))
     .pipe(sourcemaps.write())
-    //  .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest(paths.build.js))
     .pipe(browserSync.reload({
       stream: true
