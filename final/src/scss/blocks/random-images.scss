@@ -1,26 +1,23 @@
 @import "../core/_core.scss";
 .grid {
-  @include clearfix;
-  max-width: 58.75rem;
-  &__img {
-    width: 100%;
-      border-radius: .25rem;
+}
 
+.grid-sizer,
+.grid-item {
+  width: 100%;
+  @media (min-width: 40rem) {
+    width: 16.5%;
   }
 }
 
 .grid-item {
-  float: left;
-  width: 96%;
-  margin: 0 auto;
-  padding: 0;
   border-top: .313rem solid $white;
   border-bottom: .313rem solid $white;
   border-right: .625rem solid $white;
   border-left: .625rem solid $white;
+  border-radius: 1rem;
   @media (min-width: 40rem) {
     margin: 0;
-    width: 10rem;
     height: 10rem;
     border-width: .625rem;
   }
@@ -28,12 +25,13 @@
 
 .grid-item--width2 {
   @media (min-width: 40rem) {
-    width: 15rem;
+    width: 33%;
   }
 }
 
 .grid-item--height2 {
+  height: 8rem;
   @media (min-width: 40rem) {
-    height: 15rem;
+    height: 20rem;
   }
 }

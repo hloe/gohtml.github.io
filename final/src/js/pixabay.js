@@ -13,8 +13,12 @@
     // Get request from input and encode it
     var request = document.getElementsByClassName('input')[0].value;
 
+    var randomWords = ['travel', 'ocean', 'journey', 'tourist', 'sea', 'beach', 'plane', 'balloon', 'space', 'sky', 'dawn', 'bali', 'holiday', 'desert', 'mountains', 'forest', 'sunset', 'lake', 'river', 'field', 'city', 'london', 'prague', 'krakow', 'australia', 'moon'];
+
+    var randomRequest = Math.floor(Math.random() * randomWords.length);
+
     // Create url for request
-    var requestedUrl = 'https://pixabay.com/api/?key=5329767-c1e7be6357fccc39d535e11ce&per_page=12&image_type=photo';
+    var requestedUrl = requestedUrl = 'https://pixabay.com/api/?key=5329767-c1e7be6357fccc39d535e11ce&per_page=12&image_type=photo&q=' + randomRequest;
 
     makeRequest(requestedUrl);
 
@@ -34,17 +38,15 @@
 
     // Create url for request
     var requestedUrl;
-    if ((request === undefined) || (request === '')) {
-      requestedUrl = 'https://pixabay.com/api/?key=5329767-c1e7be6357fccc39d535e11ce&per_page=12&image_type=photo';
-    } else {
+    if ((request !== undefined) && (request !== '')) {
       requestedUrl = 'https://pixabay.com/api/?key=5329767-c1e7be6357fccc39d535e11ce&per_page=12&image_type=photo&q=' + encodeURIComponent(request);
+
+      makeRequest(requestedUrl);
+
+      // Clear input field after sending request
+      var form = document.getElementsByClassName('form')[0];
+      form.reset();
     }
-
-    makeRequest(requestedUrl);
-
-    // Clear input field after sending request
-    var form = document.getElementsByClassName('form')[0];
-    form.reset();
 
   }
 
@@ -92,42 +94,42 @@
     var container = document.getElementById('images-container');
     container.innerHTML = '';
 
-    var grid = document.createElement('div');
-    grid.className = 'grid';
-    container.appendChild(grid);
+    var grid = document.getElementsByClassName('grid')[0];
+    // var grid = document.createElement('div');
+    //    grid.className = 'grid';
+    //    container.appendChild(grid);
     var sizer = document.createElement('div');
     sizer.className = 'grid-sizer';
     grid.appendChild(sizer);
 
     for (var i = 0; i < links.length; i++) {
-      var div = document.createElement('div');
       var img = document.createElement('img');
       img.setAttribute('src', links[i]);
-      img.className = 'grid__img';
 
       // Set class depending on image sizes      
-      if (imageWidth[i] > imageHeight[i]) {
-        div.classList = 'grid-item grid-item--width2';
+      if (imageWidth[i] >= imageHeight[i]) {
+        img.classList = 'grid-item grid-item--width2';
       } else if (imageWidth[i] < imageHeight[i]) {
-        div.classList = 'grid-item grid-item--height2';
+        img.classList = 'grid-item grid-item--width2 grid-item--height2';
       } else {
-        div.classList = 'grid-item';
+        img.classList = 'grid-item';
       }
 
-      div.appendChild(img);
-      grid.appendChild(div);
+      grid.appendChild(img);
     }
 
 
     isotopeInit();
 
     function isotopeInit() {
-      //        var elem = document.getElementsByClassName('images-container')[0];
 
       var iso = new Isotope(grid, {
         // options
         itemSelector: '.grid-item',
-        layoutMode: 'fitRows'
+        percentPosition: true,
+        masonry: {
+          columnWidth: '.grid-sizer'
+        }
       });
 
     }
