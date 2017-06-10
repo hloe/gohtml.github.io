@@ -1,0 +1,65 @@
+@import "../core/_core.scss";
+.container {
+  min-width: 18rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.title {  
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.cart-table {  
+  margin: 0 auto;
+  border: 1px solid skyblue;
+}
+
+tr {
+  height: 2rem;
+  line-height: 2rem;
+  vertical-align: middle;
+}
+
+th,
+td {
+  width: 10rem;
+  border: 1px solid skyblue;
+  text-align: left;
+}
+
+.total {
+  text-align: right;
+}
+
+.products-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-item {
+  text-align: center;
+}
+
+.product-img {
+  width: 12rem;
+}
+
+.product-button {
+  height: 2rem;
+  margin-top: .5rem;
+  border-width: 0;
+  background-color: skyblue;
+  line-height: 2rem;
+  vertical-align: middle;
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,4 +1,5 @@
-
+*.pdf
+*.psd
 *.log
 *.db
 jQuery/
