@@ -1,4 +1,9 @@
 @import "../core/_core.scss";
+
+.hidden {
+  display: none;
+}
+
 .container {
   min-width: 18rem;
   max-width: 40rem;
