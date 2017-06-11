@@ -12,11 +12,14 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var rigger = require('gulp-rigger');
+var babel = require('gulp-babel');
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
+    // concatenation
     .pipe(concat('styles.min.css'))
+    // minification
     .pipe(minify())
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
@@ -45,13 +48,25 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
   return gulp.src('app/js/**/*.js')
-    .pipe(uglify())
+    //    .pipe(concat('scripts.min.js'))
+    //    .pipe(babel({
+    //      presets: ['es2015']
+    //    }))
+    //    .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
 
 gulp.task('fonts', function () {
   return gulp.src('app/fonts/*')
     .pipe(gulp.dest('dist/fonts'))
+});
+
+gulp.task('icons', function () {
+  return gulp.src('app/i/*')
+    .pipe(gulp.dest('dist/i'))
 });
 
 gulp.task('images', function () {
@@ -88,7 +103,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'scripts', 'images', 'fonts'],
+  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'fonts', 'icons'],
     callback
   )
 });
