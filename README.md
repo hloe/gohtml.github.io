@@ -1,4 +1,4 @@
-# This is repository for my projects.
+# This is repository for my projects
 
 [projects](https://github.com/hloe/hloe.github.io/tree/master/projects/) - here you can see all my projects with source files.
 
