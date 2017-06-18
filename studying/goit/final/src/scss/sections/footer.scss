@@ -1,0 +1,58 @@
+@import "../core/_core.scss";
+.footer-wrapper {
+  border-top: .25rem solid $red;
+}
+
+.footer {
+  padding-top: 1.125rem;
+  text-align: center;
+  @media (min-width: 40rem) {
+    padding: 2.375rem 2.438rem 2.438rem;
+    text-align: left;
+    @include clearfix;
+  }
+  @media (min-width: 64rem) {
+    padding: 2.5rem 0 2.375rem;
+  }
+  &__logo {
+    @media (min-width: 40rem) {
+      margin-right: 7.625rem;
+      float: left;
+      top: 0;
+    }
+    @media (min-width: 64rem) {
+      margin-right: 8.563rem;
+    }
+  }
+  &__menu {
+    margin-top: .875rem;
+    @media (min-width: 40rem) {
+      margin-top: 0;
+      float: left;
+      top: 0;
+    }
+  }
+  &__designed {
+    @media (min-width: 40rem) {
+      text-align: right;
+      float: right;
+      margin-top: -.375rem;
+      margin-right: -.125rem;
+    }
+  }
+  &__span {
+    @include montserrat-bold;
+    font-size: .625rem;
+    letter-spacing: .063rem;
+    text-transform: uppercase;
+    color: $gray-border;
+  }
+  &__link {
+    display: block;
+    margin: .375rem auto 0;
+    &:hover {
+      @include transition;
+      filter: saturate(1.5);
+    }
+  }
+}

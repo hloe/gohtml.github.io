@@ -1,0 +1,16 @@
+@import "../core/_core.scss";
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 72.5rem;
+  margin: 0 auto;
+  padding: 5.625rem 1.875rem;
+  &__link {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: normal;
+    text-decoration: none;
+  }
+}

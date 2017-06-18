@@ -1,0 +1,46 @@
+h1 {
+  @include montserrat-bold;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  line-height: 1.15;
+  letter-spacing: .013rem;
+  word-spacing: .25rem;
+  color: $white;
+  @media (min-width: 40rem) {
+    font-size: 3.25rem;
+  }
+}
+
+h2 {
+  margin-bottom: .938rem;
+  @include montserrat-bold;
+  font-size: 1.375rem;
+  line-height: 1.2;
+  letter-spacing: .022rem;
+  word-spacing: 0;
+  color: $dark-gray;
+  text-align: center;
+  @media (min-width: 40rem) {
+    margin-bottom: 2.063rem;
+  }
+  @media (min-width: 64rem) {
+    margin-bottom: 1.938rem;
+  }
+}
+
+h3 {
+  @include montserrat-bold;
+}
+
+p {
+  @include roboto;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  @include roboto;
+  font-size: .875rem;
+}

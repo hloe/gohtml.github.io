@@ -1,0 +1,25 @@
+@import "../core/_core.scss";
+mark {
+  padding: 0 1.75rem;
+  background-color: $mark;
+  background-color: $mark-transparent;
+  color: inherit;
+}
+
+.slider {
+  width: 72.5rem;
+  height: 29.375rem;
+  margin: 0 auto;
+  background-color: $blue;
+  @include retina('../images/photo.jpg', 2, 72.5rem 29.375rem, top center no-repeat);
+  &__text {
+    @include ubuntu-medium;
+    font-size: 3.375rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $white;
+    &:first-line {
+      color: $slider-yellow;
+    }
+  }
+}

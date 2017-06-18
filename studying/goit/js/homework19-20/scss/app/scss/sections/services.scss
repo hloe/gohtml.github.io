@@ -1,0 +1,65 @@
+@import "../core/_core.scss";
+.services {
+  width: 72.5rem;
+  margin: 0 auto;
+  padding-top: 7.5rem;
+  padding-bottom: 4.375rem;
+  &__title {
+    @include ubuntu-medium;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    line-height: .833;
+    color: $white;
+    text-transform: capitalize;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.438rem;
+    @include list;
+  }
+  &__item {
+    position: relative;
+  }
+}
+
+.service-figure {
+  text-align: center;
+  &__img {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2.063rem;
+  }
+  &__name {
+    @include ubuntu-medium;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: $white;
+    text-transform: capitalize;
+  }
+}
+
+.hover {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 16.25rem;
+  height: 16.25rem;
+  background-color: $hover;
+  font-size: 4rem;
+  line-height: 16.25rem;
+  letter-spacing: normal;
+  color: $white;
+  text-align: center;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.service-card:hover .service-figure__name {
+  color: $yellow;
+}
+
+.service-card:hover > .hover {
+  visibility: visible;
+}

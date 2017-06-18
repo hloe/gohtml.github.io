@@ -1,0 +1,41 @@
+@import "../core/_core.scss";
+.contact {
+  position: relative;
+  padding-top: 8.563rem;
+  padding-bottom: 16.75rem;
+  @include retina('../images/coffee-background.png', 2, 11.5rem 21.375rem, right bottom no-repeat);
+  &__title {
+    position: relative;
+    z-index: 9;
+    padding-bottom: .938rem;
+    border-bottom: .063rem solid $form-line;
+  }
+  &__subtitle {
+    position: relative;
+    z-index: 9;
+    margin-top: 1rem;
+    line-height: 2.063;
+    word-spacing: -.056rem;
+  }
+  &__list {
+    position: relative;
+    z-index: 9;
+    width: 23.938rem;
+    margin-top: 6rem;
+  }
+  &__item {
+    &:first-of-type {
+      margin-bottom: 3.063rem;
+    }
+  }
+  &__submit {
+    position: absolute;
+    bottom: 0;
+    right: 1.688rem;
+    cursor: pointer;
+    &:hover {
+      @include transition;
+      filter: invert(.25);
+    }
+  }
+}

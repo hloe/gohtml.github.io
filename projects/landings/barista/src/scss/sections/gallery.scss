@@ -1,0 +1,38 @@
+@import "../core/_core.scss";
+.gallery {
+  padding-top: 9.688rem;
+  padding-bottom: 9.125rem;
+  &__header {
+    width: 25rem;
+    margin: 0 auto 4.688rem;
+    color: $white;
+    text-align: center;
+  }
+  &__title {
+    position: relative;
+    margin: 0 auto 1.5rem;
+    width: 24rem;
+    &:before {
+      position: absolute;
+      top: 1.125rem;
+      left: 0;
+      width: 1.938rem;
+      height: .875rem;
+      content: '';
+      @include retina('../images/left-white-decor.png', 2, 1.938rem .875rem, top center no-repeat);
+    }
+    &:after {
+      position: absolute;
+      top: 1.125rem;
+      right: 0;
+      width: 1.938rem;
+      height: .875rem;
+      content: '';
+      @include retina('../images/right-white-decor.png', 2, 1.938rem .875rem, top center no-repeat);
+    }
+  }
+  &__subtitle {
+    line-height: 1.531;
+    word-spacing: -.063rem;
+  }
+}

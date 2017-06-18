@@ -1,0 +1,203 @@
+@import "../core/_core.scss";
+
+/*** Overall MovingBoxes Slider ***/
+
+* {
+  box-sizing: border-box;
+}
+
+.mb-wrapper {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+
+/* Panel Wrapper */
+
+.mb-slider,
+.mb-scroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  left: 0;
+  top: 0;
+  /***(>'-')> Control Panel Font size here <('-'<)***/
+  font-size: 1.125rem;
+}
+
+
+/*** Slider panel ***/
+
+.mb-slider .mb-panel {
+  margin: 0;
+  display: block;
+//  cursor: pointer;
+  float: left;
+  list-style: none;
+}
+
+
+/* Cursor to arrow over current panel, pointer for all others,
+change .current class name using plugin option, currentPanel : 'current' */
+
+.mb-slider .mb-panel.current {
+  cursor: auto;
+}
+
+
+/*** Inside the panel ***/
+
+.mb-inside {
+  margin-right: 3.313rem;
+}
+
+.mb-inside * {
+  max-width: 100%;
+}
+
+
+/*** Left & Right Navigation Arrows ***/
+
+.legend {
+  width: 28.25rem;
+  height: 4.188rem;
+  margin: 6.188rem auto 0;
+  @include clearfix;
+  @include georgia-regular;
+  font-size: 1.219rem;
+  line-height: 4.188rem;
+  letter-spacing: 0;
+  word-spacing: .087rem;
+  text-align: center;
+  vertical-align: middle;
+  color: $yellow;
+}
+
+.current-number,
+.amount {
+  font-size: 1.875rem;
+  color: $white;
+}
+
+a.mb-scrollButtons {
+  z-index: 200;
+  display: block;
+  width: 8.5rem;
+  height: 4.188rem;
+  bottom: 0;
+  cursor: pointer;
+  text-decoration: none;
+  outline-width: 0;
+  border: 0;
+  &:hover {
+    @include transition;
+    filter: saturate(2);
+  }
+}
+
+a.mb-scrollButtons.mb-left {
+  float: left;
+  left: 0;
+  @include retina('../images/left-arrow.png', 2, cover, top center no-repeat);
+}
+
+a.mb-scrollButtons.mb-right {
+  float: right;
+  right: 0;
+  @include retina('../images/right-arrow.png', 2, cover, top center no-repeat);
+}
+
+a.mb-scrollButtons.mb-left:hover {
+  background-position: left bottom;
+}
+
+a.mb-scrollButtons.mb-right:hover {
+  background-position: right bottom;
+}
+
+a.mb-scrollButtons.disabled {
+  @include transition;
+  opacity: 0;
+  cursor: default;
+}
+
+
+/*** Controls added below the panels ***/
+
+.mb-controls {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+
+
+/* Navigation bar */
+
+.main-nav {
+  display: block;
+  text-align: center;
+  border-bottom: .125rem solid #a71700;
+  margin: 0 0 1.25rem 0;
+  padding: 0 0 .625rem 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #3e63ec;
+  font-size: 1.125rem;
+  margin: 0 .5rem;
+}
+
+.main-nav a:hover {
+  color: black;
+  border-bottom: .125rem solid black;
+}
+
+
+/* height of the placeholder until image completely loads - needed for
+   webkit browsers, add this only if you don't want the height animation
+   on startup. 20.375rem measures the height of the current image when enlarged 
+*/
+
+#slider-two .current img {
+  /* height: 20.375rem; */
+}
+
+
+/* Panel links */
+
+.mb-inside a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: .063rem dotted #ccc;
+}
+
+.mb-inside a:hover {
+  border-bottom: .063rem solid #999;
+}
+
+
+/* Add/remove panels buttons */
+
+.buttons {
+  padding: .313rem .625rem;
+  text-align: center;
+}
+
+
+/* Direct link styling */
+
+.dlinks {
+  text-align: center;
+  margin: 0 0 1.25rem 0;
+}
+
+.dlinks * {
+  vertical-align: middle;
+}

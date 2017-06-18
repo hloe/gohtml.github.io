@@ -1,0 +1,35 @@
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+@mixin transition {
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+@mixin montserrat-bold {
+  	font-family: 'Montserrat Bold', Arial, sans-serif;
+font-weight: bold;
+  font-style: normal;
+}
+
+@mixin montserrat-regular {
+  font-family: 'Montserrat Regular', Arial, sans-serif;
+font-weight: normal;
+  font-style: normal;
+}
+
+@mixin roboto {
+  font-family: 'Roboto Light', Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+

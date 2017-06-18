@@ -1,0 +1,15 @@
+@import "../core/_core.scss";
+.wrapper {
+  &__services {
+    background-color: $services-background;
+  }
+  &__news {
+    background-color: $news-background;
+  }
+  &__links {
+      background-color: $services-background;
+  }
+  &__footer {
+     background-color: $footer-background;
+  }
+}

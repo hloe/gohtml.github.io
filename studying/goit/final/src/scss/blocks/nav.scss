@@ -1,0 +1,93 @@
+@import "../core/_core.scss";
+.nav {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 40rem) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    @media (min-width: 40rem) {
+      margin-right: 3.125rem;
+    }
+    @media (min-width: 64rem) {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: block;
+    padding: .563rem 1rem;
+    @include montserrat-bold;
+    font-size: .875rem;
+    line-height: 1;
+    color: $white;
+    border: .125rem solid transparent;
+    border-radius: 1.438rem;
+    &:hover {
+      @include transition;
+      border: .125rem solid $white;
+    }
+  }
+}
+
+.footer-nav {
+  &__list {
+    @include montserrat-bold;
+    font-size: .875rem;
+    text-transform: capitalize;
+    @media (min-width: 40rem) {
+      display: flex;
+      margin-left: -2.5rem;
+    }
+  }
+  &__sublist {
+    display: flex;
+    justify-content: center;
+    @include roboto;
+    @media (min-width: 40rem) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    margin-bottom: 1rem;
+    &:last-of-type {
+      margin-bottom: .813rem;
+    }
+    @media (min-width: 40rem) {
+      margin-right: 6.438rem;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    @media (min-width: 64rem) {
+      margin-right: 5.688rem;
+    }
+  }
+  &__subitem {
+    margin-top: .438rem;
+    margin-right: .813rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    @media (min-width: 40rem) {
+      margin-top: 1rem;
+    }
+  }
+  &__link {
+    color: $dark-gray;
+    &:hover {
+      @include transition;
+      color: $dark-gray-hover;
+    }
+  }
+  &__sublink {
+    color: $light-gray;
+    &:hover {
+      @include transition;
+      color: $light-gray-hover;
+    }
+  }
+}

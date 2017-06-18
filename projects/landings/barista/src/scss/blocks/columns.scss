@@ -1,0 +1,15 @@
+@import "../core/_core.scss";
+.program-column {
+  &__title {
+    margin-bottom: 1.688rem;
+  }
+  &__item {
+    @include georgia-regular;
+    font-size: 1rem;
+    line-height: 2.2;
+    color: $blue-gray;
+    &:before {
+      content: '- ';
+    }
+  }
+}

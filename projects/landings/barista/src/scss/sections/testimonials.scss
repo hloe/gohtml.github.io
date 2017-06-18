@@ -1,0 +1,39 @@
+@import "../core/_core.scss";
+.testimonials {
+  padding-top: 4.813rem;
+  padding-bottom: 6.563rem;
+  text-align: center;
+  &__title {
+    margin-bottom: 1.875rem;
+  }
+  &__subtitle {
+    line-height: 2.063;
+    color: $blue-gray;
+  }
+}
+
+.carousel-item {
+  &__img {
+    position: relative;
+    width: 10.625rem;
+    margin: 0 auto 1.875rem;
+  }
+  &__icon {
+    position: absolute;
+    top: 1.438rem;
+    right: -.5rem;
+    display: block;
+    box-shadow: .141rem .244rem .906rem 0px rgb(61, 61, 62);
+  }
+  &__title {
+    margin-bottom: 1.063rem;
+    letter-spacing: .106rem;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 52.75rem;
+    margin: 0 auto;
+    line-height: 2.2;
+    word-spacing: -.063rem;
+  }
+}

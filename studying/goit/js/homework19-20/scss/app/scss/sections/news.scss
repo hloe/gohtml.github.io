@@ -1,0 +1,94 @@
+@import "../core/_core.scss";
+.news {
+  display: flex;
+  justify-content: space-between;
+  width: 77.5rem;
+  margin: 0 auto;
+  padding-top: 3.875rem;
+  padding-bottom: 5.125rem;
+  &__title {
+    @include ubuntu-medium;
+    font-size: 1.5rem;
+    line-height: .833;
+    color: $services-background;
+    text-transform: capitalize;
+  }
+}
+
+.latest-news,
+.banners {
+  width: 48%;
+}
+
+.latest-news {
+  &__content {
+    padding-top: 2.938rem;
+  }
+}
+
+.news-article {
+  position: relative;
+  display: flex;
+  margin-bottom: 1.875rem;
+  font-family: Arial, sans-serif;
+  font-size: .813rem;
+  line-height: 1.538;
+  color: $features-text;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &__content {
+    margin-left: 1.875rem;
+  }
+  &__title {
+    display: block;
+    margin-bottom: .625rem;
+    @include ubuntu-medium;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: $services-background;
+    text-decoration: none;
+    &:hover {
+      color: $blue;
+    }
+  }
+  &__subtitle {
+    display: inline-block;
+    margin-right: .938rem;
+    margin-bottom: 1.625rem;
+  }
+  &__link {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+.data {
+  position: absolute;
+  top: .75rem;
+  left: -1.063rem;
+  width: 2.5rem;
+  line-height: 2.5rem;
+  @include ubuntu-medium;
+  text-align: center;
+  &__month {
+    display: block;
+    height: 2.5rem;
+    background-color: $blue;
+    font-size: .938em;
+    color: $white;
+  }
+  &__day {
+    display: block;
+    height: 2.5rem;
+    background-color: $yellow;
+    font-size: 1.125rem;
+    color: $features-title;
+  }
+}
+
+.banners {
+  &__content {
+    padding-top: 2.938rem;
+  }
+}

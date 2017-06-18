@@ -1,0 +1,64 @@
+@import "../core/_core.scss";
+.header {
+  padding-top: 13.25rem;
+  padding-bottom: 10.625rem;
+  @include georgia-regular;
+  text-align: center;
+  color: $white;
+  &__subheading {
+    position: relative;
+    display: inline-block;
+    width: 39.813rem;
+    margin-bottom: 2.125rem;
+    padding-top: 2.125rem;
+    @include retina('../images/stars.png', 2, 5.563rem .938rem, top center no-repeat);
+    font-size: 1.094rem;
+    line-height: 2.857;
+    &:before {
+      position: absolute;
+      top: 3.5rem;
+      left: 0;
+      display: block;
+      width: 6.313rem;
+      height: .375rem;
+      @include retina('../images/left-yellow-arrow.png', 2, 6.313rem .375rem, left center no-repeat);
+      content: '';
+    }
+    &:after {
+      position: absolute;
+      top: 3.5rem;
+      right: 0;
+      display: block;
+      width: 6.313rem;
+      height: .375rem;
+      @include retina('../images/right-yellow-arrow.png', 2, 6.313rem .375rem, right center no-repeat);
+      content: '';
+    }
+  }
+  &__title {
+    margin-bottom: 2.313rem;
+  }
+  &__emphasis {
+    color: $yellow;
+  }
+  &__subtitle {
+    padding-bottom: 1.688rem;
+    @include retina('../images/yellow-decor.png', 2, 8.75rem .438rem, bottom center no-repeat);
+    font-size: 1.313rem;
+    line-height: 2.381;
+  }
+  &__link {
+    display: block;
+    width: 3.813rem;
+    height: 3.813rem;
+    margin: 4.313rem auto;
+    border-radius: 50%;
+    border: .063rem solid $circle;
+    line-height: 3.813rem;
+    vertical-align: middle;
+    &:hover {
+      @include transition;
+      border: .063rem solid $yellow;
+    }
+  }
+}
