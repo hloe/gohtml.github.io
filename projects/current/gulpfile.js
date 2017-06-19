@@ -59,10 +59,6 @@ gulp.task('scripts', function () {
     }));
 });
 
-gulp.task('fonts', function () {
-  return gulp.src('app/fonts/*')
-    .pipe(gulp.dest('dist/fonts'))
-});
 
 gulp.task('icons', function () {
   return gulp.src('app/i/*')
@@ -103,7 +99,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'fonts', 'icons'],
+  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'icons'],
     callback
   )
 });

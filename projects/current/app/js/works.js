@@ -38,8 +38,11 @@
     let fragment = document.createDocumentFragment();
 
     for (let i = 0; i < result.works.length; i++) {
+      let workItem = document.createElement('div');
+      workItem.classList = 'works__content-item';
+
       let link = document.createElement('a');
-      link.classList = 'card-link works__item';
+      link.classList = 'card-link';
       link.setAttribute('target', '_blank');
       link.setAttribute('href', result.works[i].link);
 
@@ -68,7 +71,8 @@
 
       link.appendChild(image);
       link.appendChild(shadow);
-      fragment.appendChild(link);
+      workItem.appendChild(link);
+      fragment.appendChild(workItem);
     }
 
     container.appendChild(fragment);

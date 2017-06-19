@@ -1,30 +1,10 @@
 @import "../core/_core.scss";
 .hire-me {
   color: $gray-text;
-  &__title {
-    color: $dark-accent;
-  }
   &__text {
-    margin-bottom: 2rem;
-    &_center {
-      text-align: center;
-    }
-    &_left {
-      text-align: center;
-      @media (min-width: 40rem) {
-        text-align: left;
-      }
-    }
-  }
-  &__subtitle {
-    font-family: 'Open Sans Bold';
-    font-weight: bold;
-    font-style: normal;
-    line-height: 1.5;
     text-align: center;
-    color: $dark-accent;
-    @media (min-width: 40rem) {
-      text-align: left;
+    &_left {
+     
     }
   }
 }
@@ -34,15 +14,32 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 2rem;
   @media (min-width: 40rem) {
     flex-direction: row;
   }
   &__item {
+    
+    margin-bottom: 2rem;
+     text-align: center;
+    
     @media (min-width: 40rem) {
       margin-right: 5rem;
+      text-align: left;
       &:last-of-type {
         margin-right: 0;
       }
+    }
+  }
+  &__title {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: center;
+    color: $dark-accent;
+    @media (min-width: 40rem) {
+      text-align: left;
     }
   }
 }

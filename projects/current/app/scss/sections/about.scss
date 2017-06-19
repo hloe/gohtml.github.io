@@ -2,16 +2,7 @@
 .about {
   color: $white;
   text-align: center;
-  &__title {}
-  &__content {
-    @media (min-width: 40rem) {
-      width: 80%;
-      margin: 0 auto;
-    }
-    @media (min-width: 64rem) {
-      width: 70%;
-    }
-  }
+ 
   &__link {
     color: $light-accent;
     &:hover {

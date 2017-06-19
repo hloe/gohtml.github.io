@@ -1,61 +1,58 @@
 @import "../core/_core.scss";
 .promo {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   text-align: center;
   text-transform: uppercase;
   color: $white;
-  @media (min-width: 40rem) {
-    padding-top: 9rem;
-    padding-bottom: 8rem;
-  }
-  @media (min-width: 64rem) {
-    padding-top: 19rem;
-    padding-bottom: 14.75rem;
-  }
   &__list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin-top: 1.5rem;
     @media (min-width: 40rem) {
       flex-direction: row;
     }
   }
-  &__item {
+  &__list-item {
+    display: flex;
+    align-items: center;
     font-size: 1.25rem;
-    font-family: 'Lato Bold';
-    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-weight: 600;
     font-style: normal;
     line-height: 1.4;
     @media (min-width: 40rem) {
       text-align: center;
       &::after {
-        content: '|';
-        margin-bottom: 0;
+        display: inline-block;
+        width: .125rem;
+        height: 1.25rem;
+        content: '';
+        background-color: $white;
         margin-left: .375rem;
         margin-right: .375rem;
       }
       &:last-of-type {
         &::after {
-          content: '';
+          background-color: transparent;
         }
       }
     }
   }
   &__link {
     display: block;
-    width: 8.625rem;
-    height: 2.125rem;
     margin: 3rem auto 0;
+    padding: .6875rem 1.125rem;
     background-color: $light-accent;
     border-radius: .1875rem;
-    box-shadow: .063rem .108rem .125rem 0 $black;
     font-size: 1rem;
-    line-height: 2.125rem;
     vertical-align: middle;
-    font-family: 'Lato Regular';
-    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen-Sans, Cantarell, Helvetica Neue, sans-serif;
+    font-weight: 400;
     font-style: normal;
     color: $white;
     &:hover {

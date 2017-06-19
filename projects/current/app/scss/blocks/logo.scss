@@ -1,33 +1,32 @@
 @import "../core/_core.scss";
 .logo {
-  &:hover {
-    @include transition;
-    filter: brightness(.5);
+  padding-bottom: 1.875rem;
+  font-size: 2.3125rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: $dark-accent;
+  @media (min-width: 40rem) {
+    font-size: 2.625rem;
+    padding-bottom: 0;
   }
-  &__big {
-    font-size: 2.25rem;
-    font-family: 'Lato Black';
-    font-weight: 900;
-    font-style: normal;
-    text-transform: uppercase;
-    @media (min-width: 40rem) {
-      font-size: 2.563rem;
-    }
-    &_dark {
-      color: $dark-accent;
-    }
-    &_light {
-      color: $light-accent;
-    }
+  &_light {
+    color: $light-accent;
   }
-  &__small {
-    font-family: 'Lato Light';
+  &_small {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
     font-size: 1.125rem;
     font-weight: 300;
     font-style: normal;
+    text-transform: lowercase;
     color: $gray;
     @media (min-width: 40rem) {
-      font-size: 1.25rem;
+      font-size: 1.3125rem;
     }
+  }
+  &:hover {
+    @include transition;
+    filter: brightness(.5);
   }
 }
