@@ -1,5 +1,5 @@
 {
-  "name": "homework19-20",
+  "name": "finecoding",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,9 +25,11 @@
     "gulp-svg-sprites": "^4.1.1",
     "gulp-uglify": "^2.1.2",
     "gulp-useref": "^3.1.2",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "promise-polyfill": "6.0.2"
   },
   "dependencies": {
-    "imagemin-pngquant": "^5.0.0"
+    "imagemin-pngquant": "^5.0.0",
+    "whatwg-fetch": "^2.0.3"
   }
 }

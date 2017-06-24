@@ -1,0 +1,27 @@
+<section class="works" id="works">
+  <div class="wrapper wrapper_light">
+    <header class="works__header container">
+      <h2 class="works__title">Portfolio</h2>
+    </header>
+  </div>
+
+  <div class="wrapper wrapper_gray">
+    <div class="works__content container container__no-paddings" id="container">
+
+      <script type="text/template" id="template">
+        <% _.forEach(data, function(item) { %>
+          <div class="works__content-item">
+            <a class="card-link" target="_blank" href="<%= item.link %>">
+              <img class="card__img" data-rjs="2" src="<%= item.image %>">
+              <div class="card__shadow">
+                <h3 class="card__title"><%= item.title %></h3>
+                <p class="card__text"><%= item.description %></p>
+              </div>
+            </a>
+          </div>
+        <% }); %>
+      </script>
+
+    </div>
+  </div>
+</section>
