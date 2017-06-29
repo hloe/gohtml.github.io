@@ -1,0 +1,111 @@
+@import "../core/_core.scss";
+.nav {
+  padding: .625rem .938rem 1.25rem .625rem;
+  @media (min-width: 768px) {
+    position: fixed;
+    width: 100%;
+    padding: 1.563rem .938rem;
+  }
+}
+
+.logo {
+  display: block;
+  @media (max-width: 767px) {
+    width: 100%;
+    max-width: 9.375rem;
+  }
+  @media (min-width: 768px) {
+    margin-left: 1.25rem;
+  }
+}
+
+.menu {
+  @media (min-width: 768px) and (max-width: 992px) {
+    // Add paddings in case of long menu
+    margin-top: .813rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+  }
+}
+
+.menu-list {
+  @media (max-width: 767px) {
+    position: absolute;
+    z-index: 10;
+    float: right;
+    right: 0;
+    width: 50%;
+    padding: 1.5rem;
+    background-color: $white;
+    border: .063rem solid $khaki;
+    text-align: center;
+  }
+}
+
+.menu-hide {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.menu-item {
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  @media (max-width: 767px) {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+  @media (min-width: 992px) {
+    margin-right: 5rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.menu-link {
+  padding: .438rem .625rem;
+  text-decoration: none;
+  @media (max-width: 767px) {
+    color: $khaki;
+  }
+  @media (min-width: 768px) {
+    border-bottom: .125rem solid transparent;
+  }
+}
+
+.menu-link:hover {
+  text-decoration: none;
+  @media (min-width: 992px) {
+    border-bottom: .125rem solid $khaki;
+  }
+}
+
+.menu-button {
+  border-width: 0;
+  outline-width: 0;
+  cursor: pointer;
+    display: block;
+  background-repeat: no-repeat;
+
+  background-image: url(/images/spritesheet.png);
+  width: 53px;
+  height: 40px;
+  background-position: -5px -31px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.select {
+  float: right;
+  right: 0;
+}

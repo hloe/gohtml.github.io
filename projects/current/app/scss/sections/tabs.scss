@@ -1,0 +1,136 @@
+@import "../core/_core.scss";
+.tab {
+  padding: 1.563rem .938rem;
+  @media (min-width: 768px) {
+    float: left;
+    width: 20%;
+    min-height: 200vh;
+    padding-top: 15%;
+    text-align: center;
+  }
+  @media (min-width: 1100px) {
+    padding-top: 20%;
+    padding-left: 3.625rem;
+    padding-right: 3.625rem;
+  }
+}
+
+.narrow {
+  @media (min-width: 768px) {
+    @include transition;
+    width: 16.66%;
+  }
+}
+
+.wide {
+  @media (min-width: 768px) {
+    @include transition;
+    width: 33.33%;
+  }
+}
+
+.panel {
+  cursor: pointer;
+}
+
+.pink {
+  background-color: $pink;
+  border: .063rem solid #363636;
+}
+
+.red {
+  background-color: $red;
+  border: .063rem solid #693440;
+}
+
+.blue {
+  background-color: $blue;
+  border: .063rem solid #533e5d;
+}
+
+.green {
+  background-color: $green;
+  border: .063rem solid #6c9670;
+}
+
+.yellow {
+  background-color: $yellow;
+  border: .063rem solid #aeb289;
+}
+
+.panel-title {
+  margin-bottom: 1.875rem;
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  @media (min-width: 768px) {
+    font-size: 1.563rem;
+  }
+}
+
+.panel-title-hover {
+  margin-bottom: 2.3125rem;
+  color: $khaki;
+  font-size: 2.5rem;
+  @media (min-width: 992px) {
+    font-size: 3.125rem;
+  }
+}
+
+.panel-subtitle {
+  margin-bottom: 2.3725rem;
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.panel-subtitle-hover {
+  margin-bottom: 1.5625rem;
+  font-size: 1.563rem;
+  font-weight: 600;
+  color: $khaki;
+
+}
+
+.collapse-title {
+  margin-bottom: 2.3125rem;
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.collapse-text {
+  margin-bottom: 1.5rem;
+}
+
+.collapse-list {
+  margin-bottom: 2.25rem;
+  list-style: none;
+}
+
+.subpoint {
+  margin-bottom: .9375rem;
+}
+
+.subpoint-link {
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.tabs-link {
+  padding: .75rem 2.5rem;
+  border: .063rem solid $white;
+  border-radius: .25rem;
+  text-transform: uppercase;
+  &:hover {
+    border: .063rem solid $khaki;
+    background-color: $dark-gray;
+  }
+}

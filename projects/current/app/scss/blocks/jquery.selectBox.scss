@@ -1,0 +1,221 @@
+@import "../core/_core.scss";
+* {
+  box-sizing: border-box;
+}
+
+.selectBox-dropdown {
+  position: relative;
+  min-width: 3.625rem;
+  height: 2.5rem;
+  background-color: $white;
+  border: .063rem solid $dark-red;
+  text-transform: uppercase;
+  outline-width: 0;
+  line-height: 2.5rem;
+  vertical-align: middle;
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: $dark-red;
+  cursor: pointer;
+  @media (min-width: 768px) {
+    min-width: 5.625rem;
+    background-color: transparent;
+    border: .063rem solid $white;
+    color: $white;
+  }
+}
+
+.selectBox-dropdown:focus,
+.selectBox-dropdown:focus .selectBox-arrow {
+  border-color: $dark-red;
+  outline-width: 0;
+  @media (min-width: 768px) {
+    border-color: $white;
+  }
+}
+
+.selectBox-dropdown .selectBox-label {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.selectBox-dropdown .selectBox-arrow {
+  position: absolute;
+  content: '>';
+  top: 18px;
+  right: 10px;
+    display: block;
+  background-repeat: no-repeat;
+
+  background-image: url(/images/spritesheet.png);
+  width: 7px;
+  height: 4px;
+  background-position: -31px -5px;
+  @media (min-width: 768px) {
+      display: block;
+  background-repeat: no-repeat;
+
+    background-image: url(/images/spritesheet.png);
+    width: 8px;
+    height: 5px;
+    background-position: -68px -31px;
+  }
+}
+
+
+/* Dropdown menu */
+
+.selectBox-dropdown-menu {
+  display: block;
+  position: absolute;
+  z-index: 99999;
+  max-width: 3.625rem;
+  min-height: 7.813rem;
+  background-color: $white;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border: .063rem solid $dark-red;
+  /* should be the same border width as .selectBox-dropdown */
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  @media (min-width: 768px) {
+    max-width: 5.625rem;
+    background-color: transparent;
+    border-color: $white;
+  }
+}
+
+
+/* Inline control */
+
+.selectBox-inline {
+  outline-width: 0;
+  background-color: $white;
+  display: inline-block;
+  overflow: auto;
+  @media (min-width: 768px) {
+    background-color: transparent;
+  }
+}
+
+.selectBox-inline:focus {
+  border-color: transparent;
+}
+
+
+/* Options */
+
+.selectBox-options,
+.selectBox-options LI,
+.selectBox-options LI A {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: $dark-red;
+  @media (min-width: 768px) {
+    color: $white;
+  }
+}
+
+.selectBox-options {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  vertical-align: middle;
+  color: $dark-red;
+  @media (min-width: 768px) {
+    background-repeat: no-repeat;
+    color: $white;
+  }
+}
+
+.selectBox-options > li > a:hover {
+  color: $dark-red;
+  text-decoration: none;
+  @media (min-width: 768px) {
+    color: $white;
+  }
+}
+
+.selectBox-options .selectBox-optgroup {
+  padding: 0;
+}
+
+.ru {
+  position: relative;
+  z-index: 7;
+  display: inline-block;
+  text-indent: .625rem;
+  @media (min-width: 768px) {
+    text-indent: 1.688rem;
+    &:before {
+      position: absolute;
+      top: .75rem;
+      left: .313rem;
+      display: block;
+      content: '';
+        display: block;
+  background-repeat: no-repeat;
+
+      background-image: url(/images/spritesheet.png);
+      width: 16px;
+      height: 16px;
+      background-position: -48px -5px;
+    }
+  }
+}
+
+.ua {
+  position: relative;
+  z-index: 7;
+  display: inline-block;
+  text-indent: .625rem;
+  @media (min-width: 768px) {
+    text-indent: 1.688rem;
+    &:before {
+      position: absolute;
+      top: .75rem;
+      left: .313rem;
+      display: block;
+      content: '';
+        display: block;
+  background-repeat: no-repeat;
+
+      background-image: url(/images/spritesheet.png);
+      width: 16px;
+      height: 16px;
+      background-position: -74px -5px;
+    }
+  }
+}
+
+.en {
+  position: relative;
+  z-index: 7;
+  display: inline-block;
+  text-indent: .625rem;
+  @media (min-width: 768px) {
+    text-indent: 1.688rem;
+    &:before {
+      position: absolute;
+      top: .75rem;
+      left: .313rem;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      content: '';
+        display: block;
+  background-repeat: no-repeat;
+
+      background-image: url(/images/spritesheet.png);
+      width: 16px;
+      height: 16px;
+      background-position: -5px -5px;
+    }
+  }
+}
