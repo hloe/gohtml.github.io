@@ -5,4 +5,4 @@
 jQuery/
 node_modules/
 .sass-cache/
-npm-degug.log.*
+npm-debug.log.*
