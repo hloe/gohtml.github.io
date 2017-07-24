@@ -18,11 +18,11 @@ class App extends React.Component {
 
           <Switch>
             <Route exact path='/' component={Registration} />
-            <Route exact path='/registration' component={Registration} />
-            <Route exact path='/login' component={Login} />
-            <Route exact path='/users' component={Users} />  
+            <Route path='/registration' component={Registration} />
+            <Route path='/login' component={Login} />
+            <Route path='/users' component={Users} />  
             <Route render={function () {
-              return < Registration/>
+              return <Registration />
             }} />
           </Switch>
         </div>

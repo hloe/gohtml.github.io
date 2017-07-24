@@ -12,7 +12,7 @@ function Nav () {
           <NavLink activeClassName="active" className="nav-link" to="/login">Login</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink activeClassName="active" className="nav-link disabled" to="/users">Users</NavLink>
+          <NavLink activeClassName="active" className="nav-link" to="/users">Users</NavLink>
         </li>
       </ul>
     </nav>
