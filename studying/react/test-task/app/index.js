@@ -2,40 +2,35 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 require('./index.css');
 
-const data = [
-	{ id: 2, name: 'item'},
-	{ id: 1, name: 'item'},
-	{ id: 0, name: 'item'}
-];
+const api = {
+  data: [
+    { id: 2, name: "item" },
+    { id: 1, name: "item" },
+    { id: 0, name: "item" }
+  ],
+  appendItem() {
+    this.data.unshift({
+      id: this.data.length,
+      name: "item"
+    });
+  },
+  getData() {
+    return this.data;
+  }
+};
 
 class Counter extends React.PureComponent {
-  constructor(props) {
-    // Pass props to parent class
-    super(props);
+  constructor() {
+    super();
 
-    // Set initial state
     this.state = {
       count: 0
-    }
-  }; 
+    };
+  } 
 
-  // Problem is here
-  
-  handleClick: () => {
-    this.setState((prevState) => {
-      return {count: prevState.count + 1};
-    });
-  };  
-
-//Module build failed: SyntaxError: C:/Users/Larysa/Desktop/hloe/studying/react/test-task/app/index.js: Unexpected token, expected : (25:8)
-//
-//  23 |   
-//  24 |   handleClick: () => {
-//> 25 |     this.setState((prevState) => {
-//     |         ^
-//  26 |       return {count: prevState.count + 1};
-//  27 |     });
-//  28 |   }; 
+  handleClick = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
 
   render() {
     return (
@@ -46,9 +41,8 @@ class Counter extends React.PureComponent {
   }
 }
 
-const ListItem = ({ item }) => (
-  <li>{item.id} - {item.name} - <Counter /></li>
-);
+const ListItem = ({ item }) => 
+<li>{item.id} - {item.name} - <Counter /></li>;
 
 const renderListItem = (item, idx) => (
   <ListItem key={idx} item={item} />
