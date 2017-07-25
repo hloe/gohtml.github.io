@@ -1,4 +1,5 @@
 const React = require('react');
+const Link = require('react-router-dom').Link;
 
 class Registration extends React.Component {
   constructor () {
@@ -7,7 +8,8 @@ class Registration extends React.Component {
     this.state = {
       email: '',
       password: '',
-      passwordConfirmed: ''
+      passwordConfirmed: '',
+      messageStyle: 'hidden-xs-up'
     };
     
     this.handleEmailChanged = this.handleEmailChanged.bind(this);
@@ -41,13 +43,15 @@ class Registration extends React.Component {
       return;
     }
     
-    if (this.state.password === '') {
-      alert('Mistake: Password can\'t be empty');
+    if (this.state.email === '') {
+      alert('Please, fill in your email');
       return;
     }
     
-//    localStorage.clear();
-  
+    if (this.state.password === '') {
+      alert('Mistake: Password can\'t be empty');
+      return;
+    }    
     
     // Get data from localStorage
     let users = (localStorage.getItem('users') === null) ? [] : JSON.parse(localStorage.getItem('users'));
@@ -73,13 +77,12 @@ class Registration extends React.Component {
     // Add new user to the array in localStorage
     users.push(data);
     localStorage.setItem('users', JSON.stringify(users));
-   
-   // console.log('An array from localStorage: ' + JSON.stringify(localStorage.getItem('users')));
     
     this.setState({
         email: '',
         password: '',
-        passwordConfirmed: ''
+        passwordConfirmed: '',
+        messageStyle: 'alert alert-success'
       });
     
     return;
@@ -88,7 +91,7 @@ class Registration extends React.Component {
   render() {
     return(
       <div className="row justify-content-center">  
-        <div className="col-12 col-sm-auto">
+        <div className="col-md-3">
           <h1 className="h1">Registration</h1>
 
           <form>
@@ -128,6 +131,8 @@ class Registration extends React.Component {
               </button>
             </div>
           </form>
+      
+          <p className={this.state.messageStyle}>You have successfully registered. Now you can <Link to="/login">login.</Link></p>
 
         </div>
       </div>

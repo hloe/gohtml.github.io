@@ -1,6 +1,6 @@
 const React = require('react');
+const Link = require('react-router-dom').Link;
 
-// добавить проверку на то, есть ли такое мыло уже в базе
 class Login extends React.Component {
   constructor () {
     super();
@@ -8,7 +8,7 @@ class Login extends React.Component {
     this.state = {
       email: '',
       password: '',
-      isAuthed: ''
+      messageStyle: 'hidden-xs-up'
     };
     
     this.handleEmailChanged = this.handleEmailChanged.bind(this);
@@ -37,7 +37,6 @@ class Login extends React.Component {
       return;
     }
       
-    
     // Get data from localStorage
     let users = (localStorage.getItem('users') === null) ? [] : JSON.parse(localStorage.getItem('users'));
     
@@ -70,19 +69,21 @@ class Login extends React.Component {
       });
       return;
     }
-           
+    
+    // Set status 'isAuth' in localStorage
+    localStorage.setItem('isAuth', JSON.stringify(true));
     
     return this.setState({
-        email: '',
-        password: '',
-        isAuthed: true
-      });
+      email: '',
+      password: '',
+      messageStyle: 'alert alert-success'
+    });
   }
   
   render() {
     return(
       <div className="row justify-content-center">  
-        <div className="col-12 col-sm-auto">
+        <div className="col-md-3">
           <h1 className="h1">Login</h1>
 
           <form>
@@ -113,6 +114,8 @@ class Login extends React.Component {
               </button>
             </div>
           </form>
+      
+          <p className={this.state.messageStyle}>You have successfully registered. Now you can <Link to="/users">see section 'Users'.</Link></p>
 
         </div>
       </div>
