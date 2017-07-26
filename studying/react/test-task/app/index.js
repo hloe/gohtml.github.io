@@ -40,28 +40,46 @@ class Counter extends React.PureComponent {
     );
   }
 }
-
-const ListItem = ({ item }) => 
-<li>{item.id} - {item.name} - <Counter /></li>;
-
-const renderListItem = (item, idx) => (
-  <ListItem key={idx} item={item} />
-);
     
 const List = ({ data }) => (
   <ul>
-    {data.map(renderListItem)}
+    {data.map(function(item) {
+      return(
+        <li key={item.id}>{item.id} - {item.name} - <Counter key={item.id} /></li>
+      );
+    })}
   </ul>
 );
 
-const ListContainer = () => (
-  <div>
-    1. The counter for each item has to work by pressing the "+" button in the element
-    <br/ >
-    2. When adding a new element, the counter stores in the item that has been created
-    <List data={data}/>
-  </div>  
-);
+class ListContainer extends React.Component {
+  constructor() {
+    super();
+    
+    this.state = {
+      data: api.getData()
+    };
+  }
+  
+  onAppendItem = () => {
+    api.appendItem();
+
+    this.setState({
+      data: api.getData()
+    });
+  };
+  
+  render() {
+    return (
+        <div>
+          1. The counter for each item has to work by pressing the "+" button in the element
+          <br/ >
+          2. When adding a new element, the counter stores in the item that has been created
+          <List data={this.state.data}/>
+          <button onClick={this.onAppendItem}>add item</button>
+        </div>  
+    );
+  }
+};
 
 ReactDOM.render(
   <ListContainer />,
