@@ -6,7 +6,6 @@ var Todo = require('./components/Todo');
 var TodoList = require('./components/TodoList');
 var TodoForm = require('./components/TodoForm');
 
-// Container Component
 // Todo id
 window.id = 0;
 class TodoApp extends React.Component {

@@ -1,0 +1,38 @@
+@import "../core/_core.scss";
+.promo {
+  display: flex;
+  justify-content: flex-end;
+  height: 31.19rem;
+  padding: .813rem 1.25rem;
+  background-color: $promo;
+  @include retina('../images/promo.jpg', 2, 31.19rem 31.19rem, top left no-repeat);
+  @media (min-width: 31.19rem) {
+    background-color: $promo;
+    @include retina('../images/promo-tablet.jpg', 2, 46.81rem 31.25rem, top left no-repeat);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+  }
+  @media (min-width: 62rem) {
+    background-color: $promo;
+    @include retina('../images/promo-desktop.jpg', 2, 62.44rem 31.25rem, top left no-repeat);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 1.25rem;
+    font-family: 'Proxima Nova Semibold', Arial, sans-serif;
+    font-size: .938rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.25rem;
+    vertical-align: middle;
+    color: $white;
+  }
+  &__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: .375rem;
+  }
+}

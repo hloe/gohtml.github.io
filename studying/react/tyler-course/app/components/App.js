@@ -22,7 +22,7 @@ class App extends React.Component {
             <Route path='/battle/results' component={Results} />
             <Route path='/popular' component={Popular} />
             <Route render={function () {
-              return <p>Not Found</p>
+              return <Home />
             }} />
           </Switch>
         </div>

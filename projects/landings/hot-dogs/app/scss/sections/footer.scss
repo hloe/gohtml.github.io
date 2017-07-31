@@ -1,0 +1,20 @@
+@import "../core/_core.scss";
+.footer {
+  background-color: $footer;
+  padding: 2.125rem 1.25rem 1.625rem;
+  font-family: 'Open Sans Regular', Arial, sans-serif;
+  font-size: .875rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.7;
+  word-spacing: 0;
+  color: $text;
+  text-align: center;
+  &__right {
+    @media (min-width: 62rem) {
+      display: block;
+      left: 0;
+      text-align: left;
+    }
+  }
+}

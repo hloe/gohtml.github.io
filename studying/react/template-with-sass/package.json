@@ -1,0 +1,43 @@
+{
+  "name": "github-battle",
+  "version": "1.0.0",
+  "description": "Project for React Training's fundamental course.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "SET NODE_ENV='production' && webpack -p",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "author": "Tyler McGinnis",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-hot-loader": "^1.3.0",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^2.29.0",
+    "inline-manifest-webpack-plugin": "^3.0.1",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.4.1",
+    "webpack-chunk-hash": "^0.4.0",
+    "webpack-dev-server": "^3.2.0"
+  },
+  "dependencies": {
+    "react": "^16.0.0-alpha.5",
+    "react-dom": "^16.0.0-alpha.5"
+  }
+}

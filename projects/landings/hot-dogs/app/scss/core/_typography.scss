@@ -1,0 +1,68 @@
+@import "_fonts.scss";
+body {
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: $text;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin-bottom: 5rem;
+  padding-top: 6.25rem;
+  background: url(../images/hotdog.svg) top center no-repeat;
+  background-size: 4.375rem 4.375rem;
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: -.125rem;
+  word-spacing: .087rem;
+  color: $text;
+  @media (min-width: 48rem) {
+    padding-top: 7.25rem;
+    background-size: 5.75rem 5.75rem;
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  position: relative;
+  margin-bottom: 2.125rem;
+  font-family: 'Open Sans Bold', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: -.056rem;
+  color: $text;
+  @media (min-width: 48rem) {
+    padding-left: 3.125rem;
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      width: 1.938rem;
+      height: .125rem;
+      content: '';
+      background-color: $decor-line;
+    }
+  }
+}
+
+p {
+  padding-left: 3.188rem;
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: -.025rem;
+  word-spacing: -.063rem;
+  color: $text;
+}

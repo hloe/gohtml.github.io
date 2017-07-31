@@ -1,0 +1,18 @@
+@import "../core/_core.scss";
+.nav {
+  background-color: $white;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  @media (min-width: 48rem) {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    box-shadow: .063rem .25rem .25rem #e8e7e7;
+  }
+  @media (min-width: 62rem) {
+    position: relative;
+    z-index: 2;
+        margin-top: -1.125rem;
+  }
+}

@@ -1,0 +1,16 @@
+@mixin transition {
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+//@mixin clearfix {
+//  &:after {
+//    clear: both;
+//    content: '.';
+//    display: block;
+//    height: 0;
+//    visibility: hidden;
+//  }
+//}

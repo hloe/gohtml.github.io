@@ -28,11 +28,13 @@ class Counter extends React.PureComponent {
     };
   } 
 
-  handleClick = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
-
-  render() {
+handleClick = () => {
+  this.setState((prevState) => ({
+    count: prevState.count + 1
+  }))
+}
+  
+render() {
     return (
       <span>{this.state.count}
       <button onClick={this.handleClick}>+</button>
@@ -62,7 +64,7 @@ class ListContainer extends React.Component {
   
   onAppendItem = () => {
     api.appendItem();
-
+  
     this.setState({
       data: api.getData()
     });

@@ -24,8 +24,8 @@ Tbody.PropTypes = {
 }
 
 class Table extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     
     this.state = {
       data:[]
@@ -73,9 +73,7 @@ class Table extends React.Component {
           </div>
         </div>
       );
-    }
-      
-    
+    }    
   }
 }
 
