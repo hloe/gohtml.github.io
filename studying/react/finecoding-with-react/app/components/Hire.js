@@ -1,21 +1,6 @@
 const React = require('react');
 const IconList = require('./IconList');
 
-const contactData = [
-  {
-    title: 'Phone number',
-    contact: '+38 (096)777-29-20'
-  },
-  {
-    title: 'Email',
-    contact: 'goroshanska@gmail.com'
-  },
-  {
-    title: 'Skype',
-    contact: 'larisa_goroshanska'
-  }
-];
-
 const ContactsItem = (props) => {
   return(
     <li className="contacts__item">
@@ -26,9 +11,24 @@ const ContactsItem = (props) => {
 }
 
 const ContactsList = (props) => {
+  const contactData = [
+    {
+      title: 'Phone number',
+      contact: '+38 (096)777-29-20'
+    },
+    {
+      title: 'Email',
+      contact: 'goroshanska@gmail.com'
+    },
+    {
+      title: 'Skype',
+      contact: 'larisa_goroshanska'
+    }
+  ];
+  
   return(
     <ul className="contacts">
-    {props.data.map(function(item, index) {
+    {contactData.map(function(item, index) {
       return(
         <ContactsItem item={item} key={index} />
       );
@@ -45,7 +45,7 @@ const Hire = () => {
       <p className="hire-me__text">If you are interested in work with me, please, don't be shy to write or call. I will answer asap.</p>
 
       <div className="hire-me__content">
-        <ContactsList data={contactData} />
+        <ContactsList />
         <IconList />
       </div>
     </div>

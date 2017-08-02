@@ -27,12 +27,12 @@ class App extends React.Component {
             />
 
             <Switch>
-              <Route exact path="/" component={Works} />
-              <Route exact path="/works" component={Works} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/hire" component={Hire} />
+              <Route exact path="/" component={Home} />
+              <Route path="/works" component={Works} />
+              <Route path="/about" component={About} />
+              <Route path="/hire" component={Hire} />
               <Route render={function () {
-                return {Works}
+                return <p>Not found</p>
               }} />
             </Switch>
           </div>
