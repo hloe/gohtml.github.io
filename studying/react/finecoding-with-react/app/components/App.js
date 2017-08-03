@@ -25,13 +25,12 @@ class App extends React.Component {
                 childClassName: 'menu header__menu'
               }}
             />     
-            <Switch>
-              <Route exact path="" component={Home} />
-              <Route exact path="/" component={Home} />
+            <Switch>              
               <Route exact path="/home" component={Home} />
               <Route exact path="/works" component={Works} />
               <Route exact path="/about" component={About} />
               <Route exact path="/hire" component={Hire} /> 
+              <Route component={Home} />
             </Switch>
           </div>            
           <Footer />
