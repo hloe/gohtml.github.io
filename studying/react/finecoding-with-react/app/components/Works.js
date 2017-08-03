@@ -50,15 +50,6 @@ const WorksList = (props) => {
     );
   }
   
-/////////////
-//  {/*Create an <li> for every name in the list array who is also your friend*/           this.props.list.filter(function(user){
-//              return user.friend === true
-//            }).map(function(user){
-//            return <li>{user.name}</li>
-//          })
-//          }
-////////////
-
   return null; 
 }
 
@@ -89,7 +80,7 @@ class Works extends React.Component {
   }
   
   getWorks() {
-    axios.get('https://api.myjson.com/bins/tm4ix')
+    axios.get('https://api.myjson.com/bins/c4ert')
       .then(function (response) {
         return response.data.works;            
       })
