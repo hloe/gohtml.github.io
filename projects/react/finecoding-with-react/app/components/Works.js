@@ -80,7 +80,7 @@ class Works extends React.Component {
   }
   
   getWorks() {
-    axios.get('https://api.myjson.com/bins/c4ert')
+    axios.get('https://api.myjson.com/bins/10ypzl')
       .then(function (response) {
         return response.data.works;            
       })
