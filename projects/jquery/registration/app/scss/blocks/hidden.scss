@@ -1,0 +1,10 @@
+@import "../core/_variables.scss";
+.hidden {
+  display: none;
+}
+
+.hidden-mobile {
+  @media (max-width: 47.9375rem) {
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+@import "../core/_variables.scss";
+.container {
+  position: relative;
+  min-width: 20rem;
+  max-width: 47.9375rem;
+  margin: 0 auto;
+  @media (min-width: 48rem) {
+    max-width: 56.375rem;
+  }
+}

@@ -1,0 +1,43 @@
+@import "../core/_variables.scss";
+.article {
+  margin-bottom: 4rem;
+  @media (min-width: 48rem) {
+    display: flex;
+    align-items: center;
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.article-link {
+  &:hover {
+    color: $gray;
+  }
+}
+
+.article-text {
+  padding: 1rem;
+}
+
+.article-title {
+  padding: 0 .5rem;
+  line-height: 1.5;
+  margin-bottom: .5rem;
+  @media (min-width: 48rem) {}
+}
+
+.article-description {
+  padding: 0 .5rem;
+  line-height: 1.2;
+  @media (min-width: 48rem) {}
+}
+
+.article-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  @media (min-width: 48rem) {
+    max-width: 30rem;
+  }
+}

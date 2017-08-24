@@ -1,0 +1,118 @@
+.tab {
+  padding: 1.563rem .938rem; }
+  @media (min-width: 768px) {
+    .tab {
+      float: left;
+      width: 20%;
+      min-height: 200vh;
+      padding-top: 15%;
+      text-align: center; } }
+  @media (min-width: 1100px) {
+    .tab {
+      padding-top: 20%;
+      padding-left: 3.625rem;
+      padding-right: 3.625rem; } }
+
+@media (min-width: 768px) {
+  .narrow {
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    width: 16.66%; } }
+
+@media (min-width: 768px) {
+  .wide {
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    width: 33.33%; } }
+
+.panel {
+  cursor: pointer; }
+
+.pink {
+  background-color: #cd5895;
+  border: .063rem solid #363636; }
+
+.red {
+  background-color: #cf0808;
+  border: .063rem solid #693440; }
+
+.blue {
+  background-color: #3859ab;
+  border: .063rem solid #533e5d; }
+
+.green {
+  background-color: #1ad53e;
+  border: .063rem solid #6c9670; }
+
+.yellow {
+  background-color: #d2e154;
+  border: .063rem solid #aeb289; }
+
+.panel-title {
+  margin-bottom: 1.875rem;
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-wrap: break-word; }
+  @media (min-width: 768px) {
+    .panel-title {
+      font-size: 1.563rem; } }
+
+.panel-title-hover {
+  margin-bottom: 2.3125rem;
+  color: #669d37;
+  font-size: 2.5rem; }
+  @media (min-width: 992px) {
+    .panel-title-hover {
+      font-size: 3.125rem; } }
+
+.panel-subtitle {
+  margin-bottom: 2.3725rem;
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-wrap: break-word; }
+
+.panel-subtitle-hover {
+  margin-bottom: 1.5625rem;
+  font-size: 1.563rem;
+  font-weight: 600;
+  color: #669d37; }
+
+.collapse-title {
+  margin-bottom: 2.3125rem;
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.collapse-text {
+  margin-bottom: 1.5rem; }
+
+.collapse-list {
+  margin-bottom: 2.25rem;
+  list-style: none; }
+
+.subpoint {
+  margin-bottom: .9375rem; }
+
+.subpoint-link {
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.tabs-link {
+  padding: .75rem 2.5rem;
+  border: .063rem solid #fff;
+  border-radius: .25rem;
+  text-transform: uppercase; }
+  .tabs-link:hover {
+    border: .063rem solid #669d37;
+    background-color: #1b1b1b; }

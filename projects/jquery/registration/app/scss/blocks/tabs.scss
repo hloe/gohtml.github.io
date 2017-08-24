@@ -1,0 +1,50 @@
+@import "../core/_variables.scss";
+.tabs-list {
+  background-color: $black;
+  padding: 35px 89px 70px;
+  @media (min-width: 48rem) {
+    display: flex;
+    background-color: $white;
+    padding: 0;
+  }
+}
+
+.tabs-item {
+  font-size: 1.5rem;
+  margin-bottom: 3.063rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (min-width: 48rem) {
+    margin-bottom: 0;
+    font-size: 1.313rem;
+    font-weight: 600;
+  }
+}
+
+.tabs-link {
+  display: block;
+  border: .188rem solid transparent;
+  padding: .438rem 1.625rem .813rem 1.438rem;
+  color: $white;
+  @media (min-width: 48rem) {
+    border: .313rem solid transparent;
+    border-bottom-width: 0;
+    padding: 1.063rem .375rem 1.813rem;
+    color: $black;
+  }
+}
+
+.active-tab {
+  border-color: $yellow;
+  @media (min-width: 48rem) {
+    border-color: $black;
+  }
+}
+
+.tabs-content {
+  padding-top: .188rem;
+  @media (min-width: 48rem) {
+    padding-top: .875rem;
+  }
+}

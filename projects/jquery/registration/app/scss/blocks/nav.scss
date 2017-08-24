@@ -1,0 +1,22 @@
+@import "../core/_variables.scss";
+.nav-wrapper {
+  border-bottom: .5rem solid $black;
+}
+
+.nav {
+  @media (min-width: 48rem) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 6.25rem 1rem;
+  @media (min-width: 48rem) {
+    padding: 0;
+  }
+}
