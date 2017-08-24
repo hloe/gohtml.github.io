@@ -2,7 +2,8 @@
 *.psd
 *.log
 *.db
-jQuery/
 node_modules/
 .sass-cache/
 npm-debug.log.*
+react-router-tutorial
+redux/examples
