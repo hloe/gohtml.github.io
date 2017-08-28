@@ -1,0 +1,53 @@
+@import "../core/_variables.scss";
+@import "../core/_retina.scss";
+.pluses {
+  background-color: $light-gray;
+  text-align: center;
+  &__item {
+    @media (min-width: 48rem) {
+      text-align: left;
+    }
+    &:nth-of-type(even) {
+      @media (min-width: 48rem) {
+        text-align: right;
+      }
+    }
+  }
+  &__text {
+    position: relative;
+    @media (min-width: 48rem) {
+      padding-bottom: 87px;
+    }
+    @media (min-width: 48rem) {
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 192px;
+        height: 137px;
+        @include retina('../images/quote.png', 2, cover, top center no-repeat);
+        content: '';
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
+    }
+    &--right {
+      @media (min-width: 48rem) {
+        &:before {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+  &__figure {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    @media (min-width: 48rem) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}

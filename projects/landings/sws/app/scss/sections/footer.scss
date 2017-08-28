@@ -1,0 +1,18 @@
+@import "../core/_variables.scss";
+.footer {
+  background-color: $footer;
+  color: $white;
+  &__title {
+    margin-bottom: 54px;
+  }
+  &__subtitle {
+    font-family: 'Lato Regular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    margin-bottom: 17px;
+  }
+  &__menu {
+    margin-top: 98px;
+  }
+}

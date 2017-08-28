@@ -1,0 +1,241 @@
+@import "_fonts.scss";
+@import "_mixins.scss";
+a {
+  text-decoration: none;
+  &:hover {
+    @include transition;
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  font-family: 'Lato Hairline', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  @media (min-width: 48rem) {
+    font-size: 64px;
+  }
+  @media (min-width: 75rem) {
+    font-size: 72px;
+  }
+}
+
+h2 {
+  font-family: 'Lato Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.067;
+  @media (min-width: 62rem) {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-family: 'Lato Medium', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Lato Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.563;
+}
+
+figure {
+  display: inline-block;
+  font-family: 'Lato Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.786;
+  color: $figcaption;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+article figcaption {
+  font-size: 1rem;
+  text-align: right;
+}
+
+textarea {
+  width: 100%;
+  height: 144px;
+  padding: 19px 21px 16px;
+  outline-width: 0;
+  border: 1px solid $input;
+  border-radius: 3px;
+  background-color: transparent;
+  font-size: 1rem;
+  color: $white;
+  resize: none;
+  overflow: auto;
+  &:hover {
+    @include transition;
+    background-color: $white;
+    color: $black;
+  }
+  &:focus {
+    @include transition;
+    background-color: $white;
+    color: $black;
+  }
+}
+
+input[type="text"],
+input[type="email"] {
+  display: block;
+  width: 100%;
+  padding: 19px 21px 16px;
+  outline-width: 0;
+  border: 1px solid $input;
+  border-radius: 3px;
+  background-color: transparent;
+  font-size: 1rem;
+  color: $white;
+  &:hover {
+    @include transition;
+    background-color: $white;
+  }
+  &:focus {
+    @include transition;
+    background-color: $white;
+    color: $black;
+  }
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Lato Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  color: $white;
+}
+
+input:hover::-webkit-input-placeholder {
+  @include transition;
+  color: $black;
+}
+
+input:focus::-webkit-input-placeholder {
+  @include transition;
+  background-color: $white;
+  color: $black;
+}
+
+textarea:hover::-webkit-input-placeholder {
+  @include transition;
+  color: $black;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  @include transition;
+  color: $black;
+}
+
+::-moz-placeholder {
+  font-family: 'Lato Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  color: $white;
+}
+
+input:hover::-moz-placeholder {
+  @include transition;
+  color: $black;
+}
+
+input:focus::-moz-placeholder {
+  @include transition;
+  background-color: $white;
+  color: $black;
+}
+
+textarea:hover::-moz-placeholder {
+  @include transition;
+  color: $black;
+}
+
+textarea:focus::-moz-placeholder {
+  @include transition;
+  color: $black;
+}
+
+:-moz-placeholder {
+  font-family: 'Lato Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  color: $white;
+}
+
+input:hover:-moz-placeholder {
+  @include transition;
+  color: $black;
+}
+
+input:focus:-moz-placeholder {
+  @include transition;
+  background-color: $white;
+  color: $black;
+}
+
+textarea:hover:-moz-placeholder {
+  @include transition;
+  color: $black;
+}
+
+textarea:focus:-moz-placeholder {
+  @include transition;
+  color: $black;
+}
+
+:-ms-input-placeholder {
+  font-family: 'Lato Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  color: $white;
+}
+
+input:hover:-ms-input-placeholder {
+  @include transition;
+  color: $black;
+}
+
+input:focus:-ms-input-placeholder {
+  @include transition;
+  background-color: $white;
+  color: $black;
+}
+
+textarea:hover:-ms-input-placeholder {
+  @include transition;
+  color: $black;
+}
+
+textarea:focus:-ms-input-placeholder {
+  @include transition;
+  color: $black;
+}
+
+li {
+  font-family: 'Lato Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.563;
+}

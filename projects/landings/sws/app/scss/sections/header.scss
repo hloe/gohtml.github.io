@@ -1,0 +1,21 @@
+@import "../core/_variables.scss";
+.header {
+  padding: 129px 0 217px;
+  text-align: center;
+  color: $white;
+  &__title {
+    @media (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+  &__subtitle {
+    font-family: 'Lato Medium';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  &__button {
+    margin: 75px auto 0;
+  }
+}

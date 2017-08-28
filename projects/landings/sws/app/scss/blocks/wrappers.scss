@@ -1,0 +1,18 @@
+@import "../core/_variables.scss";
+@import "../core/_retina.scss";
+.header-wrapper {
+  background-color: $footer;
+  @include retina('../images/header-sm.jpg', 2, cover, top center no-repeat);
+  @media (min-width: 62rem) {
+    background-color: $footer;
+    @include retina('../images/header.jpg', 2, cover, top center no-repeat);
+  }
+}
+
+.works-wrapper {
+  background-color: $works;
+}
+
+.copyright-wrapper {
+  background-color: $copyright;
+}

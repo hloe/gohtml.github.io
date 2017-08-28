@@ -1,0 +1,9 @@
+@import "../core/_variables.scss";
+.form {
+  &__item {
+    margin-bottom: 40px;
+  }
+  &__button {
+    width: 100%;
+  }
+}

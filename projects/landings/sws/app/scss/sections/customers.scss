@@ -1,0 +1,63 @@
+@import "../core/_variables.scss";
+.customers {
+  text-align: center;
+  @media (min-width: 48rem) {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  &__list {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  &__images {
+    @media (max-width: 767px) {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.links {
+  @media (min-width: 48rem) {
+    position: relative;
+    height: 340px;
+  }
+  &__item {
+    margin-bottom: 2rem;
+    @media (min-width: 48rem) {
+      margin-bottom: 0;
+      position: absolute;
+    }
+    &--msqrd {
+      top: 0;
+      left: 95px;
+    }
+    &--world {
+      top: 96px;
+      left: 0;
+    }
+    &--viber {
+      left: 195px;
+      top: 79px;
+    }
+    &--belarus {
+      left: 65px;
+      top: 163px;
+    }
+  }
+}
+
+.link-belarus {
+  position: relative;
+  &:after {
+    position: absolute;
+    bottom: 52px;
+    right: 53px;
+    content: 'Belarus';
+    font-family: 'Lato Regular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    color: $white;
+  }
+}

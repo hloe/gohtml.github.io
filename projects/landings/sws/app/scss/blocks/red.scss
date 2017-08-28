@@ -1,0 +1,38 @@
+@import "../core/_variables.scss";
+input[type="text"].red,
+input[type="email"].red,
+textarea.red {
+  border-color: $red;
+}
+
+input.red::-webkit-input-placeholder {
+  color: $red;
+}
+
+input.red::-moz-placeholder {
+  color: $red;
+}
+
+input.red:-moz-placeholder {
+  color: $red;
+}
+
+input.red:-ms-input-placeholder {
+  color: $red;
+}
+
+textarea.red::-webkit-input-placeholder {
+  color: $red;
+}
+
+textarea.red::-moz-placeholder {
+  color: $red;
+}
+
+textarea.red:-moz-placeholder {
+  color: $red;
+}
+
+textarea.red:-ms-input-placeholder {
+  color: $red;
+}

@@ -1,0 +1,34 @@
+@import "../core/_variables.scss";
+@import "../core/_mixins.scss";
+.button {
+  display: block;
+  max-width: 256px;
+  background-color: transparent;
+  border: .063rem solid $black;
+  border-radius: 4px;
+  padding: 8px 58px 12px 62px;
+  font-family: 'Lato Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  outline-width: 0;
+  cursor: pointer;
+  &:hover {
+    @include transition;
+    border-color: $gray-hover;
+    color: $gray-hover;
+    text-decoration: none;
+  }
+  &--blue {
+    padding-left: 45px;
+    padding-right: 37px;
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
+    &:hover {
+      background-color: $blue-hover;
+      border-color: $blue-hover;
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../core/_variables.scss";
+@import "../core/_mixins.scss";
+.footer-menu {
+  margin-bottom: 3rem;
+  &__item {
+    font-family: 'Lato Regular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+  }
+  &__link {
+    color: $footer-link;
+    &:hover {
+      @include transition;
+    }
+  }
+}

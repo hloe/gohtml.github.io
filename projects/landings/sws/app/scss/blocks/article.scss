@@ -1,0 +1,25 @@
+@import "../core/_variables.scss";
+.article {
+  &__subtitle {
+    margin-bottom: 28px;
+  }
+  &__button {
+    margin: 55px auto;
+    @media (min-width: 48rem) {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }
+  &__paragraph {
+    margin-bottom: 24px;
+  }
+  &__figure {
+    @media (min-width: 48rem) {
+      margin-left: 40px;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}

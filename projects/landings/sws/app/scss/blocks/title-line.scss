@@ -1,0 +1,106 @@
+@import "../core/_variables.scss";
+.title-line {
+  position: relative;
+  margin-bottom: 75px;
+  &__below {
+    @media (max-width: 767px) {
+      &:after {
+        position: absolute;
+        bottom: -2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 94px;
+        height: 9px;
+        background-color: $blue;
+        content: '';
+      }
+    }
+    &:after {
+      position: absolute;
+      bottom: -2rem;
+      display: block;
+      width: 94px;
+      height: 9px;
+      background-color: $blue;
+      content: '';
+    }
+    &--right {
+      @media (max-width: 767px) {
+        text-align: center;
+        &:after {
+          position: absolute;
+          bottom: -2rem;
+          left: 50%;
+          transform: translateX(-50%);
+          display: block;
+          width: 94px;
+          height: 9px;
+          background-color: $blue;
+          content: '';
+        }
+      }
+      @media (min-width: 48rem) {
+        margin-left: auto;
+        max-width: 30rem;
+        text-align: right;
+      }
+      &:after {
+        right: 0;
+      }
+    }
+  }
+  &__above {
+    @media (max-width: 767px) {
+      &:after {
+        position: absolute;
+        top: -2rem;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 94px;
+        height: 9px;
+        background-color: $blue;
+        content: '';
+      }
+    }
+    &:after {
+      position: absolute;
+      top: -2rem;
+      display: block;
+      width: 94px;
+      height: 9px;
+      background-color: $blue;
+      content: '';
+    }
+  }
+  &__left {
+    @media (max-width: 767px) {
+      &:after {
+        position: absolute;
+        top: -2rem;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 94px;
+        height: 9px;
+        background-color: $blue;
+        content: '';
+      }
+    }
+    @media (min-width: 48rem) {
+      padding-left: 24px;
+      &:before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        display: block;
+        width: 9px;
+        height: 94px;
+        background-color: $blue;
+        content: '';
+      }
+    }
+  }
+}

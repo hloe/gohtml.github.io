@@ -1,0 +1,63 @@
+@import "../core/_variables.scss";
+@import "../core/_mixins.scss";
+.input-div {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 36px;
+  background-color: transparent;
+  border-width: 0;
+  @media (min-width: 48rem) {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+input[type='file'] {
+  width: 150px;
+  height: 36px;
+  opacity: 0;
+}
+
+#val {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 36px;
+  font-size: 18px;
+  line-height: 36px;
+  @media (min-width: 48rem) {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+#button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  display: block;
+  width: 150px;
+  height: 22px;
+  outline-width: 0;
+  border-color: transparent;
+  font-family: 'Lato Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  text-decoration: underline;
+  color: $blue;
+  cursor: pointer;
+  @media (min-width: 48rem) {
+    left: 0;
+    transform: translateX(0);
+  }
+  &:hover {
+    border-color: transparent;
+    color: $blue-hover;
+  }
+}
