@@ -10,5 +10,7 @@ $(function () {
       $('.arrow-up').addClass('hidden-arrow');
     }
   });
+  
+  $('arrow-up').click(function() {});
 
 });

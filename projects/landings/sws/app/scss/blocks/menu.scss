@@ -10,7 +10,7 @@
   &__item {
     margin-bottom: 1.5rem;
     font-family: 'Myriad Pro', 'Lato Bold', Arial, sans-serif;
-    font-size: 18px;
+    font-size: rem(18);
     text-transform: uppercase;
     @media (min-width: 48rem) {
       width: 50%;

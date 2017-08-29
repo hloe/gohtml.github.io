@@ -1,11 +1,12 @@
 @import "../core/_variables.scss";
+@import "../core/_mixins.scss";
 @import "../core/_retina.scss";
 .arrow-up {
   position: fixed;
   bottom: 1rem;
   right: 2rem;
   display: block;
-  width: 66px;
+  width: rem(66);
   height: 4rem;
   border-width: 0;
   background-color: transparent;

@@ -2,15 +2,15 @@
 @import "../core/_mixins.scss";
 .button {
   display: block;
-  max-width: 256px;
+  max-width: rem(256);
   background-color: transparent;
   border: .063rem solid $black;
-  border-radius: 4px;
-  padding: 8px 58px 12px 62px;
+  border-radius: rem(4);
+  padding: rem(8) rem(58) rem(12) rem(62);
   font-family: 'Lato Regular', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 18px;
+  font-size: rem(18);
   outline-width: 0;
   cursor: pointer;
   &:hover {
@@ -20,8 +20,8 @@
     text-decoration: none;
   }
   &--blue {
-    padding-left: 45px;
-    padding-right: 37px;
+    padding-left: rem(45);
+    padding-right: rem(37);
     background-color: $blue;
     border-color: $blue;
     color: $white;

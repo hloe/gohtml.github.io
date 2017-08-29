@@ -1,21 +1,22 @@
 @import "../core/_variables.scss";
+@import "../core/_mixins.scss";
 .article {
   &__subtitle {
-    margin-bottom: 28px;
+    margin-bottom: rem(28);
   }
   &__button {
-    margin: 55px auto;
+    margin: rem(55) auto;
     @media (min-width: 48rem) {
       margin-left: 0;
       margin-bottom: 0;
     }
   }
   &__paragraph {
-    margin-bottom: 24px;
+    margin-bottom: rem(24);
   }
   &__figure {
     @media (min-width: 48rem) {
-      margin-left: 40px;
+      margin-left: rem(40);
     }
   }
   &__img {

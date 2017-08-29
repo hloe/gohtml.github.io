@@ -12,14 +12,14 @@ h1 {
   font-family: 'Lato Hairline', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 48px;
+  font-size: rem(48);
   line-height: 1.3;
   text-transform: uppercase;
   @media (min-width: 48rem) {
-    font-size: 64px;
+    font-size: rem(64);
   }
   @media (min-width: 75rem) {
-    font-size: 72px;
+    font-size: rem(72);
   }
 }
 
@@ -27,10 +27,10 @@ h2 {
   font-family: 'Lato Regular', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
+  font-size: rem(24);
   line-height: 1.067;
   @media (min-width: 62rem) {
-    font-size: 30px;
+    font-size: rem(30);
   }
 }
 
@@ -38,7 +38,7 @@ h3 {
   font-family: 'Lato Medium', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 20px;
+  font-size: rem(20);
 }
 
 p {
@@ -54,14 +54,14 @@ figure {
   font-family: 'Lato Regular', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 14px;
+  font-size: rem(14);
   line-height: 1.786;
   color: $figcaption;
   text-align: center;
 }
 
 figcaption {
-  margin-top: 10px;
+  margin-top: rem(10);
   text-align: center;
 }
 
@@ -72,11 +72,11 @@ article figcaption {
 
 textarea {
   width: 100%;
-  height: 144px;
-  padding: 19px 21px 16px;
+  height: rem(144);
+  padding: rem(19) rem(21) rem(16);
   outline-width: 0;
-  border: 1px solid $input;
-  border-radius: 3px;
+  border: rem(1) solid $input;
+  border-radius: rem(3);
   background-color: transparent;
   font-size: 1rem;
   color: $white;
@@ -98,10 +98,10 @@ input[type="text"],
 input[type="email"] {
   display: block;
   width: 100%;
-  padding: 19px 21px 16px;
+  padding: rem(19) rem(21) rem(16);
   outline-width: 0;
-  border: 1px solid $input;
-  border-radius: 3px;
+  border: rem(1) solid $input;
+  border-radius: rem(3);
   background-color: transparent;
   font-size: 1rem;
   color: $white;

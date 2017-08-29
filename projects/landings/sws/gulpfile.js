@@ -3,6 +3,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+
+
 var browserSync = require('browser-sync');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -28,7 +30,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('autoprefixer', function () {
-  return gulp.src('app/css/*.css')
+  return gulp.src('app/css/styles.min.css')
     .pipe(autoprefixer({
       browsers: ['last 5 versions', 'IE 9'],
       cascade: false
@@ -37,14 +39,13 @@ gulp.task('autoprefixer', function () {
 });
 
 gulp.task('html', function () {
-  gulp.src('app/**/*.html')
+  return gulp.src('app/**/*.html')
     //    .pipe(rigger())
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
       stream: true
     }))
 });
-
 
 gulp.task('scripts', function () {
   return gulp.src('app/js/**/*.js')

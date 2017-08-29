@@ -1,4 +1,5 @@
 @import "../core/_variables.scss";
+@import "../core/_mixins.scss";
 @import "../core/_retina.scss";
 .pluses {
   background-color: $light-gray;
@@ -16,7 +17,7 @@
   &__text {
     position: relative;
     @media (min-width: 48rem) {
-      padding-bottom: 87px;
+      padding-bottom: rem(87);
     }
     @media (min-width: 48rem) {
       &:before {
@@ -24,8 +25,8 @@
         top: 0;
         left: 0;
         display: block;
-        width: 192px;
-        height: 137px;
+        width: rem(192);
+        height: rem(137);
         @include retina('../images/quote.png', 2, cover, top center no-repeat);
         content: '';
         &:last-of-type {

@@ -1,18 +1,19 @@
 @import "../core/_variables.scss";
+@import "../core/_mixins.scss";
 .footer {
   background-color: $footer;
   color: $white;
   &__title {
-    margin-bottom: 54px;
+    margin-bottom: rem(54);
   }
   &__subtitle {
     font-family: 'Lato Regular', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 1rem;
-    margin-bottom: 17px;
+    margin-bottom: rem(17);
   }
   &__menu {
-    margin-top: 98px;
+    margin-top: rem(98);
   }
 }

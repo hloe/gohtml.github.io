@@ -1,8 +1,9 @@
 @import "../core/_variables.scss";
+@import "../core/_mixins.scss";
 .logo {
   position: relative;
   display: block;
-  min-width: 215px;
+  min-width: rem(215);
   font-family: 'LatoBlack Italic', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -19,7 +20,7 @@
   &__text {
     position: absolute;
     top: 0;
-    left: 62px;
+    left: rem(62);
   }
   &__small {
     display: block;

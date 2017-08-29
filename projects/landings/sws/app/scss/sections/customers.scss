@@ -1,4 +1,5 @@
 @import "../core/_variables.scss";
+@import "../core/_mixins.scss";
 .customers {
   text-align: center;
   @media (min-width: 48rem) {
@@ -7,11 +8,11 @@
     text-align: left;
   }
   &__list {
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin-top: rem(25);
+    margin-bottom: rem(50);
   }
   &__images {
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       margin-top: 3rem;
     }
   }
@@ -20,7 +21,7 @@
 .links {
   @media (min-width: 48rem) {
     position: relative;
-    height: 340px;
+    height: rem(340);
   }
   &__item {
     margin-bottom: 2rem;
@@ -30,19 +31,19 @@
     }
     &--msqrd {
       top: 0;
-      left: 95px;
+      left: rem(95);
     }
     &--world {
-      top: 96px;
+      top: rem(96);
       left: 0;
     }
     &--viber {
-      left: 195px;
-      top: 79px;
+      left: rem(195);
+      top: rem(79);
     }
     &--belarus {
-      left: 65px;
-      top: 163px;
+      left: rem(65);
+      top: rem(163);
     }
   }
 }
@@ -51,8 +52,8 @@
   position: relative;
   &:after {
     position: absolute;
-    bottom: 52px;
-    right: 53px;
+    bottom: rem(52);
+    right: rem(53);
     content: 'Belarus';
     font-family: 'Lato Regular', Arial, sans-serif;
     font-weight: normal;

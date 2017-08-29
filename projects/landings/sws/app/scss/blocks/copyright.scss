@@ -1,16 +1,17 @@
 @import "../core/_variables.scss";
+@import "../core/_mixins.scss";
 .copyright {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: rem(25);
+  padding-bottom: rem(25);
   @media (min-width: 48rem) {
     flex-flow: row;
   }
   &__text {
     display: block;
     font-family: 'Tahoma Regular', Tahoma, Arial, sans-serif;
-    font-size: 13px;
+    font-size: rem(13);
   }
 }
