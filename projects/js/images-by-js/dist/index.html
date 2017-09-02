@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.min.css">
+
+  <title>Image View</title>
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <header class="header container">
+      <h1>Image view</h1>
+    </header>
+  </div>
+
+  <div class="content container">
+    <div class="images">
+      <ul class="images__list" id="images-container"></ul>
+
+      <ul class="hidden" id="pagination">
+        <li class="pagination__item">
+          <button id="prev" class="prev disabled">&lt;</button>
+        </li>
+        <li class="pagination__item">
+          <span id="pag-number"></span>
+        </li>
+        <li class="pagination__item">
+          <button id="next" class="next">&gt;</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="filters">
+      <h2 class="filters__title">filter by</h2>
+      <ul>
+        <li class="filters__item">
+          <h3 class="filters__subtitle">size</h3>
+          <ul class="filters__sub-list">
+            <li>
+              <a href="#" id="large" class="size-link filters__sublink">large</a>
+            </li>
+            <li>
+              <a href="#" id="medium" class="size-link filters__sublink">medium
+                </a>
+            </li>
+            <li>
+              <a href="#" id="small" class="size-link filters__sublink">small</a>
+            </li>
+          </ul>
+        </li>
+        <li class="filters__item">
+          <h3 class="filters__subtitle">author</h3>
+          <ul class="filters__sub-list" id="author-container"></ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

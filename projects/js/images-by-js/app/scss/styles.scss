@@ -1,0 +1,138 @@
+@import "core/_reset.scss";
+@import "core/_variables.scss";
+@import "core/_typography.scss";
+@import "core/_mixins.scss";
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  background-color: $dark-gray;
+}
+
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: $white;
+}
+
+.content {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.images {
+  width: 80%;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 23%;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+}
+
+.filters {
+  width: 20%;
+  padding-left: 1%;
+  text-transform: capitalize;
+  &__title {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &__item {
+    line-height: 1.5;
+  }
+  &__subtitle {
+    display: block;
+    padding: .75rem;
+    background-color: #f0f0f0;
+  }
+  &__sublink {
+    display: block;
+    padding: .5rem 1.5rem;
+    &:hover {
+      @include transition;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 1rem;
+        left: .5rem;
+        display: block;
+        width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+        background-color: $dark-gray;
+        content: '';
+      }
+    }
+    &--active {
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 1rem;
+        left: .5rem;
+        display: block;
+        width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+        background-color: $dark-gray;
+        content: '';
+      }
+    }
+  }
+}
+
+.pagination {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    margin-right: .5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.prev,
+.next {
+  background-color: transparent;
+  border-width: 0;
+  outline-width: 0;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: .5;
+  cursor: auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black-transparent;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hidden {
+  display: none;
+}
