@@ -104,7 +104,7 @@ class Works extends React.Component {
   errorMessage() {
     return(
       <div className="section__content wrapper-works">
-        Sorry, works aren\'t available at the moment.
+        Sorry, works are not available at the moment.
       </div>
     );
   }
