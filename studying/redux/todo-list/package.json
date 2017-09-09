@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "Counter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -26,6 +26,7 @@
     "deep-freeze": "0.0.1",
     "expect": "^21.0.0",
     "html-webpack-plugin": "^2.29.0",
+    "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "style-loader": "^0.16.1",
     "webpack": "^2.7.0",
