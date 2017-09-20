@@ -1,0 +1,27 @@
+
+
+-----x---- INSTALL 1170 BOOTSTRAP GRID SYSYTEM PHOTOSHOP ACTION ----x-----
+
+1. Close Photoshop (if opened)
+2. Copy "1170 BS Grid.atn" to C:\Users\__USER__\AppData\Roaming\Adobe\Adobe Photoshop CS5\Presets\Actions
+   or Copy "1170 BS Grid.atn" to C:\Program Files\Adobe\Adobe Photoshop CS5\Presets\Actions
+3. Restart Photoshop
+4. Go to Menu => Window -> Actions or you can press Alt + F9
+5. Click on the Action Menu (Right top of the Action panel)
+6. Then Click "Load Actions" and Select "1170 BS Grid.atn" from Browse option
+7. Now You will see New Group Layer called "1170 BS Grid", Expand it and click "12 Col"
+8. Click Play on the toolbar and Wait until the action complete
+9. Now you can see a new document with 1170px Grid System
+10. Yay! You are done.
+
+
+-----x-------x-------x------ FURTHER ASSISTANCE ----x--------x--------x----
+
+http://web3canvas.com
+
+Email : mail@web3canvas.com
+Twitter : @web3canvas - http://twitter.com/web3canvas/
+
+-----x-------x-------x---------x----------x--------x--------x---------x----
+
+Thanks for Downloading from Web3Canvas. Spread the word if you like it.
