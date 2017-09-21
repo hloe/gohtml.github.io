@@ -1,3 +1,5 @@
+import React from 'react';
+
 function DateFormat(date) {
   date = Date.parse(date);
   const month = new Date(date).getMonth().toString().length < 2 ? '0' + (new Date(date).getMonth() + 1) : new Date(date).getMonth() + 1;
@@ -7,4 +9,10 @@ function DateFormat(date) {
   return (month + '/' + day + '/' + new Date(date).getFullYear() + ' ' + hours + ':' + minutes);
 }
 
-export default DateFormat;
+function ItemDate(props) {
+  return(
+    <small className='date text-right'>{DateFormat(props.data)}</small>
+  );
+}
+
+export default ItemDate;

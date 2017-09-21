@@ -1,21 +1,10 @@
 // add task
-export function addTask(description, date, priority) {
+export function addTask(description, priority) {
   return {
     type: 'ADD_TASK',
     description,
-    date,
-    priority,
-    state: 'do it'
+    priority
   };
-}
-
-// change description
-export function changeDescription(index, description) {
-  return {
-    type: 'CHANGE_DESCRIPTION',
-    index,
-    description
-  };      
 }
 
 // change priority
@@ -28,9 +17,9 @@ export function changePriority(index, priority) {
 }
 
 // change state and priority
-export function changeStateAndPriority(index, description, priority) {
+export function changeDescriptionAndPriority(index, description, priority) {
   return {
-    type: 'CHANGE_STATE_AND_PRIORITY',
+    type: 'CHANGE_DESCRIPTION_AND_PRIORITY',
     index,
     description,
     priority
