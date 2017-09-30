@@ -1,14 +1,14 @@
 {
-  "name": "github-battle",
+  "name": "finecoding",
   "version": "1.0.0",
-  "description": "Project for React Training's fundamental course.",
+  "description": "My website with React",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "SET NODE_ENV='production' && webpack -p",
     "deploy": "npm run build && firebase deploy"
   },
-  "author": "Tyler McGinnis",
+  "author": "hloe",
   "license": "MIT",
   "babel": {
     "presets": [
