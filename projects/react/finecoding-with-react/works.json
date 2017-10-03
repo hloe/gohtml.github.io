@@ -15,6 +15,13 @@
       "category": "React"
     },
     {
+      "title": "The Simpsons. Quote App",
+      "description": "Vanilla JavaScript, ESLint",
+      "link": "http://finecoding.net/projects/js/quote-machine/",
+      "image": "http://finecoding.net/images/works/quote-machine.jpg",
+      "category": "JavaScript"
+    },          
+    {
       "title": "Registration with React",
       "description": "Bootstrap 4, React, localStorage",
       "link": "http://finecoding.net/projects/react/auth/",

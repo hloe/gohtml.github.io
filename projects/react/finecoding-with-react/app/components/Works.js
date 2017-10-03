@@ -4,7 +4,7 @@ const Loading = require('./Loading');
 const WorksItem = require('./WorksItem');
 
 const SelectCategory = (props) => {
-  const categories = ['All', 'React', 'Web Pages'];
+  const categories = ['All', 'JavaScript', 'React', 'Web Pages'];
   
   return (
     <ul className="works-menu works__menu">
@@ -80,7 +80,7 @@ class Works extends React.Component {
   }
   
   getWorks() {
-    axios.get('https://api.myjson.com/bins/127fbp')
+    axios.get('https://api.myjson.com/bins/jkmel')
       .then(function (response) {
         return response.data.works;            
       })
