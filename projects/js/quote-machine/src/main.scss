@@ -17,7 +17,7 @@ $orange-hover: #ffd669;
   background-repeat: repeat-y;
   background-size: cover;
   @media (min-width: 40rem) {
-    background-image: url(./images/sky.jpg);
+    background-image: url('images/sky.jpg');
     padding-top: 8rem;
     padding-bottom: 8rem;
   }

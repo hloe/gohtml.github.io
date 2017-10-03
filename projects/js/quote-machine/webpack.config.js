@@ -25,7 +25,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'images/[name].[ext]',
+              name: './images/[name].[ext]',
             },
           },
           'img-loader',
@@ -37,7 +37,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'fonts/[name].[ext]',
+              name: './fonts/[name].[ext]',
             },
           },
         ],
