@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Simpsons';
+    src: url('./fonts/simpson_normal-webfont.eot');
+    src: url('./fonts/simpson_normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/simpson_normal-webfont.woff2') format('woff2'),
+         url('./fonts/simpson_normal-webfont.woff') format('woff'),
+         url('./fonts/simpson_normal-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
