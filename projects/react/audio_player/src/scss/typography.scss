@@ -1,3 +1,23 @@
 * {
   font-family: 'Roboto', Arial, sans-serif;
 }
+
+button {
+  display: block;
+  border-width: 0;
+  outline-width: 0;
+  background-color: transparent;
+  color: #fff;
+  opacity: 1;
+  transition: .5s linear;
+  cursor: pointer;
+}
+
+button:active,
+button:hover,
+button:focus {
+  border-width: 0;
+  outline-width: 0;
+  opacity: .6;
+}
+

@@ -2,19 +2,13 @@ export function setTrack(index) {
   return {
     type: 'SET_TRACK',
     index,
-  };  
-}
-
-export function setTrackDuration(duration) {
-  return {
-    type: 'SET_TRACK_DURATION',
-    duration,
+    isPlaying: true,
   };
 }
 
-export function setCurrentTime(currentTime) {
+export function setIsPlaying(isPlaying) {
   return {
-    type: 'SET_CURRENT_TIME',
-    currentTime,
+    type: 'SET_IS_PLAYING',
+    isPlaying,
   };
 }

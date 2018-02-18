@@ -1,7 +1,9 @@
 import Tracks from './Helpers/Tracks';
 
 const initialState = {
+  index: 0,
   tracks: Tracks,
+  isPlaying: true,
 };
 
 export default function (state = initialState, action) {
@@ -10,20 +12,15 @@ export default function (state = initialState, action) {
       return {
         ...state,
         index: action.index,
+        isPlaying: action.isPlaying,
       };
-      
-    case 'SET_TRACK_DURATION':
+    case 'SET_IS_PLAYING':
       return {
         ...state,
-        duration: action.duration,
-      };
-    case 'SET_CURRENT_TIME':
-      return {
-        ...state,
-        currentTime: action.currentTime,
+        isPlaying: action.isPlaying,
       };
 
-      default:
+    default:
       return state;
   }
 }

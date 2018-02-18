@@ -2,13 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const coord = {
-  x: 220 + 1,
-  y: 220 + 1,
-  radius: 220,
-  arcStart: 1.5 * Math.PI,
+  x: 0,
+  y: 0,
+  lineWidth: 440,
+  lineHeight: 4,
 };
 
-class Circle extends React.Component {
+class WhiteLine extends React.Component {
   constructor() {
     super();
 
@@ -16,7 +16,7 @@ class Circle extends React.Component {
       index: 0,
       duration: 0,
       drawInterval: null,
-      arc: 1.5 * Math.PI,
+      lineEnd: 0,
       isPlaying: true,
     };
 
@@ -42,7 +42,7 @@ class Circle extends React.Component {
       this.setState({
         index: nextProps.index,
         duration: nextProps.duration,
-        arc: 1.5 * Math.PI,
+        lineEnd: 0,
         drawInterval: clearInterval(this.state.drawInterval),
       });
 
@@ -54,19 +54,20 @@ class Circle extends React.Component {
   componentWillUnmount() {
     this.setState({
       drawInterval: clearInterval(this.state.drawInverval),
+      lineEnd: 0,
     });
   }
 
   startDrawing(duration, index) {
-    const interval = (duration * 1000) / 360;
+    const interval = (duration * 1000) / coord.lineWidth;
 
     this.setState({
       index,
       drawInterval: setInterval(() => {
         this.setState({
-          arc: this.state.isPlaying ? this.state.arc + (Math.PI / 180) : this.state.arc,
+          lineEnd: this.state.isPlaying ? this.state.lineEnd + 1 : this.state.lineEnd,
         });
-        this.updateCanvas(this.state.arc);
+        this.updateCanvas(this.state.lineEnd);
       }, interval),
     });
   }
@@ -75,24 +76,25 @@ class Circle extends React.Component {
     const ctx = this.refs.canvas.getContext('2d');
 
     ctx.beginPath();
-    ctx.clearRect(coord.x - coord.radius - 3, coord.y - coord.radius - 3, (coord.radius * 2) + 6, (coord.radius * 2) + 6);
+    ctx.clearRect(coord.x, coord.y, coord.lineWidth, coord.lineHeight);
     ctx.closePath();
   }
 
-  updateCanvas(arcEnd) {
+  updateCanvas(lineEnd) {
     const ctx = this.refs.canvas.getContext('2d');
     ctx.beginPath();
 
-    ctx.arc(coord.x, coord.y, coord.radius, coord.arcStart, arcEnd);
+    ctx.moveTo(coord.x, coord.y);
+    ctx.lineTo(lineEnd, coord.y);
+    ctx.lineWidth = coord.lineHeight;
 
-    ctx.lineWidth = 4;
     ctx.strokeStyle = 'white';
     ctx.stroke();
   }
 
   render() {
     return (
-      <canvas className="circle" ref="canvas" width={444} height={444}/>
+      <canvas className="white-line" ref="canvas" width={440} height={4}/>
     );
   }
 }
@@ -100,9 +102,9 @@ class Circle extends React.Component {
 function mapStateToProps(state) {
   return {
     index: state.index,
-    duration: state.tracks[state.index].duration,
+    duration: state.tracks[state.index] ? state.tracks[state.index].duration : 0,
     isPlaying: state.isPlaying,
   };
 }
 
-export default connect(mapStateToProps, null)(Circle);
+export default connect(mapStateToProps, null)(WhiteLine);
