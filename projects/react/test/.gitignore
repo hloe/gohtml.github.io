@@ -1,5 +1,0 @@
-
-*.log
-*.db
-node_modules/
-.sass-cache/
