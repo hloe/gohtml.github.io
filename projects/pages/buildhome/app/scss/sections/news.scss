@@ -58,8 +58,13 @@
     margin-bottom: 1.625rem;
   }
   &__link {
-    color: $blue;
-    text-decoration: none;
+    color: inherit;
+    &:hover {
+      opacity: .8;
+    }
+    &_blue {
+      color: $blue;
+    }
   }
 }
 

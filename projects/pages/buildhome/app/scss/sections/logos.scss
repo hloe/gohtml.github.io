@@ -12,5 +12,9 @@
     line-height: 1;
     letter-spacing: normal;
     text-decoration: none;
+    opacity: .6;
+    &:hover {
+      opacity: 1;
+    }
   }
 }

@@ -10,8 +10,8 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var rigger = require('gulp-rigger');
-
 var svgSprite = require("gulp-svg-sprites");
+
 gulp.task('sprites', function () {
   return gulp.src('app/i/*.svg')
     .pipe(svgSprite())
@@ -21,7 +21,7 @@ gulp.task('sprites', function () {
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
-    .pipe(concat('styles.css'))
+    .pipe(concat('styles.min.css'))
     .pipe(minify())
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
@@ -39,7 +39,7 @@ gulp.task('autoprefixer', function () {
 });
 
 gulp.task('html', function () {
-  gulp.src('app/**/*.html')
+  gulp.src('app/*.html')
     .pipe(rigger())
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
@@ -98,7 +98,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'scripts', 'images', 'fonts', 'icons'],
+  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'fonts', 'icons', 'html'],
     callback
   )
 });

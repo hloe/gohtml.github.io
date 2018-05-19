@@ -1,5 +1,3 @@
-'use strict';
-
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
@@ -12,14 +10,18 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var rigger = require('gulp-rigger');
-var babel = require('gulp-babel');
+var svgSprite = require("gulp-svg-sprites");
+
+gulp.task('sprites', function () {
+  return gulp.src('app/i/*.svg')
+    .pipe(svgSprite())
+    .pipe(gulp.dest('app/i'));
+});
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
-    // concatenation
     .pipe(concat('styles.min.css'))
-    // minification
     .pipe(minify())
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
@@ -30,14 +32,14 @@ gulp.task('sass', function () {
 gulp.task('autoprefixer', function () {
   return gulp.src('app/css/*.css')
     .pipe(autoprefixer({
-      browsers: ['last 5 versions', 'IE 9'],
+      browsers: ['last 16 versions', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'],
       cascade: false
     }))
     .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('html', function () {
-  gulp.src('app/**/*.html')
+  gulp.src('app/*.html')
     .pipe(rigger())
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
@@ -48,17 +50,14 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
   return gulp.src('app/js/**/*.js')
-    .pipe(concat('scripts.min.js'))
-    .pipe(babel({
-      presets: ['es2015']
-    }))
-  .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
 });
 
+gulp.task('fonts', function () {
+  return gulp.src('app/fonts/*')
+    .pipe(gulp.dest('dist/fonts'))
+});
 
 gulp.task('icons', function () {
   return gulp.src('app/i/*')
@@ -99,7 +98,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'icons'],
+  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'fonts', 'icons', 'html'],
     callback
   )
 });

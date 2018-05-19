@@ -10,8 +10,8 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var rigger = require('gulp-rigger');
-
 var svgSprite = require("gulp-svg-sprites");
+
 gulp.task('sprites', function () {
   return gulp.src('app/i/*.svg')
     .pipe(svgSprite())
@@ -98,7 +98,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'scripts', 'images', 'fonts', 'icons'],
+  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'fonts', 'icons', 'html'],
     callback
   )
 });

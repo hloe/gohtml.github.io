@@ -31,9 +31,10 @@
 .closed {
   display: block;
   height: 2.375rem;
- border: .063rem solid $accordion-closed;
+  border: .063rem solid $accordion-closed;
   background-color: $white;
   color: $services-background;
+  cursor: pointer;
 }
 
 .open {

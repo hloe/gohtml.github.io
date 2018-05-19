@@ -23,6 +23,12 @@
       margin-right: 0;
     }
   }
+  &__link {
+    color: inherit;
+    &:hover {
+      color: $blue;
+    }
+  }
   &__icon {
     margin-right: .313rem;
     vertical-align: text-bottom;

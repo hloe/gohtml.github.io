@@ -25,6 +25,7 @@
 
 .service-figure {
   text-align: center;
+  cursor: pointer;
   &__img {
     position: relative;
     z-index: 1;
@@ -51,6 +52,7 @@
   line-height: 16.25rem;
   letter-spacing: normal;
   color: $white;
+  cursor: pointer;
   text-align: center;
   vertical-align: middle;
   visibility: hidden;
