@@ -1,24 +1,29 @@
 @import "../core/_core.scss";
 .logo {
-  display: flex;
-  &__text {
-    margin-left: .688rem;
+  @include reset;
+  @include retina('../images/logo.png', 2, 2.25rem 2.25rem, center left no-repeat);
+  @include link;
+  padding-left: 3rem;
+  filter: contrast(1);
+  &:hover {
+    filter: contrast(1.5);
   }
+
   &__title {
+    @include reset;
     @include ubuntu-medium;
     font-size: 1.875rem;
     line-height: .667;
+    filter: inherit;
   }
   &__subtitle {
+    @include reset;
     @include ubuntu-light;
     font-size: .75rem;
     line-height: 1.667;
     letter-spacing: .219rem;
     text-transform: uppercase;
     opacity: .65;
-  }
-  &__link {
-    color: $logo-text;
-    text-decoration: none;
+    filter: inherit;
   }
 }
