@@ -1,15 +1,13 @@
-$('.closed').click(function() {
+$('.accordion').click(function() {
   $('.open ~ .accordion-content')
-    .removeClass('visible')
-    .addClass('hidden')
+    .toggleClass('hidden');
 
   $('.open')
     .removeClass('open')
     .addClass('closed');
 
   $(this).siblings()
-    .removeClass('hidden')
-    .addClass('visible')
+    .toggleClass('hidden');
   $(this)
     .removeClass('closed')
     .addClass('open');

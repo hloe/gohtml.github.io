@@ -51,17 +51,16 @@
 }
 
 .accordion-content {
+  height: 9.96rem;
   padding: 1.875rem 2.188rem;
   font-family: Arial, sans-serif;
   font-size: .813rem;
   line-height: 1.538;
   color: $features-text;
+  overflow-y: auto;
+  transition: height .5s ease;
 }
 
 .hidden {
   display: none;
-}
-
-.visible {
-  display: block;
 }
