@@ -60,7 +60,7 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('icons', function () {
-  return gulp.src('app/i/*')
+  return gulp.src('app/i/**/*.svg')
     .pipe(gulp.dest('dist/i'))
 });
 
@@ -98,7 +98,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'fonts', 'icons', 'html'],
+  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'icons', 'fonts', 'html'],
     callback
   )
 });

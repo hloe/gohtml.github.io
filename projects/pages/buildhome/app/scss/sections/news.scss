@@ -77,14 +77,12 @@
   @include ubuntu-medium;
   text-align: center;
   &__month {
-    display: block;
     height: 2.5rem;
     background-color: $blue;
     font-size: .938em;
     color: $white;
   }
   &__day {
-    display: block;
     height: 2.5rem;
     background-color: $yellow;
     font-size: 1.125rem;

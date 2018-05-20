@@ -1,5 +1,5 @@
 @import "../core/_core.scss";
-.footer {
+.contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@
     display: inline-block;
     margin-right: 2.188rem;
     font-size: .75rem;
-    line-height: 1;
+    line-height: 1.2;
     letter-spacing: normal;
     &:last-of-type {
       margin-right: 0;
@@ -31,6 +31,6 @@
   }
   &__icon {
     margin-right: .313rem;
-    vertical-align: text-bottom;
+    vertical-align: middle;
   }
 }

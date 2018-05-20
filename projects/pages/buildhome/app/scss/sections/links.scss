@@ -6,18 +6,20 @@
   margin: 0 auto;
   padding-top: 3.75rem;
   padding-bottom: 4.688rem;
-  &__container {
-    width: 16.25rem;
-  }
-  &__title {
-    margin-bottom: 2.813rem;
+  &__item {
+    width: 25%;
+    padding-right: 1.875rem;
     @include ubuntu-medium;
     font-size: 1rem;
     line-height: 1.5;
     color: $white;
     text-transform: uppercase;
   }
-  &__item {
+  &__sublist {
+    margin-top: 2.813rem;
+    text-transform: none;
+  }
+  &__subitem {
     border-bottom: .063rem solid $links-border;
     &:last-of-type {
       border-bottom-color: transparent;

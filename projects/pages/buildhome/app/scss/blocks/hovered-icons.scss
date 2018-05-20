@@ -1,0 +1,21 @@
+.hovered-icon {
+  transition: all .5s ease;
+  &__def {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+  }
+  &__hov {
+    display: none;
+  }
+}
+
+.hovered-icon:hover .hovered-icon__def {
+  display: none;
+}
+
+.hovered-icon:hover .hovered-icon__hov {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+}

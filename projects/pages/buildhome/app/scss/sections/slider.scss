@@ -1,10 +1,4 @@
 @import "../core/_core.scss";
-mark {
-  padding: 0 1.75rem;
-  background-color: $mark;
-  background-color: $mark-transparent;
-  color: inherit;
-}
 
 .slider {
   width: 72.5rem;
@@ -12,14 +6,19 @@ mark {
   margin: 0 auto;
   background-color: $blue;
   @include retina('../images/photo.jpg', 2, 72.5rem 29.375rem, top center no-repeat);
-  &__text {
-    @include ubuntu-medium;
-    font-size: 3.375rem;
-    line-height: 1.2;
-    text-transform: uppercase;
+  &__paragraph {
     color: $white;
-    &:first-line {
+    &:first-of-type {
       color: $slider-yellow;
     }
+  }
+  &__text {
+    padding: 0 1.75rem;
+    background-color: $mark;
+    background-color: $mark-transparent;
+    @include ubuntu-medium;
+    font-size: 3.375rem;
+    line-height: 1.28;
+    text-transform: uppercase;
   }
 }

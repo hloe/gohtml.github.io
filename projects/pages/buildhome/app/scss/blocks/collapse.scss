@@ -1,7 +1,7 @@
 @import "../core/_core.scss";
 .accordion {
   display: block;
-  margin-bottom: .313rem;
+  margin-bottom: .438rem;
   height: 2.438rem;
   @include ubuntu-medium;
   font-size: .813rem;
@@ -10,14 +10,8 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $services-background;
-  &:hover {
-    background-color: $yellow;
-    color: $white;
-    &:before {
-      border-right: .063rem solid $accordion-open;
-    }
-  }
-  &:before {
+
+  &::before {
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;
@@ -26,12 +20,20 @@
     content: '+';
     text-align: center;
   }
+
+  &:hover {
+    background-color: $yellow;
+    color: $white;
+    &::before {
+      border-color: $accordion-open;
+    }
+  }
 }
 
 .closed {
   display: block;
   height: 2.375rem;
-  border: .063rem solid $accordion-closed;
+  outline: .063rem solid $accordion-closed;
   background-color: $white;
   color: $services-background;
   cursor: pointer;
@@ -40,7 +42,7 @@
 .open {
   background-color: $yellow;
   color: $white;
-  &:before {
+  &::before {
     display: inline-block;
     width: 2.375rem;
     margin-right: .813rem;

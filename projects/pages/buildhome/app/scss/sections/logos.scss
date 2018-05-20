@@ -7,6 +7,7 @@
   margin: 0 auto;
   padding: 5.625rem 1.875rem;
   &__link {
+    display: block;
     font-family: Arial, sans-serif;
     font-size: 1rem;
     line-height: 1;
@@ -16,5 +17,9 @@
     &:hover {
       opacity: 1;
     }
+  }
+  &__img {
+    width: auto;
+    height: 62px;
   }
 }

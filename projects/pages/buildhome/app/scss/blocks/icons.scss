@@ -3,45 +3,11 @@
   display: inline-block;
 }
 
-.icon-social {
-  fill: $gray;
-  width: 1.063rem;
-  height: 1rem;
-  &:hover {
-    fill: $blue;
-  }
-}
-
 .icon-features {
-  fill: $yellow;
   width: 2rem;
   height: 2rem;
 }
 
 .icon-arrow {
-  width: .625rem;
-  height: .563rem;
   margin-left: .563rem;
-  fill: $blue;
-}
-
-.icon-location,
-.icon-phone,
-.icon-message {
-  fill: #5D6063;
-}
-
-.icon-location {
-  width: 1rem;
-  height: 1.25rem;
-}
-
-.icon-phone {
-  width: .875rem;
-  height: 1.25rem;
-}
-
-.icon-message {
-  width: 1.25rem;
-  height: 1rem;
 }
