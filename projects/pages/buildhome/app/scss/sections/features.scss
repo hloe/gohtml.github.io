@@ -1,10 +1,10 @@
 @import "../core/_core.scss";
 .features {
   display: flex;
-  width: 72.5rem;
+  width: 1160px;
   margin: 0 auto;
-  padding-top: 4.375rem;
-  padding-bottom: 5rem;
+  padding-top: 70px;
+  padding-bottom: 90px;
   &__item {
     width: 33%;
   }
@@ -13,25 +13,25 @@
 .features-article {
   display: flex;
   &__number {
-    margin-right: 2.188rem;
+    margin-right: 35px;
     @include ubuntu-medium;
-    font-size: 5.625rem;
+    font-size: 90px;
     letter-spacing: normal;
     line-height: 1;
     color: $features-title;
     opacity: .1;
   }
   &__content {
-    margin-right: 2.5rem;
+    margin-right: 40px;
     &:last-of-type {
-      margin-right: 2.5rem;
+      margin-right: 40px;
     }
   }
   &__title {
-    margin-top: 1.125rem;
-    margin-bottom: 1.375rem;
+    margin-top: 18px;
+    margin-bottom: 22px;
     @include ubuntu-medium;
-    font-size: 1.25rem;
+    font-size:20px;
     line-height: 1;
     letter-spacing: normal;
     color: $features-title;
@@ -39,16 +39,16 @@
   }
   &__text {
     font-family: Arial, sans-serif;
-    font-size: .813rem;
+    font-size:13px;
     letter-spacing: normal;
     line-height: 1.538;
     color: $features-text;
   }
   &__link {
     display: block;
-    margin-top: 1.25rem;
+    margin-top:20px;
     @include ubuntu-medium;
-    font-size: .813rem;
+    font-size:13px;
     line-height: 1.538;
     letter-spacing: normal;
     color: $features-title;

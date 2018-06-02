@@ -3,18 +3,18 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  padding-bottom: 4.875rem;
+  padding-bottom: 78px;
   &__img {
     position: relative;
-    margin-top: 5.75rem;
+    margin-top: 92px;
     z-index: 2;
   }
   &__header {
     position: absolute;
     top: 0;
-    right: 4.688rem;
+    right: 75px;
     @include roboto-black;
-    font-size: 12.5rem;
+    font-size: 200px;
     line-height: 1;
     color: $light-gray;
     text-transform: uppercase;
@@ -22,52 +22,52 @@
   &__title {
     position: absolute;
     z-index: 5;
-    top: 6.125rem;
-    right: 8.438rem;
+    top: 98px;
+    right: 135px;
     @include georgia-bold;
-    font-size: 1.875rem;
+    font-size: 30px;
     line-height: 1.667;
     letter-spacing: 0;
     color: $dark-gray;
     text-transform: capitalize;
   }
   &__list {
-    margin-top: -15.75rem;
-    margin-left: 3.563rem;
+    margin-top: -252px;
+    margin-left: 57px;
   }
   &__item {
     display: flex;
     align-items: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
     @include georgia-regular;
-    font-size: 1rem;
+    font-size: 16px;
     color: $black;
   }
   &__icon {
-    margin-right: .938rem;
+    margin-right:15px;
   }
   &__price {
     display: block;
-    margin-top: 1.563rem;
-    margin-left: 3.563rem;
+    margin-top: 25px;
+    margin-left: 57px;
     @include georgia-bold;
-    font-size: 1.938rem;
     &_big {
-      font-size: 3.625rem;
+      font-size: 58px;
+      font-size: 31px;
     }
   }
   &__link {
     display: block;
-    width: 15.313rem;
-    height: 3.625rem;
-    margin-top: 1.75rem;
-    margin-left: 3.563rem;
-    border-radius: .125rem;
+    width: 245px;
+    height: 58px;
+    margin-top: 28px;
+    margin-left: 57px;
+    border-radius: 2px;
     background-color: $black;
     @include roboto-black;
-    font-size: .875rem;
-    line-height: 3.625rem;
-    letter-spacing: .063rem;
+    font-size: 14px;
+    line-height: 58px;
+    letter-spacing: 1px;
     vertical-align: middle;
     color: $white;
     text-align: center;

@@ -1,19 +1,19 @@
 @import "../core/_core.scss";
 .team {
-  padding-top: 5.438rem; 
-    padding-bottom: 3.125rem;
+  padding-top: 87px;
+    padding-bottom: 50px;
   text-align: center;
   &__subtitle {
-    max-width: 60.625rem;
-    margin: 2.25rem auto 0;
+    max-width: 970px;
+    margin: 36px auto 0;
     @include opensans-semibold;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.5;
     color: $team-text;
     opacity: .8;
   }
   &__content {
     position: relative;
-    padding-top: 6.563rem;
+    padding-top: 105px;
   }
 }

@@ -1,16 +1,16 @@
 @import "../core/_core.scss";
 .content {
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     display: table;
   }
   &__line {
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       display: table-row;
     }
   }
   &__item {
     width: 100%;
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       width: 50%;
       display: table-cell;
       vertical-align: middle;
@@ -20,7 +20,7 @@
       box-sizing: border-box;
     }
     &--hidden-mobile {
-      @media (max-width: 48rem) {
+      @media (max-width: 768px) {
         display: none;
       }
     }

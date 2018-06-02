@@ -1,23 +1,23 @@
 @import "../core/_core.scss";
 .search {
   &__form {
-    padding-bottom: 2.5rem;
-    @media (min-width: 40rem) {
-      padding-bottom: 6.25rem;
+    padding-bottom: 40px;
+    @media (min-width: 640px) {
+      padding-bottom: 94px;
     }
   }
   &__list {
-    @media (min-width: 40rem) {
+    @media (min-width: 640px) {
       display: inline-flex;
     }
   }
   &__item {
-    margin-bottom: .625rem;
+    margin-bottom: 10px;
     &:last-of-type {
       margin-bottom: 0;
     }
-    @media (min-width: 40rem) {
-      margin: 0 .313rem;
+    @media (min-width: 640px) {
+      margin: 0 5px;
     }
   }
 }

@@ -2,21 +2,21 @@
 @import "../core/_mixins.scss";
 .menu {
   &__list {
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
     }
   }
   &__item {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     font-family: 'Myriad Pro', 'Lato Bold', Arial, sans-serif;
-    font-size: rem(18);
+    font-size: 18px;
     text-transform: uppercase;
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       width: 50%;
       margin-bottom: 0;
     }
-    @media (min-width: 62rem) {
+    @media (min-width: 992px) {
       width: 33.33%;
     }
   }

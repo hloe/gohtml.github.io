@@ -3,17 +3,17 @@
   &__header {
     background-color: $header-background;
         @include retina('../images/header-background-xs.jpg', 2, cover, top center no-repeat);
-        @media (min-width: 48rem) {
+        @media (min-width: 768px) {
           @include retina('../images/header-background-sm.jpg', 2, cover, top center no-repeat);
         }
-        @media (min-width: 62rem) {
+        @media (min-width: 992px) {
           @include retina('../images/header-background-md.jpg', 2, cover, top center no-repeat);
         }
-        @media (min-width: 68.75rem) {
-          @include retina('../images/header-background-lg.jpg', 2, 99.313rem 47.375rem, top center no-repeat);
+        @media (min-width: 1100px) {
+          @include retina('../images/header-background-lg.jpg', 2, 1589px 758px, top center no-repeat);
         }
-    @media (min-width: 75rem) {
-      @include retina('../images/header-background-shadow.jpg', 2, 99.313rem 47.375rem, top center no-repeat);
+    @media (min-width: 100px) {
+      @include retina('../images/header-background-shadow.jpg', 2, 1589px 758px, top center no-repeat);
     }
   }
   &__watch {
@@ -22,16 +22,16 @@
   &__contact {
     background-color: $footer-background;
     @include retina('../images/footer-background-xs.jpg', 2, cover, top center no-repeat);
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       @include retina('../images/footer-background-sm.jpg', 2, cover, top center no-repeat);
     }
-    @media (min-width: 62rem) {
+    @media (min-width: 992px) {
       @include retina('../images/footer-background-md.jpg', 2, cover, top center no-repeat);
-      margin-top: 4.375rem;
+      margin-top: 70px;
     }
-    @media (min-width: 68.75rem) {
+    @media (min-width: 1100px) {
       @include retina('../images/footer-background-lg.jpg', 2, cover, top center no-repeat);
-      margin-top: 10.813rem;
+      margin-top: 173px;
     }
   }
 }

@@ -17,26 +17,26 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
+            <state relative-caret-position="308">
               <caret line="14" selection-start-line="14" selection-end-line="54" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/template/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
+            <state relative-caret-position="449">
               <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scss/sections/header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="2838">
+              <caret line="129" column="5" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -44,7 +44,7 @@
       <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scss/core/_mixins.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="638">
               <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
@@ -54,26 +54,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$</find>
-      <find>subtitle</find>
-      <find>info</find>
-      <find>&amp;-</find>
-      <find>comment</find>
-      <find>accordi</find>
-      <find>figure</find>
-      <find>accordion</find>
-      <find>alt=</find>
-      <find>news-article__subtitle</find>
-      <find>panel</find>
-      <find>footer</find>
-      <find>copy</find>
-      <find>container</find>
-      <find>containe</find>
-      <find>banners</find>
-      <find>data</find>
-      <find>accor</find>
-      <find>&amp;:af</find>
-      <find>&amp;:be</find>
       <find>service-figure</find>
       <find>icon-arr</find>
       <find>text</find>
@@ -84,7 +64,48 @@
       <find>include list</find>
       <find>retina</find>
       <find>logo</find>
+      <find>.125rem</find>
+      <find>.75rem</find>
+      <find>1.625rem</find>
+      <find>.875rem</find>
+      <find>.875rem</find>
+      <find>2.375rem</find>
+      <find>2.375rem</find>
+      <find>13.313rem</find>
+      <find>1rem</find>
+      <find>72.5rem</find>
+      <find>16.25rem</find>
+      <find>7.5rem</find>
+      <find>4.375rem</find>
+      <find>1.5rem</find>
+      <find>3.438rem</find>
+      <find>4rem</find>
+      <find>2.063rem</find>
+      <find>5.625rem</find>
+      <find>3rem</find>
+      <find>rem</find>
     </findStrings>
+    <replaceStrings>
+      <replace>2px</replace>
+      <replace>12px</replace>
+      <replace>26px</replace>
+      <replace>14px</replace>
+      <replace>38px</replace>
+      <replace>213px</replace>
+      <replace>16px</replace>
+      <replace>1160px</replace>
+      <replace>260px</replace>
+      <replace>120px</replace>
+      <replace>70px</replace>
+      <replace>24px</replace>
+      <replace>55px</replace>
+      <replace>64px</replace>
+      <replace>33px</replace>
+      <replace>90px</replace>
+      <replace>54px</replace>
+      <replace>4px</replace>
+      <replace>32px</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>C:\Users\larysa\Desktop\hloe\projects\pages\buildhome\app\scss</dir>
     </dirStrings>
@@ -140,9 +161,9 @@
         <option value="$PROJECT_DIR$/app/template/nav.html" />
         <option value="$PROJECT_DIR$/app/scss/blocks/logo.scss" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/scss/sections/header.scss" />
         <option value="$PROJECT_DIR$/app/scss/core/_mixins.scss" />
         <option value="$PROJECT_DIR$/app/template/header.html" />
+        <option value="$PROJECT_DIR$/app/scss/sections/header.scss" />
       </list>
     </option>
   </component>
@@ -177,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,11 +259,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../react" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -272,12 +293,13 @@
       <updated>1526728919947</updated>
       <workItem from="1526728929716" duration="12029000" />
       <workItem from="1526844350241" duration="176000" />
-      <workItem from="1526847673953" duration="4475000" />
+      <workItem from="1526847673953" duration="4484000" />
+      <workItem from="1527937961327" duration="3459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35238000" />
+    <option name="totallyTimeSpent" value="38706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -286,8 +308,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Gulp" order="3" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
@@ -296,12 +318,12 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,31 +665,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/core/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/sections/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
+        <state relative-caret-position="308">
           <caret line="14" selection-start-line="14" selection-end-line="54" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/template/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
+        <state relative-caret-position="449">
           <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/core/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/sections/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2838">
+          <caret line="129" column="5" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -1,29 +1,29 @@
 @import "../core/_core.scss";
 .form {
   &__input {
-    width: 23.938rem;
-    height: 2.125rem;
+    width: 383px;
+    height: 34px;
     border-width: 0;
-    border-bottom: .063rem solid $form-line;
+    border-bottom: 1px solid $form-line;
     outline-width: 0;
     background-color: transparent;
     @include roboto-black;
-    font-size: .781rem;
+    font-size: 13px;
     line-height: 1;
-    letter-spacing: .031rem;
+    letter-spacing: .5px;
     color: $black;
     text-transform: uppercase;
   }
   &__submit {
-    width: 18.375rem;
-    height: 3.813rem;
+    width: 294px;
+    height: 61px;
     border-width: 0;
-    padding-left: 5.563rem;
+    padding-left: 90px;
     @include retina('../images/button.png', 2, cover, top center no-repeat);
     @include roboto-black;
-    font-size: 1.094rem;
+    font-size: 17px;
     line-height: 2.514;
-    letter-spacing: .063rem;
+    letter-spacing: 1px;
     text-align: left;
     text-transform: uppercase;
   }
@@ -31,28 +31,28 @@
 
 ::-webkit-input-placeholder {
   @include roboto-black;
-  letter-spacing: .031rem;
+  letter-spacing: .5px;
   color: $black;
   text-transform: uppercase;
 }
 
 ::-moz-placeholder {
   @include roboto-black;
-  letter-spacing: .031rem;
+  letter-spacing: .5px;
   color: $black;
   text-transform: uppercase;
 }
 
 :-moz-placeholder {
   @include roboto-black;
-  letter-spacing: .031rem;
+  letter-spacing: .5px;
   color: $black;
   text-transform: uppercase;
 }
 
 :-ms-input-placeholder {
   @include roboto-black;
-  letter-spacing: .031rem;
+  letter-spacing: .5px;
   color: $black;
   text-transform: uppercase;
 }

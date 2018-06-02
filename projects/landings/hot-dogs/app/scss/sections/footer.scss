@@ -1,9 +1,9 @@
 @import "../core/_core.scss";
 .footer {
   background-color: $footer;
-  padding: 2.125rem 1.25rem 1.625rem;
+  padding: 34px 20px 26px;
   font-family: 'Open Sans Regular', Arial, sans-serif;
-  font-size: .875rem;
+  font-size: 14px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.7;
@@ -11,7 +11,7 @@
   color: $text;
   text-align: center;
   &__right {
-    @media (min-width: 62rem) {
+    @media (min-width: 992px) {
       display: block;
       left: 0;
       text-align: left;

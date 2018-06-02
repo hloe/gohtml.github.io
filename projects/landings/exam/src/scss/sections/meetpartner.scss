@@ -4,39 +4,39 @@
   flex-direction: column;
   align-items: center;
   &__list {
-    @media (min-width: 40rem) {
+    @media (min-width: 640px) {
       display: flex;
       flex-flow: row wrap;
       width: 66%;
     }
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       flex-wrap: nowrap;
       width: 100%;
     }
   }
   &__item {
-    @media (min-width: 40rem) {
+    @media (min-width: 640px) {
       flex: 0 1 50%;
       &:nth-of-type(1) {
         order: -2;
-        margin-bottom: 1.688rem;
+        margin-bottom: 27px;
       }
       &:nth-of-type(3) {
         order: -1;
-        margin-bottom: 1.688rem;
+        margin-bottom: 27px;
       }
     }
   }
   &__link {
     display: block;
-    width: 17.5rem;
-    height: 2.5rem;
-    border: .125rem solid $red;
-    border-radius: 1.25rem;
+    width: 280px;
+    height: 40px;
+    border: 2px solid $red;
+    border-radius: 20px;
     @include montserrat-bold;
-    font-size: .875rem;
-    line-height: 2.25rem;
-    word-spacing: .094rem;
+    font-size: 14px;
+    line-height: 36px;
+    word-spacing: 1.5px;
     color: $red;
     text-align: center;
     vertical-align: middle;
@@ -45,9 +45,9 @@
       background-color: $red;
       color: $white;
     }
-    @media (min-width: 40rem) {
-      width: 12rem;
-      margin-top: .438rem;
+    @media (min-width: 640px) {
+      width: 192px;
+      margin-top: 7px;
     }
   }
 }
@@ -56,18 +56,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.813rem;
-  @media (min-width: 40rem) {
+  margin-bottom: 29px;
+  @media (min-width: 640px) {
     margin-bottom: 0;
-    padding: 0 .625rem;
+    padding: 0 10px;
   }
-  @media (min-width: 64rem) {
-    margin-bottom: 2rem;
+  @media (min-width: 1024px) {
+    margin-bottom: 32px;
   }
   &__avatar {
     position: relative;
-    width: 7.625rem;
-    height: 7.625rem;
+    width: 122px;
+    height: 122px;
   }
   &__link {
     &:hover {
@@ -80,22 +80,22 @@
   }
   &__icon {
     position: absolute;
-    bottom: -.188rem;
-    right: -.125rem;
+    bottom: -3px;
+    right: -2px;
   }
   &__title {
-    margin-top: 1.188rem;
-    margin-bottom: 1rem;
-    font-size: .875rem;
-    word-spacing: .094rem;
+    margin-top: 19px
+    margin-bottom: 16px;
+    font-size: 14px;
+    word-spacing: 1.5px;
     color: $dark-gray;
   }
   &__text {
     width: 68%;
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2;
     color: $light-gray;
-    @media (min-width: 40rem) {
+    @media (min-width: 640px) {
       width: 94%;
     }
   }

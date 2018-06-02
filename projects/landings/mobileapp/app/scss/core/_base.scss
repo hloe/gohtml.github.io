@@ -12,21 +12,21 @@ a {
 
 h1 {
   @include raleway-bold;
-  font-size: 2.625rem;
+  font-size: 42px;
   text-transform: capitalize;
 }
 
 h2 {
   @include raleway-bold;
-  font-size: 1.75rem;
+  font-size: 28px;
   line-height: 1.32;
   text-transform: uppercase;
 }
 
 button {
-  border-radius: .188rem;
+  border-radius: 3px;
   @include opensans-semibold;
-  font-size: 1.25rem;
+  font-size: 20px;
   text-transform: capitalize;
 }
 
@@ -37,14 +37,14 @@ iframe {
 blockquote {
   position: relative;
   display: block;
-  max-width: 67.5rem;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 0 4.063rem;
+  padding: 0 65px;
   @include opensans-regular;
-  font-size: 1.125rem;
+  font-size: 18px;
   line-height: 2;
   text-align: left;
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     text-align: justify;
     text-align-last: center;
   }
@@ -52,10 +52,10 @@ blockquote {
 
 blockquote:before {
   position: absolute;
-  top: 1.875rem;
+  top: 30px;
   left: 0;
   font-family: Georgia, serif;
-  font-size: 9.375rem;
+  font-size: 150px;
   line-height: .24;
   color: $quotes;
   content: '\201c';
@@ -64,17 +64,17 @@ blockquote:before {
 blockquote:after {
   position: absolute;
   right: 0;
-  bottom: -1.875rem;
+  bottom: -30px;
   font-family: Georgia, serif;
-  font-size: 9.375rem;
+  font-size: 150px;
   line-height: .24;
   color: $quotes;
   content: '\201d';
 }
 
 form {
-  @media (min-width: 40rem) {
-    width: 35.625rem;
+  @media (min-width: 640px) {
+    width: 570px;
     margin: 0 auto;
   }
 }
@@ -107,12 +107,12 @@ textarea {
 input[type="text"],
 input[type="email"] {
   width: 100%;
-  height: 2.75rem;
-  padding-left: 1.25rem;
-  line-height: 2.75rem;
+  height: 44px;
+  padding-left: 20px;
+  line-height: 44px;
   vertical-align: middle;
-  @media (min-width: 40rem) {
-    width: 16.875rem;
+  @media (min-width: 640px) {
+    width: 270px;
   }
 }
 
@@ -120,26 +120,26 @@ input[type="text"],
 input[type="email"],
 textarea {
   background-color: $white;
-  border-radius: .188rem;
+  border-radius: 3px;
   @include opensans-regular;
-  font-size: 1rem;
+  font-size: 16px;
   color: $input;
 }
 
 textarea {
   width: 100%;
-  height: 11.188rem;
-  padding: 1.25rem;
+  height: 119px
+  padding: 20px;
 }
 
 input[type="submit"] {
-  width: 10.625rem;
-  height: 3.125rem;
-  border-radius: .188rem;
+  width: 170px;
+  height: 50px;
+  border-radius: 3px;
   background-color: $video-background;
   @include opensans-regular;
-  font-size: 1.375rem;
-  line-height: 3.125rem;
+  font-size: 22px;
+  line-height: 50px;
   vertical-align: middle;
   text-transform: uppercase;
   color: $white;

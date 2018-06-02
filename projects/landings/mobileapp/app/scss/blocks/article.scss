@@ -6,68 +6,68 @@
   
   .features-article {
     @include clearfix;
-    margin: 0 auto 3.125rem;
-    padding-left: .813rem;
+    margin: 0 auto 50px;
+    padding-left: 13px;
     text-align: center;
-    @media (min-width: 48rem) {
-      margin: 0 auto 6.25rem;
+    @media (min-width: 768px) {
+      margin: 0 auto 94px;
       &:last-of-type {
         margin-bottom: 0;
       }
     }
     &__icon {
       display: block;
-      margin: 0 auto .625rem;
+      margin: 0 auto 10px;
       vertical-align: top;
-      @media (min-width: 48rem) {
+      @media (min-width: 768px) {
         float: left;
         margin-bottom: 0;
-        margin-right: 2.563rem;
+        margin-right: 41px;
       }
     }
     &__body {
       margin: 0 auto;
-      padding-top: .313rem;
+      padding-top: 5px;
       text-align: center;
-      @media (min-width: 48rem) {
+      @media (min-width: 768px) {
         float: left;
         text-align: left;
       }
     }
     &__title {
-      margin-bottom: .75rem;
+      margin-bottom: 12px;
       @include raleway-bold;
-      font-size: 1.125rem;
+      font-size: 18px;
       line-height: 1;
       color: $gray-text;
     }
     &__text {
       @include opensans-regular;
-      font-size: .813rem;
+      font-size: 13px;
       line-height: 1.9;
       vertical-align: middle;
       white-space: pre-wrap;
-      @media (min-width: 48rem) {
-        max-width: 15.313rem;
+      @media (min-width: 768px) {
+        max-width: 245px;
       }
     }
   }
   
   .say-article {
     &__author {
-      margin-top: 1.25rem;
+      margin-top: 20px;
       @include opensans-semibold;
-      font-size: 1.125rem;
+      font-size: 18px;
       line-height: 1.5;
       color: $team-text;
     }
     &__from {
       @include opensans-regular;
       color: $company;
-      font-size: .813rem;
+      font-size: 13px;
       line-height: 1;
     }
     &__quote {
-      margin-top: 6.313rem;
+      margin-top: 101px;
     }
   }

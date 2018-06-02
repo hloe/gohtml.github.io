@@ -2,48 +2,48 @@
 @import "../core/_mixins.scss";
 .title-line {
   position: relative;
-  margin-bottom: rem(75);
+  margin-bottom: 75px;
   &__below {
-    @media (max-width: rem(767)) {
+    @media (max-width: 767px) {
       &:after {
         position: absolute;
-        bottom: -2rem;
+        bottom: -32px;
         left: 50%;
         transform: translateX(-50%);
         display: block;
-        width: rem(94);
-        height: rem(9);
+        width: 84px;
+        height: 9px;
         background-color: $blue;
         content: '';
       }
     }
     &:after {
       position: absolute;
-      bottom: -2rem;
+      bottom: -32px;
       display: block;
-      width: rem(94);
-      height: rem(9);
+      width: 84px;
+      height: 9px;
       background-color: $blue;
       content: '';
     }
     &--right {
-      @media (max-width: rem(767)) {
+      @media (max-width: 767px) {
         text-align: center;
         &:after {
           position: absolute;
-          bottom: -2rem;
+          bottom: -32px;
           left: 50%;
           transform: translateX(-50%);
           display: block;
-          width: rem(94);
-          height: rem(9);
+          width: 84px;
+          height: 9px;
           background-color: $blue;
           content: '';
         }
       }
-      @media (min-width: 48rem) {
+      @media (min-width: 768px) {
         margin-left: auto;
-        max-width: 30rem;
+        max-width: 480px;
         text-align: right;
       }
       &:after {
@@ -52,53 +52,53 @@
     }
   }
   &__above {
-    @media (max-width: rem(767)) {
+    @media (max-width: 767px) {
       &:after {
         position: absolute;
-        top: -2rem;
+        top: -32px;
         display: block;
         left: 50%;
         transform: translateX(-50%);
-        width: rem(94);
-        height: rem(9);
+        width: 84px;
+        height: 9px;
         background-color: $blue;
         content: '';
       }
     }
     &:after {
       position: absolute;
-      top: -2rem;
+      top: -32px;
       display: block;
-      width: rem(94);
-      height: rem(9);
+      width: 84px;
+      height: 9px;
       background-color: $blue;
       content: '';
     }
   }
   &__left {
-    @media (max-width: rem(767)) {
+    @media (max-width: 767px) {
       &:after {
         position: absolute;
-        top: -2rem;
+        top: -32px;
         display: block;
         left: 50%;
         transform: translateX(-50%);
-        width: rem(94);
-        height: rem(9);
+        width: 84px;
+        height: 9px;
         background-color: $blue;
         content: '';
       }
     }
-    @media (min-width: 48rem) {
-      padding-left: rem(24);
+    @media (min-width: 768px) {
+      padding-left: 24px;
       &:before {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: 0;
         display: block;
-        width: rem(9);
-        height: rem(94);
+        width: 9px;
+        height: 84px;
         background-color: $blue;
         content: '';
       }

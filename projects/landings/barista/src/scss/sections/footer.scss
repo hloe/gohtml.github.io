@@ -1,7 +1,7 @@
 @import "../core/_core.scss";
 .school {
-  padding-top: 8.875rem;
-  padding-bottom: 2.438rem;
+  padding-top: 142px;
+  padding-bottom: 39px;
   color: $white;
   &__title {
     width: 60%;
@@ -10,15 +10,15 @@
     text-align: center;
   }
   &__text {
-    padding-top: 3.125rem;
-    padding-bottom: 2.813rem;
+    padding-top: 50px;
+    padding-bottom: 45px;
     line-height: 1.656;
     text-align: justify;
     &_left {
-      padding-right: .938rem;
+      padding-right:15px;
     }
     &_right {
-      padding-left: .938rem;
+      padding-left:15px;
     }
   }
 }
@@ -26,25 +26,25 @@
 .school-table {
   width: 100%;
   background-color: $table-background;
-  border: .125rem solid $school-table;
+  border: 2px solid $school-table;
   @include roboto-black;
-  font-size: .938rem;
+  font-size:15px;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   &__tr {
-    height: 6.125rem;
-    line-height: 6.125rem;
+    height: 98px;
+    line-height: 98px;
     &:last-of-type {
-      height: 7.5rem;
-      line-height: 7.5rem;
+      height: 120px;
+      line-height: 120px;
     }
   }
   &__td {
-    border: .063rem solid $school-td;
+    border: 1px solid $school-td;
   }
   &__icon {
-    line-height: 6.125rem;
+    line-height: 98px;
     vertical-align: middle;
   }
   &__list {
@@ -55,7 +55,7 @@
     position: relative;
     &:after {
       position: absolute;
-      top: .125rem;
+      top: 2px;
       content: '\2022';
     }
     &:last-of-type {
@@ -65,8 +65,8 @@
     }
   }
   &__link {
-    padding: 0 3.438rem;
-    font-size: .781rem;
+    padding: 0 55px;
+    font-size: 13px;
     color: $white;
     text-decoration: none;
     &:hover {
@@ -77,20 +77,20 @@
 }
 
 .footer {
-  padding-bottom: 2.938rem;
-  font-size: 1.875rem;
+  padding-bottom: 38px;
+  font-size: 30px;
   color: $white;
   text-align: center;
   &__copy {
-    padding-right: 1.25rem;
+    padding-right: 20px;
     @include georgia-regular;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1;
   }
   &__site {
-    padding-left: 1.25rem;
+    padding-left: 20px;
     @include roboto-black;
-    font-size: .781rem;
+    font-size: 13px;
     line-height: 1;
     text-transform: uppercase;
   }

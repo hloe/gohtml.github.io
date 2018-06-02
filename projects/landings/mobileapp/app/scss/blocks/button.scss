@@ -1,15 +1,15 @@
 @import "../core/_core.scss";
 .button {
   display: block;
-  height: 3.063rem;
-  width: 13.25rem;
+  height: 49px;
+  width: 212px;
 
   border-width: 0;
   &__download {
     background-color: $button;
     color: $white;
     &__text {
-      line-height: 3.063rem;
+      line-height: 49px;
       vertical-align: middle;
     }
   }

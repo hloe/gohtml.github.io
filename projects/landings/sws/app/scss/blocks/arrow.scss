@@ -3,11 +3,11 @@
 @import "../core/_retina.scss";
 .arrow-up {
   position: fixed;
-  bottom: 1rem;
-  right: 2rem;
+  bottom: 16px;
+  right: 32px;
   display: block;
-  width: rem(66);
-  height: 4rem;
+  width: 66px;
+  height: 64px;
   border-width: 0;
   background-color: transparent;
   @include retina('../images/up.png', 2, cover, top center no-repeat);

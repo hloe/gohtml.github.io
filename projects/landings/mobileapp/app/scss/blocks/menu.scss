@@ -5,19 +5,19 @@
     margin: 0;
     font-size: 0;
     line-height: 0;
-    letter-spacing: -.063rem;
+    letter-spacing: -1px;
   }
   &__item {
     display: inline;
     display: inline-block;
-    margin-right: 2.438rem;
+    margin-right: 39px;
     @include opensans-bold;
-    font-size: .813rem;
+    font-size: 13px;
     letter-spacing: normal;
     line-height: normal;
     text-transform: uppercase;
     &:last-of-type {
-      margin-right: -1.25rem;
+      margin-right: -20px;
     }
   }
   &__link {

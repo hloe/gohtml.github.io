@@ -9,7 +9,7 @@ svg {
     justify-content: center;
   }
   &__item {
-    margin-right: 1.25rem;
+    margin-right: 20px;
     &:last-of-type {
       margin-right: 0;
     }
@@ -18,8 +18,8 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     &_contact {
       background-color: $dark-accent;
@@ -37,8 +37,8 @@ svg {
     }
   }
   &__svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
     &_contact {
       fill: $light-gray;
     }

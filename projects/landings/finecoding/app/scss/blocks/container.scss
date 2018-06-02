@@ -1,16 +1,16 @@
 @import "../core/_core.scss";
 .container {
   box-sizing: border-box;
-  min-width: 20rem;
-  max-width: 30rem;
-  padding-left: .938rem;
-  padding-right: .938rem;
+  min-width: 320px;
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-  @media (min-width: 40rem) {
-    max-width: 56rem;
+  @media (min-width: 640px) {
+    max-width: 896px;
   }
-  @media (min-width: 64rem) {
-    max-width: 75rem;
+  @media (min-width: 1024px) {
+    max-width: 100px;
   }
   &__no-paddings {
     padding: 0;

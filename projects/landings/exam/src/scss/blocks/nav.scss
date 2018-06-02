@@ -2,7 +2,7 @@
 .nav {
   display: flex;
   flex-direction: column;
-  @media (min-width: 40rem) {
+  @media (min-width: 640px) {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
@@ -10,25 +10,25 @@
   &__list {
     display: flex;
     justify-content: center;
-    @media (min-width: 40rem) {
-      margin-right: 3.125rem;
+    @media (min-width: 640px) {
+      margin-right: 50px;
     }
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       margin-right: 0;
     }
   }
   &__link {
     display: block;
-    padding: .563rem 1rem;
+    padding: 9px 16px;
     @include montserrat-bold;
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1;
     color: $white;
-    border: .125rem solid transparent;
-    border-radius: 1.438rem;
+    border: 2px solid transparent;
+    border-radius: 23px;
     &:hover {
       @include transition;
-      border: .125rem solid $white;
+      border: 2px solid $white;
     }
   }
 }
@@ -36,44 +36,44 @@
 .footer-nav {
   &__list {
     @include montserrat-bold;
-    font-size: .875rem;
+    font-size: 14px;
     text-transform: capitalize;
-    @media (min-width: 40rem) {
+    @media (min-width: 640px) {
       display: flex;
-      margin-left: -2.5rem;
+      margin-left: -40px;
     }
   }
   &__sublist {
     display: flex;
     justify-content: center;
     @include roboto;
-    @media (min-width: 40rem) {
+    @media (min-width: 640px) {
       flex-direction: column;
     }
   }
   &__item {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     &:last-of-type {
-      margin-bottom: .813rem;
+      margin-bottom: 13px;
     }
-    @media (min-width: 40rem) {
-      margin-right: 6.438rem;
+    @media (min-width: 640px) {
+      margin-right: 103px;
       &:last-of-type {
         margin-right: 0;
       }
     }
-    @media (min-width: 64rem) {
-      margin-right: 5.688rem;
+    @media (min-width: 1024px) {
+      margin-right: 91px;
     }
   }
   &__subitem {
-    margin-top: .438rem;
-    margin-right: .813rem;
+    margin-top: 7px;
+    margin-right: 13px;
     &:last-of-type {
       margin-right: 0;
     }
-    @media (min-width: 40rem) {
-      margin-top: 1rem;
+    @media (min-width: 640px) {
+      margin-top: 16px;
     }
   }
   &__link {

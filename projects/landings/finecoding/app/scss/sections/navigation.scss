@@ -5,9 +5,9 @@
   justify-content: center;
   align-items: center;
   &_header {
-    padding-top: 1.188rem;
-    padding-bottom: 1.188rem;
-    @media (min-width: 40rem) {
+    padding-top: 19px
+    padding-bottom: 19px
+    @media (min-width: 640px) {
       flex-direction: row;
       justify-content: space-between;
     }

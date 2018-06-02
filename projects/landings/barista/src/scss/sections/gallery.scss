@@ -1,38 +1,38 @@
 @import "../core/_core.scss";
 .gallery {
-  padding-top: 9.688rem;
-  padding-bottom: 9.125rem;
+  padding-top: 155px;
+  padding-bottom: 146px;
   &__header {
-    width: 25rem;
-    margin: 0 auto 4.688rem;
+    width: 400px;
+    margin: 0 auto 75px;
     color: $white;
     text-align: center;
   }
   &__title {
     position: relative;
-    margin: 0 auto 1.5rem;
-    width: 24rem;
+    margin: 0 auto 24px;
+    width: 384px;
     &:before {
       position: absolute;
-      top: 1.125rem;
+      top: 18px;
       left: 0;
-      width: 1.938rem;
-      height: .875rem;
+      width: 31px;
+      height: 14px;
       content: '';
-      @include retina('../images/left-white-decor.png', 2, 1.938rem .875rem, top center no-repeat);
+      @include retina('../images/left-white-decor.png', 2, 31px 14px, top center no-repeat);
     }
     &:after {
       position: absolute;
-      top: 1.125rem;
+      top: 18px;
       right: 0;
-      width: 1.938rem;
-      height: .875rem;
+      width: 31px;
+      height: 14px;
       content: '';
-      @include retina('../images/right-white-decor.png', 2, 1.938rem .875rem, top center no-repeat);
+      @include retina('../images/right-white-decor.png', 2, 31px 14px, top center no-repeat);
     }
   }
   &__subtitle {
     line-height: 1.531;
-    word-spacing: -.063rem;
+    word-spacing: -1px;
   }
 }

@@ -4,6 +4,7 @@
 *.db
 node_modules/
 .sass-cache/
+.idea/
 npm-debug.log.*
 react-router-tutorial
 redux/examples

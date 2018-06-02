@@ -1,9 +1,9 @@
 @import "../core/_core.scss";
 .logo {
   @include reset;
-  @include retina('../images/logo.png', 2, 2.25rem 2.25rem, center left no-repeat);
+  @include retina('../images/logo.png', 2, 36px 36px, center left no-repeat);
   @include link;
-  padding-left: 3rem;
+  padding-left: 48px;
   filter: contrast(1);
   &:hover {
     filter: contrast(1.5);
@@ -12,16 +12,16 @@
   &__title {
     @include reset;
     @include ubuntu-medium;
-    font-size: 1.875rem;
+    font-size: 30px;
     line-height: .667;
     filter: inherit;
   }
   &__subtitle {
     @include reset;
     @include ubuntu-light;
-    font-size: .75rem;
+    font-size:12px;
     line-height: 1.667;
-    letter-spacing: .219rem;
+    letter-spacing: 3.5px;
     text-transform: uppercase;
     opacity: .65;
     filter: inherit;

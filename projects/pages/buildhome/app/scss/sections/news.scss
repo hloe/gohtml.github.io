@@ -2,13 +2,13 @@
 .news {
   display: flex;
   justify-content: space-between;
-  width: 77.5rem;
+  width: 1240px;
   margin: 0 auto;
-  padding-top: 3.875rem;
-  padding-bottom: 5.125rem;
+  padding-top: 60px;
+  padding-bottom:80px;
   &__title {
     @include ubuntu-medium;
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: .833;
     color: $services-background;
     text-transform: capitalize;
@@ -22,29 +22,29 @@
 
 .latest-news {
   &__content {
-    padding-top: 2.938rem;
+    padding-top:50px;
   }
 }
 
 .news-article {
   position: relative;
   display: flex;
-  margin-bottom: 1.875rem;
+  margin-bottom:30px;
   font-family: Arial, sans-serif;
-  font-size: .813rem;
+  font-size:13px;
   line-height: 1.538;
   color: $features-text;
   &:last-of-type {
     margin-bottom: 0;
   }
   &__content {
-    margin-left: 1.875rem;
+    margin-left: 30px;
   }
   &__title {
     display: block;
-    margin-bottom: .625rem;
+    margin-bottom: 10px;
     @include ubuntu-medium;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     color: $services-background;
     text-decoration: none;
@@ -54,8 +54,8 @@
   }
   &__subtitle {
     display: inline-block;
-    margin-right: .938rem;
-    margin-bottom: 1.625rem;
+    margin-right: 15px;
+    margin-bottom: 26px;
   }
   &__link {
     color: inherit;
@@ -70,28 +70,28 @@
 
 .data {
   position: absolute;
-  top: .75rem;
-  left: -1.063rem;
-  width: 2.5rem;
-  line-height: 2.5rem;
+  top:12px;
+  left: -17px;
+  width: 40px;
+  line-height: 40px;
   @include ubuntu-medium;
   text-align: center;
   &__month {
-    height: 2.5rem;
+    height: 40px;
     background-color: $blue;
     font-size: .938em;
     color: $white;
   }
   &__day {
-    height: 2.5rem;
+    height: 40px;
     background-color: $yellow;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: $features-title;
   }
 }
 
 .banners {
   &__content {
-    padding-top: 2.938rem;
+    padding-top:50px;
   }
 }

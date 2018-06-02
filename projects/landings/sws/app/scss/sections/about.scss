@@ -7,15 +7,15 @@
 }
 
 .icon {
-  padding: rem(117) rem(32) rem(60);
-  @include retina('../images/icon1.png', 2, rem(67) rem(73), top center no-repeat);
+  padding: 117px 32px 60px;
+  @include retina('../images/icon1.png', 2, 67px 73px, top center no-repeat);
   &--laptop {
-    @include retina('../images/icon2.png', 2, rem(76) rem(80), top center no-repeat);
+    @include retina('../images/icon2.png', 2, 76px 80px, top center no-repeat);
   }
   &--table {
-    @include retina('../images/icon3.png', 2, rem(81) rem(75), top center no-repeat);
+    @include retina('../images/icon3.png', 2, 81px 75px, top center no-repeat);
   }
-  @media (min-width: 62rem) {
+  @media (min-width: 992px) {
     padding-bottom: 0;
   }
 }

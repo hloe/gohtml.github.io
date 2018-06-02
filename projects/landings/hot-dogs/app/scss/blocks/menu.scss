@@ -6,25 +6,25 @@
     align-items: center;
     flex-flow: row wrap;
     margin: 0 auto;
-    @media (max-width: 48rem) {
-      max-width: 30rem;
+    @media (max-width: 768px) {
+      max-width: 480px;
     }
   }
   &__item {
     font-family: 'Open Sans Semibold', Arial, sans-serif;
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: normal;
     font-style: normal;
-    letter-spacing: .125rem;
+    letter-spacing: 2px;
     line-height: 1.2;
     text-transform: uppercase;
-    @media (max-width: 48rem) {
+    @media (max-width: 768px) {
       min-width: 50%;
     }
   }
   &__link {
     display: block;
-    padding: .625rem 2.375rem;
+    padding: 10px 380px;
     text-align: center;
     color: $menu;
     &:hover {

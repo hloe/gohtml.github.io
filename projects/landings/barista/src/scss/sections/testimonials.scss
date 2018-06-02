@@ -1,10 +1,10 @@
 @import "../core/_core.scss";
 .testimonials {
-  padding-top: 4.813rem;
-  padding-bottom: 6.563rem;
+  padding-top: 77px;
+  padding-bottom: 105px;
   text-align: center;
   &__title {
-    margin-bottom: 1.875rem;
+    margin-bottom: 30px;
   }
   &__subtitle {
     line-height: 2.063;
@@ -15,25 +15,25 @@
 .carousel-item {
   &__img {
     position: relative;
-    width: 10.625rem;
-    margin: 0 auto 1.875rem;
+    width: 170px;
+    margin: 0 auto 30px;
   }
   &__icon {
     position: absolute;
-    top: 1.438rem;
-    right: -.5rem;
+    top: 23px;
+    right: -8px;
     display: block;
-    box-shadow: .141rem .244rem .906rem 0px rgb(61, 61, 62);
+    box-shadow: 2px 4px 15px 0px rgb(61, 61, 62);
   }
   &__title {
-    margin-bottom: 1.063rem;
-    letter-spacing: .106rem;
+    margin-bottom: 17px;
+    letter-spacing: 1.7px;
     text-transform: uppercase;
   }
   &__text {
-    width: 52.75rem;
+    width: 844px;
     margin: 0 auto;
     line-height: 2.2;
-    word-spacing: -.063rem;
+    word-spacing: -1px;
   }
 }

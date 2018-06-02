@@ -1,21 +1,21 @@
 @import "../core/_core.scss";
 .blue-button {
-  padding: 1.188rem .625rem;
-  border-radius: .375rem;
+  padding: 19px 10px;
+  border-radius: 6px;
   font-family: 'Open Sans Semibold', Arial, sans-serif;
-  font-size: .938rem;
+  font-size: 15px;
   font-weight: normal;
   font-style: normal;
-  letter-spacing: -.044rem;
+  letter-spacing: -.7px;
   background-color: $blue-button;
   color: $white;
   &:hover {
     @include transition;
     background-color: $blue-button-hover;
   }
-  @media (min-width: 48rem) {
-    padding-left: 2.313rem;
-    padding-right: 1.688rem;
-    font-size: 1.25rem;
+  @media (min-width: 768px) {
+    padding-left: 37px;
+    padding-right: 27px;
+    font-size: 20px;
   }
 }

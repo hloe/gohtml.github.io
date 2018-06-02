@@ -5,28 +5,28 @@
   background-color: $light-gray;
   text-align: center;
   &__item {
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       text-align: left;
     }
     &:nth-of-type(even) {
-      @media (min-width: 48rem) {
+      @media (min-width: 768px) {
         text-align: right;
       }
     }
   }
   &__text {
     position: relative;
-    @media (min-width: 48rem) {
-      padding-bottom: rem(87);
+    @media (min-width: 768px) {
+      padding-bottom: 87px;
     }
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       &:before {
         position: absolute;
         top: 0;
         left: 0;
         display: block;
-        width: rem(192);
-        height: rem(137);
+        width: 192px;
+        height: 137px;
         @include retina('../images/quote.png', 2, cover, top center no-repeat);
         content: '';
         &:last-of-type {
@@ -35,7 +35,7 @@
       }
     }
     &--right {
-      @media (min-width: 48rem) {
+      @media (min-width: 768px) {
         &:before {
           left: auto;
           right: 0;
@@ -44,9 +44,9 @@
     }
   }
   &__figure {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    @media (min-width: 48rem) {
+    margin-top: 32px;
+    margin-bottom: 64px;
+    @media (min-width: 768px) {
       margin-top: 0;
       margin-bottom: 0;
     }

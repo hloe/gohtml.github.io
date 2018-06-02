@@ -4,16 +4,16 @@
   background-color: $footer;
   color: $white;
   &__title {
-    margin-bottom: rem(54);
+    margin-bottom: 54px;
   }
   &__subtitle {
     font-family: 'Lato Regular', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 1rem;
-    margin-bottom: rem(17);
+    font-size: 16px;
+    margin-bottom: 17px;
   }
   &__menu {
-    margin-top: rem(98);
+    margin-top: 98px;
   }
 }

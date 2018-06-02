@@ -4,7 +4,7 @@
 .header-wrapper {
   background-color: $footer;
   @include retina('../images/header-sm.jpg', 2, cover, top center no-repeat);
-  @media (min-width: 62rem) {
+  @media (min-width: 992px) {
     background-color: $footer;
     @include retina('../images/header.jpg', 2, cover, top center no-repeat);
   }

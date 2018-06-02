@@ -1,11 +1,11 @@
 @import "../core/_core.scss";
 
 .slider {
-  width: 72.5rem;
-  height: 29.375rem;
+  width: 1160px;
+  height: 470px;
   margin: 0 auto;
   background-color: $blue;
-  @include retina('../images/photo.jpg', 2, 72.5rem 29.375rem, top center no-repeat);
+  @include retina('../images/photo.jpg', 2, 1160px 470px, top center no-repeat);
   &__paragraph {
     color: $white;
     &:first-of-type {
@@ -13,11 +13,11 @@
     }
   }
   &__text {
-    padding: 0 1.75rem;
+    padding: 0 28px;
     background-color: $mark;
     background-color: $mark-transparent;
     @include ubuntu-medium;
-    font-size: 3.375rem;
+    font-size: 54px;
     line-height: 1.28;
     text-transform: uppercase;
   }

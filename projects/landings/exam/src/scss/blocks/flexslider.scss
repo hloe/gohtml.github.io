@@ -79,16 +79,16 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-viewport {
-  max-height: 125rem;
+  max-height: 2000px;
   transition: all 1s ease;
 }
 
 .loading .flex-viewport {
-  max-height: 18.75rem;
+  max-height: 300px;
 }
 
 .carousel li {
-  margin-right: .313rem;
+  margin-right: 5px;
 }
 
 .flex-direction-nav {
@@ -98,60 +98,60 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
-  width: 1.875rem;
-  height: 3.438rem;
+  width: 30px;
+  height: 55px;
   top: 0;
-  margin-top: 3.906rem;
+  margin-top: 62px;
   position: absolute;
   z-index: 10;
   overflow: hidden;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.8);
-  text-shadow: .063rem .063rem 0 rgba(255, 255, 255, 0.3);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease-in-out;
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     top: 50%;
-    margin-top: -2.75rem;
+    margin-top: -44px;
   }
 }
 
 .flex-direction-nav a:before {
   display: block;
-  width: 1.875rem;
-  height: 3.438rem;
+  width: 30px;
+  height: 55px;
   content: '';
   color: rgba(0, 0, 0, 0.8);
-  @media (min-width: 40rem) {
+  @media (min-width: 640px) {
     content: url(../images/left-arrow.png);
   }
 }
 
 .flex-direction-nav a.flex-next:before {
   content: '';
-  @media (min-width: 40rem) {
+  @media (min-width: 640px) {
     content: url(../images/right-arrow.png);
   }
 }
 
 .flex-direction-nav .flex-prev {
-  left: .813rem;
-  @media (min-width: 64rem) {
-    left: 1.313rem;
+  left: 13px;
+  @media (min-width: 1024px) {
+    left: 21px;
   }
 }
 
 .flex-direction-nav .flex-next {
-  right: .813rem;
-  @media (min-width: 64rem) {
-    right: 1.313rem;
+  right: 13px;
+  @media (min-width: 1024px) {
+    right: 21px;
   }
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
-  left: .813rem;
-  @media (min-width: 64rem) {
-    left: 1.313rem;
+  left: 13px;
+  @media (min-width: 1024px) {
+    left: 21px;
   }
 }
 
@@ -161,9 +161,9 @@ html[xmlns] .flexslider .slides {
 
 .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
-  right: .813rem;
-  @media (min-width: 64rem) {
-    right: 1.313rem;
+  right: 13px;
+  @media (min-width: 1024px) {
+    right: 21px;
   }
 }
 
@@ -180,11 +180,11 @@ html[xmlns] .flexslider .slides {
 
 .flex-pauseplay a {
   display: block;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  bottom: .313rem;
-  left: .625rem;
+  bottom: 5px;
+  left: 10px;
   opacity: 0.8;
   z-index: 10;
   overflow: hidden;
@@ -193,7 +193,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-pauseplay a:before {
-  font-size: 1.25rem;
+  font-size: 20px;
   display: inline-block;
   content: '\f004';
 }
@@ -209,26 +209,26 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  bottom: -2.5rem;
+  bottom: -40px;
   text-align: center;
 }
 
 .flex-control-nav li {
-  margin: 0 .375rem;
+  margin: 0 6px;
   display: inline-block;
   zoom: 1;
   *display: inline;
 }
 
 .flex-control-paging li a {
-  width: .688rem;
-  height: .688rem;
+  width: 11px;
+  height: 11px;
   display: block;
   background: #666;
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  text-indent: -625rem;
-  border-radius: 1.25rem;
+  text-indent: -10000px;
+  border-radius: 20px;
 }
 
 .flex-control-paging li a:hover {
@@ -243,7 +243,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-control-thumbs {
-  margin: .313rem 0 0;
+  margin: 5px 0 0;
   position: static;
   overflow: hidden;
 }
@@ -278,13 +278,13 @@ html[xmlns] .flexslider .slides {
  * RESPONSIVE
  * ====================================================================================================================*/
 
-@media screen and (max-width: 53.75rem) {
+@media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
     opacity: 1;
-    left: .625rem;
+    left: 10px;
   }
   .flex-direction-nav .flex-next {
     opacity: 1;
-    right: .625rem;
+    right: 10px;
   }
 }

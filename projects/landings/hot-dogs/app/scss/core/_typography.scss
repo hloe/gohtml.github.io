@@ -11,44 +11,44 @@ a {
 }
 
 h1 {
-  margin-bottom: 5rem;
-  padding-top: 6.25rem;
+  margin-bottom: 80px;
+  padding-top: 94px;
   background: url(../images/hotdog.svg) top center no-repeat;
-  background-size: 4.375rem 4.375rem;
+  background-size: 70px 70px;
   font-family: 'Open Sans Light', Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.23;
-  letter-spacing: -.125rem;
-  word-spacing: .087rem;
+  letter-spacing: -2px;
+  word-spacing: 1.39px;
   color: $text;
-  @media (min-width: 48rem) {
-    padding-top: 7.25rem;
-    background-size: 5.75rem 5.75rem;
-    font-size: 3.5rem;
+  @media (min-width: 768px) {
+    padding-top: 116px;
+    background-size: 92px 92px;
+    font-size: 56px;
   }
 }
 
 h2 {
   position: relative;
-  margin-bottom: 2.125rem;
+  margin-bottom: 34px;
   font-family: 'Open Sans Bold', Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.1;
-  letter-spacing: -.056rem;
+  letter-spacing: -.9px;
   color: $text;
-  @media (min-width: 48rem) {
-    padding-left: 3.125rem;
+  @media (min-width: 768px) {
+    padding-left: 50px;
     &:before {
       position: absolute;
       top: 50%;
       left: 0;
       display: block;
-      width: 1.938rem;
-      height: .125rem;
+      width: 31px;
+      height: 2px;
       content: '';
       background-color: $decor-line;
     }
@@ -56,13 +56,13 @@ h2 {
 }
 
 p {
-  padding-left: 3.188rem;
+  padding-left: 51px
   font-family: 'Open Sans Light', Arial, sans-serif;
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.33;
-  letter-spacing: -.025rem;
-  word-spacing: -.063rem;
+  letter-spacing: -.4px;
+  word-spacing: -1px;
   color: $text;
 }

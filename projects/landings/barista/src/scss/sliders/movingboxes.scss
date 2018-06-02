@@ -26,7 +26,7 @@
   left: 0;
   top: 0;
   /***(>'-')> Control Panel Font size here <('-'<)***/
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 
 
@@ -52,7 +52,7 @@ change .current class name using plugin option, currentPanel : 'current' */
 /*** Inside the panel ***/
 
 .mb-inside {
-  margin-right: 3.313rem;
+  margin-right: 53px;
 }
 
 .mb-inside * {
@@ -63,15 +63,15 @@ change .current class name using plugin option, currentPanel : 'current' */
 /*** Left & Right Navigation Arrows ***/
 
 .legend {
-  width: 28.25rem;
-  height: 4.188rem;
-  margin: 6.188rem auto 0;
+  width: 452px;
+  height: 67px;
+  margin: 100px auto 0;
   @include clearfix;
   @include georgia-regular;
-  font-size: 1.219rem;
-  line-height: 4.188rem;
+  font-size: 19px;
+  line-height: 67px;
   letter-spacing: 0;
-  word-spacing: .087rem;
+  word-spacing: 1.4px;
   text-align: center;
   vertical-align: middle;
   color: $yellow;
@@ -79,15 +79,15 @@ change .current class name using plugin option, currentPanel : 'current' */
 
 .current-number,
 .amount {
-  font-size: 1.875rem;
+  font-size: 30px;
   color: $white;
 }
 
 a.mb-scrollButtons {
   z-index: 200;
   display: block;
-  width: 8.5rem;
-  height: 4.188rem;
+  width: 136px;
+  height: 67px;
   bottom: 0;
   cursor: pointer;
   text-decoration: none;
@@ -142,31 +142,31 @@ a.mb-scrollButtons.disabled {
 .main-nav {
   display: block;
   text-align: center;
-  border-bottom: .125rem solid #a71700;
-  margin: 0 0 1.25rem 0;
-  padding: 0 0 .625rem 0;
+  border-bottom: 2px solid #a71700;
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
 }
 
 .main-nav a {
   text-decoration: none;
   color: #3e63ec;
-  font-size: 1.125rem;
-  margin: 0 .5rem;
+  font-size: 18px;
+  margin: 0 8px;
 }
 
 .main-nav a:hover {
   color: black;
-  border-bottom: .125rem solid black;
+  border-bottom: 2px solid black;
 }
 
 
 /* height of the placeholder until image completely loads - needed for
    webkit browsers, add this only if you don't want the height animation
-   on startup. 20.375rem measures the height of the current image when enlarged 
+   on startup. 326px measures the height of the current image when enlarged
 */
 
 #slider-two .current img {
-  /* height: 20.375rem; */
+  /* height: 326px; */
 }
 
 
@@ -175,18 +175,18 @@ a.mb-scrollButtons.disabled {
 .mb-inside a {
   color: #333;
   text-decoration: none;
-  border-bottom: .063rem dotted #ccc;
+  border-bottom: 1px dotted #ccc;
 }
 
 .mb-inside a:hover {
-  border-bottom: .063rem solid #999;
+  border-bottom: 1px solid #999;
 }
 
 
 /* Add/remove panels buttons */
 
 .buttons {
-  padding: .313rem .625rem;
+  padding: 5px 10px;
   text-align: center;
 }
 
@@ -195,7 +195,7 @@ a.mb-scrollButtons.disabled {
 
 .dlinks {
   text-align: center;
-  margin: 0 0 1.25rem 0;
+  margin: 0 0 20px 0;
 }
 
 .dlinks * {

@@ -2,19 +2,19 @@
 .works {
 
   &__header {
-    height: 5.625rem;
+    height: 90px;
     text-transform: uppercase;
     color: $white;
   }
   &__title {
-    font-size: 1.625rem;
+    font-size: 26px;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, sans-serif;
     font-weight: 300;
     font-style: normal;
-    line-height: 5.625rem;
+    line-height: 90px;
     vertical-align: middle;
     text-align: center;
-     @media (min-width: 40rem) { 
+     @media (min-width: 640px) {
     text-align: left;
     }
   }
@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    @media (min-width: 40rem) {
+    @media (min-width: 640px) {
       justify-content: space-around;
       flex-direction: row;
       flex-wrap: wrap;
@@ -34,11 +34,11 @@
     width: 90%;
     height: 100%;
     margin: 5%;
-    @media (min-width: 40rem) {
+    @media (min-width: 640px) {
       width: 47.5%;
       margin: 1.25%;
     }
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       width: 23.5%;
       margin: .5%;
     }
