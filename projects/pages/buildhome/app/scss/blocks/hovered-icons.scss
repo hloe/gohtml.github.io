@@ -1,11 +1,15 @@
+@import "../core/_core.scss";
+
 .hovered-icon {
   transition: all .5s ease;
-  &__def {
+
+  @include el('def') {
     display: inline-block;
     width: inherit;
     height: inherit;
   }
-  &__hov {
+
+  @include el('hov') {
     display: none;
   }
 }

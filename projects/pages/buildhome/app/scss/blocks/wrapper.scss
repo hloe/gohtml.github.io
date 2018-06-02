@@ -1,15 +1,18 @@
 @import "../core/_core.scss";
 .wrapper {
-  &__services {
+  @include el('services') {
     background-color: $services-background;
   }
-  &__news {
+
+  @include el('news') {
     background-color: $news-background;
   }
-  &__links {
-      background-color: $services-background;
+
+  @include el('links') {
+    background-color: $services-background;
   }
-  &__contacts {
-     background-color: $footer-background;
+
+  @include el('contacts') {
+    background-color: $footer-background;
   }
 }

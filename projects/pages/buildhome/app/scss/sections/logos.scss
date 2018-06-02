@@ -5,20 +5,21 @@
   align-items: center;
   width: 1160px;
   margin: 0 auto;
-  padding: 90px 1 14px;
-  &__link {
+  padding: 90px 14px;
+
+  @include mod('link') {
     display: block;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1;
-    letter-spacing: normal;
     text-decoration: none;
     opacity: .6;
     &:hover {
       opacity: 1;
     }
   }
-  &__img {
+
+  @include mod('img') {
     width: auto;
     height: 62px;
   }

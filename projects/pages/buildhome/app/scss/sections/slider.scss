@@ -6,13 +6,15 @@
   margin: 0 auto;
   background-color: $blue;
   @include retina('../images/photo.jpg', 2, 1160px 470px, top center no-repeat);
-  &__paragraph {
+
+  @include el('paragraph') {
     color: $white;
     &:first-of-type {
       color: $slider-yellow;
     }
   }
-  &__text {
+
+  @include el('text') {
     padding: 0 28px;
     background-color: $mark;
     background-color: $mark-transparent;

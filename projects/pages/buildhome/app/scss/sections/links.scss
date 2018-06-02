@@ -1,4 +1,5 @@
 @import "../core/_core.scss";
+
 .links {
   display: flex;
   justify-content: space-between;
@@ -6,7 +7,8 @@
   margin: 0 auto;
   padding-top:60px;
   padding-bottom: 75px;
-  &__item {
+
+  @include mod('item') {
     width: 25%;
     padding-right: 30px;
     @include ubuntu-medium;
@@ -15,17 +17,20 @@
     color: $white;
     text-transform: uppercase;
   }
-  &__sublist {
+
+  @include mod('sublist') {
     margin-top: 45px;
     text-transform: none;
   }
-  &__subitem {
+
+  @include mod('subitem') {
     border-bottom:1px solid $links-border;
     &:last-of-type {
       border-bottom-color: transparent;
     }
   }
-  &__link {
+
+  @include mod('link') {
     font-family: Arial, sans-serif;
     font-size:13px;
     line-height: 2.769;

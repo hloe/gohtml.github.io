@@ -1,3 +1,15 @@
+@mixin el($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin mod($modifier) {
+  &_#{$modifier} {
+    @content;
+  }
+}
+
 // div, span, h1, h2, h3, p, a, img, ul, li,
 // form, article, figure, figcaption, footer,
 // header, nav, section
@@ -6,7 +18,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  vertical-align: baseline;
 }
 
 @mixin clearfix {
@@ -18,7 +29,6 @@
     visibility: hidden;
   }
 }
-
 
 @mixin list {
   @include reset;
@@ -52,7 +62,21 @@
   font-style: normal;
 }
 
+@mixin placeholder {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.667;
+  color: $input;
+  color: $input-transparent;
+}
+
 @mixin container {
   max-width: 1160px;
   margin: 0 auto;
+}
+
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -15,8 +15,8 @@
 <!-- Header -->
 <header class="header" id="home">
   <a href="#" class="logo">
-      <h1 class="logo__title">Build Home</h1>
-      <p class="logo__subtitle">Industrial Theme</p>
+    <h1 class="logo__title">Build Home</h1>
+    <p class="logo__subtitle">Industrial Theme</p>
   </a>
 
   <ul class="social">
@@ -54,36 +54,93 @@
 </header>
 <!-- End of Header -->
 
-<nav class="header-nav">
-  <ul class="header-nav__list">
-    <li class="header-nav__item">
+<nav class="nav">
+  <ul class="nav__list">
+    <li class="nav__item">
       <a href="#home" class="menu-link menu-link__active">home</a>
     </li>
-    <li class="header-nav__item">
+    <li class="nav__item">
       <a href="#features" class="menu-link">features</a>
     </li>
-    <li class="header-nav__item">
+    <li class="nav__item">
       <a href="#services" class="menu-link">services</a>
     </li>
-    <li class="header-nav__item">
+    <li class="nav__item">
       <a href="#news" class="menu-link">news</a>
     </li>
-    <li class="header-nav__item">
+    <li class="nav__item">
       <a href="#" class="menu-link">shop</a>
     </li>
   </ul>
 
-  <form action="#" class="search-form header-nav__form">
+  <form action="#" class="search-form nav__form">
     <ul class="search-form__list">
       <li class="search-form__item">
-        <input type="text" placeholder="Search...">
+        <input type="text" class="search-form__input search-form__input_text" placeholder="Search...">
       </li>
       <li class="search-form__item">
-        <input type="submit" value="Send">
+        <input type="submit" class="search-form__input search-form__input_submit" value="Send">
       </li>
     </ul>
   </form>
 </nav>
+
+<!-- Slider -->
+<div class="slider">
+  <div id="carousel-example-generic" class="carousel" data-ride="carousel">
+
+    <!-- Carousel Content -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="carousel-caption">
+          <p class="slider__paragraph">
+            <span class="slider__text">build</span>
+          </p>
+          <p class="slider__paragraph">
+            <span class="slider__text">your</span>
+          </p>
+          <p class="slider__paragraph">
+            <span class="slider__text">business</span>
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel-caption">
+          <p class="slider__paragraph">
+            <span class="slider__text">Lorem</span>
+          </p>
+          <p class="slider__paragraph">
+            <span class="slider__text">ipsum</span>
+          </p>
+          <p class="slider__paragraph">
+            <span class="slider__text">dolor</span>
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel-caption">
+          <p class="slider__paragraph">
+            <span class="slider__text">sit</span>
+          </p>
+          <p class="slider__paragraph">
+            <span class="slider__text">amet</span>
+          </p>
+          <p class="slider__paragraph">
+            <span class="slider__text">consectetur</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pointers -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+  </div>
+</div>
+<!-- End of Slider -->
 
 
   <!--//= template/header.html-->

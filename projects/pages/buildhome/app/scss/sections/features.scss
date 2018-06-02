@@ -1,56 +1,59 @@
 @import "../core/_core.scss";
+
 .features {
   display: flex;
   width: 1160px;
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 90px;
-  &__item {
+
+  @include el('item') {
     width: 33%;
   }
 }
 
 .features-article {
   display: flex;
-  &__number {
+
+  @include el('number') {
     margin-right: 35px;
     @include ubuntu-medium;
     font-size: 90px;
-    letter-spacing: normal;
     line-height: 1;
     color: $features-title;
     opacity: .1;
   }
-  &__content {
+
+  @include el('content') {
     margin-right: 40px;
     &:last-of-type {
       margin-right: 40px;
     }
   }
-  &__title {
+
+  @include el('title') {
     margin-top: 18px;
     margin-bottom: 22px;
     @include ubuntu-medium;
-    font-size:20px;
+    font-size: 20px;
     line-height: 1;
-    letter-spacing: normal;
     color: $features-title;
     text-transform: capitalize;
   }
-  &__text {
+
+  @include el('text') {
     font-family: Arial, sans-serif;
-    font-size:13px;
-    letter-spacing: normal;
+    font-size: 13px;
     line-height: 1.538;
     color: $features-text;
   }
-  &__link {
+
+  @include el('link') {
     display: block;
-    margin-top:20px;
+    margin-top: 20px;
     @include ubuntu-medium;
-    font-size:13px;
+    font-size: 13px;
     line-height: 1.538;
-    letter-spacing: normal;
     color: $features-title;
     text-decoration: none;
     &:hover {

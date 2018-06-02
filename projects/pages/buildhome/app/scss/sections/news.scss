@@ -6,7 +6,8 @@
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom:80px;
-  &__title {
+
+  @include el('title') {
     @include ubuntu-medium;
     font-size: 24px;
     line-height: .833;
@@ -21,7 +22,8 @@
 }
 
 .latest-news {
-  &__content {
+
+  @include el('content') {
     padding-top:50px;
   }
 }
@@ -37,10 +39,12 @@
   &:last-of-type {
     margin-bottom: 0;
   }
-  &__content {
+
+  @include el('content') {
     margin-left: 30px;
   }
-  &__title {
+
+  @include el('title') {
     display: block;
     margin-bottom: 10px;
     @include ubuntu-medium;
@@ -52,17 +56,20 @@
       color: $blue;
     }
   }
-  &__subtitle {
+
+  @include el('subtitle') {
     display: inline-block;
     margin-right: 15px;
     margin-bottom: 26px;
   }
-  &__link {
+
+  @include el('link') {
     color: inherit;
     &:hover {
       opacity: .8;
     }
-    &_blue {
+
+    @include mod('blue') {
       color: $blue;
     }
   }
@@ -76,13 +83,15 @@
   line-height: 40px;
   @include ubuntu-medium;
   text-align: center;
-  &__month {
+
+  @include el('month') {
     height: 40px;
     background-color: $blue;
     font-size: .938em;
     color: $white;
   }
-  &__day {
+
+  @include el('day') {
     height: 40px;
     background-color: $yellow;
     font-size: 18px;
@@ -91,7 +100,7 @@
 }
 
 .banners {
-  &__content {
+  @include el('content') {
     padding-top:50px;
   }
 }
