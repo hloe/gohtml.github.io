@@ -10,16 +10,6 @@
   }
 }
 
-// div, span, h1, h2, h3, p, a, img, ul, li,
-// form, article, figure, figcaption, footer,
-// header, nav, section
-@mixin reset {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
 @mixin clearfix {
   &::after {
     clear: both;
@@ -31,7 +21,6 @@
 }
 
 @mixin list {
-  @include reset;
   list-style: none;
   display: flex;
 }
@@ -68,11 +57,6 @@
   line-height: 1.667;
   color: $input;
   color: $input-transparent;
-}
-
-@mixin container {
-  max-width: 1160px;
-  margin: 0 auto;
 }
 
 @mixin flex-between-center {

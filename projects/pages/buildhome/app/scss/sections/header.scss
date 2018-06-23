@@ -1,8 +1,6 @@
 @import "../core/_core.scss";
 
 .header {
-  @include reset;
-  @include container;
   @include flex-between-center;
   padding-top: 36px;
   padding-bottom: 36px;
@@ -10,10 +8,8 @@
 
 .social {
   @include list;
-  @include reset;
 
   @include el('item') {
-    @include reset;
     margin-left: 18px;
   }
 

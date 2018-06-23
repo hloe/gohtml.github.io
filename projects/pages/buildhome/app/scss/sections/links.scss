@@ -8,7 +8,7 @@
   padding-top:60px;
   padding-bottom: 75px;
 
-  @include mod('item') {
+  @include el('item') {
     width: 25%;
     padding-right: 30px;
     @include ubuntu-medium;
@@ -18,22 +18,23 @@
     text-transform: uppercase;
   }
 
-  @include mod('sublist') {
+  @include el('sublist') {
     margin-top: 45px;
     text-transform: none;
   }
 
-  @include mod('subitem') {
-    border-bottom:1px solid $links-border;
+  @include el('subitem') {
+    border-bottom: 1px solid $links-border;
     &:last-of-type {
       border-bottom-color: transparent;
     }
   }
 
-  @include mod('link') {
+  @include el('link') {
     font-family: Arial, sans-serif;
-    font-size:13px;
+    font-size: 13px;
     line-height: 2.769;
+    text-decoration: none;
     color: $white-transparent;
     &:hover {
       color: $blue;

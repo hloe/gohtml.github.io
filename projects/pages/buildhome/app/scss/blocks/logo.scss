@@ -1,6 +1,5 @@
 @import "../core/_core.scss";
 .logo {
-  @include reset;
   @include retina('../images/logo.png', 2, 36px 36px, center left no-repeat);
   @include link;
   padding-left: 48px;
@@ -10,7 +9,6 @@
   }
 
   @include el('title') {
-    @include reset;
     @include ubuntu-medium;
     font-size: 30px;
     line-height: .667;
@@ -18,7 +16,6 @@
   }
 
   @include el('subtitle') {
-    @include reset;
     @include ubuntu-light;
     font-size:12px;
     line-height: 1.667;

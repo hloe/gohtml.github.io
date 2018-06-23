@@ -1,9 +1,7 @@
 @import "../core/_core.scss";
 
 .nav {
-  @include reset;
   @include flex-between-center;
-  @include container;
   padding-right: 8px;
   background-color: $services-background;
 
@@ -12,7 +10,6 @@
   }
 
   @include el('form') {
-    @include reset;
     margin-right: 8px;
   }
 }
@@ -41,7 +38,6 @@
 }
 
 .search-form {
-  @include reset;
   width: 240px;
   border: 1px solid $border;
 
@@ -50,7 +46,6 @@
   }
 
   @include el('input') {
-    @include reset;
     height: 38px;
     border-width: 0;
     outline-width: 0;
