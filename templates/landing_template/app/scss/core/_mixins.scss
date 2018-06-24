@@ -1,0 +1,145 @@
+@mixin transition {
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+   visibility: hidden;
+  }
+}
+
+$baseFontSize: 16;
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@mixin font-size($size1, $break-point, $size2) {
+  font-size: $size1;
+  @media (min-width: $break-point) {
+    font-size: $size2;
+  }
+}
+
+// BEM
+@mixin el($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin mod($modifier) {
+  &_#{$modifier} {
+    @content;
+  }
+}
+
+@mixin fixed($top, $right, $bottom, $left) {
+  position: fixed;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin absolute($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin centered-background($url, $size) {
+  background: $url;
+  background-size: $size;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@mixin margin-right($size) {
+  margin-right: $size;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@mixin margin-bottom($size) {
+  margin-bottom: $size;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@mixin square($size, $background) {
+  width: $size;
+  height: $size;
+  @if $background {
+    background: $background;
+  }
+}
+
+@mixin rectangle($width, $height, $background) {
+  width: $width;
+  height: $height;
+  @if $background {
+    background: $background;
+  }
+}
+
+@mixin block($width, $height, $background) {
+  display: block;
+  @include rectangle($width, $height, $background);
+  content: '';
+}
+
+@mixin round($size, $background) {
+  @include square($size, $background);
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  line-height: $size;
+  vertical-align: middle;
+}
+
+@mixin background-translateX($top, $size, $background) {
+  position: absolute;
+  top: $top;
+  left: 50%;
+  transform: translateX(-50%);
+  @include block($size, $size, $background);
+}
+
+@mixin translateY50 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin translateCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+

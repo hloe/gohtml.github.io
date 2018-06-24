@@ -30,7 +30,7 @@ gulp.task('sass', function () {
 gulp.task('autoprefixer', function () {
   return gulp.src('app/css/*.css')
     .pipe(autoprefixer({
-      browsers: ['last 5 versions', 'IE 9'],
+      browsers: ['last 2 versions'],
       cascade: false
     }))
     .pipe(gulp.dest('dist/css'));
@@ -50,7 +50,7 @@ gulp.task('scripts', function () {
   return gulp.src('app/js/**/*.js')
     .pipe(concat('scripts.min.js'))
     .pipe(babel({
-      presets: ['es2015']
+      presets: ['es2015', 'stage-2']
     }))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
@@ -72,7 +72,9 @@ gulp.task('icons', function () {
 gulp.task('images', function () {
   return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
     .pipe(cache(imagemin({
-      interlaced: true
+      interlaced: true,
+      progressive: true,
+      optimizationLevel: 10,
     })))
     .pipe(gulp.dest('dist/images'))
 });
@@ -103,7 +105,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'fonts', 'icons'],
+  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'fonts', 'icons', 'html'],
     callback
   )
 });
