@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+.user-card {
+  position: relative;
+  z-index: 3;
+  width: 270px;
+  height: 300px;
+  display: block;
+  margin: 0 auto 64px;
+  &__title {
+    margin-bottom: 36px;
+  }
+  &__text {
+    @include opensans-semibold;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $team-text;
+    opacity: .8;
+  }
+}
+
+.figure {
+  display: block;
+  margin: 0 auto;
+  &__img {
+    width: 270px;
+    height: 300px;
+  }
+  &__title {
+    margin-bottom: 5px;
+    margin-top: 11px;
+    @include opensans-semibold;
+    font-size: 18px;
+    line-height: 1.333;
+    color: $team-text;
+  }
+  &__text {
+    margin-bottom: 50px;
+    @include opensans-regular;
+    font-size: 13px;
+    line-height: 1.846;
+    color: $alternative-gray;
+    color: $team-text;
+    opacity: .56;
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.hover {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 300px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  padding: 18px 23px 0;
+  background-color: $aqua-background;
+  background-color: $aqua-background-transparent;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $white;
+  &__title {
+    margin-bottom: 8px;
+    @include opensans-semibold;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  &__text {
+    margin-bottom: 105px;
+    @include opensans-regular;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: .8;
+  }
+  &__icons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: 0 auto;
+    @media (min-width: 320px) {
+      bottom: 22px;
+    }
+  }
+}

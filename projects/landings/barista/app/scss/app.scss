@@ -1,0 +1,29 @@
+@import './core/variables.scss';
+@import './core/fonts.scss';
+@import './core/mixins.scss';
+@import './core/reset.scss';
+@import './core/typography.scss';
+@import './core/grid.scss';
+@import './core/retina.scss';
+
+@import './blocks/coffee-beans.scss';
+@import './blocks/columns.scss';
+@import './blocks/form.scss';
+@import './blocks/icons.scss';
+@import './blocks/program-table.scss';
+@import './blocks/tabs.scss';
+@import './blocks/tabs-info.scss';
+@import './blocks/wrappers.scss';
+
+@import './sections/header.scss';
+@import './sections/navigation.scss';
+@import './sections/programs.scss';
+@import './sections/gallery.scss';
+@import './sections/partners.scss';
+@import './sections/testimonials.scss';
+@import './sections/contact.scss';
+@import './sections/footer.scss';
+
+@import './sliders/carousel.scss';
+@import './sliders/flexslider.scss';
+@import './sliders/movingboxes.scss';

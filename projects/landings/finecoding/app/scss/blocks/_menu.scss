@@ -1,0 +1,50 @@
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  &_header {
+    @media (min-width: 640px) {
+      margin-left: 80px;
+      justify-content: flex-end;
+    }
+    @media (max-width: 640px) {
+      width: 320px;
+    }
+  }
+  &__item {
+    &_header {
+    
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    padding: 16px 24px;
+    @include font(400);
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    &_header {
+    
+    }
+  }
+}
+
+.header__menu {
+  .menu__item {
+      @media (min-width: 1024px) {
+        border-right: 1px solid $light-gray;
+        &:last-of-type {
+          border-right: 1px solid transparent;
+        }
+      }
+  }
+  .menu__link {
+      color: $dark-accent;
+      &:hover {
+        @include transition;
+        color: $light-accent;
+      }
+  }
+}

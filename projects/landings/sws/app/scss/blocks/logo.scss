@@ -1,12 +1,8 @@
-@import "../core/_variables.scss";
-@import "../core/_mixins.scss";
 .logo {
   position: relative;
   display: block;
   min-width: 215px;
-  font-family: 'LatoBlack Italic', Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
+  @inclue font-black-italic;
   font-size: 30px;
   line-height: 1;
   text-align: left;
@@ -26,9 +22,7 @@
     display: block;
     min-width: 160px;
     padding-top: 4px;
-    font-family: 'Lato Light', Arial, sans-serif;
-    font-weight: normal;
-    font-style: normal;
+    @include font-light;
     font-size: 15px;
   }
 }

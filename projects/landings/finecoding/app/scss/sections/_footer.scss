@@ -1,0 +1,21 @@
+.footer {
+  &__text {
+    font-size: 14px;
+    padding-top: 40px;
+    padding-bottom: 44px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.footer__menu {
+  .menu__link {
+          color: $white;
+      &:hover {
+        @include transition;
+        color: $dark-accent;
+      }
+
+  }
+}

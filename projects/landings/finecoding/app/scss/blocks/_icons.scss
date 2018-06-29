@@ -1,0 +1,48 @@
+svg {
+  display: block;
+}
+
+.icon {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    margin-right: 20px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    &_contact {
+      background-color: $dark-accent;
+      &:hover {
+        @include transition;
+        background-color: $light-accent;
+      }
+    }
+    &_footer {
+      background-color: $light-accent;
+      &:hover {
+        @include transition;
+        background-color: $white;
+      }
+    }
+  }
+  &__svg {
+    width: 24px;
+    height: 24px;
+    &_contact {
+      fill: $light-gray;
+    }
+    &_footer {
+      fill: $dark-accent;
+    }
+  }
+}

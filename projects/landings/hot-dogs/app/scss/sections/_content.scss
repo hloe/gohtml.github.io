@@ -1,0 +1,28 @@
+.content {
+  @media (min-width: 768px) {
+    display: table;
+  }
+  &__line {
+    @media (min-width: 768px) {
+      display: table-row;
+    }
+  }
+  &__item {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 50%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    &--text {
+      padding: 8.33%;
+    }
+    &--hidden-mobile {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
+
+

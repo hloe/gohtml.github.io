@@ -1,0 +1,29 @@
+@import './core/fonts.scss';
+@import './core/variables.scss';
+@import './core/mixins.scss';
+@import './core/reset.scss';
+@import './core/typography.scss';
+@import './core/grid.scss';
+@import './core/retina.scss';
+
+@import './blocks/arrow.scss';
+@import './blocks/article.scss';
+@import './blocks/buttons.scss';
+@import './blocks/copyright.scss';
+@import './blocks/footer-menu.scss';
+@import './blocks/form.scss';
+@import './blocks/logo.scss';
+@import './blocks/menu.scss';
+@import './blocks/red.scss';
+@import './blocks/section.scss';
+@import './blocks/title-line.scss';
+@import './blocks/upload.scss';
+@import './blocks/wrappers.scss';
+
+@import './sections/about.scss';
+@import './sections/customers.scss';
+@import './sections/header.scss';
+@import './sections/nav.scss';
+@import './sections/footer.scss';
+@import './sections/pluses.scss';
+@import './sections/works.scss';

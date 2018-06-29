@@ -1,5 +1,3 @@
-@import "../core/_variables.scss";
-@import "../core/_mixins.scss";
 .button {
   display: block;
   max-width: 256px;
@@ -7,9 +5,7 @@
   border: 1px solid $black;
   border-radius: 3px;
   padding: 8px 58px 12px 62px;
-  font-family: 'Lato Regular', Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
+  @include font-regular;
   font-size: 18px;
   outline-width: 0;
   cursor: pointer;

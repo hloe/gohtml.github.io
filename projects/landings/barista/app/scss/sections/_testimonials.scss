@@ -1,0 +1,38 @@
+.testimonials {
+  padding-top: 77px;
+  padding-bottom: 105px;
+  text-align: center;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    line-height: 2.063;
+    color: $blue-gray;
+  }
+}
+
+.carousel-item {
+  &__img {
+    position: relative;
+    width: 170px;
+    margin: 0 auto 30px;
+  }
+  &__icon {
+    position: absolute;
+    top: 23px;
+    right: -8px;
+    display: block;
+    box-shadow: 2px 4px 15px 0px rgb(61, 61, 62);
+  }
+  &__title {
+    margin-bottom: 17px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 844px;
+    margin: 0 auto;
+    line-height: 2.2;
+    word-spacing: -1px;
+  }
+}

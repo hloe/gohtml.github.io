@@ -1,0 +1,27 @@
+.logo {
+  padding-bottom: 30px;
+  font-size: 37px;
+  @include font(700);
+  text-transform: uppercase;
+  color: $dark-accent;
+  @media (min-width: 640px) {
+    font-size: 42px;
+    padding-bottom: 0;
+  }
+  &_light {
+    color: $light-accent;
+  }
+  &_small {
+    @include font(300);
+    font-size: 18px;
+    text-transform: lowercase;
+    color: $gray;
+    @media (min-width: 640px) {
+      font-size: 21px;
+    }
+  }
+  &:hover {
+    @include transition;
+    filter: brightness(.5);
+  }
+}

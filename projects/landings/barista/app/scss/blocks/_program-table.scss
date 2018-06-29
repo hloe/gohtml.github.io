@@ -1,0 +1,18 @@
+.program-table {
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__table {
+    margin-right: -25px;
+    border: 1px solid $table-border;
+    @include georgia-regular;
+    font-size: 16px;
+    line-height: 2.4;
+    color: $blue-gray;
+  }
+  &__td {
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid $table-border;
+  }
+}

@@ -1,0 +1,58 @@
+.how {
+  &__sliders {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 640px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 5px;
+    }
+  }
+  &__item {
+       position: relative;
+    @media (min-width: 640px) {
+      width: 33%;
+    }
+  }
+}
+
+.step {
+  padding: 70px 20px 0;
+  color: $white;
+  @media (min-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 16px;
+    height: 404px;
+  }
+  @media (min-width: 1024px) {
+    height: 400px;
+  }
+  &__number {
+    display: block;
+    width: 70px;
+    height: 20px;
+    margin-bottom: 17px;
+    background-color: $red;
+    border-radius: 20px;
+    @include montserrat-regular;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__title {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  &__text {
+    @include roboto;
+    font-size: 14px;
+    line-height: 1.25;
+    color: $gray-border;
+  }
+}

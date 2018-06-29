@@ -1,5 +1,3 @@
-@import "../core/_variables.scss";
-@import "../core/_mixins.scss";
 .menu {
   &__list {
     @media (min-width: 768px) {
@@ -9,7 +7,7 @@
   }
   &__item {
     margin-bottom: 24px;
-    font-family: 'Myriad Pro', 'Lato Bold', Arial, sans-serif;
+    @include font-bold;
     font-size: 18px;
     text-transform: uppercase;
     @media (min-width: 768px) {

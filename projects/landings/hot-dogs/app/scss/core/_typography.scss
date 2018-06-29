@@ -1,8 +1,7 @@
 @import "_fonts.scss";
+
 body {
-  font-family: 'Open Sans Light', Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
+  @include opensans-light;
   color: $text;
 }
 
@@ -15,10 +14,8 @@ h1 {
   padding-top: 94px;
   background: url(../images/hotdog.svg) top center no-repeat;
   background-size: 70px 70px;
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  @include opensans-light;
   font-size: 32px;
-  font-weight: normal;
-  font-style: normal;
   line-height: 1.23;
   letter-spacing: -2px;
   word-spacing: 1.39px;
@@ -33,10 +30,8 @@ h1 {
 h2 {
   position: relative;
   margin-bottom: 34px;
-  font-family: 'Open Sans Bold', Arial, sans-serif;
+  @include openans-bold;
   font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
   line-height: 1.1;
   letter-spacing: -.9px;
   color: $text;
@@ -56,11 +51,9 @@ h2 {
 }
 
 p {
-  padding-left: 51px
-  font-family: 'Open Sans Light', Arial, sans-serif;
+  padding-left: 50px;
+  @include opensans-light;
   font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
   line-height: 1.33;
   letter-spacing: -.4px;
   word-spacing: -1px;

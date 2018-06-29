@@ -1,0 +1,37 @@
+.gallery {
+  padding-top: 155px;
+  padding-bottom: 146px;
+  &__header {
+    width: 400px;
+    margin: 0 auto 75px;
+    color: $white;
+    text-align: center;
+  }
+  &__title {
+    position: relative;
+    margin: 0 auto 24px;
+    width: 384px;
+    &:before {
+      position: absolute;
+      top: 18px;
+      left: 0;
+      width: 31px;
+      height: 14px;
+      content: '';
+      @include retina('../images/left-white-decor.png', 2, 31px 14px, top center no-repeat);
+    }
+    &:after {
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 31px;
+      height: 14px;
+      content: '';
+      @include retina('../images/right-white-decor.png', 2, 31px 14px, top center no-repeat);
+    }
+  }
+  &__subtitle {
+    line-height: 1.531;
+    word-spacing: -1px;
+  }
+}

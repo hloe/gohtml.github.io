@@ -1,0 +1,59 @@
+.input {
+  box-sizing: border-box;
+  width: 280px;
+  height: 40px;
+  border: 1px solid $gray-border;
+  border-radius: 4px;
+  outline-width: 0;
+  padding-left: 16px;
+  line-height: 38;
+  vertical-align: middle;
+  color: $input;
+  @media (min-width: 640px) {
+    width: 240px;
+  }
+}
+
+::-webkit-input-placeholder {
+  @include roboto;
+  font-size: 14px;
+  color: $input;
+}
+
+::-moz-placeholder {
+  @include roboto;
+  font-size: 14px;
+  color: $input;
+}
+
+:-moz-placeholder {
+  @include roboto;
+  font-size: 14px;
+  color: $input;
+}
+
+:-ms-input-placeholder {
+  @include roboto;
+  font-size: 14px;
+  color: $input;
+}
+
+.button {
+  width: 280px;
+  height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  outline-width: 0;
+  background-color: $red;
+  @include montserrat-bold;
+  font-size: 14px;
+  text-align: center;
+  color: $white;
+  &:hover {
+    @include transition;
+    background-color: $red-hover;
+  }
+  @media (min-width: 640px) {
+    width: 160px;
+  }
+}

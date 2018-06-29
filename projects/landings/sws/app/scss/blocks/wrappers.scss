@@ -1,6 +1,3 @@
-@import "../core/_variables.scss";
-@import "../core/_mixins.scss";
-@import "../core/_retina.scss";
 .header-wrapper {
   background-color: $footer;
   @include retina('../images/header-sm.jpg', 2, cover, top center no-repeat);

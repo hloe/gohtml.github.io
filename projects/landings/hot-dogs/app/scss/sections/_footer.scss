@@ -1,0 +1,17 @@
+.footer {
+  background-color: $footer;
+  padding: 34px 20px 26px;
+  @include opensans-regular;
+  font-size: 14px;
+  line-height: 1.7;
+  word-spacing: 0;
+  color: $text;
+  text-align: center;
+  &__right {
+    @media (min-width: 992px) {
+      display: block;
+      left: 0;
+      text-align: left;
+    }
+  }
+}

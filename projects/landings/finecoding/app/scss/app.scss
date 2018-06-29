@@ -1,0 +1,20 @@
+@import './core/variables.scss';
+@import './core/mixins.scss';
+@import './core/reset.scss';
+@import './core/typography.scss';
+@import './core/retina.scss';
+
+@import "./blocks/card.scss";
+@import "./blocks/container.scss";
+@import "./blocks/icons.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/section.scss";
+
+@import "./sections/navigation.scss";
+@import "./sections/promo.scss";
+@import "./sections/about.scss";
+@import "./sections/hire-me.scss";
+@import "./sections/works.scss";
+@import "./sections/wrappers.scss";
+@import "./sections/footer.scss";

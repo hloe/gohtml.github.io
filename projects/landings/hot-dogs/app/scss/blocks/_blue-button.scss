@@ -1,0 +1,18 @@
+.blue-button {
+  padding: 19px 10px;
+  border-radius: 6px;
+  @include opensans-semibold;
+  font-size: 15px;
+  letter-spacing: -.7px;
+  background-color: $blue-button;
+  color: $white;
+  &:hover {
+    @include transition;
+    background-color: $blue-button-hover;
+  }
+  @media (min-width: 768px) {
+    padding-left: 37px;
+    padding-right: 27px;
+    font-size: 20px;
+  }
+}

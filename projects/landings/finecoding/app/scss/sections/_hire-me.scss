@@ -1,0 +1,42 @@
+.hire-me {
+  color: $gray-text;
+  &__text {
+    text-align: center;
+    &_left {
+     
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
+  &__item {
+    
+    margin-bottom: 32px;
+     text-align: center;
+    
+    @media (min-width: 640px) {
+      margin-right: 80px;
+      text-align: left;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  &__title {
+    @include font(600);
+    line-height: 1.5;
+    text-align: center;
+    color: $dark-accent;
+    @media (min-width: 640px) {
+      text-align: left;
+    }
+  }
+}
