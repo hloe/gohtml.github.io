@@ -2,34 +2,39 @@
   padding-top: 77px;
   padding-bottom: 105px;
   text-align: center;
-  &__title {
+
+  @include el('title') {
     margin-bottom: 30px;
   }
-  &__subtitle {
+
+  @include el('subtitle') {
     line-height: 2.063;
     color: $blue-gray;
   }
 }
 
 .carousel-item {
-  &__img {
+  @include el('img') {
     position: relative;
     width: 170px;
     margin: 0 auto 30px;
   }
-  &__icon {
+
+  @include el('icon') {
     position: absolute;
     top: 23px;
     right: -8px;
     display: block;
-    box-shadow: 2px 4px 15px 0px rgb(61, 61, 62);
+    box-shadow: 2px 4px 15px 0 rgb(61, 61, 62);
   }
-  &__title {
+
+  @include el('title') {
     margin-bottom: 17px;
     letter-spacing: 1.7px;
     text-transform: uppercase;
   }
-  &__text {
+
+  @include el('text') {
     width: 844px;
     margin: 0 auto;
     line-height: 2.2;

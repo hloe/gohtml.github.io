@@ -3,35 +3,46 @@
   height: 240px;
   border: 2px solid $white;
   border-radius: 8px;
+
   @media (min-width: 640px) {
     height: 404px;
   }
+
   @media (min-width: 1024px) {
     height: 400px;
   }
-  &_1 {
+
+  @include mod('1') {
     @include retina('../images/step11-mobile.jpg', 2, cover, top center no-repeat);
+
     @media (min-width: 640px) {
       @include retina('../images/step11-tablet.jpg', 2, cover, top center no-repeat);
     }
+
     @media (min-width: 1024px) {
       @include retina('../images/step11-desktop.jpg', 2, cover, top center no-repeat);
     }
   }
-  &_2 {
+
+  @include mod('2') {
     @include retina('../images/step21-mobile.jpg', 2, cover, top center no-repeat);
+
     @media (min-width: 640px) {
       @include retina('../images/step21-tablet.jpg', 2, cover, top center no-repeat);
     }
+
     @media (min-width: 1024px) {
       @include retina('../images/step21-desktop.jpg', 2, cover, top center no-repeat);
     }
   }
-  &_3 {
+
+  @include mod('3') {
     @include retina('../images/step31-mobile.jpg', 2, cover, top center no-repeat);
+
     @media (min-width: 640px) {
       @include retina('../images/step31-tablet.jpg', 2, cover, top center no-repeat);
     }
+
     @media (min-width: 1024px) {
       @include retina('../images/step31-desktop.jpg', 2, cover, top center no-repeat);
     }

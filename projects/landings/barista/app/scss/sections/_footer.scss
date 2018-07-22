@@ -2,22 +2,26 @@
   padding-top: 142px;
   padding-bottom: 39px;
   color: $white;
-  &__title {
+
+  @include el('title') {
     width: 60%;
     margin: 0 auto;
     line-height: 1.17;
     text-align: center;
   }
-  &__text {
+
+  @include el('text') {
     padding-top: 50px;
     padding-bottom: 45px;
     line-height: 1.656;
     text-align: justify;
-    &_left {
-      padding-right:15px;
+
+    @include mod('left') {
+      padding-right: 15px;
     }
-    &_right {
-      padding-left:15px;
+
+    @include mod('right') {
+      padding-left: 15px;
     }
   }
 }
@@ -27,47 +31,57 @@
   background-color: $table-background;
   border: 2px solid $school-table;
   @include roboto-black;
-  font-size:15px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  &__tr {
+
+  @include el('tr') {
     height: 98px;
     line-height: 98px;
+
     &:last-of-type {
       height: 120px;
       line-height: 120px;
     }
   }
-  &__td {
+
+  @include el('td') {
     border: 1px solid $school-td;
   }
-  &__icon {
+
+  @include el('icon') {
     line-height: 98px;
     vertical-align: middle;
   }
-  &__list {
+
+  @include el('list') {
     display: flex;
     justify-content: center;
   }
-  &__item {
+
+  @include el('item') {
     position: relative;
-    &:after {
+
+    &::after {
       position: absolute;
       top: 2px;
       content: '\2022';
     }
+
     &:last-of-type {
-      &:after {
+      &::after {
         content: '';
       }
     }
   }
-  &__link {
+
+  @include el('link') {
     padding: 0 55px;
     font-size: 13px;
     color: $white;
     text-decoration: none;
+
     &:hover {
       @include transition;
       color: $yellow;
@@ -80,22 +94,26 @@
   font-size: 30px;
   color: $white;
   text-align: center;
-  &__copy {
+
+  @include el('copy') {
     padding-right: 20px;
     @include georgia-regular;
     font-size: 16px;
     line-height: 1;
   }
-  &__site {
+
+  @include el('site') {
     padding-left: 20px;
     @include roboto-black;
     font-size: 13px;
     line-height: 1;
     text-transform: uppercase;
   }
-  &__link {
+
+  @include el('link') {
     color: $white;
     text-decoration: none;
+
     &:hover {
       @include transition;
       color: $yellow;

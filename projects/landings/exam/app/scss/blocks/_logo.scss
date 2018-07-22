@@ -3,13 +3,16 @@
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 1px;
-  &_header {
+
+  @include mod('header') {
     font-size: 20px;
     color: $white;
   }
-  &_footer {
+
+  @include mod('footer') {
     font-size: 16px;
     color: $red;
+
     &:hover {
       @include transition;
       color: $red-hover;

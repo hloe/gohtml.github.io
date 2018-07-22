@@ -3,12 +3,14 @@
   display: flex;
   align-items: flex-end;
   padding-bottom: 78px;
-  &__img {
+
+  @include el('img') {
     position: relative;
-    margin-top: 92px;
     z-index: 2;
+    margin-top: 92px;
   }
-  &__header {
+
+  @include el('header') {
     position: absolute;
     top: 0;
     right: 75px;
@@ -18,7 +20,8 @@
     color: $light-gray;
     text-transform: uppercase;
   }
-  &__title {
+
+  @include el('title') {
     position: absolute;
     z-index: 5;
     top: 98px;
@@ -30,11 +33,13 @@
     color: $dark-gray;
     text-transform: capitalize;
   }
-  &__list {
+
+  @include el('list') {
     margin-top: -252px;
     margin-left: 57px;
   }
-  &__item {
+
+  @include el('item') {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -42,20 +47,23 @@
     font-size: 16px;
     color: $black;
   }
-  &__icon {
-    margin-right:15px;
+
+  @include el('icon') {
+    margin-right: 15px;
   }
-  &__price {
+
+  @include el('price') {
     display: block;
     margin-top: 25px;
     margin-left: 57px;
     @include georgia-bold;
-    &_big {
+
+    @include mod('big') {
       font-size: 58px;
-      font-size: 31px;
     }
   }
-  &__link {
+
+  @include el('link') {
     display: block;
     width: 245px;
     height: 58px;
@@ -72,6 +80,7 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+
     &:hover {
       @include transition;
       background-color: #060303;

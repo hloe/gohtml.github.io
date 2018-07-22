@@ -1,18 +1,21 @@
 .address {
-  &__list {
+  @include el('list') {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     @media (min-width: 992px) {
       flex-direction: row;
       justify-content: flex-end;
     }
   }
-  &__item {
+
+  @include el('item') {
     @media (min-width: 992px) {
       display: flex;
       align-items: center;
-      &:after {
+
+      &::after {
         display: block;
         width: 2px;
         height: 15px;
@@ -21,8 +24,9 @@
         background-color: $address-line;
         content: '';
       }
+
       &:last-of-type {
-        &:after {
+        &::after {
           background-color: $footer;
           width: 0;
           margin-left: 0;
@@ -31,7 +35,8 @@
       }
     }
   }
-  &__link {
+
+  @include el('link') {
     color: $text;
   }
 }

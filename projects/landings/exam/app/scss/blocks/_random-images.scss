@@ -1,6 +1,7 @@
 .grid-sizer,
 .grid-item {
   width: 100%;
+
   @media (min-width: 640px) {
     width: 16.5%;
   }
@@ -12,6 +13,7 @@
   border-right: 10px solid $white;
   border-left: 10px solid $white;
   border-radius: 16px;
+
   @media (min-width: 640px) {
     margin: 0;
     height: 160px;

@@ -1,8 +1,9 @@
 .form {
-  &__item {
-    margin-bottom: 40px;
+  @include el('item') {
+    margin: 40px;
   }
-  &__button {
+
+  @include el('button') {
     width: 100%;
   }
 }

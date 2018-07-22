@@ -2,6 +2,7 @@
   width: 16px;
   height: 9px;
   fill: $yellow;
+
   &:hover {
     @include transition;
     fill: $circle;
@@ -41,6 +42,7 @@
   background-color: $white;
   border-radius: 50%;
   fill: #4267B2;
+
   &:hover {
     @include transition;
     fill: #2751a4;

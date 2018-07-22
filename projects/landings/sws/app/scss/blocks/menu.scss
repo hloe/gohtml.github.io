@@ -1,24 +1,28 @@
 .menu {
-  &__list {
+  @include el('list') {
     @media (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
     }
   }
-  &__item {
+
+  @include el('item') {
     margin-bottom: 24px;
     @include font-bold;
     font-size: 18px;
     text-transform: uppercase;
+
     @media (min-width: 768px) {
       width: 50%;
       margin-bottom: 0;
     }
+
     @media (min-width: 992px) {
       width: 33.33%;
     }
   }
-  &__link {
+
+  @include el('link') {
     color: $black;
   }
 }

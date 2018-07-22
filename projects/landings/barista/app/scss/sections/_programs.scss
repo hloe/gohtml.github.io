@@ -2,14 +2,16 @@
   padding-top: 90px;
   padding-bottom: 140px;
   @include retina('../images/cup-background.jpg', 2, 742px 727px, right bottom no-repeat);
-  &__title {
+
+  @include el('title') {
     position: relative;
     display: block;
     width: 392px;
     margin: 0 auto 30px;
     color: $black;
     text-align: center;
-    &:before {
+
+    &::before {
       position: absolute;
       top: 15px;
       left: 0;
@@ -19,7 +21,8 @@
       @include retina('../images/dark-star.png', 2,15px15px, center center no-repeat);
       content: '';
     }
-    &:after {
+
+    &::after {
       position: absolute;
       top:15px;
       right: 0;
@@ -30,7 +33,8 @@
       content: '';
     }
   }
-  &__subtitle {
+
+  @include el('subtitle') {
     @include georgia-regular;
     font-size: 16px;
     line-height: 2.063;
@@ -38,16 +42,19 @@
     text-align: center;
     word-spacing: -1.4px;
   }
-  &__content {
+
+  @include el('content') {
     padding-top: 58px;
   }
-  &__column {
+
+  @include el('column') {
     width: 76%;
     margin: 0 auto 33px;
     padding-top: 10px;
     border-top: 1px solid $light-border;
   }
-  &__table {
+
+  @include el('table') {
     margin-top: 18px;
   }
 }

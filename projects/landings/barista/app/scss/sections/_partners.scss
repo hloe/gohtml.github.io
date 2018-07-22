@@ -3,8 +3,9 @@
   padding-top: 130px;
   padding-bottom: 120px;
   text-align: center;
-  &__header {
-    &:after {
+
+  @include el('header') {
+    &::after {
       position: relative;
       margin: 4px auto 86px;
       display: block;
@@ -14,12 +15,14 @@
       content: '';
     }
   }
-  &__title {
+
+  @include el('title') {
     position: relative;
     margin: 0 auto;
     width: 550px;
     height: 80px;
-    &:before {
+
+    &::before {
       position: absolute;
       top: 18px;
       left: 0;
@@ -28,7 +31,8 @@
       content: '';
       @include retina('../images/left-dark-decor.png', 2, 31px 14px, top center no-repeat);
     }
-    &:after {
+
+    &::after {
       position: absolute;
       top: 18px;
       right: 0;

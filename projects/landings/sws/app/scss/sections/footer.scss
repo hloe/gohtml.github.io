@@ -1,15 +1,18 @@
 .footer {
   background-color: $footer;
   color: $white;
-  &__title {
-    margin-bottom: 54px;
+
+  @include el('title') {
+    margin-top: 54px;
   }
-  &__subtitle {
+
+  @include el('subtitle') {
     @include font-regular;
     font-size: 16px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
   }
-  &__menu {
-    margin-top: 98px;
+
+  @include el('menu') {
+    margin-top: 100px;
   }
 }

@@ -8,44 +8,53 @@
     margin: 0 auto 50px;
     padding-left: 13px;
     text-align: center;
+
     @media (min-width: 768px) {
       margin: 0 auto 94px;
+
       &:last-of-type {
         margin-bottom: 0;
       }
     }
-    &__icon {
+
+    @include el('icon') {
       display: block;
       margin: 0 auto 10px;
       vertical-align: top;
+
       @media (min-width: 768px) {
         float: left;
         margin-bottom: 0;
         margin-right: 41px;
       }
     }
-    &__body {
+
+    @include el('body') {
       margin: 0 auto;
       padding-top: 5px;
       text-align: center;
+
       @media (min-width: 768px) {
         float: left;
         text-align: left;
       }
     }
-    &__title {
+
+    @include el('title') {
       margin-bottom: 12px;
       @include raleway-bold;
       font-size: 18px;
       line-height: 1;
       color: $gray-text;
     }
-    &__text {
+
+    @include el('text') {
       @include opensans-regular;
       font-size: 13px;
       line-height: 1.9;
       vertical-align: middle;
       white-space: pre-wrap;
+
       @media (min-width: 768px) {
         max-width: 245px;
       }
@@ -53,20 +62,22 @@
   }
   
   .say-article {
-    &__author {
+    @include el('author') {
       margin-top: 20px;
       @include opensans-semibold;
       font-size: 18px;
       line-height: 1.5;
       color: $team-text;
     }
-    &__from {
+
+    @include el('from') {
       @include opensans-regular;
       color: $company;
       font-size: 13px;
       line-height: 1;
     }
-    &__quote {
-      margin-top: 101px;
+
+    @include el('quote') {
+      margin-top: 100px;
     }
   }

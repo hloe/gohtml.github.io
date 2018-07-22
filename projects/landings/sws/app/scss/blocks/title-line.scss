@@ -3,7 +3,7 @@
   margin-bottom: 75px;
   &__below {
     @media (max-width: 767px) {
-      &:after {
+      &::after {
         position: absolute;
         bottom: -32px;
         left: 50%;
@@ -15,7 +15,7 @@
         content: '';
       }
     }
-    &:after {
+    &::after {
       position: absolute;
       bottom: -32px;
       display: block;
@@ -27,7 +27,7 @@
     &--right {
       @media (max-width: 767px) {
         text-align: center;
-        &:after {
+        &::after {
           position: absolute;
           bottom: -32px;
           left: 50%;
@@ -44,14 +44,14 @@
         max-width: 480px;
         text-align: right;
       }
-      &:after {
+      &::after {
         right: 0;
       }
     }
   }
   &__above {
     @media (max-width: 767px) {
-      &:after {
+      &::after {
         position: absolute;
         top: -32px;
         display: block;
@@ -63,7 +63,7 @@
         content: '';
       }
     }
-    &:after {
+    &::after {
       position: absolute;
       top: -32px;
       display: block;
@@ -75,7 +75,7 @@
   }
   &__left {
     @media (max-width: 767px) {
-      &:after {
+      &::after {
         position: absolute;
         top: -32px;
         display: block;
@@ -89,7 +89,7 @@
     }
     @media (min-width: 768px) {
       padding-left: 24px;
-      &:before {
+      &::before {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);

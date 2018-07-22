@@ -41,6 +41,7 @@ blockquote {
   font-size: 18px;
   line-height: 2;
   text-align: left;
+
   @media (min-width: 480px) {
     text-align: justify;
     text-align-last: center;
@@ -76,22 +77,7 @@ form {
   }
 }
 
-::-webkit-input-placeholder {
-  color: $placeholder;
-  text-transform: capitalize;
-}
-
-::-moz-placeholder {
-  color: $placeholder;
-  text-transform: capitalize;
-}
-
-:-moz-placeholder {
-  color: $placeholder;
-  text-transform: capitalize;
-}
-
-:-ms-input-placeholder {
+@include placeholder {
   color: $placeholder;
   text-transform: capitalize;
 }

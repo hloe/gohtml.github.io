@@ -2,48 +2,58 @@
   padding-top: 60px;
   padding-bottom: 25px;
   text-align: center;
-  &__title {
-    margin-bottom: 96px;
+
+  @include el('title') {
+    margin-top: 95px;
   }
-  &__subtitle {
+
+  @include el('subtitle') {
     @include raleway-regular;
     font-size: 24px;
     line-height: 1.5;
     color: $white;
+
     @media (min-width: 992px) {
       text-align: left;
     }
   }
-  &__content {
+
+  @include el('content') {
     @include clearfix;
   }
-  &__text {
+
+  @include el('text') {
     margin-bottom: 380px;
     @include opensans-regular;
     font-size: 14px;
     line-height: 1.5;
-    color: $footer-gray;
     color: $white;
     opacity: .5;
+
     @media (min-width: 992px) {
       max-width: 450px;
       text-align: left;
     }
   }
-  &__icons {
+
+  @include el('icons') {
     margin: 0 auto 23px;
+
     @media (min-width: 768px) {
       text-align: left;
     }
   }
-  &__data {
+
+  @include el('data') {
     @include opensans-regular;
     font-size: 14px;
     line-height: 1.75;
     color: $contact-data;
+
     &:last-of-type {
       margin-bottom: 50px;
     }
+
     @media (min-width: 768px) {
       text-align: left;
     }
@@ -52,7 +62,7 @@
 
 .form {
   @media (min-width: 640px) {
-    &__list {
+    @include el('list') {
       @include clearfix;
       float: right;
       right: 0;
@@ -61,16 +71,20 @@
       letter-spacing: -1px;
     }
   }
-  &__item {
-    margin: 0 auto 31px;
+
+  @include el('item') {
+    margin: 0 auto 30px;
     letter-spacing: normal;
+
     @media (min-width: 640px) {
       float: right;
       right: 0;
+
       &:first-of-type {
         float: left;
         left: 0;
       }
+
       &:nth-of-type(3) {
         width: 100%;
       }
@@ -86,19 +100,21 @@
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
+
   @media (min-width: 768px) {
     text-align: right;
   }
-  &__text {
-    color: $footer-gray;
+
+  @include el('text') {
     color: $white;
     opacity: .5;
+
     @media (min-width: 768px) {
       text-align: left;
     }
   }
-  &__link {
-    color: $footer-gray;
+
+  @include el('link') {
     color: $white;
     opacity: .5;
   }

@@ -1,15 +1,18 @@
 .customers {
   text-align: center;
+
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
     text-align: left;
   }
-  &__list {
+
+  @include el('list') {
     margin-top: 25px;
     margin-bottom: 50px;
   }
-  &__images {
+
+  @include el('images') {
     @media (max-width: 767px) {
       margin-top: 32px;
     }
@@ -21,25 +24,31 @@
     position: relative;
     height: 340px;
   }
-  &__item {
+
+  @include el('item') {
     margin-bottom: 32px;
+
     @media (min-width: 768px) {
       margin-bottom: 0;
       position: absolute;
     }
-    &--msqrd {
+
+    @include mod('msqrd') {
       top: 0;
       left: 95px;
     }
-    &--world {
+
+    @include mod('world') {
       top: 96px;
       left: 0;
     }
-    &--viber {
+
+    @include mod('viber') {
       left: 195px;
       top: 79px;
     }
-    &--belarus {
+
+    @include mod('belarus') {
       left: 65px;
       top: 163px;
     }
@@ -48,7 +57,8 @@
 
 .link-belarus {
   position: relative;
-  &:after {
+
+  &::after {
     position: absolute;
     bottom: 52px;
     right: 52px;

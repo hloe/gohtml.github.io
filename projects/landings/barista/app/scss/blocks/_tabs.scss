@@ -1,5 +1,5 @@
 .tabs {
-  &__list {
+  @include el('list') {
     position: relative;
     display: flex;
     flex-flow: row wrap;
@@ -7,14 +7,16 @@
     max-width: 750px;
     margin: 0 auto;
   }
-  &__item {
+
+  @include el('item') {
     width: 33%;
     @include roboto-black;
     font-size: 21px;
     line-height: 2.095;
     letter-spacing: 2.5px;
   }
-  &__link {
+
+  @include el('link') {
     position: relative;
     z-index: 5;
     display: block;
@@ -24,13 +26,15 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+
     &:hover {
       @include transition;
       border-bottom: 4px solid $black;
       color: $black;
     }
   }
-  &__content {
+
+  @include el('content') {
     margin-top: -3px;
     padding-top: 5px;
     border-top: 2px solid $gray-border;

@@ -1,13 +1,15 @@
 .program-column {
-  &__title {
+  @include el('title') {
     margin-bottom: 27px;
   }
-  &__item {
+
+  @include el('item') {
     @include georgia-regular;
     font-size: 16px;
     line-height: 2.2;
     color: $blue-gray;
-    &:before {
+
+    &::before {
       content: '- ';
     }
   }

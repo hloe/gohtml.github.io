@@ -2,17 +2,20 @@
   padding: 129px 0 217px;
   text-align: center;
   color: $white;
-  &__title {
+
+  @include el('title') {
     @media (max-width: 767px) {
       margin-bottom: 16px;
     }
   }
-  &__subtitle {
+
+  @include el('subtitle') {
     @include font-medium;
     font-size: 26px;
     line-height: 1.2;
   }
-  &__button {
+
+  @include el('button') {
     margin: 75px auto 0;
   }
 }

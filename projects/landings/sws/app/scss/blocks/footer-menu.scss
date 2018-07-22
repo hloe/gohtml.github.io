@@ -1,11 +1,14 @@
 .footer-menu {
   margin-bottom: 32px;
-  &__item {
+
+  @include el('item') {
     @include font-regular;
     font-size: 16px;
   }
-  &__link {
+
+  @include el('link') {
     color: $footer-link;
+
     &:hover {
       @include transition;
     }

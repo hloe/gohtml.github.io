@@ -1,12 +1,13 @@
 .menu {
-  &__list {
+  @include el('list') {
     width: 100%;
     margin: 0;
     font-size: 0;
     line-height: 0;
     letter-spacing: -1px;
   }
-  &__item {
+
+  @include el('item') {
     display: inline-block;
     margin-right: 39px;
     @include opensans-bold;
@@ -14,11 +15,13 @@
     letter-spacing: normal;
     line-height: normal;
     text-transform: uppercase;
+
     &:last-of-type {
       margin-right: -20px;
     }
   }
-  &__link {
+
+  @include el('link') {
     color: $nav-link;
   }
 }

@@ -34,3 +34,17 @@
   font-weight: 500;
   font-style: normal;
 }
+
+
+// BEM
+@mixin el($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin mod($modifier) {
+  &_#{$modifier} {
+    @content;
+  }
+}

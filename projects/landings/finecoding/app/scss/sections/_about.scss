@@ -1,9 +1,10 @@
 .about {
   color: $white;
   text-align: center;
- 
-  &__link {
+
+  @include el('link') {
     color: $light-accent;
+
     &:hover {
       @include transition;
       color: $ligth-accent-hover;

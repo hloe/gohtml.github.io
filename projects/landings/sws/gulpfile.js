@@ -15,7 +15,7 @@ var rigger = require('gulp-rigger');
 var babel = require('gulp-babel');
 
 gulp.task('sass', function () {
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src('app/scss/app.scss')
     .pipe(sass())
     // concatenation
     .pipe(concat('styles.min.css'))

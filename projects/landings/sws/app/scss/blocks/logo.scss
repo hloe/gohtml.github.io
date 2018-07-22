@@ -7,18 +7,22 @@
   line-height: 1;
   text-align: left;
   color: $black;
+
   &:hover {
     text-decoration: none;
   }
-  &__img {
+
+  @include el('img') {
     display: block;
   }
-  &__text {
+
+  @include el('text') {
     position: absolute;
     top: 0;
     left: 62px;
   }
-  &__small {
+
+  @include el('small') {
     display: block;
     min-width: 160px;
     padding-top: 4px;

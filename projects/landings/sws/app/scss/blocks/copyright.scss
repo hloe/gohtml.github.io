@@ -4,10 +4,12 @@
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
+
   @media (min-width: 768px) {
     flex-flow: row;
   }
-  &__text {
+
+  @include el('text') {
     display: block;
     font-family: 'Tahoma Regular', Tahoma, Arial, sans-serif;
     font-size: 13px;

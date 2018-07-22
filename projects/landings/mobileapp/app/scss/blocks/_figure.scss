@@ -1,11 +1,13 @@
 .figure {
   display: block;
   position: relative;
-  &__img {
+
+  @include el('img') {
     height: 300px;
     width: 270px;
   }
-  &__title {
+
+  @include el('title') {
     @include opensans-semibold;
     color: $team-text;
     line-height: 1.333;
@@ -13,9 +15,9 @@
     margin-top: 12px;
     font-size: 18px;
   }
-  &__text {
+
+  @include el('text') {
     @include opensans-regular;
-    color: $alternative-gray;
     color: $team-text;
     font-size: 13px;
     line-height: 1.846;

@@ -5,33 +5,40 @@
 .footer {
   padding-top: 18px;
   text-align: center;
+
   @media (min-width: 640px) {
     padding: 380px 40px 40px;
     text-align: left;
     @include clearfix;
   }
+
   @media (min-width: 1024px) {
     padding: 40px 0;
   }
-  &__logo {
+
+  @include el('logo') {
     @media (min-width: 640px) {
       margin-right: 122px;
       float: left;
       top: 0;
     }
+
     @media (min-width: 1024px) {
       margin-right: 137px;
     }
   }
-  &__menu {
+
+  @include el('menu') {
     margin-top: 14px;
+
     @media (min-width: 640px) {
       margin-top: 0;
       float: left;
       top: 0;
     }
   }
-  &__designed {
+
+  @include el('designed') {
     @media (min-width: 640px) {
       text-align: right;
       float: right;
@@ -39,16 +46,19 @@
       margin-right: -2px;
     }
   }
-  &__span {
+
+  @include el('span') {
     @include montserrat-bold;
     font-size: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $gray-border;
   }
-  &__link {
+
+  @include el('link') {
     display: block;
     margin: 6px auto 0;
+
     &:hover {
       @include transition;
       filter: saturate(1.5);

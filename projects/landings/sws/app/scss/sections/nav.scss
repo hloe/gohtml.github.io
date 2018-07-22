@@ -4,13 +4,16 @@
   align-items: center;
   padding: 32px 12px;
   text-align: center;
+
   @media (min-width: 768px) {
     flex-direction: row;
     padding-left: 0;
     padding-right: 0;
   }
-  &__logo {
+
+  @include el('logo') {
     margin: 0 auto 24px;
+
     @media (min-width: 768px) {
       margin: 0;
     }

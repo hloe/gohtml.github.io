@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 90px;
 
-  &__title {
+  @include el('title') {
     position: relative;
     display: block;
     width: 234px;
@@ -16,6 +16,7 @@
     text-align: center;
     text-transform: capitalize;
     vertical-align: middle;
+
     &::before {
       position: absolute;
       top: -60px;
@@ -26,19 +27,23 @@
       content: '';
       background-color: $light-gray;
     }
-    &_dark {
+
+    @include mod('dark') {
       color: $dark-accent;
       border-color: $blue;
+
       &::before {
         background-color: $blue;
       }
     }
   }
-  &__content {
+
+  @include el('content') {
     @media (min-width: 640px) {
       width: 80%;
       margin: 0 auto;
     }
+
     @media (min-width: 1024px) {
       width: 70%;
     }

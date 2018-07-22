@@ -1,15 +1,18 @@
 .how {
-  &__sliders {
+  @include el('sliders') {
     display: flex;
     flex-direction: column;
+
     @media (min-width: 640px) {
       flex-direction: row;
       justify-content: space-between;
       padding: 0 5px;
     }
   }
-  &__item {
-       position: relative;
+
+  @include el('item') {
+    position: relative;
+
     @media (min-width: 640px) {
       width: 33%;
     }
@@ -19,6 +22,7 @@
 .step {
   padding: 70px 20px 0;
   color: $white;
+
   @media (min-width: 640px) {
     display: flex;
     flex-direction: column;
@@ -26,10 +30,12 @@
     padding-bottom: 16px;
     height: 404px;
   }
+
   @media (min-width: 1024px) {
     height: 400px;
   }
-  &__number {
+
+  @include el('number') {
     display: block;
     width: 70px;
     height: 20px;
@@ -44,12 +50,14 @@
     text-align: center;
     text-transform: uppercase;
   }
-  &__title {
+
+  @include el('title') {
     margin-bottom: 12px;
     font-size: 24px;
     line-height: 1.2;
   }
-  &__text {
+
+  @include el('text') {
     @include roboto;
     font-size: 14px;
     line-height: 1.25;

@@ -1,20 +1,25 @@
 .search {
-  &__form {
+  @include el('form') {
     padding-bottom: 40px;
+
     @media (min-width: 640px) {
       padding-bottom: 94px;
     }
   }
-  &__list {
+
+  @include el('list') {
     @media (min-width: 640px) {
       display: inline-flex;
     }
   }
-  &__item {
+
+  @include el('item') {
     margin-bottom: 10px;
+
     &:last-of-type {
       margin-bottom: 0;
     }
+
     @media (min-width: 640px) {
       margin: 0 5px;
     }

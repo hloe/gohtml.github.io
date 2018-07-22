@@ -4,16 +4,18 @@
   @include georgia-regular;
   text-align: center;
   color: $white;
-  &__subheading {
+
+  @include el('subheading') {
     position: relative;
     display: inline-block;
     width: 637px;
     margin-bottom: 34px;
     padding-top: 34px;
-    @include retina('../images/stars.png', 2, 90px15px, top center no-repeat);
+    @include retina('../images/stars.png', 2, 90px 15px, top center no-repeat);
     font-size: 17px;
     line-height: 2.857;
-    &:before {
+
+    &::before {
       position: absolute;
       top: 56px;
       left: 0;
@@ -23,7 +25,8 @@
       @include retina('../images/left-yellow-arrow.png', 2, 100px 6px, left center no-repeat);
       content: '';
     }
-    &:after {
+
+    &::after {
       position: absolute;
       top: 56px;
       right: 0;
@@ -34,27 +37,32 @@
       content: '';
     }
   }
-  &__title {
+
+  @include el('title') {
     margin-bottom: 37px;
   }
-  &__emphasis {
+
+  @include el('emphasis') {
     color: $yellow;
   }
-  &__subtitle {
+
+  @include el('subtitle') {
     padding-bottom: 27px;
     @include retina('../images/yellow-decor.png', 2, 140px 7px, bottom center no-repeat);
     font-size: 21px;
     line-height: 2.381;
   }
-  &__link {
+
+  @include el('link') {
     display: block;
-    width: 61px;
-    height: 61px;
+    width: 60px;
+    height: 60px;
     margin: 70px auto;
     border-radius: 50%;
     border: 1px solid $circle;
     line-height: 61px;
     vertical-align: middle;
+
     &:hover {
       @include transition;
       border: 1px solid $yellow;

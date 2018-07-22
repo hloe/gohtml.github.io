@@ -4,24 +4,29 @@
   @include font(700);
   text-transform: uppercase;
   color: $dark-accent;
+
+  &:hover {
+    @include transition;
+    filter: brightness(.5);
+  }
+
   @media (min-width: 640px) {
     font-size: 42px;
     padding-bottom: 0;
   }
-  &_light {
+
+  @include mod('light') {
     color: $light-accent;
   }
-  &_small {
+
+  @include mod('small') {
     @include font(300);
     font-size: 18px;
     text-transform: lowercase;
     color: $gray;
+
     @media (min-width: 640px) {
       font-size: 21px;
     }
-  }
-  &:hover {
-    @include transition;
-    filter: brightness(.5);
   }
 }

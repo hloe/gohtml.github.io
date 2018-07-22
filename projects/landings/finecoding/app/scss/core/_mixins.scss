@@ -10,3 +10,16 @@
   font-weight: $weight;
   font-style: normal;
 }
+
+// BEM
+@mixin el($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin mod($modifier) {
+  &_#{$modifier} {
+    @content;
+  }
+}

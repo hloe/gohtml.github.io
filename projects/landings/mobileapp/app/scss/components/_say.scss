@@ -1,7 +1,8 @@
 .say {
   padding-top: 77px;
   padding-bottom: 64px;
-  &__content {
+
+  @include el('content') {
     margin-top: 15px;
   }
 }

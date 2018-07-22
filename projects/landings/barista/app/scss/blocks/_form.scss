@@ -1,5 +1,5 @@
 .form {
-  &__input {
+  @include el('input') {
     width: 383px;
     height: 34px;
     border-width: 0;
@@ -13,7 +13,8 @@
     color: $black;
     text-transform: uppercase;
   }
-  &__submit {
+
+  @include el('submit') {
     width: 294px;
     height: 61px;
     border-width: 0;
@@ -28,28 +29,7 @@
   }
 }
 
-::-webkit-input-placeholder {
-  @include roboto-black;
-  letter-spacing: .5px;
-  color: $black;
-  text-transform: uppercase;
-}
-
-::-moz-placeholder {
-  @include roboto-black;
-  letter-spacing: .5px;
-  color: $black;
-  text-transform: uppercase;
-}
-
-:-moz-placeholder {
-  @include roboto-black;
-  letter-spacing: .5px;
-  color: $black;
-  text-transform: uppercase;
-}
-
-:-ms-input-placeholder {
+@include placeholder {
   @include roboto-black;
   letter-spacing: .5px;
   color: $black;

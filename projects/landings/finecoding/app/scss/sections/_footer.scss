@@ -1,5 +1,5 @@
 .footer {
-  &__text {
+  @include el('text') {
     font-size: 14px;
     padding-top: 40px;
     padding-bottom: 44px;
@@ -10,12 +10,14 @@
 }
 
 .footer__menu {
-  .menu__link {
-          color: $white;
+  .menu {
+    @include el('link') {
+      color: $white;
+
       &:hover {
         @include transition;
         color: $dark-accent;
       }
-
+    }
   }
 }

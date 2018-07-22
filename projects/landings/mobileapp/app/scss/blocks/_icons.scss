@@ -38,6 +38,7 @@
   margin-right: 18px;
   border-radius: 50%;
   background-color: $system;
+
   &:last-of-type {
     margin-right: 0;
   }
@@ -59,8 +60,8 @@
   width: 42px;
   padding-top: 9px;
   margin-right: 4px;
-  background: $black;
-  background: $transparent-black;
+  background-color: $transparent-black;
+
   &:last-of-type {
     margin-right: 0;
   }

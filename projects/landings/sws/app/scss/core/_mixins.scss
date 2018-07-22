@@ -46,3 +46,30 @@
   font-weight: 100;
   font-style: normal;
 }
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin input {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder {@content}
+  ::-moz-placeholder {@content}
+  :-ms-input-placeholder {@content}
+}
+
+// BEM
+@mixin el($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin mod($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}

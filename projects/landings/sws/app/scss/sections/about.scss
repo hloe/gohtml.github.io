@@ -6,12 +6,15 @@
 .icon {
   padding: 117px 32px 60px;
   @include retina('../images/icon1.png', 2, 67px 73px, top center no-repeat);
-  &--laptop {
+
+  @include mod('laptop') {
     @include retina('../images/icon2.png', 2, 76px 80px, top center no-repeat);
   }
-  &--table {
+
+  @include mod('table') {
     @include retina('../images/icon3.png', 2, 81px 75px, top center no-repeat);
   }
+
   @media (min-width: 992px) {
     padding-bottom: 0;
   }

@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &_header {
+
+  @include mod('header') {
     padding-top: 19px;
     padding-bottom: 19px;
 

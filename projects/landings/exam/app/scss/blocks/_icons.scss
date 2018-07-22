@@ -7,35 +7,43 @@
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
-  &_red {
+
+  @include mod('red') {
     background-color: $red;
   }
-  &_yellow {
+
+  @include mod('yellow') {
     background-color: $yellow;
   }
-  &_aqua {
+
+  @include mod('aqua') {
     background-color: $aqua;
   }
-  &_blue {
+
+  @include mod('blue') {
     background-color: $blue;
   }
 }
 
 .icon {
   fill: $white;
-  &__cup {
+
+  @include el('cup') {
     width: 16px;
     height: 16px;
   }
-  &__tv {
+
+  @include el('tv') {
     width: 16px;
     height: 16px;
   }
-  &__bottle {
+
+  @include el('bottle') {
     width: 14px;
     height: 16px;
   }
-  &__plane {
+
+  @include el('plane') {
     width: 17px;
     height: 16px;
   }

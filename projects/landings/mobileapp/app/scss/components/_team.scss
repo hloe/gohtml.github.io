@@ -1,8 +1,9 @@
 .team {
-  padding-top: 87px;
-    padding-bottom: 50px;
+  padding-top: 85px;
+  padding-bottom: 50px;
   text-align: center;
-  &__subtitle {
+
+  @include el('subtitle') {
     max-width: 970px;
     margin: 36px auto 0;
     @include opensans-semibold;
@@ -11,7 +12,8 @@
     color: $team-text;
     opacity: .8;
   }
-  &__content {
+
+  @include el('content') {
     position: relative;
     padding-top: 105px;
   }

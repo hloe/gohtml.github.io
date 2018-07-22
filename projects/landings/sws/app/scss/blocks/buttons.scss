@@ -9,18 +9,21 @@
   font-size: 18px;
   outline-width: 0;
   cursor: pointer;
+
   &:hover {
     @include transition;
     border-color: $gray-hover;
     color: $gray-hover;
     text-decoration: none;
   }
-  &--blue {
+
+  @include mod('blue') {
     padding-left: 45px;
     padding-right: 37px;
     background-color: $blue;
     border-color: $blue;
     color: $white;
+
     &:hover {
       background-color: $blue-hover;
       border-color: $blue-hover;

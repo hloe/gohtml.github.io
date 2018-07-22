@@ -20,6 +20,7 @@ h1 {
   letter-spacing: -2px;
   word-spacing: 1.39px;
   color: $text;
+
   @media (min-width: 768px) {
     padding-top: 116px;
     background-size: 92px 92px;
@@ -37,15 +38,16 @@ h2 {
   color: $text;
   @media (min-width: 768px) {
     padding-left: 50px;
-    &:before {
+
+    &::before {
       position: absolute;
       top: 50%;
       left: 0;
       display: block;
       width: 31px;
       height: 2px;
-      content: '';
       background-color: $decor-line;
+      content: '';
     }
   }
 }

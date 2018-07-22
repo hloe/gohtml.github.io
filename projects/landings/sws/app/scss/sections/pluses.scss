@@ -1,23 +1,28 @@
 .pluses {
   background-color: $light-gray;
   text-align: center;
-  &__item {
+
+  @include el('item') {
     @media (min-width: 768px) {
       text-align: left;
     }
+
     &:nth-of-type(even) {
       @media (min-width: 768px) {
         text-align: right;
       }
     }
   }
-  &__text {
+
+  @include el('text') {
     position: relative;
+
     @media (min-width: 768px) {
       padding-bottom: 87px;
     }
+
     @media (min-width: 768px) {
-      &:before {
+      &::before {
         position: absolute;
         top: 0;
         left: 0;
@@ -26,26 +31,27 @@
         height: 137px;
         @include retina('../images/quote.png', 2, cover, top center no-repeat);
         content: '';
+
         &:last-of-type {
           padding-bottom: 0;
         }
       }
     }
-    &--right {
+
+    @include mod('right') {
       @media (min-width: 768px) {
-        &:before {
+        &::before {
           left: auto;
           right: 0;
         }
       }
     }
   }
-  &__figure {
-    margin-top: 32px;
-    margin-bottom: 64px;
-    @media (min-width: 768px) {
-      margin-top: 0;
-      margin-bottom: 0;
+
+  @include el('figure') {
+    @media (max-width: 767px) {
+      margin-top: 32px;
+      margin-bottom: 64px;
     }
   }
 }

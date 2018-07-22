@@ -1,40 +1,46 @@
 .works {
-
-  &__header {
+  @include el('header') {
     height: 90px;
     text-transform: uppercase;
     color: $white;
   }
-  &__title {
+
+  @include el('title') {
     font-size: 26px;
     @include font(300);
     line-height: 90px;
     vertical-align: middle;
     text-align: center;
-     @media (min-width: 640px) {
-    text-align: left;
+
+    @media (min-width: 640px) {
+      text-align: left;
     }
   }
-  &__content {
+
+  @include el('content') {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     @media (min-width: 640px) {
       justify-content: space-around;
       flex-direction: row;
       flex-wrap: wrap;
     }
   }
-  &__content-item {
+
+  @include el('content-item') {
     position: relative;
     width: 90%;
     height: 100%;
     margin: 5%;
+
     @media (min-width: 640px) {
       width: 47.5%;
       margin: 1.25%;
     }
+
     @media (min-width: 1024px) {
       width: 23.5%;
       margin: .5%;

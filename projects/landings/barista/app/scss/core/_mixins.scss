@@ -1,11 +1,11 @@
 @mixin clearfix {
-&:after {
-clear: both;
-content: '.';
-display: block;
-height: 0;
-visibility: hidden;
-}
+  &::after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
 }
 
 @mixin transition {
@@ -37,4 +37,25 @@ visibility: hidden;
   font-family: Georgia, Times, 'Times New Roman', serif;
   font-style: normal;
   font-weight: bold;
+}
+
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+// BEM
+@mixin el($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin mod($modifier) {
+  &_#{$modifier} {
+    @content;
+  }
 }
