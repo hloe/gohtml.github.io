@@ -64,11 +64,6 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('dist/fonts'))
 });
 
-gulp.task('icons', function () {
-  return gulp.src('app/i/*')
-    .pipe(gulp.dest('dist/i'))
-});
-
 gulp.task('images', function () {
   return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
     .pipe(cache(imagemin({
@@ -105,7 +100,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'fonts', 'icons', 'html'],
+  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'fonts', 'html'],
     callback
   )
 });

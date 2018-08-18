@@ -54,7 +54,7 @@
 
     @media (min-width: 640px) {
       width: 192px;
-      margin-top: 7px;
+      margin-top: 70px;
     }
   }
 }
@@ -82,8 +82,8 @@
 
   @include el('link') {
     &:hover {
-      @include transition;
-      filter: sepia(.5);
+      //@include transition;
+      //filter: sepia(.5);
     }
   }
 
@@ -95,6 +95,14 @@
     position: absolute;
     bottom: -3px;
     right: -2px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      position: absolute;
+      bottom: -3px;
+      right: -2px;
+    }
   }
 
   @include el('title') {
