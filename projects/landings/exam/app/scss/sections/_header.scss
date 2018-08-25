@@ -1,25 +1,27 @@
 .wrapper {
+  @media (min-width: 640px) {
+    background-attachment: fixed;
+  }
+}
+
+.header-wrapper {
   padding-top: 20px;
   padding-bottom: 149px;
   background-color: $header;
-  @include retina('../images/header-mobile.jpg', 2, cover, top center no-repeat);
+  background-image: url('../images/header-mobile.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
   text-align: center;
 
   @media (min-width: 640px) {
-    @include retina('../images/header-tablet.jpg', 2, cover, top center no-repeat);
-    padding-top: 39px;
+    background-image: url('../images/header-tablet.jpg');
+    padding-top: 40px;
     padding-bottom: 232px;
     height: 700px;
-    background-attachment: fixed;
   }
 
   @media (min-width: 1024px) {
-    @include retina('../images/header-desktop.jpg', 2, cover, top center no-repeat);
-    padding-top: 40px;
-    padding-bottom: 234px;
-    height: 700px;
-    background-attachment: fixed;
-
+    background-image: url('../images/header-desktop.jpg');
   }
 }
 

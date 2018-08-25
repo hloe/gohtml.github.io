@@ -47,7 +47,7 @@ gulp.task('html', function () {
 
 
 gulp.task('scripts', function () {
-  return gulp.src('app/js/**/*.js')
+  return gulp.src('app/js/*.js')
     .pipe(concat('scripts.min.js'))
     .pipe(babel({
       presets: ['es2015', 'stage-2']
@@ -58,6 +58,15 @@ gulp.task('scripts', function () {
       stream: true
     }));
 });
+
+gulp.task('plugins', function () {
+  return gulp.src('app/js/plugins/*.js')
+    .pipe(gulp.dest('dist/js/plugins'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
 
 gulp.task('fonts', function () {
   return gulp.src('app/fonts/*')
@@ -105,7 +114,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'images', 'fonts', 'icons', 'html'],
+  runSequence('clean:dist', ['sass', 'autoprefixer', 'scripts', 'plugins', 'images', 'fonts', 'icons', 'html'],
     callback
   )
 });

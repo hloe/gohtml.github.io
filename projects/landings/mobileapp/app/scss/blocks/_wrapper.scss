@@ -11,7 +11,7 @@
         @media (min-width: 1100px) {
           @include retina('../images/header-background-lg.jpg', 2, 1589px 758px, top center no-repeat);
         }
-    @media (min-width: 100px) {
+    @media (min-width: 1200px) {
       @include retina('../images/header-background-shadow.jpg', 2, 1589px 758px, top center no-repeat);
     }
   }

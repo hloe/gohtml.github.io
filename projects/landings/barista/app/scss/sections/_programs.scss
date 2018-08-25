@@ -1,7 +1,7 @@
 .programs {
   padding-top: 90px;
   padding-bottom: 140px;
-  @include retina('../images/cup-background.jpg', 2, 742px 727px, right bottom no-repeat);
+  background: url('../images/cup-background.jpg') right 90% / 742px 727px no-repeat;
 
   @include el('title') {
     position: relative;

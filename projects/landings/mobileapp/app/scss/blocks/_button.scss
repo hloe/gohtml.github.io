@@ -5,6 +5,8 @@
   border-width: 0;
 
   @include el('download') {
+    position: relative;
+    padding-left: 40px;
     background-color: $button;
     color: $white;
   }

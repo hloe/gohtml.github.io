@@ -4,7 +4,7 @@
   text-align: center;
 
   @include el('title') {
-    margin-top: 95px;
+    margin-bottom: 96px;
   }
 
   @include el('subtitle') {
@@ -23,7 +23,7 @@
   }
 
   @include el('text') {
-    margin-bottom: 380px;
+    margin-bottom: 38px;
     @include opensans-regular;
     font-size: 14px;
     line-height: 1.5;

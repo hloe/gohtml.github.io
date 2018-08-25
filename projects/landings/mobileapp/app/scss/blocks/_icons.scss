@@ -3,9 +3,9 @@
 }
 
 .icon-download {
-  position: relative;
-  float: left;
-  top: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: 14px;
   height: 35px;
   width: 37px;
@@ -67,22 +67,13 @@
   }
 }
 
-.icon-twitter,
-.icon-facebook,
-.icon-google-plus {
-  height: 21px;
-  width: 23px;
-  fill: $white;
-}
-
 .facebook-circle,
 .twitter-circle,
 .google-circle {
+  position: relative;
   display: inline-block;
-  height: 41px;
-  width: 41px;
-  padding-top: 10px;
-  padding-left: 10px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
 }
 
@@ -101,4 +92,16 @@
 
 .google-circle {
   background-color: $google;
+}
+
+.icon-twitter,
+.icon-facebook,
+.icon-google-plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 21px;
+  width: 23px;
+  fill: $white;
 }

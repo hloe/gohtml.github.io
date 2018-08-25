@@ -47,11 +47,7 @@ gulp.task('html', function () {
 
 
 gulp.task('scripts', function () {
-  return gulp.src('app/js/**/*.js')
-    .pipe(concat('scripts.min.js'))
-    .pipe(babel({
-      presets: ['es2015', 'stage-2']
-    }))
+  return gulp.src('app/js/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.reload({
