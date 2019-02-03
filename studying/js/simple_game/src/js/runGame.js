@@ -1,5 +1,4 @@
 import Level from './Level';
-import DOMDisplay from './DOMDisplay';
 
 const arrowCodes = {
     37: "left",
@@ -24,29 +23,15 @@ function trackKeys(codes) {
     return pressed;
 }
 
-function runGame() {
-    const pressed = Object.create(null);
-
-    function handler(event) {
-        if (codes.hasOwnProperty(event.keyCode)) {
-            const down = event.type === "keydown";
-            pressed[codes[event.keyCode]] = down;
-            event.preventDefault();
-        }
-    }
-    addEventListener("keydown", handler);
-    addEventListener("keyup", handler);
-    return pressed;
-}
-
 function runAnimation(frameFunc) {
     let lastTime = null;
 
     function frame(time) {
         let stop = false;
+
         if (lastTime !== null) {
             const timeStep = Math.min(time - lastTime, 100) / 1000;
-            stop = frameFunc(timeStep) === false;
+            stop = !stop && frameFunc(timeStep) === false;
         }
 
         lastTime = time;
@@ -56,29 +41,52 @@ function runAnimation(frameFunc) {
     requestAnimationFrame(frame);
 }
 
-const arrows = trackKeys(arrowCodes);
 
 function runLevel(level, Display, andThen) {
     const display = new Display(document.body, level);
+    let onPause = false;
+
+    const arrows = trackKeys(arrowCodes);
 
     runAnimation(function(step) {
-        level.animate(step, arrows);
-        display.drawFrame(step);
-        if (level.isFinished()) {
-            display.clear();
+        if (!onPause) {
+            level.animate(step, arrows);
+            display.drawFrame(step);
 
-            if (andThen) andThen(level.status);
-            return false;
+            if (level.isFinished()) {
+                display.clear();
+
+                if (andThen) andThen(level.status);
+                return false;
+            }
         }
     });
+
+    function handler(event) {
+        if (event.key === 'Escape') onPause = !onPause;
+    }
+
+    addEventListener("keyup", handler);
 }
 
 export default function runGame(plans, Display) {
+    let lives = 3;
+
     function startLevel(n) {
         runLevel(new Level(plans[n]), Display, function(status) {
-            if (status === "lost") startLevel(n);
+            if (status === "lost") {
+                lives--;
+
+                if (lives) {
+                    startLevel(n);
+                } else {
+                    alert("Game over!");
+                    lives = 3;
+                    startLevel(0);
+                }
+            }
             else if (n < plans.length - 1) startLevel(n + 1);
-            else console.log("You win!");
+            else alert("You win!");
         });
     }
 

@@ -89,8 +89,7 @@ export default class Level {
     animate(step, keys) {
         const maxStep = 0.05;
 
-        if (this.status !== null)
-            this.finishDelay -= step;
+        if (this.status !== null) this.finishDelay -= step;
 
         while (step > 0) {
             const thisStep = Math.min(step, maxStep);

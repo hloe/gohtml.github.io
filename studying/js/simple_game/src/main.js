@@ -1,11 +1,8 @@
 import './main.scss';
-import DOMDisplay from './js/DOMDisplay';
+import CanvasDisplay from './js/CanvasDisplay';
 import runGame from './js/runGame';
 import gameLevels from './js/gameLevels';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // const simpleLevel = new Level(simpleLevelPlan);
-  // const display = new DOMDisplay(document.body, simpleLevel);
-
-  runGame(gameLevels, DOMDisplay);
+  runGame(gameLevels, CanvasDisplay);
 });
