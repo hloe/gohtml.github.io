@@ -1,9 +1,9 @@
 const scale = 40;
 const otherSprites = document.createElement("img");
-otherSprites.src = "./../dist/images/sprites.png";
+otherSprites.src = "/images/sprites.png";
 
 const playerSprites = document.createElement("img");
-playerSprites.src = "./../dist/images/player.png";
+playerSprites.src = "/images/player.png";
 const playerXOverlap = 8;
 
 export default class CanvasDisplay {
